@@ -1,0 +1,55 @@
+.\" Process this file with
+.\" groff -man -Tascii foo.1
+.\"
+.TH PEEKFD 1 "APRIL 2007" Linux "User Commands"
+.SH NAME
+peekfd \- peek at file descriptors of running processes
+.SH SYNOPSIS
+.B peekfd 
+.RB [ \-8 , \-\-eight\-bit\-clean ]
+.RB [ \-n , \-\-no\-headers ]
+.RB [ \-f , \-\-follow ]
+.RB [ \-d , \-\-duplicates\-removed ]
+.RB [ \-V , \-\-version ]
+.RB [ \-h , \-\-help ]
+.I pid
+.RI [ fd ]
+.RI [ fd ]
+.B ...
+.SH DESCRIPTION
+.B peekfd
+attaches to a running process and intercepts all reads 
+and writes to file descriptors.  You can specify the 
+desired file descriptor numbers or dump all of them.
+.SH OPTIONS
+.IP -8
+Do no post-processing on the bytes being read or written.
+.IP -n
+Do not display headers indicating the source of the bytes dumped.
+.IP -c
+Also dump the requested file descriptor activity in any new child processes that are created.
+.IP -d
+Remove duplicate read/writes from the output.  If you're looking at a tty with echo, you might want this.
+.IP -v
+Display a version string.
+.IP -h
+Display a help message.
+.SH FILES
+.I /proc/*/fd
+.RS
+Not used but useful for the user to look at to get good file descriptor numbers.
+.SH ENVIRONMENT
+None.
+.SH DIAGNOSTICS
+The following diagnostics may be issued on stderr:
+
+.B 
+Error attaching to pid ...
+.RS
+An unknown error occured while attempted to attach to a process.. you may need to be root.
+.SH BUGS
+Probably lots.  Don't be surprised if the process you are monitoring dies.
+.SH AUTHOR
+Trent Waddington <trent.waddington@gmail.com>
+.SH "SEE ALSO"
+.BR ttysnoop (8)

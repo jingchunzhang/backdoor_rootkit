@@ -1,0 +1,115 @@
+proc/devname.c: In function `load_drivers':
+proc/devname.c:87: warning: comparison between signed and unsigned
+In file included from proc/escape.h:7,
+                 from proc/escape.c:15:
+proc/readproc.h:76: warning: padding struct to align 'start_code'
+In file included from proc/readproc.c:13:
+proc/readproc.h:76: warning: padding struct to align 'start_code'
+proc/readproc.c: In function `status2proc':
+proc/readproc.c:176: warning: array subscript has type `char'
+proc/readproc.c:176: warning: array subscript has type `char'
+proc/readproc.c:176: warning: array subscript has type `char'
+proc/readproc.c: In function `stat2proc':
+proc/readproc.c:391: warning: use of assignment suppression and length modifier together in scanf format
+proc/readproc.c:391: warning: use of assignment suppression and length modifier together in scanf format
+proc/readproc.c: At top level:
+proc/readproc.c:41: warning: 'unhex' defined but not used
+proc/slab.c:99:1: warning: multi-line comment
+proc/slab.c:104:1: warning: multi-line comment
+proc/slab.c:111:1: warning: multi-line comment
+proc/slab.c:116:1: warning: multi-line comment
+tload.c:33: warning: redundant redeclaration of 'optind'
+/usr/include/getopt.h:73: warning: previous declaration of 'optind' was here
+tload.c:34: warning: redundant redeclaration of 'optarg'
+/usr/include/getopt.h:59: warning: previous declaration of 'optarg' was here
+In file included from w.c:10:
+proc/readproc.h:76: warning: padding struct to align 'start_code'
+w.c: In function `getproc':
+w.c:161: warning: comparison between signed and unsigned
+w.c:161: warning: comparison between signed and unsigned
+In file included from top.c:28:
+/usr/include/ncurses/curses.h:338: warning: padding struct to align '_attrs'
+/usr/include/ncurses/curses.h:351: warning: padding struct to align '_delay'
+/usr/include/ncurses/curses.h:375: warning: padding struct to align '_bkgrnd'
+/usr/include/ncurses/curses.h:1171: warning: padding struct to align 'x'
+In file included from top.c:38:
+/usr/include/ncurses/term.h:699: warning: padding struct to align 'Ottyb'
+In file included from top.c:49:
+proc/readproc.h:76: warning: padding struct to align 'start_code'
+In file included from top.c:56:
+top.h:342: warning: padding struct size to alignment boundary
+top.c: In function `show_special':
+top.c:691: warning: assignment discards qualifiers from pointer target type
+top.c: In function `good_uid':
+top.c:854: warning: comparison between signed and unsigned
+top.c:855: warning: comparison between signed and unsigned
+top.c:856: warning: comparison between signed and unsigned
+top.c:859: warning: comparison between signed and unsigned
+top.c: In function `prochlp':
+top.c:1075: warning: passing arg 5 of `bsearch' from incompatible pointer type
+top.c: In function `whack_terminal':
+top.c:1937: warning: passing arg 1 of `setupterm' discards qualifiers from pointer target type
+top.c: In function `summary_show':
+top.c:2959: warning: passing arg 5 of `select' discards qualifiers from pointer target type
+top.c: In function `task_show':
+top.c:3179: warning: assignment discards qualifiers from pointer target type
+top.c: In function `window_show':
+top.c:3205: warning: assignment discards qualifiers from pointer target type
+top.c: In function `main':
+top.c:3379: warning: passing arg 5 of `select' discards qualifiers from pointer target type
+top.c:3398: warning: passing arg 5 of `select' discards qualifiers from pointer target type
+In file included from watch.c:18:
+/usr/include/ncurses/ncurses.h:338: warning: padding struct to align '_attrs'
+/usr/include/ncurses/ncurses.h:351: warning: padding struct to align '_delay'
+/usr/include/ncurses/ncurses.h:375: warning: padding struct to align '_bkgrnd'
+/usr/include/ncurses/ncurses.h:1171: warning: padding struct to align 'x'
+skill.c: In function `main':
+skill.c:387: warning: 'argptr' might be used uninitialized in this function
+In file included from pmap.c:24:
+proc/readproc.h:76: warning: padding struct to align 'start_code'
+pmap.c:43: warning: large integer implicitly truncated to unsigned type
+pmap.c: In function `main':
+pmap.c:311: warning: ISO C90 forbids mixed declarations and code
+pmap.c:314: warning: operation on `arg2' may be undefined
+In file included from pgrep.c:30:
+proc/readproc.h:76: warning: padding struct to align 'start_code'
+pgrep.c:159: warning: no previous prototype for 'fcntl_lock'
+pgrep.c: In function `main':
+pgrep.c:420: warning: 'saved_start_time' might be used uninitialized in this function
+In file included from slabtop.c:17:
+/usr/include/ncurses/ncurses.h:338: warning: padding struct to align '_attrs'
+/usr/include/ncurses/ncurses.h:351: warning: padding struct to align '_delay'
+/usr/include/ncurses/ncurses.h:375: warning: padding struct to align '_bkgrnd'
+/usr/include/ncurses/ncurses.h:1171: warning: padding struct to align 'x'
+In file included from ps/../proc/escape.h:7,
+                 from ps/common.h:16,
+                 from ps/display.c:31:
+ps/../proc/readproc.h:76: warning: padding struct to align 'start_code'
+In file included from ps/../proc/escape.h:7,
+                 from ps/common.h:16,
+                 from ps/global.c:24:
+ps/../proc/readproc.h:76: warning: padding struct to align 'start_code'
+ps/global.c: In function `init_p_list':
+ps/global.c:380: warning: use of cast expressions as lvalues is deprecated
+ps/global.c: In function `check_p_list':
+ps/global.c:397: warning: unused variable `i'
+In file included from ps/output.c:58:
+ps/../proc/readproc.h:76: warning: padding struct to align 'start_code'
+ps/output.c: In function `pr_nice':
+ps/output.c:592: warning: comparison between signed and unsigned
+ps/output.c: In function `pr_rtprio':
+ps/output.c:629: warning: comparison between signed and unsigned
+ps/output.c: In function `pr_sched':
+ps/output.c:633: warning: comparison between signed and unsigned
+In file included from ps/../proc/escape.h:7,
+                 from ps/common.h:16,
+                 from ps/parser.c:28:
+ps/../proc/readproc.h:76: warning: padding struct to align 'start_code'
+In file included from ps/../proc/escape.h:7,
+                 from ps/common.h:16,
+                 from ps/select.c:16:
+ps/../proc/readproc.h:76: warning: padding struct to align 'start_code'
+ps/select.c: In function `want_this_proc':
+ps/select.c:126: warning: ISO C90 forbids mixed declarations and code
+In file included from ps/sortformat.c:21:
+ps/../proc/readproc.h:76: warning: padding struct to align 'start_code'

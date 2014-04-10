@@ -1,0 +1,94 @@
+#!/bin/sh
+# make sure chgrp is reasonable
+
+if test "$VERBOSE" = yes; then
+  set -x
+  chgrp --version
+fi
+
+. $srcdir/../envvar-check
+. $srcdir/../lang-default
+. $srcdir/../group-names
+
+pwd=`pwd`
+tmp=basic.$$
+trap 'status=$?; cd $pwd; rm -rf $tmp && exit $status' 0
+trap '(exit $?); exit' 1 2 13 15
+
+framework_failure=0
+mkdir $tmp || framework_failure=1
+cd $tmp || framework_failure=1
+
+if test $framework_failure = 1; then
+  echo 'failure in testing framework' 1>&2
+  (exit 1); exit
+fi
+
+fail=0
+
+set _ $groups; shift
+g1=$1
+g2=$2
+mkdir d
+touch f f2 d/f3
+chgrp $g1 f || fail=1
+chgrp $g2 f || fail=1
+chgrp $g2 f2 || fail=1
+chgrp -R $g1 d || fail=1
+
+# Don't let verbose output interfere.
+test "$VERBOSE" = yes && set +x
+
+(
+  chgrp -c $g1 f
+  chgrp -c $g2 f
+  chgrp -c $g2 f
+  chgrp --verbose $g1 f
+  chgrp --verbose $g1 f
+  chgrp --verbose --reference=f2 f
+  chgrp -R --verbose $g2 d
+  chgrp -R --verbose $g1 d
+  chgrp -R -c $g2 d
+  chgrp -R -c $g1 d
+  chgrp -c $g2 d
+
+  rm -f f
+  touch f
+  ln -s f symlink
+  chgrp $g1 f
+  chgrp $g2 symlink 2> /dev/null
+
+  # This should not change the group of f.
+  chgrp -c $g2 symlink 2> /dev/null
+  chgrp -c $g2 f
+
+  # This *should* change the group of f.
+  # Though note that the diagnostic is misleading in that
+  # it says the `group of `symlink'' has been changed.
+  chgrp --dereference -c $g1 symlink
+
+) 2>&1 | sed "s/ $g1$/ G1/;s/ $g2$/ G2/" > actual
+
+cat <<\EOF > expected
+changed group of `f' to G1
+changed group of `f' to G2
+changed group of `f' to G1
+group of `f' retained as G1
+changed group of `f' to G2
+changed group of `d' to G2
+changed group of `d/f3' to G2
+changed group of `d' to G1
+changed group of `d/f3' to G1
+changed group of `d' to G2
+changed group of `d/f3' to G2
+changed group of `d' to G1
+changed group of `d/f3' to G1
+changed group of `d' to G2
+changed group of `f' to G2
+changed group of `symlink' to G1
+EOF
+
+cmp expected actual \
+  || { diff expected actual 1>&2; fail=1; }
+
+(exit $fail); exit

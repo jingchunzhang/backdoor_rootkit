@@ -1,0 +1,116 @@
+#!/bin/sh
+# -*- perl -*-
+# Ensure that rm gives the expected diagnostic when failing to remove a file
+# owned by some other user in a directory with the sticky bit set.
+
+if test "$VERBOSE" = yes; then
+  set -x
+  rm --version
+fi
+
+# FIXME-someday: when run as root we don't need all of the
+# searching below.  root can simply create the required
+# dir/files and run the test as someone else.
+
+PRIV_CHECK_ARG=require-non-root . $srcdir/../priv-check
+
+: ${PERL=perl}
+: ${srcdir=.}
+
+$PERL -e 1 > /dev/null 2>&1 || {
+  echo 1>&2 "$0: configure didn't find a usable version of Perl," \
+    "so can't run this test"
+  exit 77
+}
+
+ARGV_0=$0
+export ARGV_0
+
+exec $PERL -w -- - << \EOP
+require 5.003;
+use strict;
+
+(my $ME = $ENV{ARGV_0}) =~ s|.*/||;
+
+my $verbose = $ENV{VERBOSE} && $ENV{VERBOSE} eq 'yes';
+
+# Ensure that the diagnostics are in English.
+$ENV{LC_ALL} = 'C';
+
+my @dir_list = qw(/tmp /var/tmp /usr/tmp);
+
+# Find a directory with the sticky bit set.
+my $found_dir;
+my $found_file;
+foreach my $dir (@dir_list)
+  {
+    if (-d $dir && -k _ && -r _ && -w _ && -x _)
+      {
+	$found_dir = 1;
+
+	# Find a non-directory there that is owned by some other user.
+	opendir DIR_HANDLE, $dir
+	  or die "$ME: couldn't open $dir: $!\n";
+
+	foreach my $f (readdir DIR_HANDLE)
+	  {
+	    my $target_file = "$dir/$f";
+	    $verbose
+	      and warn "$ME: considering $target_file\n";
+
+	    # Skip files owned by self, symlinks, and directories.
+	    # It's not technically necessary to skip symlinks, but it's simpler.
+	    -l $target_file || -o _ || -d _
+	      and next;
+
+	    $found_file = 1;
+
+	    # Invoke rm on this file and ensure that we get the
+	    # expected exit code and diagnostic.
+	    my $cmd = "rm -f $target_file";
+	    open RM, "$cmd 2>&1 |"
+	      or die "$ME: cannot execute `$cmd'\n";
+
+	    my $line = <RM>;
+
+	    close RM;
+	    my $status = $? >> 8;
+	    $status == 1
+	      or die "$ME: unexpected exit status from `$cmd';\n"
+		. "  got $status, expected 1\n";
+
+	    my $exp = "rm: cannot remove `$target_file':";
+	    $line
+	      or die "$ME: no output from `$cmd';\n"
+		. "expected something like `$exp ...'\n";
+
+	    my $regex = quotemeta $exp;
+	    $line =~ /^$regex/
+	      or die "$ME: unexpected dignostic from `$cmd';\n"
+		. "  got      $line"
+		. "  expected $exp ...\n";
+
+	    last;
+	  }
+
+	closedir DIR_HANDLE;
+	$found_file
+	  and last;
+      }
+  }
+
+if ( ! $found_dir)
+  {
+    warn "$ME: couldn't find a directory with the sticky bit set;"
+      . " skipping this test\n";
+    exit 77;
+  }
+
+if ( ! $found_file)
+  {
+    warn "$ME: couldn't find a file not owned by you\n"
+      . " in any of the following directories:\n  @dir_list\n"
+      . "...so, skipping this test\n";
+    exit 77;
+  }
+EOP

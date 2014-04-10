@@ -1,0 +1,3 @@
+forcefindlib.o forcefindlib.o: forcefindlib.c ../config.h
+
+../config.h:

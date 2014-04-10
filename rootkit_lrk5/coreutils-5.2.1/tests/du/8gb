@@ -1,0 +1,71 @@
+#!/bin/sh
+# Ensure that du does not rely on narrow types like size_t for
+# file sizes or sums.
+
+if test "$VERBOSE" = yes; then
+  set -x
+  du --version
+fi
+
+. $srcdir/../envvar-check
+
+pwd=`pwd`
+t0=`echo "$0"|sed 's,.*/,,'`.tmp; tmp=$t0/$$
+trap 'status=$?; cd $pwd; chmod -R u+rwx $t0; rm -rf $t0 && exit $status' 0
+trap '(exit $?); exit $?' 1 2 13 15
+
+framework_failure=0
+mkdir -p $tmp || framework_failure=1
+cd $tmp || framework_failure=1
+
+if test $framework_failure = 1; then
+  echo "$0: failure in testing framework" 1>&2
+  (exit 1); exit 1
+fi
+
+# If this file system doesn't support sparse files,
+# don't try to create a file that'd end up consuming 8GB.
+# This happens on Darwin6.5 with a file system of type `hfs'.
+dd bs=1 seek=64K of=t < /dev/null 2> /dev/null
+set x `du -sk t`
+if test "$2" = 64; then
+  echo "$0: skipping this test, since this file system doesn't support" 1>&2
+  echo "$0: sparse files and this test requires a file with an apparent" 1>&2
+  echo "$0: size of 8GB" 1>&2
+  (exit 77); exit 77
+fi
+
+dd bs=1 seek=8G of=big < /dev/null 2> /dev/null
+if test $? != 0; then
+  echo "$0: cannot create a file large enough for this test; possibly" 1>&2
+  echo "$0: because file offsets are only 32 bits on this file system" 1>&2
+  (exit 77); exit 77
+fi
+
+# FIXME: this should be a test of dd.
+# On some systems (at least linux-2.4.18 + NFS to disks on a Solaris system)
+# the `dd' command above mistakenly creates a file of length `0', yet
+# doesn't fail.  The root of that failure is that the ftruncate call
+# returns zero but doesn't do its job.  Detect this failure.
+set x `ls -gG big`
+size=$4
+if test "$size" = 0; then
+  echo "$0: cannot create a file large enough for this test;" 1>&2
+  echo "$0: possibly because this system's NFS support is buggy;" 1>&2
+  echo "$0: Consider rerunning this test on a different file system." 1>&2
+  (exit 77); exit 77
+fi
+
+fail=0
+
+# This would print `0	big' with coreutils-4.5.8.
+du -ab big > out || fail=1
+
+cat <<\EOF > exp
+8589934592	big
+EOF
+
+cmp out exp || fail=1
+test $fail = 1 && diff out exp 2> /dev/null
+
+(exit $fail); exit $fail

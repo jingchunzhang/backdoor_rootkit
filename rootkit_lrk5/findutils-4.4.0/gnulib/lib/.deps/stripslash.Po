@@ -1,0 +1,11 @@
+stripslash.o stripslash.o: stripslash.c ../../config.h dirname.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/stdbool.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/stddef.h
+
+../../config.h:
+
+dirname.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/stdbool.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/stddef.h:

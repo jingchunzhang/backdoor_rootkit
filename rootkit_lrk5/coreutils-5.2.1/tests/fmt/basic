@@ -1,0 +1,49 @@
+#!/bin/sh
+# -*- perl -*-
+
+: ${PERL=perl}
+: ${srcdir=.}
+
+$PERL -e 1 > /dev/null 2>&1 || {
+  echo 1>&2 "$0: configure didn't find a usable version of Perl," \
+    "so can't run this test"
+  exit 77
+}
+
+# Export this to avoid hassles when run in a UTF-8 locale,
+# since we use 8-bit characters below, and those values are
+# interpolated into strings (to perform substitution) in Fetish.pm.
+LC_ALL=C
+export LC_ALL
+
+exec $PERL -w -I$srcdir/.. -MFetish -- - <<\EOF
+require 5.003;
+use strict;
+
+(my $program_name = $0) =~ s|.*/||;
+
+my @Tests =
+    (
+     ['8-bit-pfx', qw (-p 'ç'),
+      {IN=> "ça\nçb\n"},
+      {OUT=>"ça b\n"}],
+     ['wide-1', '-32768',	{IN=> "a\n"}, {OUT=>"a\n"}],
+     ['wide-2', '-2147483647',	{IN=> "a\n"}, {OUT=>"a\n"}],
+     ['bad-suffix', '-72x',	{IN=> ''},
+      {ERR => "fmt: invalid width option: `-72x'\n"}, {EXIT => 1}],
+     ['no-file', 'no-such-file',
+      {ERR => "fmt: cannot open `no-such-file' for reading:"
+       . " No such file or directory\n"}, {EXIT => 1}],
+     ['obs-1', '-c -72',
+      {ERR => "fmt: invalid option -- 7; -WIDTH is recognized only when it"
+       . " is the first\noption; use -w N instead\n"
+       . "Try `fmt --help' for more information.\n" }, {EXIT => 1}],
+    );
+
+my $save_temps = $ENV{DEBUG};
+my $verbose = $ENV{VERBOSE};
+
+my $prog = $ENV{PROG} || die "$0: \$PROG not specified in environment\n";
+my $fail = run_tests ($program_name, $prog, \@Tests, $save_temps, $verbose);
+exit $fail;
+EOF

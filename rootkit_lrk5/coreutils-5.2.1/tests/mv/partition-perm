@@ -1,0 +1,38 @@
+#!/bin/sh
+# Make sure permissions are preserved when moving from one partition to another.
+
+if test "$VERBOSE" = yes; then
+  set -x
+  mv --version
+fi
+
+. $srcdir/setup
+. $srcdir/../envvar-check
+. $srcdir/../lang-default
+
+if test -z "$other_partition_tmpdir"; then
+  exit 77
+fi
+
+pwd=`pwd`
+dir=p-perm-$$
+trap "cd $pwd; rm -rf $dir $other_partition_tmpdir" 0 1 2 3 15
+
+mkdir $dir
+
+cd $dir
+: > file
+chmod a=rwx file
+
+umask 077
+mv file $other_partition_tmpdir
+
+fail=0
+test -f file && fail=1
+test -f $other_partition_tmpdir/file || fail=1
+
+# This would have failed with the mv from fileutils-4.0i.
+set _ `ls -l $other_partition_tmpdir/file`; shift; mode=$1
+test "$mode" = "-rwxrwxrwx" || fail=1
+
+exit $fail

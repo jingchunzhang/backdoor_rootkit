@@ -1,0 +1,52 @@
+dirname.o dirname.o: dirname.c ../../config.h dirname.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/stdbool.h \
+  /usr/lib/gcc/i386-redhat-linux/4.1.2/include/stddef.h string.h \
+  /usr/include/string.h /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+  /usr/include/gnu/stubs-32.h /usr/include/xlocale.h \
+  /usr/include/bits/string.h /usr/include/bits/string2.h \
+  /usr/include/endian.h /usr/include/bits/endian.h \
+  /usr/include/bits/types.h /usr/include/bits/typesizes.h stdlib.h \
+  /usr/include/stdlib.h xalloc.h
+
+../../config.h:
+
+dirname.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/stdbool.h:
+
+/usr/lib/gcc/i386-redhat-linux/4.1.2/include/stddef.h:
+
+string.h:
+
+/usr/include/string.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/string.h:
+
+/usr/include/bits/string2.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+stdlib.h:
+
+/usr/include/stdlib.h:
+
+xalloc.h:

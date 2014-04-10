@@ -1,0 +1,1146 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ACTOBJS	lib/Makefile	/^ACTOBJS  = slip_ac.o ppp_ac.o activate.o$/;"	m
+ADAPTIVE_activate	lib/slip_ac.c	/^int ADAPTIVE_activate(int fd)$/;"	f
+AFGROBJS	lib/Makefile	/^AFGROBJS = inet_gr.o inet6_gr.o ipx_gr.o ddp_gr.o netrom_gr.o ax25_gr.o rose_gr.o getroute.o x25_gr.o$/;"	m
+AFOBJS	lib/Makefile	/^AFOBJS	 = unix.o inet.o inet6.o ax25.o ipx.o ddp.o ipx.o netrom.o af.o rose.o econet.o x25.o$/;"	m
+AFSROBJS	lib/Makefile	/^AFSROBJS = inet_sr.o inet6_sr.o netrom_sr.o ipx_sr.o setroute.o x25_sr.o$/;"	m
+AFTRANS_CNT	lib/net-support.h	151;"	d
+AFTRANS_OPTS	lib/net-support.h	139;"	d
+AF_ECONET	lib/net-support.h	239;"	d
+AF_INET6	lib/util-ank.c	33;"	d	file:
+AF_ROSE	lib/rose.c	42;"	d	file:
+AF_ROSE	lib/rose.c	49;"	d	file:
+ARPHRD_ASH	lib/ash.c	55;"	d	file:
+ARPHRD_HDLC	lib/hdlclapb.c	41;"	d	file:
+ARPHRD_HIPPI	lib/hippi.c	41;"	d	file:
+ARPHRD_IRDA	lib/irda.c	51;"	d	file:
+ARPHRD_LAPB	lib/hdlclapb.c	46;"	d	file:
+ARPHRD_SIT	lib/sit.c	38;"	d	file:
+ASH_ALEN	lib/ash.c	25;"	d	file:
+AX25_errmsg	lib/ax25.c	/^static char AX25_errmsg[128];$/;"	v	file:
+AX25_herror	lib/ax25.c	/^static void AX25_herror(char *text)$/;"	f	file:
+AX25_hinput	lib/ax25.c	/^static int AX25_hinput(char *bufp, struct sockaddr *sap)$/;"	f	file:
+AX25_input	lib/ax25.c	/^static int AX25_input(int type, char *bufp, struct sockaddr *sap)$/;"	f	file:
+AX25_print	lib/ax25.c	/^static char *AX25_print(unsigned char *ptr)$/;"	f	file:
+AX25_rprint	lib/ax25_gr.c	/^int AX25_rprint(int options)$/;"	f
+AX25_sprint	lib/ax25.c	/^ AX25_sprint(struct sockaddr *sap, int numeric)$/;"	f	file:
+CATALOGS	po/Makefile	/^CATALOGS = de.mo fr.mo pt_BR.mo et_EE.mo cs.mo$/;"	m
+CATALOGS	po/Makefile	/^CATALOGS =$/;"	m
+CC	Makefile	/^CC	= gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS	= $(COPTS) -I. -idirafter .\/include\/ -I$(NET_LIB_PATH)$/;"	m
+CMDS	man/Makefile	/^				CMDS=`ls *.$$SECTION`; \\$/;"	m
+COPTS	Makefile	/^COPTS = -D_GNU_SOURCE -O2 -Wall -g # -I\/usr\/inet6\/include$/;"	m
+COPTS	Makefile	/^MDEFINES = COPTS='$(COPTS)' LOPTS='$(LOPTS)' TOPDIR='$(TOPDIR)'$/;"	m
+CSLIP6_activate	lib/slip_ac.c	/^int CSLIP6_activate(int fd)$/;"	f
+CSLIP_activate	lib/slip_ac.c	/^int CSLIP_activate(int fd)$/;"	f
+DDP_rprint	lib/ddp_gr.c	/^int DDP_rprint(int options)$/;"	f
+DEF_PROTO	slattach.c	72;"	d	file:
+DELADDR	ipmaddr.c	45;"	d	file:
+DFLT_AF	arp.c	77;"	d	file:
+DFLT_AF	ifconfig.c	28;"	d	file:
+DFLT_AF	netstat.c	120;"	d	file:
+DFLT_AF	route.c	64;"	d	file:
+DFLT_HW	arp.c	78;"	d	file:
+DFLT_HW	rarp.c	36;"	d	file:
+DIRENT_HAVE_D_TYPE_WORKS	netstat.c	250;"	d	file:
+DNLIB	Makefile	/^DNLIB = -ldnet$/;"	m
+EINTERN	lib/net-support.h	153;"	d
+ENOSUPP	lib/net-support.h	156;"	d
+ESYSNOT	lib/net-support.h	161;"	d
+EXTERN	lib/x25.c	36;"	d	file:
+EXTERN	lib/x25_gr.c	40;"	d	file:
+EXTERN	lib/x25_sr.c	36;"	d	file:
+E_INTERN	lib/net-support.h	169;"	d
+E_IOCTL	netstat.c	129;"	d	file:
+E_LOOKUP	lib/net-support.h	165;"	d
+E_NOSUPP	lib/net-support.h	170;"	d
+E_NOTFOUND	lib/net-support.h	163;"	d
+E_OPTERR	lib/net-support.h	168;"	d
+E_READ	netstat.c	128;"	d	file:
+E_SOCK	lib/net-support.h	164;"	d
+E_USAGE	lib/net-support.h	167;"	d
+E_VERSION	lib/net-support.h	166;"	d
+FEATURE_ARP	arp.c	80;"	d	file:
+FEATURE_NETSTAT	netstat.c	122;"	d	file:
+FEATURE_ROUTE	route.c	66;"	d	file:
+FLAG_CACHE	lib/net-support.h	101;"	d
+FLAG_EXT	lib/net-support.h	95;"	d
+FLAG_FIB	lib/net-support.h	102;"	d
+FLAG_NUM	lib/net-support.h	99;"	d
+FLAG_NUM_HOST	lib/net-support.h	96;"	d
+FLAG_NUM_PORT	lib/net-support.h	97;"	d
+FLAG_NUM_USER	lib/net-support.h	98;"	d
+FLAG_SYM	lib/net-support.h	100;"	d
+FLAG_VERBOSE	lib/net-support.h	103;"	d
+Features	lib/net-features.h	/^static char *Features =$/;"	v
+GRE_CSUM	iptunnel.c	47;"	d	file:
+GRE_CSUM	iptunnel.c	48;"	d	file:
+GRE_FLAGS	iptunnel.c	59;"	d	file:
+GRE_FLAGS	iptunnel.c	60;"	d	file:
+GRE_KEY	iptunnel.c	51;"	d	file:
+GRE_KEY	iptunnel.c	52;"	d	file:
+GRE_REC	iptunnel.c	57;"	d	file:
+GRE_REC	iptunnel.c	58;"	d	file:
+GRE_ROUTING	iptunnel.c	49;"	d	file:
+GRE_ROUTING	iptunnel.c	50;"	d	file:
+GRE_SEQ	iptunnel.c	53;"	d	file:
+GRE_SEQ	iptunnel.c	54;"	d	file:
+GRE_STRICT	iptunnel.c	55;"	d	file:
+GRE_STRICT	iptunnel.c	56;"	d	file:
+GRE_VERSION	iptunnel.c	61;"	d	file:
+GRE_VERSION	iptunnel.c	62;"	d	file:
+HAS_INODE	netstat.c	1095;"	d	file:
+HAVE_AFASH	config.h	40;"	d
+HAVE_AFATALK	config.h	33;"	d
+HAVE_AFAX25	config.h	34;"	d
+HAVE_AFDECnet	config.h	39;"	d
+HAVE_AFECONET	config.h	38;"	d
+HAVE_AFINET	config.h	30;"	d
+HAVE_AFINET6	config.h	31;"	d
+HAVE_AFIPX	config.h	32;"	d
+HAVE_AFNETROM	config.h	35;"	d
+HAVE_AFROSE	config.h	36;"	d
+HAVE_AFUNIX	config.h	29;"	d
+HAVE_AFX25	config.h	37;"	d
+HAVE_DYNAMIC	include/interface.h	93;"	d
+HAVE_FW_MASQUERADE	config.h	72;"	d
+HAVE_HWARC	config.h	48;"	d
+HAVE_HWASH	config.h	62;"	d
+HAVE_HWAX25	config.h	54;"	d
+HAVE_HWEC	config.h	65;"	d
+HAVE_HWETHER	config.h	47;"	d
+HAVE_HWFDDI	config.h	60;"	d
+HAVE_HWFR	config.h	58;"	d
+HAVE_HWHDLCLAPB	config.h	63;"	d
+HAVE_HWHIPPI	config.h	61;"	d
+HAVE_HWIRDA	config.h	64;"	d
+HAVE_HWNETROM	config.h	56;"	d
+HAVE_HWPPP	config.h	50;"	d
+HAVE_HWROSE	config.h	55;"	d
+HAVE_HWSIT	config.h	59;"	d
+HAVE_HWSLIP	config.h	49;"	d
+HAVE_HWSTRIP	config.h	52;"	d
+HAVE_HWTR	config.h	53;"	d
+HAVE_HWTUNNEL	config.h	51;"	d
+HAVE_HWX25	config.h	57;"	d
+HAVE_IP_TOOLS	config.h	73;"	d
+HAVE_MII	config.h	74;"	d
+HAVE_NEW_ADDRT	lib/net-features.h	35;"	d
+HAVE_RTF_IRTT	lib/net-features.h	39;"	d
+HAVE_RTF_REJECT	lib/net-features.h	43;"	d
+HAVE_TXQUEUELEN	include/interface.h	91;"	d
+HIPPI_ALEN	lib/hippi.c	39;"	d	file:
+HWOBJS	lib/Makefile	/^HWOBJS	 = hw.o loopback.o slip.o ether.o ax25.o ppp.o arcnet.o tr.o tunnel.o frame.o sit.o rose.o ash.o fddi.o hippi.o hdlclapb.o strip.o irda.o ec_hw.o x25.o$/;"	m
+I18N	config.h	22;"	d
+IFF_DYNAMIC	include/interface.h	95;"	d
+IN6_IS_ADDR_UNSPECIFIED	lib/inet6.c	66;"	d	file:
+INET6_getsock	lib/inet6.c	/^static int INET6_getsock(char *bufp, struct sockaddr *sap)$/;"	f	file:
+INET6_input	lib/inet6.c	/^static int INET6_input(int type, char *bufp, struct sockaddr *sap)$/;"	f	file:
+INET6_print	lib/inet6.c	/^static char *INET6_print(unsigned char *ptr)$/;"	f	file:
+INET6_reserror	lib/inet6.c	/^static void INET6_reserror(char *text)$/;"	f	file:
+INET6_resolve	lib/inet6.c	/^static int INET6_resolve(char *name, struct sockaddr_in6 *sin6)$/;"	f	file:
+INET6_rinput	lib/inet6_sr.c	/^int INET6_rinput(int action, int options, char **args)$/;"	f
+INET6_rprint	lib/inet6_gr.c	/^int INET6_rprint(int options)$/;"	f
+INET6_rresolve	lib/inet6.c	/^static int INET6_rresolve(char *name, struct sockaddr_in6 *sin6, int numeric)$/;"	f	file:
+INET6_setroute	lib/inet6_sr.c	/^static int INET6_setroute(int action, int options, char **args)$/;"	f	file:
+INET6_sprint	lib/inet6.c	/^static char *INET6_sprint(struct sockaddr *sap, int numeric)$/;"	f	file:
+INET_getnetmask	lib/inet.c	/^static int INET_getnetmask(char *adr, struct sockaddr *m, char *name)$/;"	f	file:
+INET_getsock	lib/inet.c	/^static int INET_getsock(char *bufp, struct sockaddr *sap)$/;"	f	file:
+INET_input	lib/inet.c	/^static int INET_input(int type, char *bufp, struct sockaddr *sap)$/;"	f	file:
+INET_nn	lib/inet.c	/^static struct addr *INET_nn = NULL;	\/* addr-to-name cache           *\/$/;"	v	file:
+INET_print	lib/inet.c	/^static char *INET_print(unsigned char *ptr)$/;"	f	file:
+INET_reserror	lib/inet.c	/^static void INET_reserror(char *text)$/;"	f	file:
+INET_resolve	lib/inet.c	/^static int INET_resolve(char *name, struct sockaddr_in *sin, int hostfirst)$/;"	f	file:
+INET_rinput	lib/inet_sr.c	/^int INET_rinput(int action, int options, char **args)$/;"	f
+INET_rprint	lib/inet_gr.c	/^int INET_rprint(int options)$/;"	f
+INET_rresolve	lib/inet.c	/^static int INET_rresolve(char *name, size_t len, struct sockaddr_in *sin, $/;"	f	file:
+INET_setroute	lib/inet_sr.c	/^static int INET_setroute(int action, int options, char **args)$/;"	f	file:
+INET_sprint	lib/inet.c	/^static char *INET_sprint(struct sockaddr *sap, int numeric)$/;"	f	file:
+INET_sprintmask	lib/inet.c	/^char *INET_sprintmask(struct sockaddr *sap, int numeric, $/;"	f
+INFO_GUTS	netstat.c	204;"	d	file:
+INFO_GUTS1	netstat.c	155;"	d	file:
+INFO_GUTS2	netstat.c	175;"	d	file:
+INFO_GUTS2	netstat.c	186;"	d	file:
+INFO_GUTS3	netstat.c	189;"	d	file:
+INFO_GUTS6	netstat.c	192;"	d	file:
+INSTALL	man/Makefile	/^INSTALL=install$/;"	m
+INSTALL	po/Makefile	/^INSTALL=install -c$/;"	m
+INSTALLNLSDIR	po/Makefile	/^INSTALLNLSDIR=${BASEDIR}\/usr\/share\/locale$/;"	m
+INSTALL_DATA	po/Makefile	/^INSTALL_DATA= ${INSTALL} -m 644$/;"	m
+INSTALL_PROGRAM	po/Makefile	/^INSTALL_PROGRAM= ${INSTALL}$/;"	m
+IPPROTO_AH	include/util-ank.h	16;"	d
+IPPROTO_ESP	include/util-ank.h	13;"	d
+IPPROTO_GRE	iptunnel.c	66;"	d	file:
+IPV6_ADDR_ANY	lib/interface.c	69;"	d	file:
+IPV6_ADDR_ANYCAST	lib/interface.c	73;"	d	file:
+IPV6_ADDR_COMPATv4	lib/interface.c	79;"	d	file:
+IPV6_ADDR_LINKLOCAL	lib/interface.c	76;"	d	file:
+IPV6_ADDR_LOOPBACK	lib/interface.c	75;"	d	file:
+IPV6_ADDR_MAPPED	lib/interface.c	83;"	d	file:
+IPV6_ADDR_MULTICAST	lib/interface.c	72;"	d	file:
+IPV6_ADDR_RESERVED	lib/interface.c	84;"	d	file:
+IPV6_ADDR_SCOPE_MASK	lib/interface.c	81;"	d	file:
+IPV6_ADDR_SITELOCAL	lib/interface.c	77;"	d	file:
+IPV6_ADDR_UNICAST	lib/interface.c	71;"	d	file:
+IPX_FRAME_8022	include/ipx.h	25;"	d
+IPX_FRAME_8023	include/ipx.h	27;"	d
+IPX_FRAME_ETHERII	include/ipx.h	26;"	d
+IPX_FRAME_NONE	include/ipx.h	23;"	d
+IPX_FRAME_SNAP	include/ipx.h	24;"	d
+IPX_FRAME_TR_8022	include/ipx.h	28;"	d
+IPX_MTU	include/ipx.h	8;"	d
+IPX_NODE_LEN	include/ipx.h	7;"	d
+IPX_getsock	lib/ipx.c	/^static int IPX_getsock(char *bufp, struct sockaddr *sap)$/;"	f	file:
+IPX_input	lib/ipx.c	/^static int IPX_input(int type, char *bufp, struct sockaddr *sap)$/;"	f	file:
+IPX_print	lib/ipx.c	/^static char *IPX_print(unsigned char *ptr)$/;"	f	file:
+IPX_rinput	lib/ipx_sr.c	/^int IPX_rinput(int action, int ext, char **args)$/;"	f
+IPX_rprint	lib/ipx_gr.c	/^int IPX_rprint(int options)$/;"	f
+IPX_sprint	lib/ipx.c	/^static char *IPX_sprint(struct sockaddr *sap, int numeric)$/;"	f	file:
+IP_DF	iptunnel.c	210;"	d	file:
+I_STATIC	statistics.c	54;"	d	file:
+I_TITLE	statistics.c	55;"	d	file:
+Icmptab	statistics.c	/^struct entry Icmptab[] =$/;"	v
+Iptab	statistics.c	/^struct entry Iptab[] =$/;"	v
+KRELEASE	lib/util.h	10;"	d
+LANGS	man/Makefile	/^		LANGS=$(LANGS) ; \\$/;"	m
+LANGS	man/Makefile	/^LANGS=`ls -d * | grep -v Makefile`$/;"	m
+LANGS	man/Makefile	/^LANGS=en_US$/;"	m
+LD	Makefile	/^LD	= $(CC)$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS	= $(LOPTS) -L$(NET_LIB_PATH)$/;"	m
+LINE_MAX	netstat.c	240;"	d	file:
+LOPTS	Makefile	/^LOPTS = $/;"	m
+LOPTS	Makefile	/^MDEFINES = COPTS='$(COPTS)' LOPTS='$(LOPTS)' TOPDIR='$(TOPDIR)'$/;"	m
+MAINTAINER	Makefile	/^MAINTAINER = Philip.Blundell@pobox.com$/;"	m
+MAN_DIR	man/Makefile	/^					MAN_DIR=${BASEDIR}${mandir}\/$$LANG\/man$$SECTION; \\$/;"	m
+MAN_DIR	man/Makefile	/^					MAN_DIR=${BASEDIR}${mandir}\/man$$SECTION; \\$/;"	m
+MAX_ETH	mii-tool.c	55;"	d	file:
+MDEFINES	Makefile	/^MDEFINES = COPTS='$(COPTS)' LOPTS='$(LOPTS)' TOPDIR='$(TOPDIR)'$/;"	m
+MII_ANAR	include/mii.h	62;"	d
+MII_ANER	include/mii.h	79;"	d
+MII_ANER_LP_AN_ABLE	include/mii.h	84;"	d
+MII_ANER_LP_NP_ABLE	include/mii.h	81;"	d
+MII_ANER_MULT_FAULT	include/mii.h	80;"	d
+MII_ANER_NP_ABLE	include/mii.h	82;"	d
+MII_ANER_PAGE_RX	include/mii.h	83;"	d
+MII_ANLPAR	include/mii.h	64;"	d
+MII_AN_100BASET4	include/mii.h	70;"	d
+MII_AN_100BASETX_FD	include/mii.h	71;"	d
+MII_AN_100BASETX_HD	include/mii.h	72;"	d
+MII_AN_10BASET_FD	include/mii.h	73;"	d
+MII_AN_10BASET_HD	include/mii.h	74;"	d
+MII_AN_ABILITY_MASK	include/mii.h	68;"	d
+MII_AN_ACK	include/mii.h	66;"	d
+MII_AN_FLOW_CONTROL	include/mii.h	69;"	d
+MII_AN_NEXT_PAGE	include/mii.h	65;"	d
+MII_AN_PROT_802_3	include/mii.h	76;"	d
+MII_AN_PROT_MASK	include/mii.h	75;"	d
+MII_AN_REMOTE_FAULT	include/mii.h	67;"	d
+MII_BMCR	include/mii.h	32;"	d
+MII_BMCR_100MBIT	include/mii.h	35;"	d
+MII_BMCR_AN_ENA	include/mii.h	36;"	d
+MII_BMCR_COLTEST	include/mii.h	40;"	d
+MII_BMCR_DUPLEX	include/mii.h	39;"	d
+MII_BMCR_ISOLATE	include/mii.h	37;"	d
+MII_BMCR_LOOPBACK	include/mii.h	34;"	d
+MII_BMCR_RESET	include/mii.h	33;"	d
+MII_BMCR_RESTART	include/mii.h	38;"	d
+MII_BMSR	include/mii.h	43;"	d
+MII_BMSR_100BASET4	include/mii.h	45;"	d
+MII_BMSR_100BASETX_FD	include/mii.h	46;"	d
+MII_BMSR_100BASETX_HD	include/mii.h	47;"	d
+MII_BMSR_10BASET_FD	include/mii.h	48;"	d
+MII_BMSR_10BASET_HD	include/mii.h	49;"	d
+MII_BMSR_AN_ABLE	include/mii.h	53;"	d
+MII_BMSR_AN_COMPLETE	include/mii.h	51;"	d
+MII_BMSR_CAP_MASK	include/mii.h	44;"	d
+MII_BMSR_EXT_CAP	include/mii.h	56;"	d
+MII_BMSR_JABBER	include/mii.h	55;"	d
+MII_BMSR_LINK_VALID	include/mii.h	54;"	d
+MII_BMSR_NO_PREAMBLE	include/mii.h	50;"	d
+MII_BMSR_REMOTE_FAULT	include/mii.h	52;"	d
+MII_PHY_ID1	include/mii.h	58;"	d
+MII_PHY_ID2	include/mii.h	59;"	d
+MODE_DELETE	rarp.c	189;"	d	file:
+MODE_DISPLAY	rarp.c	188;"	d	file:
+MODE_ETHERS	rarp.c	191;"	d	file:
+MODE_SET	rarp.c	190;"	d	file:
+MaxState	statistics.c	/^    MaxState$/;"	e	enum:State	file:
+NETROM_herror	lib/netrom.c	/^static void NETROM_herror(char *text)$/;"	f	file:
+NETROM_hinput	lib/netrom.c	/^static int NETROM_hinput(char *bufp, struct sockaddr *sap)$/;"	f	file:
+NETROM_input	lib/netrom.c	/^static int NETROM_input(int type, char *bufp, struct sockaddr *sap)$/;"	f	file:
+NETROM_print	lib/netrom.c	/^static char *NETROM_print(unsigned char *ptr)$/;"	f	file:
+NETROM_rinput	lib/netrom_sr.c	/^int NETROM_rinput(int action, int ext, char **args)$/;"	f
+NETROM_rprint	lib/netrom_gr.c	/^int NETROM_rprint(int options)$/;"	f
+NETROM_sprint	lib/netrom.c	/^static char *NETROM_sprint(struct sockaddr *sap, int numeric)$/;"	f	file:
+NET_LIB	Makefile	/^NET_LIB = $(NET_LIB_PATH)\/lib$(NET_LIB_NAME).a$/;"	m
+NET_LIB_NAME	Makefile	/^NET_LIB_NAME = net-tools$/;"	m
+NET_LIB_NAME	lib/Makefile	/^NET_LIB_NAME = net-tools$/;"	m
+NET_LIB_PATH	Makefile	/^NET_LIB_PATH = lib$/;"	m
+NEWADDR	ipmaddr.c	44;"	d	file:
+NEXT_ARG	include/util-ank.h	23;"	d
+NLIB	Makefile	/^NLIB	= -l$(NET_LIB_NAME)$/;"	m
+NLSPACKAGE	po/Makefile	/^NLSPACKAGE = net-tools$/;"	m
+NMEDIA	mii-tool.c	151;"	d	file:
+NMII	mii-tool.c	78;"	d	file:
+NTF_02	lib/inet6_gr.c	50;"	d	file:
+NTF_04	lib/inet6_gr.c	51;"	d	file:
+NTF_PROXY	lib/inet6_gr.c	48;"	d	file:
+NTF_ROUTER	lib/inet6_gr.c	49;"	d	file:
+NUD_DELAY	lib/inet6_gr.c	40;"	d	file:
+NUD_FAILED	lib/inet6_gr.c	42;"	d	file:
+NUD_INCOMPLETE	lib/inet6_gr.c	37;"	d	file:
+NUD_NOARP	lib/inet6_gr.c	44;"	d	file:
+NUD_NONE	lib/inet6_gr.c	46;"	d	file:
+NUD_PERMANENT	lib/inet6_gr.c	45;"	d	file:
+NUD_PROBE	lib/inet6_gr.c	41;"	d	file:
+NUD_REACHABLE	lib/inet6_gr.c	38;"	d	file:
+NUD_STALE	lib/inet6_gr.c	39;"	d	file:
+N_	intl.h	11;"	d
+N_	intl.h	8;"	d
+OBJS	lib/Makefile	/^OBJS	= $(sort $(VARIA) $(AFOBJS) $(HWOBJS) \\$/;"	m
+PATH_CMDLINE	netstat.c	247;"	d	file:
+PATH_CMDLINEl	netstat.c	248;"	d	file:
+PATH_FD_SUFF	netstat.c	244;"	d	file:
+PATH_FD_SUFFl	netstat.c	245;"	d	file:
+PATH_PROC	netstat.c	243;"	d	file:
+PATH_PROC_X_FD	netstat.c	246;"	d	file:
+PF_ROSE	lib/rose.c	45;"	d	file:
+PF_ROSE	lib/rose.c	46;"	d	file:
+POTFILES	po/Makefile	/^POTFILES=..\/arp.c ..\/hostname.c ..\/ifconfig.c ..\/netstat.c ..\/rarp.c \\$/;"	m
+PPP_activate	lib/ppp_ac.c	/^int PPP_activate(int fd)$/;"	f
+PRG_HASHIT	netstat.c	225;"	d	file:
+PRG_HASH_SIZE	netstat.c	215;"	d	file:
+PRG_INODE	netstat.c	232;"	d	file:
+PRG_LOCAL_ADDRESS	netstat.c	231;"	d	file:
+PRG_SOCKET_PFX	netstat.c	233;"	d	file:
+PRG_SOCKET_PFX2	netstat.c	235;"	d	file:
+PRG_SOCKET_PFX2l	netstat.c	236;"	d	file:
+PRG_SOCKET_PFXl	netstat.c	234;"	d	file:
+PROGNAME_BANNER	netstat.c	227;"	d	file:
+PROGNAME_WIDTH	netstat.c	98;"	d	file:
+PROGNAME_WIDTH1	netstat.c	212;"	d	file:
+PROGNAME_WIDTH2	netstat.c	213;"	d	file:
+PROGNAME_WIDTHs	netstat.c	211;"	d	file:
+PROGS	Makefile	/^PROGS	:= ifconfig hostname arp netstat route rarp slattach plipconfig nameif$/;"	m
+RELEASE	Makefile	/^RELEASE	   = 1.60$/;"	m
+RELEASE	version.h	1;"	d
+RESLIB	Makefile	/^RESLIB = # -L\/usr\/inet6\/lib -linet6$/;"	m
+ROSE_errmsg	lib/rose.c	/^static char ROSE_errmsg[128];$/;"	v	file:
+ROSE_herror	lib/rose.c	/^static void ROSE_herror(char *text)$/;"	f	file:
+ROSE_hinput	lib/rose.c	/^static int ROSE_hinput(char *bufp, struct sockaddr *sap)$/;"	f	file:
+ROSE_input	lib/rose.c	/^static int ROSE_input(int type, char *bufp, struct sockaddr *sap)$/;"	f	file:
+ROSE_print	lib/rose.c	/^ ROSE_print(unsigned char *ptr)$/;"	f	file:
+ROSE_rprint	lib/rose_gr.c	/^int ROSE_rprint(int options)$/;"	f
+ROSE_sprint	lib/rose.c	/^ ROSE_sprint(struct sockaddr *sap, int numeric)$/;"	f	file:
+RTACTION_ADD	lib/net-support.h	89;"	d
+RTACTION_DEL	lib/net-support.h	90;"	d
+RTACTION_FLUSH	lib/net-support.h	92;"	d
+RTACTION_HELP	lib/net-support.h	91;"	d
+RTACTION_SHOW	lib/net-support.h	93;"	d
+RTCF_BROADCAST	lib/net-support.h	199;"	d
+RTCF_DEAD	lib/net-support.h	186;"	d
+RTCF_DIRECTDST	lib/net-support.h	190;"	d
+RTCF_DIRECTSRC	lib/net-support.h	197;"	d
+RTCF_DNAT	lib/net-support.h	198;"	d
+RTCF_DOREDIRECT	lib/net-support.h	196;"	d
+RTCF_FAST	lib/net-support.h	193;"	d
+RTCF_LOCAL	lib/net-support.h	202;"	d
+RTCF_MASQ	lib/net-support.h	194;"	d
+RTCF_MULTICAST	lib/net-support.h	200;"	d
+RTCF_NOTIFY	lib/net-support.h	189;"	d
+RTCF_ONLINK	lib/net-support.h	187;"	d
+RTCF_REDIRECTED	lib/net-support.h	191;"	d
+RTCF_REJECT	lib/net-support.h	201;"	d
+RTCF_SNAT	lib/net-support.h	195;"	d
+RTCF_TPROXY	lib/net-support.h	192;"	d
+RTF_ADDRCONF	lib/net-support.h	210;"	d
+RTF_ALLONLINK	lib/net-support.h	208;"	d
+RTF_CACHE	lib/net-support.h	214;"	d
+RTF_DEFAULT	lib/net-support.h	206;"	d
+RTF_DYNAMIC	lib/net-support.h	224;"	d
+RTF_EXPIRES	lib/net-support.h	213;"	d
+RTF_FLOW	lib/net-support.h	215;"	d
+RTF_GATEWAY	lib/net-support.h	221;"	d
+RTF_HOST	lib/net-support.h	222;"	d
+RTF_IRTT	lib/net-support.h	231;"	d
+RTF_LOCAL	lib/net-support.h	217;"	d
+RTF_MODIFIED	lib/net-support.h	225;"	d
+RTF_MSS	lib/net-support.h	228;"	d
+RTF_MTU	lib/net-support.h	226;"	d
+RTF_NONEXTHOP	lib/net-support.h	212;"	d
+RTF_NOTCACHED	lib/net-support.h	235;"	d
+RTF_POLICY	lib/net-support.h	216;"	d
+RTF_REINSTATE	lib/net-support.h	223;"	d
+RTF_REJECT	lib/net-support.h	232;"	d
+RTF_UP	lib/net-support.h	220;"	d
+RTF_WINDOW	lib/net-support.h	230;"	d
+RTNH_F_DEAD	lib/net-support.h	181;"	d
+RTNH_F_ONLINK	lib/net-support.h	183;"	d
+RTNH_F_PERVASIVE	lib/net-support.h	182;"	d
+Release	arp.c	/^char *Release = RELEASE, *Version = "arp 1.88 (2001-04-04)";$/;"	v
+Release	hostname.c	/^char *Release = RELEASE, *Version = "hostname 1.100 (2001-04-14)";$/;"	v
+Release	ifconfig.c	/^char *Release = RELEASE, *Version = "ifconfig 1.42 (2001-04-13)";$/;"	v
+Release	ipmaddr.c	/^char *Release = RELEASE,$/;"	v
+Release	iptunnel.c	/^char *Release = RELEASE,$/;"	v
+Release	netstat.c	/^char *Release = RELEASE, *Version = "netstat 1.42 (2001-04-15)", *Signature = "Fred Baumgarten, Alan Cox, Bernd Eckenfels, Phil Blundell, Tuan Hoang and others";$/;"	v
+Release	plipconfig.c	/^char *Release = RELEASE,$/;"	v
+Release	route.c	/^char *Release = RELEASE, *Version = "route 1.98 (2001-04-15)";$/;"	v
+Release	slattach.c	/^const char *Release = RELEASE,$/;"	v
+SETDOMAIN	hostname.c	63;"	d	file:
+SETHOST	hostname.c	62;"	d	file:
+SETNODE	hostname.c	64;"	d	file:
+SIOCGIFTXQLEN	include/interface.h	83;"	d
+SIOCGMIIPHY	include/mii.h	14;"	d
+SIOCGMIIREG	include/mii.h	15;"	d
+SIOCGPARAMS	include/mii.h	17;"	d
+SIOCSIFTXQLEN	include/interface.h	82;"	d
+SIOCSMIIREG	include/mii.h	16;"	d
+SIOCSPARAMS	include/mii.h	18;"	d
+SLIP6_activate	lib/slip_ac.c	/^int SLIP6_activate(int fd)$/;"	f
+SLIP_activate	lib/slip_ac.c	/^int SLIP_activate(int fd)$/;"	f
+SLIP_set_disc	lib/slip_ac.c	/^static int SLIP_set_disc(int fd, int disc)$/;"	f	file:
+SLIP_set_encap	lib/slip_ac.c	/^static int SLIP_set_encap(int fd, int encap)$/;"	f	file:
+SONAME	lib/Makefile	/^SONAME=libnet-tools.so.0$/;"	m
+SO_ACCEPTCON	netstat.c	116;"	d	file:
+SO_NOSPACE	netstat.c	118;"	d	file:
+SO_WAITDATA	netstat.c	117;"	d	file:
+SPRINT_BSIZE	include/util-ank.h	19;"	d
+SPRINT_BUF	include/util-ank.h	20;"	d
+SS_CONNECTED	netstat.c	/^    SS_CONNECTED,		\/* connected to socket          *\/$/;"	e	file:
+SS_CONNECTING	netstat.c	/^    SS_CONNECTING,		\/* in process of connecting     *\/$/;"	e	file:
+SS_DISCONNECTING	netstat.c	/^    SS_DISCONNECTING		\/* in process of disconnecting  *\/$/;"	e	file:
+SS_FREE	netstat.c	/^    SS_FREE = 0,		\/* not allocated                *\/$/;"	e	file:
+SS_UNCONNECTED	netstat.c	/^    SS_UNCONNECTED,		\/* unconnected to any socket    *\/$/;"	e	file:
+SUBDIRS	Makefile	/^SUBDIRS	= man\/ $(NET_LIB_PATH)\/$/;"	m
+Signature	ipmaddr.c	/^     *Signature = "Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>";$/;"	v
+Signature	iptunnel.c	/^     *Signature = "Alexey Kuznetsov, <kuznet@ms2.inr.ac.ru>";$/;"	v
+Signature	netstat.c	/^char *Release = RELEASE, *Version = "netstat 1.42 (2001-04-15)", *Signature = "Fred Baumgarten, Alan Cox, Bernd Eckenfels, Phil Blundell, Tuan Hoang and others";$/;"	v
+Signature	plipconfig.c	/^     *Signature = "John Paul Morrison, Alan Cox et al.";$/;"	v
+Signature	slattach.c	/^	   *Signature = "net-tools, Fred N. van Kempen et al.";$/;"	v
+State	statistics.c	/^enum State {$/;"	g	file:
+TCP_CLOSE	netstat.c	/^    TCP_CLOSE,$/;"	e	file:
+TCP_CLOSE_WAIT	netstat.c	/^    TCP_CLOSE_WAIT,$/;"	e	file:
+TCP_CLOSING	netstat.c	/^    TCP_CLOSING			\/* now a valid state *\/$/;"	e	file:
+TCP_ESTABLISHED	netstat.c	/^    TCP_ESTABLISHED = 1,$/;"	e	file:
+TCP_FIN_WAIT1	netstat.c	/^    TCP_FIN_WAIT1,$/;"	e	file:
+TCP_FIN_WAIT2	netstat.c	/^    TCP_FIN_WAIT2,$/;"	e	file:
+TCP_LAST_ACK	netstat.c	/^    TCP_LAST_ACK,$/;"	e	file:
+TCP_LISTEN	netstat.c	/^    TCP_LISTEN,$/;"	e	file:
+TCP_SYN_RECV	netstat.c	/^    TCP_SYN_RECV,$/;"	e	file:
+TCP_SYN_SENT	netstat.c	/^    TCP_SYN_SENT,$/;"	e	file:
+TCP_TIME_WAIT	netstat.c	/^    TCP_TIME_WAIT,$/;"	e	file:
+TOPDIR	Makefile	/^MDEFINES = COPTS='$(COPTS)' LOPTS='$(LOPTS)' TOPDIR='$(TOPDIR)'$/;"	m
+TOPDIR	Makefile	/^TOPDIR   = ..$/;"	m
+TOPDIR	Makefile	/^TOPDIR  := $(shell if [ "$$PWD" != "" ]; then echo $$PWD; else pwd; fi)$/;"	m
+TOPDIR	lib/Makefile	/^TOPDIR=..$/;"	m
+TUPDATE	po/Makefile	/^TUPDATE = tupdate$/;"	m
+Tcpexttab	statistics.c	/^struct entry Tcpexttab[] =$/;"	v
+Tcptab	statistics.c	/^struct entry Tcptab[] =$/;"	v
+UFWARN	statistics.c	18;"	d	file:
+UFWARN	statistics.c	20;"	d	file:
+UNIX_print	lib/unix.c	/^static char *UNIX_print(unsigned char *ptr)$/;"	f	file:
+UNIX_sprint	lib/unix.c	/^static char *UNIX_sprint(struct sockaddr *sap, int numeric)$/;"	f	file:
+UNSPEC_print	lib/unix.c	/^static char *UNSPEC_print(unsigned char *ptr)$/;"	f	file:
+UNSPEC_sprint	lib/unix.c	/^static char *UNSPEC_sprint(struct sockaddr *sap, int numeric)$/;"	f	file:
+Udptab	statistics.c	/^struct entry Udptab[] =$/;"	v
+VARIA	lib/Makefile	/^VARIA	 = getargs.o masq_info.o proc.o util.o nstrcmp.o interface.o sockets.o$/;"	m
+Version	arp.c	/^char *Release = RELEASE, *Version = "arp 1.88 (2001-04-04)";$/;"	v
+Version	hostname.c	/^char *Release = RELEASE, *Version = "hostname 1.100 (2001-04-14)";$/;"	v
+Version	ifconfig.c	/^char *Release = RELEASE, *Version = "ifconfig 1.42 (2001-04-13)";$/;"	v
+Version	ipmaddr.c	/^     *Version = "ipmaddr 1.1",$/;"	v
+Version	iptunnel.c	/^     *Version = "iptunnel 1.01",$/;"	v
+Version	netstat.c	/^char *Release = RELEASE, *Version = "netstat 1.42 (2001-04-15)", *Signature = "Fred Baumgarten, Alan Cox, Bernd Eckenfels, Phil Blundell, Tuan Hoang and others";$/;"	v
+Version	plipconfig.c	/^     *Version = "plipconfig 0.2",$/;"	v
+Version	route.c	/^char *Release = RELEASE, *Version = "route 1.98 (2001-04-15)";$/;"	v
+Version	slattach.c	/^	   *Version = "@(#) slattach 1.21 (1999-11-21)",$/;"	v
+X25_ADDR_LEN	lib/x25.c	49;"	d	file:
+X25_ADDR_LEN	lib/x25_gr.c	48;"	d	file:
+X25_errmsg	lib/x25.c	/^static char X25_errmsg[128];$/;"	v	file:
+X25_herror	lib/x25.c	/^X25_herror(char *text)$/;"	f	file:
+X25_hinput	lib/x25.c	/^X25_hinput(char *bufp, struct sockaddr *sap)$/;"	f	file:
+X25_input	lib/x25.c	/^X25_input(int type, char *bufp, struct sockaddr *sap)$/;"	f	file:
+X25_print	lib/x25.c	/^X25_print(unsigned char *ptr)$/;"	f	file:
+X25_rinput	lib/x25_sr.c	/^int X25_rinput(int action, int options, char **args)$/;"	f
+X25_rprint	lib/x25_gr.c	/^int X25_rprint(int options)$/;"	f
+X25_setroute	lib/x25_sr.c	/^static int X25_setroute(int action, int options, char **args)$/;"	f	file:
+X25_sprint	lib/x25.c	/^X25_sprint(struct sockaddr *sap, int numeric)$/;"	f	file:
+_	intl.h	10;"	d
+_	intl.h	7;"	d
+_GNU_SOURCE	nameif.c	9;"	d	file:
+_IPX_H_	include/ipx.h	5;"	d
+_LINUX_MII_H	include/mii.h	10;"	d
+_NET_FEATURES_H	lib/net-features.h	30;"	d
+_PATH_DEV_ROUTE	lib/pathnames.h	50;"	d
+_PATH_ETHERS	lib/pathnames.h	43;"	d
+_PATH_LOCKD	slattach.c	65;"	d	file:
+_PATH_PROCNET_ARP	lib/pathnames.h	30;"	d
+_PATH_PROCNET_ATALK	lib/pathnames.h	34;"	d
+_PATH_PROCNET_AX25	lib/pathnames.h	31;"	d
+_PATH_PROCNET_AX25_ROUTE	lib/pathnames.h	26;"	d
+_PATH_PROCNET_DEV	lib/pathnames.h	41;"	d
+_PATH_PROCNET_DEV_MCAST	lib/pathnames.h	47;"	d
+_PATH_PROCNET_IFINET6	lib/pathnames.h	40;"	d
+_PATH_PROCNET_IGMP	lib/pathnames.h	14;"	d
+_PATH_PROCNET_IGMP6	lib/pathnames.h	15;"	d
+_PATH_PROCNET_IPX	lib/pathnames.h	32;"	d
+_PATH_PROCNET_IPX_ROUTE	lib/pathnames.h	33;"	d
+_PATH_PROCNET_IP_ACC	lib/pathnames.h	37;"	d
+_PATH_PROCNET_IP_BLK	lib/pathnames.h	35;"	d
+_PATH_PROCNET_IP_FWD	lib/pathnames.h	36;"	d
+_PATH_PROCNET_IP_MASQ	lib/pathnames.h	38;"	d
+_PATH_PROCNET_NDISC	lib/pathnames.h	39;"	d
+_PATH_PROCNET_NR	lib/pathnames.h	27;"	d
+_PATH_PROCNET_NR_NEIGH	lib/pathnames.h	28;"	d
+_PATH_PROCNET_NR_NODES	lib/pathnames.h	29;"	d
+_PATH_PROCNET_RARP	lib/pathnames.h	42;"	d
+_PATH_PROCNET_RAW	lib/pathnames.h	20;"	d
+_PATH_PROCNET_RAW6	lib/pathnames.h	21;"	d
+_PATH_PROCNET_ROSE_ROUTE	lib/pathnames.h	44;"	d
+_PATH_PROCNET_ROUTE	lib/pathnames.h	23;"	d
+_PATH_PROCNET_ROUTE6	lib/pathnames.h	24;"	d
+_PATH_PROCNET_RTCACHE	lib/pathnames.h	25;"	d
+_PATH_PROCNET_TCP	lib/pathnames.h	16;"	d
+_PATH_PROCNET_TCP6	lib/pathnames.h	17;"	d
+_PATH_PROCNET_UDP	lib/pathnames.h	18;"	d
+_PATH_PROCNET_UDP6	lib/pathnames.h	19;"	d
+_PATH_PROCNET_UNIX	lib/pathnames.h	22;"	d
+_PATH_PROCNET_X25	lib/pathnames.h	45;"	d
+_PATH_PROCNET_X25_ROUTE	lib/pathnames.h	46;"	d
+_UID_UUCP	slattach.c	68;"	d	file:
+__OPTIMIZE__	intl.h	5;"	d
+__UTILS_H__	include/util-ank.h	2;"	d
+activate	lib/net-support.h	/^    int (*activate) (int fd);$/;"	m	struct:hwtype
+activate_init	lib/activate.c	/^void activate_init(void)$/;"	f
+activate_ld	lib/activate.c	/^int activate_ld(const char *hwname, int fd)$/;"	f
+adaptive_hwtype	lib/slip.c	/^struct hwtype adaptive_hwtype =$/;"	v
+add2list	lib/inet.c	/^static void add2list(struct service **namebase, struct service *item)$/;"	f	file:
+add_interface	lib/interface.c	/^static struct interface *add_interface(char *name)$/;"	f	file:
+addchange	nameif.c	/^int addchange(char *p, struct change *ch, char *pos)$/;"	f
+addr	ifconfig.c	/^    unsigned long addr;$/;"	m	struct:ifcmd	file:
+addr	include/interface.h	/^    struct sockaddr addr;	\/* IP address            *\/$/;"	m	struct:interface
+addr	ipmaddr.c	/^	inet_prefix	addr;$/;"	m	struct:ma_info	file:
+addr	lib/inet.c	/^    struct sockaddr_in addr;$/;"	m	struct:addr	file:
+addr	lib/inet.c	/^struct addr {$/;"	s	file:
+addr_family	ifconfig.c	/^int addr_family = 0;		\/* currently selected AF        *\/$/;"	v
+af	lib/net-support.h	/^    int af;$/;"	m	struct:aftype
+afinit	lib/af.c	/^void afinit()$/;"	f
+afname	lib/af.c	/^char afname[256] = "";$/;"	v
+aftrans	lib/af.c	/^} aftrans[] = {$/;"	v
+aftrans_def	lib/af.c	/^void aftrans_def(char *tool, char *argv0, char *dflt)$/;"	f
+aftrans_opt	lib/af.c	/^int aftrans_opt(const char *arg)$/;"	f
+aftrans_t	lib/af.c	/^struct aftrans_t {$/;"	s	file:
+aftype	lib/net-support.h	/^struct aftype {$/;"	s
+aftypes	lib/af.c	/^struct aftype *aftypes[] =$/;"	v
+alen	lib/net-support.h	/^    int alen;$/;"	m	struct:aftype
+alen	lib/net-support.h	/^    int alen;$/;"	m	struct:hwtype
+alias	lib/af.c	/^    char *alias;$/;"	m	struct:aftrans_t	file:
+ap	arp.c	/^struct aftype *ap;		\/* current address family       *\/$/;"	v
+ap	lib/masq_info.c	/^static struct aftype *ap;	\/* current address family       *\/$/;"	v	file:
+ap	route.c	/^struct aftype *ap;		\/* current address family       *\/$/;"	v
+arcnet_hwtype	lib/arcnet.c	/^struct hwtype arcnet_hwtype =$/;"	v
+arp_del	arp.c	/^static int arp_del(char **args)$/;"	f	file:
+arp_disp	arp.c	/^static void arp_disp(char *name, char *ip, int type, int arp_flags, char *hwa, char *mask, char *dev)$/;"	f	file:
+arp_disp_2	arp.c	/^static void arp_disp_2(char *name, int type, int arp_flags, char *hwa, char *mask, char *dev)$/;"	f	file:
+arp_file	arp.c	/^static int arp_file(char *name)$/;"	f	file:
+arp_getdevhw	arp.c	/^static int arp_getdevhw(char *ifname, struct sockaddr *sa, struct hwtype *hw)$/;"	f	file:
+arp_set	arp.c	/^static int arp_set(char **args)$/;"	f	file:
+arp_show	arp.c	/^static int arp_show(char *name)$/;"	f	file:
+ash_aftype	lib/ash.c	/^struct aftype ash_aftype =$/;"	v
+ash_hwtype	lib/ash.c	/^struct hwtype ash_hwtype =$/;"	v
+ash_hwtype	lib/ash.c	/^struct hwtype ash_hwtype;$/;"	v
+ax25_aftype	lib/ax25.c	/^struct aftype ax25_aftype =$/;"	v
+ax25_hwtype	lib/ax25.c	/^struct hwtype ax25_hwtype =$/;"	v
+ax25_info	netstat.c	/^static int ax25_info(void)$/;"	f	file:
+base	ifconfig.c	/^    char *base;$/;"	m	struct:ifcmd	file:
+baselen	ifconfig.c	/^    int baselen;$/;"	m	struct:ifcmd	file:
+bitlen	include/util-ank.h	/^	__s16 bitlen;$/;"	m
+bool	configure.sh	/^function bool()$/;"	f
+broadaddr	include/interface.h	/^    struct sockaddr broadaddr;	\/* IP broadcast address  *\/$/;"	m	struct:interface
+bytelen	include/util-ank.h	/^	__u8 bytelen;$/;"	m
+catalogs	po/Makefile	/^	catalogs='$(CATALOGS)'; \\$/;"	m
+change	nameif.c	/^struct change { $/;"	s	file:
+clist	nameif.c	/^struct change *clist;$/;"	v
+clr_flag	ifconfig.c	/^static int clr_flag(char *ifname, short flag)$/;"	f	file:
+cmpentries	statistics.c	/^int cmpentries(const void *a, const void *b)$/;"	f
+code	slattach.c	/^  int	code;$/;"	m	file:
+collisions	include/interface.h	/^    unsigned long collisions;$/;"	m	struct:user_net_device_stats
+complain	nameif.c	/^void complain(char *fmt, ...) $/;"	f
+cslip6_hwtype	lib/slip.c	/^struct hwtype cslip6_hwtype =$/;"	v
+cslip_hwtype	lib/slip.c	/^struct hwtype cslip_hwtype =$/;"	v
+ctl_sk	nameif.c	/^int ctl_sk = -1; $/;"	v
+data	include/util-ank.h	/^	__u32 data[4];$/;"	m
+ddp_aftype	lib/ddp.c	/^struct aftype ddp_aftype =$/;"	v
+ddp_print	lib/ddp.c	/^static char *ddp_print(unsigned char *ptr)$/;"	f	file:
+ddp_sprint	lib/ddp.c	/^static char *ddp_sprint(struct sockaddr *sap, int numeric)$/;"	f	file:
+ddpaddr	include/interface.h	/^    struct sockaddr ddpaddr;	\/* Appletalk DDP address *\/$/;"	m	struct:interface
+default_conf	nameif.c	/^const char default_conf[] = "\/etc\/mactab"; $/;"	v
+delta	lib/masq_info.c	/^    short delta;		\/* Delta in sequence numbers *\/$/;"	m	struct:masq	file:
+device	arp.c	/^char device[16] = "";		\/* current device               *\/$/;"	v
+display_cache	rarp.c	/^static int display_cache(void)$/;"	f	file:
+dlci_hwtype	lib/frame.c	/^struct hwtype dlci_hwtype =$/;"	v
+do_add	iptunnel.c	/^static int do_add(int cmd, int argc, char **argv)$/;"	f	file:
+do_add_ioctl	iptunnel.c	/^static int do_add_ioctl(int cmd, char *basedev, struct ip_tunnel_parm *p)$/;"	f	file:
+do_del	iptunnel.c	/^int do_del(int argc, char **argv)$/;"	f
+do_del_ioctl	iptunnel.c	/^static int do_del_ioctl(char *basedev, struct ip_tunnel_parm *p)$/;"	f	file:
+do_get_ioctl	iptunnel.c	/^static int do_get_ioctl(char *basedev, struct ip_tunnel_parm *p)$/;"	f	file:
+do_if_fetch	lib/interface.c	/^int do_if_fetch(struct interface *ife)$/;"	f
+do_if_print	lib/interface.c	/^int do_if_print(struct interface *ife, void *cookie)$/;"	f
+do_ifcmd	ifconfig.c	/^static int do_ifcmd(struct interface *x, struct ifcmd *ptr)$/;"	f	file:
+do_ioctl_get_ifindex	iptunnel.c	/^static int do_ioctl_get_ifindex(char *dev)$/;"	f	file:
+do_ioctl_get_ifname	iptunnel.c	/^static char * do_ioctl_get_ifname(int idx)$/;"	f	file:
+do_ioctl_get_iftype	iptunnel.c	/^static int do_ioctl_get_iftype(char *dev)$/;"	f	file:
+do_iptunnel	iptunnel.c	/^int do_iptunnel(int argc, char **argv)$/;"	f
+do_multiaddr	ipmaddr.c	/^int do_multiaddr(int argc, char **argv)$/;"	f
+do_one_xcvr	mii-tool.c	/^static int do_one_xcvr(int skfd, char *ifname, int maybe)$/;"	f	file:
+do_ppp	lib/ppp.c	/^static int do_ppp(int fd)$/;"	f	file:
+do_show	iptunnel.c	/^static int do_show(int argc, char **argv)$/;"	f	file:
+do_strip	lib/strip.c	/^static int do_strip(int fd)$/;"	f	file:
+do_tunnels_list	iptunnel.c	/^static int do_tunnels_list(struct ip_tunnel_parm *p)$/;"	f	file:
+dport	lib/masq_info.c	/^    unsigned short sport, dport;	\/* Source and destination ports *\/$/;"	m	struct:masq	file:
+dst	lib/masq_info.c	/^    struct sockaddr_in src, dst;	\/* Source and destination IP addresses *\/$/;"	m	struct:masq	file:
+dstaddr	include/interface.h	/^    struct sockaddr dstaddr;	\/* P-P IP address        *\/$/;"	m	struct:interface
+ec_aftype	lib/econet.c	/^struct aftype ec_aftype =$/;"	v
+ec_hwtype	lib/ec_hw.c	/^struct hwtype ec_hwtype =$/;"	v
+ec_input	lib/econet.c	/^ec_input(int type, char *bufp, struct sockaddr *sap)$/;"	f	file:
+ec_print	lib/econet.c	/^ec_print(unsigned char *ptr)$/;"	f	file:
+ec_sprint	lib/econet.c	/^ec_sprint(struct sockaddr *sap, int numeric)$/;"	f	file:
+ecaddr	include/interface.h	/^    struct sockaddr ecaddr;	\/* Econet address        *\/$/;"	m	struct:interface
+entry	statistics.c	/^struct entry {$/;"	s	file:
+err	nameif.c	/^void err(char *msg) $/;"	f
+ether_hwtype	lib/ether.c	/^struct hwtype ether_hwtype =$/;"	v
+expires	lib/masq_info.c	/^    unsigned long expires;	\/* Expiration timer *\/$/;"	m	struct:masq	file:
+extract_type_1_socket_inode	netstat.c	/^static void extract_type_1_socket_inode(const char lname[], long * inode_p) {$/;"	f	file:
+extract_type_2_socket_inode	netstat.c	/^static void extract_type_2_socket_inode(const char lname[], long * inode_p) {$/;"	f	file:
+f_raw	statistics.c	/^int print_static,f_raw,f_tcp,f_udp,f_unknown = 1;$/;"	v
+f_tcp	statistics.c	/^int print_static,f_raw,f_tcp,f_udp,f_unknown = 1;$/;"	v
+f_udp	statistics.c	/^int print_static,f_raw,f_tcp,f_udp,f_unknown = 1;$/;"	v
+f_unknown	statistics.c	/^int print_static,f_raw,f_tcp,f_udp,f_unknown = 1;$/;"	v
+family	include/util-ank.h	/^	__u8 family;$/;"	m
+fd	lib/net-support.h	/^    int fd;$/;"	m	struct:aftype
+fddi_hwtype	lib/fddi.c	/^struct hwtype fddi_hwtype =$/;"	v
+features	ipmaddr.c	/^	char		*features;$/;"	m	struct:ma_info	file:
+filter_dev	ipmaddr.c	/^char filter_dev[16];$/;"	v
+filter_family	ipmaddr.c	/^int  filter_family;$/;"	v
+finish_this_one	netstat.c	/^static void finish_this_one(int uid, unsigned long inode, const char *timers)$/;"	f	file:
+fixed_speed	mii-tool.c	/^static int fixed_speed = 0;$/;"	v	file:
+flag	ifconfig.c	/^    int flag;$/;"	m	struct:ifcmd	file:
+flag	lib/af.c	/^    int *flag;$/;"	m	struct:aftrans_t	file:
+flag	statistics.c	/^    int *flag; $/;"	m	struct:tabtab	file:
+flag_all	netstat.c	/^int flag_all = 0;$/;"	v
+flag_arg	netstat.c	/^int flag_arg = 0;$/;"	v
+flag_ash	lib/af.c	/^int flag_ash;$/;"	v
+flag_ax25	lib/af.c	/^int flag_ax25;$/;"	v
+flag_cf	netstat.c	/^int flag_cf  = 0;$/;"	v
+flag_cnt	netstat.c	/^int flag_cnt = 0;$/;"	v
+flag_ddp	lib/af.c	/^int flag_ddp;$/;"	v
+flag_deb	netstat.c	/^int flag_deb = 0;$/;"	v
+flag_econet	lib/af.c	/^int flag_econet;$/;"	v
+flag_exp	netstat.c	/^int flag_exp = 1;$/;"	v
+flag_file	lib/net-support.h	/^    char *flag_file;$/;"	m	struct:aftype
+flag_igmp	netstat.c	/^int flag_igmp= 0;$/;"	v
+flag_inet	lib/af.c	/^int flag_inet;$/;"	v
+flag_inet6	lib/af.c	/^int flag_inet6;$/;"	v
+flag_int	netstat.c	/^int flag_int = 0;$/;"	v
+flag_ipx	lib/af.c	/^int flag_ipx;$/;"	v
+flag_lst	netstat.c	/^int flag_lst = 0;$/;"	v
+flag_mas	netstat.c	/^int flag_mas = 0;$/;"	v
+flag_netrom	lib/af.c	/^int flag_netrom;$/;"	v
+flag_not	netstat.c	/^int flag_not = 0;$/;"	v
+flag_opt	netstat.c	/^int flag_opt = 0;$/;"	v
+flag_prg	netstat.c	/^int flag_prg = 0;$/;"	v
+flag_raw	netstat.c	/^int flag_raw = 0;$/;"	v
+flag_rom	netstat.c	/^int flag_rom = 0;$/;"	v
+flag_rou	netstat.c	/^int flag_rou = 0;$/;"	v
+flag_sta	netstat.c	/^int flag_sta = 0;$/;"	v
+flag_tcp	netstat.c	/^int flag_tcp = 0;$/;"	v
+flag_udp	netstat.c	/^int flag_udp = 0;$/;"	v
+flag_unx	lib/af.c	/^int flag_unx;$/;"	v
+flag_ver	netstat.c	/^int flag_ver = 0;$/;"	v
+flag_x25	lib/af.c	/^int flag_x25 = 0;$/;"	v
+flags	include/interface.h	/^    short flags;		\/* various flags         *\/$/;"	m	struct:interface
+fname	nameif.c	/^const char *fname = default_conf; $/;"	v
+for_all_interfaces	lib/interface.c	/^int for_all_interfaces(int (*doit) (struct interface *, void *), void *cookie)$/;"	f
+format_host	lib/util-ank.c	/^const char *format_host(int af, void *addr, __u8 *abuf, int alen)$/;"	f
+frad_hwtype	lib/frame.c	/^struct hwtype frad_hwtype =$/;"	v
+free_interface_list	lib/interface.c	/^int free_interface_list(void)$/;"	f
+full_mask	lib/inet_sr.c	37;"	d	file:
+full_mask	lib/inet_sr.c	40;"	d	file:
+get_addr	lib/util-ank.c	/^int get_addr(inet_prefix *dst, char *arg, int family)$/;"	f
+get_addr32	lib/util-ank.c	/^__u32 get_addr32(char *name)$/;"	f
+get_addr_1	lib/util-ank.c	/^int get_addr_1(inet_prefix *addr, char *name, int family)$/;"	f
+get_afntype	lib/af.c	/^struct aftype *get_afntype(int af)$/;"	f
+get_aftype	lib/af.c	/^struct aftype *get_aftype(const char *name)$/;"	f
+get_byte	include/util-ank.h	46;"	d
+get_dev_fields	lib/interface.c	/^static int get_dev_fields(char *bp, struct interface *ife)$/;"	f	file:
+get_hwntype	lib/hw.c	/^struct hwtype *get_hwntype(int type)$/;"	f
+get_hwtype	lib/hw.c	/^struct hwtype *get_hwtype(const char *name)$/;"	f
+get_integer	lib/util-ank.c	/^int get_integer(int *val, char *arg, int base)$/;"	f
+get_name	lib/interface.c	/^static char *get_name(char *name, char *p)$/;"	f	file:
+get_nmbc_parent	ifconfig.c	/^static int get_nmbc_parent(char *parent,$/;"	f	file:
+get_prefix	lib/util-ank.c	/^int get_prefix(inet_prefix *dst, char *arg, int family)$/;"	f
+get_prefix_1	lib/util-ank.c	/^int get_prefix_1(inet_prefix *dst, char *arg, int family)$/;"	f
+get_s16	lib/util-ank.c	/^int get_s16(__s16 *val, char *arg, int base)$/;"	f
+get_s8	lib/util-ank.c	/^int get_s8(__s8 *val, char *arg, int base)$/;"	f
+get_short	include/util-ank.h	48;"	d
+get_sname	lib/inet.c	/^char *get_sname(int socknumber, char *proto, int numeric)$/;"	f
+get_socket_for_af	lib/af.c	/^int get_socket_for_af(int af)$/;"	f
+get_u16	lib/util-ank.c	/^int get_u16(__u16 *val, char *arg, int base)$/;"	f
+get_u32	lib/util-ank.c	/^int get_u32(__u32 *val, char *arg, int base)$/;"	f
+get_u8	lib/util-ank.c	/^int get_u8(__u8 *val, char *arg, int base)$/;"	f
+get_unsigned	lib/util-ank.c	/^int get_unsigned(unsigned *val, char *arg, int base)$/;"	f
+get_ushort	include/util-ank.h	47;"	d
+getargs	lib/getargs.c	/^int getargs(char *string, char *arguments[])$/;"	f
+getmac	nameif.c	/^int getmac(char *name, unsigned char *mac)$/;"	f
+getmask	lib/net-support.h	/^    int (*getmask) (char *src, struct sockaddr * mask, char *name);$/;"	m	struct:aftype
+getroute_init	lib/getroute.c	/^void getroute_init(void)$/;"	f
+hamming	lib/ash.c	/^static unsigned char hamming[16] =$/;"	v	file:
+hardware	rarp.c	/^static struct hwtype *hardware = NULL;$/;"	v	file:
+has_ax25	include/interface.h	/^    int has_ax25;$/;"	m	struct:interface
+has_ddp	include/interface.h	/^    int has_ddp;$/;"	m	struct:interface
+has_econet	include/interface.h	/^    int has_econet;$/;"	m	struct:interface
+has_ip	include/interface.h	/^    int has_ip;$/;"	m	struct:interface
+has_ipx_bb	include/interface.h	/^    int has_ipx_bb;$/;"	m	struct:interface
+has_ipx_e2	include/interface.h	/^    int has_ipx_e2;$/;"	m	struct:interface
+has_ipx_e3	include/interface.h	/^    int has_ipx_e3;$/;"	m	struct:interface
+has_ipx_sn	include/interface.h	/^    int has_ipx_sn;$/;"	m	struct:interface
+has_pdelta	lib/masq_info.c	/^static int has_pdelta;$/;"	v	file:
+hdlc_hwtype	lib/hdlclapb.c	/^struct hwtype hdlc_hwtype =$/;"	v
+herror	lib/net-support.h	/^    void (*herror) (char *text);$/;"	m	struct:aftype
+hippi_hwtype	lib/hippi.c	/^struct hwtype hippi_hwtype =$/;"	v
+host	lib/inet.c	/^    int host;$/;"	m	struct:addr	file:
+hw	arp.c	/^struct hwtype *hw;		\/* current hardware type        *\/$/;"	v
+hw_null_address	lib/hw.c	/^int hw_null_address(struct hwtype *hw, void *ap)$/;"	f
+hw_set	arp.c	/^int hw_set = 0;			\/* flag if hw-type was set (-H) *\/$/;"	v
+hwaddr	include/interface.h	/^    char hwaddr[32];		\/* HW address            *\/$/;"	m	struct:interface
+hwinit	lib/hw.c	/^void hwinit()$/;"	f
+hwtype	lib/net-support.h	/^struct hwtype {$/;"	s
+hwtypes	lib/hw.c	/^static struct hwtype *hwtypes[] =$/;"	v	file:
+i_forward	statistics.c	/^    number = 0, opt_number, i_forward, i_inp_icmp, i_outp_icmp, i_rto_alg,$/;"	e	enum:State	file:
+i_inp_icmp	statistics.c	/^    number = 0, opt_number, i_forward, i_inp_icmp, i_outp_icmp, i_rto_alg,$/;"	e	enum:State	file:
+i_outp_icmp	statistics.c	/^    number = 0, opt_number, i_forward, i_inp_icmp, i_outp_icmp, i_rto_alg,$/;"	e	enum:State	file:
+i_rto_alg	statistics.c	/^    number = 0, opt_number, i_forward, i_inp_icmp, i_outp_icmp, i_rto_alg,$/;"	e	enum:State	file:
+id1	mii-tool.c	/^    u_short	id1, id2;$/;"	m	file:
+id2	mii-tool.c	/^    u_short	id1, id2;$/;"	m	file:
+if_fetch	lib/interface.c	/^int if_fetch(struct interface *ife)$/;"	f
+if_port_text	lib/interface.c	/^const char *if_port_text[][4] =$/;"	v
+if_print	ifconfig.c	/^static int if_print(char *ifname)$/;"	f	file:
+if_readconf	lib/interface.c	/^static int if_readconf(void)$/;"	f	file:
+if_readlist	lib/interface.c	/^int if_readlist(void) $/;"	f
+if_readlist_proc	lib/interface.c	/^static int if_readlist_proc(char *target)$/;"	f	file:
+iface_info	netstat.c	/^static int iface_info(void)$/;"	f	file:
+ifcmd	ifconfig.c	/^struct ifcmd {$/;"	s	file:
+ife_print	lib/interface.c	/^void ife_print(struct interface *i)$/;"	f
+ife_print_long	lib/interface.c	/^void ife_print_long(struct interface *ptr)$/;"	f
+ife_print_short	lib/interface.c	/^void ife_print_short(struct interface *ptr)$/;"	f
+ife_short	lib/interface.c	/^int ife_short;$/;"	v
+ifname	nameif.c	/^	char ifname[IFNAMSIZ+1];$/;"	m	struct:change	file:
+ifr	mii-tool.c	/^static struct ifreq ifr;$/;"	v	file:
+ifr	plipconfig.c	/^struct ifreq ifr;$/;"	v
+ifr6_addr	ifconfig.c	/^    struct in6_addr ifr6_addr;$/;"	m	struct:in6_ifreq	file:
+ifr6_ifindex	ifconfig.c	/^    unsigned int ifr6_ifindex;$/;"	m	struct:in6_ifreq	file:
+ifr6_prefixlen	ifconfig.c	/^    __u32 ifr6_prefixlen;$/;"	m	struct:in6_ifreq	file:
+ifr_newname	nameif.c	94;"	d	file:
+ifr_qlen	include/interface.h	88;"	d
+igmp_do_one	netstat.c	/^static void igmp_do_one(int lnr, const char *line)$/;"	f	file:
+igmp_info	netstat.c	/^static int igmp_info(void)$/;"	f	file:
+in6_ifreq	ifconfig.c	/^struct in6_ifreq {$/;"	s	file:
+in_arcnet	lib/arcnet.c	/^static int in_arcnet(char *bufp, struct sockaddr *sap)$/;"	f	file:
+in_ash	lib/ash.c	/^in_ash(char *bufp, struct sockaddr *sap)$/;"	f	file:
+in_ether	lib/ether.c	/^static int in_ether(char *bufp, struct sockaddr *sap)$/;"	f	file:
+in_fddi	lib/fddi.c	/^static int in_fddi(char *bufp, struct sockaddr *sap)$/;"	f	file:
+in_hippi	lib/hippi.c	/^static int in_hippi(char *bufp, struct sockaddr *sap)$/;"	f	file:
+in_strip	lib/strip.c	/^in_strip(char *bufp, struct sockaddr *sap)$/;"	f	file:
+in_tr	lib/tr.c	/^static int in_tr(char *bufp, struct sockaddr *sap)$/;"	f	file:
+in_tunnel	lib/tunnel.c	/^static int in_tunnel(char *bufp, struct sockaddr *sap)$/;"	f	file:
+indent	statistics.c	/^    int indent;$/;"	m	struct:statedesc	file:
+index	ipmaddr.c	/^	int		index;$/;"	m	struct:ma_info	file:
+inet6_aftype	lib/inet6.c	/^struct aftype inet6_aftype =$/;"	v
+inet_addr_match	lib/util-ank.c	/^int inet_addr_match(inet_prefix *a, inet_prefix *b, int bits)$/;"	f
+inet_aftype	lib/inet.c	/^struct aftype inet_aftype =$/;"	v
+inet_prefix	include/util-ank.h	/^} inet_prefix;$/;"	t
+initseq	lib/masq_info.c	/^    unsigned long initseq;	\/* Add delta from this seq. on *\/$/;"	m	struct:masq	file:
+inittab	statistics.c	/^void inittab(void)$/;"	f
+inode	netstat.c	/^    int inode;$/;"	m	struct:prg_node	file:
+input	lib/net-support.h	/^    int (*input) (char *, struct sockaddr *);$/;"	m	struct:hwtype
+input	lib/net-support.h	/^    int (*input) (int type, char *bufp, struct sockaddr *);$/;"	m	struct:aftype
+int	configure.sh	/^function int()$/;"	f
+int_last	lib/interface.c	/^static struct interface *int_list, *int_last;$/;"	v	file:
+int_list	lib/interface.c	/^static struct interface *int_list, *int_last;$/;"	v	file:
+interface	include/interface.h	/^struct interface {$/;"	s
+invarg	lib/util-ank.c	/^void invarg(char *msg)$/;"	f
+ip_masq_info	lib/masq_info.c	/^int ip_masq_info(int numeric_host, int numeric_port, int ext)$/;"	f
+ipx_aftype	lib/ipx.c	/^struct aftype ipx_aftype =$/;"	v
+ipx_getaddr	lib/interface.c	/^static int ipx_getaddr(int sock, int ft, struct ifreq *ifr)$/;"	f	file:
+ipx_info	netstat.c	/^static int ipx_info(void)$/;"	f	file:
+ipxaddr_bb	include/interface.h	/^    struct sockaddr ipxaddr_bb;	\/* IPX network address   *\/$/;"	m	struct:interface
+ipxaddr_e2	include/interface.h	/^    struct sockaddr ipxaddr_e2;	\/* IPX network address   *\/$/;"	m	struct:interface
+ipxaddr_e3	include/interface.h	/^    struct sockaddr ipxaddr_e3;	\/* IPX network address   *\/$/;"	m	struct:interface
+ipxaddr_sn	include/interface.h	/^    struct sockaddr ipxaddr_sn;	\/* IPX network address   *\/$/;"	m	struct:interface
+irda_hwtype	lib/irda.c	/^struct hwtype irda_hwtype =$/;"	v
+irda_print	lib/irda.c	/^static char *irda_print(unsigned char *ptr)$/;"	f	file:
+keepalive	include/interface.h	/^    int keepalive;		\/* keepalive value for SLIP *\/$/;"	m	struct:interface
+kernel_version	lib/util.c	/^int kernel_version(void)$/;"	f
+l	po/Makefile	/^	    l=`basename $$n .mo`; \\$/;"	m
+lang	po/Makefile	/^		lang=`echo $$cat | sed 's\/.mo\/\/'`; \\$/;"	m
+lapb_hwtype	lib/hdlclapb.c	/^struct hwtype lapb_hwtype =$/;"	v
+longopts	mii-tool.c	/^struct option longopts[] = {$/;"	v
+longopts	rarp.c	/^static struct option longopts[] =$/;"	v	file:
+lookup_interface	lib/interface.c	/^struct interface *lookup_interface(char *name)$/;"	f
+lookupmac	nameif.c	/^struct change *lookupmac(unsigned char *mac) $/;"	f
+loop_hwtype	lib/loopback.c	/^struct hwtype loop_hwtype =$/;"	v
+lopt	nameif.c	/^struct option lopt[] = { $/;"	v
+ma_info	ipmaddr.c	/^struct ma_info$/;"	s	file:
+mac	nameif.c	/^	unsigned char mac[6];$/;"	m	struct:change	file:
+maddr_ins	ipmaddr.c	/^void maddr_ins(struct ma_info **lst, struct ma_info *m)$/;"	f
+main	arp.c	/^int main(int argc, char **argv)$/;"	f
+main	hostname.c	/^int main(int argc, char **argv)$/;"	f
+main	ifconfig.c	/^int main(int argc, char **argv)$/;"	f
+main	ipmaddr.c	/^int main(int argc, char **argv)$/;"	f
+main	iptunnel.c	/^int main(int argc, char **argv)$/;"	f
+main	mii-tool.c	/^int main(int argc, char **argv)$/;"	f
+main	nameif.c	/^int main(int ac, char **av) $/;"	f
+main	netstat.c	/^int main$/;"	f
+main	plipconfig.c	/^int main(int argc, char **argv)$/;"	f
+main	rarp.c	/^int main(int argc, char **argv)$/;"	f
+main	route.c	/^int main(int argc, char **argv)$/;"	f
+main	slattach.c	/^main(int argc, char *argv[])$/;"	f
+mandir	man/Makefile	/^mandir=\/usr\/share\/man$/;"	m
+map	include/interface.h	/^    struct ifmap map;		\/* hardware setup        *\/$/;"	m	struct:interface
+mask_in_addr	lib/inet_sr.c	36;"	d	file:
+mask_in_addr	lib/inet_sr.c	39;"	d	file:
+masq	lib/masq_info.c	/^struct masq {$/;"	s	file:
+matches	lib/util-ank.c	/^int matches(char *cmd, char *pattern)$/;"	f
+mdio_read	mii-tool.c	/^static int mdio_read(int skfd, int location)$/;"	f	file:
+mdio_write	mii-tool.c	/^static void mdio_write(int skfd, int location, int value)$/;"	f	file:
+media	mii-tool.c	/^} media[] = {$/;"	v
+media_list	mii-tool.c	/^static char *media_list(int mask, int best)$/;"	f	file:
+metric	include/interface.h	/^    int metric;			\/* routing metric        *\/$/;"	m	struct:interface
+mii_data	include/mii.h	/^struct mii_data {$/;"	s
+mii_id	mii-tool.c	/^} mii_id[] = {$/;"	v	file:
+mport	lib/masq_info.c	/^    unsigned short mport;	\/* Masqueraded port *\/$/;"	m	struct:masq	file:
+mtu	include/interface.h	/^    int mtu;			\/* MTU value             *\/$/;"	m	struct:interface
+multiaddr_list	ipmaddr.c	/^static int multiaddr_list(int argc, char **argv)$/;"	f	file:
+multiaddr_modify	ipmaddr.c	/^int multiaddr_modify(int cmd, int argc, char **argv)$/;"	f
+name	include/interface.h	/^    char name[IFNAMSIZ];	\/* interface name        *\/$/;"	m	struct:interface
+name	ipmaddr.c	/^	char		name[IFNAMSIZ];$/;"	m	struct:ma_info	file:
+name	lib/af.c	/^    char *name;$/;"	m	struct:aftrans_t	file:
+name	lib/inet.c	/^    char *name;$/;"	m	struct:addr	file:
+name	lib/inet.c	/^    char *name;$/;"	m	struct:service	file:
+name	lib/net-support.h	/^    char *name;$/;"	m	struct:aftype
+name	lib/net-support.h	/^    char *name;$/;"	m	struct:hwtype
+name	mii-tool.c	/^    char	*name;$/;"	m	file:
+name	netstat.c	/^    char name[PROGNAME_WIDTH];$/;"	m	struct:prg_node	file:
+netmask	include/interface.h	/^    struct sockaddr netmask;	\/* IP network mask       *\/$/;"	m	struct:interface
+netrom_aftype	lib/netrom.c	/^struct aftype netrom_aftype =$/;"	v
+netrom_errmsg	lib/netrom.c	/^static char netrom_errmsg[128];$/;"	v	file:
+netrom_hwtype	lib/netrom.c	/^struct hwtype netrom_hwtype =$/;"	v
+netrom_info	netstat.c	/^static int netrom_info(void)$/;"	f	file:
+netrom_state	netstat.c	/^static const char *netrom_state[] =$/;"	v	file:
+new	lib/util.h	6;"	d
+newtable	statistics.c	/^struct tabtab *newtable(struct tabtab *tabs, char *title)$/;"	f
+next	include/interface.h	/^    struct interface *next, *prev; $/;"	m	struct:interface
+next	ipmaddr.c	/^	struct ma_info *next;$/;"	m	struct:ma_info	file:
+next	lib/inet.c	/^    struct addr *next;$/;"	m	struct:addr	file:
+next	lib/inet.c	/^    struct service *next;$/;"	m	struct:service	file:
+next	nameif.c	/^	struct change *next,**pprev;$/;"	m	struct:change	file:
+next	netstat.c	/^    struct prg_node *next;$/;"	m	struct:prg_node	file:
+no_rarp_message	rarp.c	/^static char no_rarp_message[] = N_("This kernel does not support RARP.\\n");$/;"	v	file:
+normal	statistics.c	30;"	d	file:
+notnull	netstat.c	907;"	d	file:
+notnull	netstat.c	915;"	d	file:
+nstrcmp	lib/nstrcmp.c	/^int nstrcmp(const char *astr, const char *b)$/;"	f
+number	lib/inet.c	/^    int number;$/;"	m	struct:service	file:
+number	statistics.c	/^    number = 0, opt_number, i_forward, i_inp_icmp, i_outp_icmp, i_rto_alg,$/;"	e	enum:State	file:
+nway_advertise	mii-tool.c	/^static int nway_advertise = 0;$/;"	v	file:
+oom	lib/util.c	/^static void oom(void)$/;"	f	file:
+opensock	nameif.c	/^void opensock(void)$/;"	f
+opt_D	arp.c	/^int opt_D = 0;			\/* HW-address is devicename     *\/$/;"	v
+opt_L	slattach.c	/^int		opt_L = 0;		\/* clocal flag			*\/$/;"	v
+opt_N	arp.c	/^int opt_N = 0;			\/* use symbolic names           *\/$/;"	v
+opt_a	arp.c	/^int opt_a = 0;			\/* all entries, substring match *\/$/;"	v
+opt_a	ifconfig.c	/^int opt_a = 0;			\/* show all interfaces          *\/$/;"	v
+opt_a	plipconfig.c	/^int opt_a = 0;$/;"	v
+opt_c	slattach.c	/^int		opt_c = 0;		\/* "command" to run at exit	*\/$/;"	v
+opt_d	slattach.c	/^int		opt_d = 0;		\/* debug flag			*\/$/;"	v
+opt_e	arp.c	/^int opt_e = 0;			\/* 0=BSD output, 1=new linux    *\/$/;"	v
+opt_e	route.c	/^int opt_e = 1;			\/* 1,2,3=type of routetable     *\/$/;"	v
+opt_e	slattach.c	/^int		opt_e = 0;		\/* "activate only" flag		*\/$/;"	v
+opt_fc	route.c	/^int opt_fc = 0;			\/* routing cache\/FIB *\/$/;"	v
+opt_h	route.c	/^int opt_h = 0;			\/* help selected                *\/$/;"	v
+opt_h	slattach.c	/^int		opt_h = 0;		\/* "hangup" on carrier loss	*\/$/;"	v
+opt_i	ifconfig.c	/^int opt_i = 0;			\/* show the statistics          *\/$/;"	v
+opt_i	plipconfig.c	/^int opt_i = 0;$/;"	v
+opt_k	slattach.c	/^int		opt_k = 0;		\/* "keepalive" value		*\/$/;"	v
+opt_l	slattach.c	/^int		opt_l = 0;		\/* "lock it" flag		*\/$/;"	v
+opt_log	mii-tool.c	/^    opt_log = 0,$/;"	v	file:
+opt_m	slattach.c	/^int		opt_m = 0;		\/* "set RAW mode" flag		*\/$/;"	v
+opt_n	arp.c	/^int opt_n = 0;			\/* do not resolve addresses     *\/$/;"	v
+opt_n	route.c	/^int opt_n = 0;			\/* numerical output flag        *\/$/;"	v
+opt_n	slattach.c	/^int		opt_n = 0;		\/* "set No Mesg" flag		*\/$/;"	v
+opt_number	statistics.c	/^    number = 0, opt_number, i_forward, i_inp_icmp, i_outp_icmp, i_rto_alg,$/;"	e	enum:State	file:
+opt_o	slattach.c	/^int		opt_o = 0;		\/* "outfill" value		*\/$/;"	v
+opt_q	slattach.c	/^int		opt_q = 0;		\/* "quiet" flag			*\/$/;"	v
+opt_reset	mii-tool.c	/^    opt_reset = 0,$/;"	v	file:
+opt_restart	mii-tool.c	/^    opt_restart = 0,$/;"	v	file:
+opt_v	arp.c	/^int opt_v = 0;			\/* debugging output flag        *\/$/;"	v
+opt_v	hostname.c	/^static int opt_v;$/;"	v	file:
+opt_v	ifconfig.c	/^int opt_v = 0;			\/* debugging output flag        *\/$/;"	v
+opt_v	plipconfig.c	/^int opt_v = 0;$/;"	v
+opt_v	route.c	/^int opt_v = 0;			\/* debugging output flag        *\/$/;"	v
+opt_v	slattach.c	/^int		opt_v = 0;		\/* Verbose flag			*\/$/;"	v
+opt_version	mii-tool.c	/^    opt_version = 0,$/;"	v	file:
+opt_watch	mii-tool.c	/^    opt_watch = 0;$/;"	v	file:
+out	statistics.c	/^    char *out;$/;"	m	struct:entry	file:
+outfill	include/interface.h	/^    int outfill;		\/* outfill value for SLIP *\/$/;"	m	struct:interface
+override_phy	mii-tool.c	/^static int override_phy = -1;$/;"	v	file:
+parse_args	iptunnel.c	/^static int parse_args(int argc, char **argv, struct ip_tunnel_parm *p)$/;"	f	file:
+parse_hex	ipmaddr.c	/^static int parse_hex(char *str, unsigned char *addr)$/;"	f	file:
+parse_lla	ipmaddr.c	/^static int parse_lla(char *str, unsigned char *addr)$/;"	f	file:
+parse_media	mii-tool.c	/^static int parse_media(char *arg)$/;"	f	file:
+parsemac	nameif.c	/^int parsemac(char *str, unsigned char *mac)$/;"	f
+parsesnmp	statistics.c	/^void parsesnmp(int flag_raw, int flag_tcp, int flag_udp)$/;"	f
+pdelta	lib/masq_info.c	/^    short pdelta;		\/* Delta in sequence numbers before last *\/$/;"	m	struct:masq	file:
+phy_id	include/mii.h	/^    __u16	phy_id;$/;"	m	struct:mii_data
+plip	plipconfig.c	/^struct plipconf *plip;$/;"	v
+ppp_hwtype	lib/ppp.c	/^struct hwtype ppp_hwtype =$/;"	v
+pprev	nameif.c	/^	struct change *next,**pprev;$/;"	m	struct:change	file:
+pr_arcnet	lib/arcnet.c	/^static char *pr_arcnet(unsigned char *ptr)$/;"	f	file:
+pr_ash	lib/ash.c	/^pr_ash(unsigned char *ptr)$/;"	f	file:
+pr_dlci	lib/frame.c	/^char *pr_dlci(unsigned char *ptr)$/;"	f
+pr_ether	lib/ether.c	/^static char *pr_ether(unsigned char *ptr)$/;"	f	file:
+pr_fddi	lib/fddi.c	/^static char *pr_fddi(unsigned char *ptr)$/;"	f	file:
+pr_hippi	lib/hippi.c	/^static char *pr_hippi(unsigned char *ptr)$/;"	f	file:
+pr_sash	lib/ash.c	/^pr_sash(struct sockaddr *sap, int numeric)$/;"	f	file:
+pr_strip	lib/strip.c	/^pr_strip(unsigned char *ptr)$/;"	f	file:
+pr_tr	lib/tr.c	/^static char *pr_tr(unsigned char *ptr)$/;"	f	file:
+pr_tunnel	lib/tunnel.c	/^static char *pr_tunnel(unsigned char *ptr)$/;"	f	file:
+pr_unspec	lib/loopback.c	/^static char *pr_unspec(unsigned char *ptr)$/;"	f	file:
+preferred_family	ipmaddr.c	/^int preferred_family = AF_UNSPEC;$/;"	v
+preferred_family	iptunnel.c	/^int preferred_family = AF_UNSPEC;$/;"	v
+prev	include/interface.h	/^    struct interface *next, *prev; $/;"	m	struct:interface
+prg_cache_add	netstat.c	/^static void prg_cache_add(int inode, char *name)$/;"	f	file:
+prg_cache_clear	netstat.c	/^static void prg_cache_clear(void)$/;"	f	file:
+prg_cache_get	netstat.c	/^static const char *prg_cache_get(int inode)$/;"	f	file:
+prg_cache_load	netstat.c	/^static void prg_cache_load(void)$/;"	f	file:
+prg_cache_loaded	netstat.c	/^static char prg_cache_loaded = 0;$/;"	v	file:
+prg_hash	netstat.c	/^} *prg_hash[PRG_HASH_SIZE];$/;"	v	file:
+prg_node	netstat.c	/^static struct prg_node {$/;"	s	file:
+print	lib/net-support.h	/^    char *(*print) (unsigned char *);$/;"	m	struct:aftype
+print	lib/net-support.h	/^    char *(*print) (unsigned char *);$/;"	m	struct:hwtype
+print_aflist	lib/af.c	/^void print_aflist(int type) {$/;"	f
+print_hwlist	lib/hw.c	/^void print_hwlist(int type) {$/;"	f
+print_lla	ipmaddr.c	/^static void print_lla(FILE *fp, int len, unsigned char *addr)$/;"	f	file:
+print_maddr	ipmaddr.c	/^static void print_maddr(FILE *fp, struct ma_info *list)$/;"	f	file:
+print_masq	lib/masq_info.c	/^static void print_masq(struct masq *ms, int numeric_host, int numeric_port,$/;"	f	file:
+print_mlist	ipmaddr.c	/^static void print_mlist(FILE *fp, struct ma_info *list)$/;"	f	file:
+print_plip	plipconfig.c	/^void print_plip(void)$/;"	f
+print_progname_banner	netstat.c	229;"	d	file:
+print_static	statistics.c	/^int print_static,f_raw,f_tcp,f_udp,f_unknown = 1;$/;"	v
+print_tunnel	iptunnel.c	/^void print_tunnel(struct ip_tunnel_parm *p)$/;"	f
+printval	statistics.c	/^void printval(struct tabtab *tab, char *title, int val)$/;"	f
+proc_gen_fmt	lib/proc.c	/^char *proc_gen_fmt(char *name, int more, FILE * fh,...)$/;"	f
+proc_guess_fmt	lib/proc.c	/^int proc_guess_fmt(char *name, FILE *fh, ...)$/;"	f
+process_fd	statistics.c	/^void process_fd(FILE *f)$/;"	f
+procinfo	netstat.c	/^FILE *procinfo;$/;"	v
+procnetdev_version	lib/interface.c	/^static int procnetdev_version(char *buf)$/;"	f	file:
+procnetdev_vsn	lib/interface.c	/^int procnetdev_vsn = 1;$/;"	v
+program_name	hostname.c	/^static char *program_name;$/;"	v	file:
+proto	lib/masq_info.c	/^    char *proto;		\/* Which protocol are we talking? *\/$/;"	m	struct:masq	file:
+rarp_delete	rarp.c	/^static int rarp_delete(int fd, struct hostent *hp)$/;"	f	file:
+rarp_file	rarp.c	/^static int rarp_file(int fd, const char *name)$/;"	f	file:
+rarp_set	rarp.c	/^static int rarp_set(int fd, struct hostent *hp, char *hw_addr)$/;"	f	file:
+raw_do_one	netstat.c	/^static void raw_do_one(int lnr, const char *line)$/;"	f	file:
+raw_info	netstat.c	/^static int raw_info(void)$/;"	f	file:
+raw_name	lib/inet.c	/^static struct service *tcp_name = NULL, *udp_name = NULL, *raw_name = NULL;$/;"	v	file:
+read_dev_mcast	ipmaddr.c	/^void read_dev_mcast(struct ma_info **result_p)$/;"	f
+read_igmp	ipmaddr.c	/^void read_igmp(struct ma_info **result_p)$/;"	f
+read_igmp6	ipmaddr.c	/^void read_igmp6(struct ma_info **result_p)$/;"	f
+read_masqinfo	lib/masq_info.c	/^static int read_masqinfo(FILE * f, struct masq *mslist, int nmslist)$/;"	f	file:
+read_services	lib/inet.c	/^static int read_services(void)$/;"	f	file:
+readconf	nameif.c	/^void readconf(void)$/;"	f
+readln	configure.sh	/^function readln()$/;"	f
+reg_num	include/mii.h	/^    __u16	reg_num;$/;"	m	struct:mii_data
+resolve_hosts	ipmaddr.c	/^int resolve_hosts = 0;$/;"	v
+resolve_hosts	iptunnel.c	/^int resolve_hosts = 0;$/;"	v
+rinput	lib/net-support.h	/^    int (*rinput) (int typ, int ext, char **argv);$/;"	m	struct:aftype
+rose_aftype	lib/rose.c	/^struct aftype rose_aftype =$/;"	v
+rose_hwtype	lib/rose.c	/^struct hwtype rose_hwtype =$/;"	v
+route_edit	lib/setroute.c	/^int route_edit(int action, const char *afname, int options, char **argv)$/;"	f
+route_info	lib/getroute.c	/^int route_info(const char *afname, int options)$/;"	f
+rprint	lib/net-support.h	/^    int (*rprint) (int options);$/;"	m	struct:aftype
+rprint_cache	lib/inet_gr.c	/^int rprint_cache(int ext, int numeric)$/;"	f
+rprint_cache6	lib/inet6_gr.c	/^int rprint_cache6(int ext, int numeric)$/;"	f
+rprint_fib	lib/inet_gr.c	/^int rprint_fib(int ext, int numeric)$/;"	f
+rprint_fib6	lib/inet6_gr.c	/^int rprint_fib6(int ext, int numeric)$/;"	f
+rx_bytes	include/interface.h	/^    unsigned long long rx_bytes;	\/* total bytes received         *\/$/;"	m	struct:user_net_device_stats
+rx_compressed	include/interface.h	/^    unsigned long rx_compressed;$/;"	m	struct:user_net_device_stats
+rx_crc_errors	include/interface.h	/^    unsigned long rx_crc_errors;	\/* recved pkt with crc error    *\/$/;"	m	struct:user_net_device_stats
+rx_dropped	include/interface.h	/^    unsigned long rx_dropped;	\/* no space in linux buffers    *\/$/;"	m	struct:user_net_device_stats
+rx_errors	include/interface.h	/^    unsigned long rx_errors;	\/* bad packets received         *\/$/;"	m	struct:user_net_device_stats
+rx_fifo_errors	include/interface.h	/^    unsigned long rx_fifo_errors;	\/* recv'r fifo overrun          *\/$/;"	m	struct:user_net_device_stats
+rx_frame_errors	include/interface.h	/^    unsigned long rx_frame_errors;	\/* recv'd frame alignment error *\/$/;"	m	struct:user_net_device_stats
+rx_length_errors	include/interface.h	/^    unsigned long rx_length_errors;$/;"	m	struct:user_net_device_stats
+rx_missed_errors	include/interface.h	/^    unsigned long rx_missed_errors;	\/* receiver missed packet     *\/$/;"	m	struct:user_net_device_stats
+rx_multicast	include/interface.h	/^    unsigned long rx_multicast;	\/* multicast packets received   *\/$/;"	m	struct:user_net_device_stats
+rx_over_errors	include/interface.h	/^    unsigned long rx_over_errors;	\/* receiver ring buff overflow  *\/$/;"	m	struct:user_net_device_stats
+rx_packets	include/interface.h	/^    unsigned long long rx_packets;	\/* total packets received       *\/$/;"	m	struct:user_net_device_stats
+s6_addr32	netstat.c	101;"	d	file:
+sVafinit	lib/af.c	/^static short sVafinit = 0;$/;"	v	file:
+sVhwinit	lib/hw.c	/^static short sVhwinit = 0;$/;"	v	file:
+safe_strncpy	lib/util.c	/^char *safe_strncpy(char *dst, const char *src, size_t size)$/;"	f
+scan_number	lib/util-ank.c	/^int scan_number(char *arg, unsigned *val)$/;"	f
+searcher	ifconfig.c	/^static unsigned char searcher[256];$/;"	v	file:
+searchlist	lib/inet.c	/^static struct service *searchlist(struct service *servicebase, int number)$/;"	f	file:
+service	lib/inet.c	/^struct service {$/;"	s	file:
+set_flag	ifconfig.c	/^static int set_flag(char *ifname, short flag)$/;"	f	file:
+set_ifstate	ifconfig.c	/^static int set_ifstate(char *parent, unsigned long ip,$/;"	f	file:
+set_ip_using	ifconfig.c	/^static int set_ip_using(const char *name, int c, unsigned long ip)$/;"	f	file:
+set_netmask	ifconfig.c	/^static int set_netmask(int skfd, struct ifreq *ifr, struct sockaddr *sa)$/;"	f	file:
+setdname	hostname.c	/^static void setdname(char *dname)$/;"	f	file:
+setfilename	hostname.c	/^static void setfilename(char *name, int what)$/;"	f	file:
+sethname	hostname.c	/^static void sethname(char *hname)$/;"	f	file:
+setname	nameif.c	/^int  setname(char *oldname, char *newname)$/;"	f
+setnname	hostname.c	/^static void setnname(char *nname)$/;"	f	file:
+setroute_init	lib/setroute.c	/^void setroute_init(void)$/;"	f
+show_basic_mii	mii-tool.c	/^int show_basic_mii(int sock, int phy_id)$/;"	f
+show_stats	ipmaddr.c	/^int show_stats = 0;$/;"	v
+show_stats	iptunnel.c	/^int show_stats = 0;$/;"	v
+showhname	hostname.c	/^static void showhname(char *hname, int c)$/;"	f	file:
+sig_catch	slattach.c	/^sig_catch(int sig)$/;"	f	file:
+sipx_family	include/ipx.h	/^    sa_family_t sipx_family;$/;"	m	struct:sockaddr_ipx
+sipx_network	include/ipx.h	/^    unsigned int sipx_network;$/;"	m	struct:sockaddr_ipx
+sipx_node	include/ipx.h	/^    unsigned char sipx_node[IPX_NODE_LEN];$/;"	m	struct:sockaddr_ipx
+sipx_port	include/ipx.h	/^    unsigned short sipx_port;$/;"	m	struct:sockaddr_ipx
+sipx_type	include/ipx.h	/^    unsigned char sipx_type;$/;"	m	struct:sockaddr_ipx
+sipx_zero	include/ipx.h	/^    unsigned char sipx_zero;	\/* 16 byte fill *\/$/;"	m	struct:sockaddr_ipx
+sit_hwtype	lib/sit.c	/^struct hwtype sit_hwtype =$/;"	v
+size	statistics.c	/^    size_t size;$/;"	m	struct:tabtab	file:
+skfd	lib/inet6_sr.c	/^static int skfd = -1;$/;"	v	file:
+skfd	lib/inet_sr.c	/^static int skfd = -1;$/;"	v	file:
+skfd	lib/sockets.c	/^int skfd = -1;			\/* generic raw socket desc.     *\/$/;"	v
+skfd	lib/x25_sr.c	/^static int skfd = -1;$/;"	v	file:
+skfd	mii-tool.c	/^static int skfd = -1;		\/* AF_INET socket for ioctl() calls. *\/$/;"	v	file:
+skfd	plipconfig.c	/^int skfd = -1;$/;"	v
+slip6_hwtype	lib/slip.c	/^struct hwtype slip6_hwtype =$/;"	v
+slip_hwtype	lib/slip.c	/^struct hwtype slip_hwtype =$/;"	v
+snmptabs	statistics.c	/^struct tabtab snmptabs[] =$/;"	v
+sockaddr_ipx	include/ipx.h	/^struct sockaddr_ipx {$/;"	s
+socket_state	netstat.c	/^} socket_state;$/;"	t	file:
+sockets_open	lib/sockets.c	/^int sockets_open(int family)$/;"	f
+sockfd	arp.c	/^int sockfd = 0;			\/* active socket descriptor     *\/$/;"	v
+speed	slattach.c	/^  const char	*speed;$/;"	m	file:
+sport	lib/masq_info.c	/^    unsigned short sport, dport;	\/* Source and destination ports *\/$/;"	m	struct:masq	file:
+sprint	lib/net-support.h	/^    char *(*sprint) (struct sockaddr *, int numeric);$/;"	m	struct:aftype
+src	lib/masq_info.c	/^    struct sockaddr_in src, dst;	\/* Source and destination IP addresses *\/$/;"	m	struct:masq	file:
+state	statistics.c	/^static enum State state;$/;"	v	file:
+statedesc	statistics.c	/^struct statedesc { $/;"	s	file:
+states	statistics.c	/^struct statedesc states[] = { $/;"	v
+statistics_valid	include/interface.h	/^    int statistics_valid;$/;"	m	struct:interface
+stats	include/interface.h	/^    struct user_net_device_stats stats;		\/* statistics            *\/$/;"	m	struct:interface
+strip_hwtype	lib/strip.c	/^struct hwtype strip_hwtype = {$/;"	v
+suppress_null_addr	lib/net-support.h	/^    int suppress_null_addr;$/;"	m	struct:hwtype
+tab	statistics.c	/^    struct entry *tab;$/;"	m	struct:tabtab	file:
+tabtab	statistics.c	/^struct tabtab {$/;"	s	file:
+tcp_do_one	netstat.c	/^static void tcp_do_one(int lnr, const char *line)$/;"	f	file:
+tcp_info	netstat.c	/^static int tcp_info(void)$/;"	f	file:
+tcp_name	lib/inet.c	/^static struct service *tcp_name = NULL, *udp_name = NULL, *raw_name = NULL;$/;"	v	file:
+tcp_state	netstat.c	/^static const char *tcp_state[] =$/;"	v	file:
+title	lib/net-support.h	/^    char *title;$/;"	m	struct:aftype
+title	lib/net-support.h	/^    char *title;$/;"	m	struct:hwtype
+title	statistics.c	/^    char *title; $/;"	m	struct:statedesc	file:
+title	statistics.c	/^    char *title;$/;"	m	struct:entry	file:
+title	statistics.c	/^    char *title;$/;"	m	struct:tabtab	file:
+tr_hwtype	lib/tr.c	/^struct hwtype tr_hwtype =$/;"	v
+tr_hwtype1	lib/tr.c	/^struct hwtype tr_hwtype1 =$/;"	v
+tty_already_locked	slattach.c	/^tty_already_locked(char *nam)$/;"	f	file:
+tty_close	slattach.c	/^tty_close(void)$/;"	f	file:
+tty_current	slattach.c	/^		tty_current;		\/* current TTY device state	*\/$/;"	v
+tty_fd	slattach.c	/^		tty_fd = -1;		\/* TTY file descriptor		*\/$/;"	v
+tty_find_speed	slattach.c	/^tty_find_speed(const char *speed)$/;"	f	file:
+tty_get_disc	slattach.c	/^tty_get_disc(int *disc)$/;"	f	file:
+tty_get_name	slattach.c	/^tty_get_name(char *name)$/;"	f	file:
+tty_get_state	slattach.c	/^tty_get_state(struct termios *tty)$/;"	f	file:
+tty_hangup	slattach.c	/^tty_hangup(void)$/;"	f	file:
+tty_ldisc	slattach.c	/^		tty_ldisc,		\/* current TTY line discipline	*\/$/;"	v
+tty_lock	slattach.c	/^tty_lock(char *path, int mode)$/;"	f	file:
+tty_nomesg	slattach.c	/^tty_nomesg(int fd)$/;"	f	file:
+tty_open	slattach.c	/^tty_open(char *name, const char *speed)$/;"	f	file:
+tty_saved	slattach.c	/^struct termios	tty_saved,		\/* saved TTY device state	*\/$/;"	v
+tty_sdisc	slattach.c	/^int		tty_sdisc,		\/* saved TTY line discipline	*\/$/;"	v
+tty_set_databits	slattach.c	/^tty_set_databits(struct termios *tty, char *databits)$/;"	f	file:
+tty_set_disc	slattach.c	/^tty_set_disc(int disc)$/;"	f	file:
+tty_set_parity	slattach.c	/^tty_set_parity(struct termios *tty, char *parity)$/;"	f	file:
+tty_set_raw	slattach.c	/^tty_set_raw(struct termios *tty)$/;"	f	file:
+tty_set_speed	slattach.c	/^tty_set_speed(struct termios *tty, const char *speed)$/;"	f	file:
+tty_set_state	slattach.c	/^tty_set_state(struct termios *tty)$/;"	f	file:
+tty_set_stopbits	slattach.c	/^tty_set_stopbits(struct termios *tty, char *stopbits)$/;"	f	file:
+tty_speeds	slattach.c	/^} tty_speeds[] = {			\/* table of usable baud rates	*\/$/;"	v
+tunnel_hwtype	lib/tunnel.c	/^struct hwtype tunnel_hwtype =$/;"	v
+tx_aborted_errors	include/interface.h	/^    unsigned long tx_aborted_errors;$/;"	m	struct:user_net_device_stats
+tx_bytes	include/interface.h	/^    unsigned long long tx_bytes;	\/* total bytes transmitted      *\/$/;"	m	struct:user_net_device_stats
+tx_carrier_errors	include/interface.h	/^    unsigned long tx_carrier_errors;$/;"	m	struct:user_net_device_stats
+tx_compressed	include/interface.h	/^    unsigned long tx_compressed;$/;"	m	struct:user_net_device_stats
+tx_dropped	include/interface.h	/^    unsigned long tx_dropped;	\/* no space available in linux  *\/$/;"	m	struct:user_net_device_stats
+tx_errors	include/interface.h	/^    unsigned long tx_errors;	\/* packet transmit problems     *\/$/;"	m	struct:user_net_device_stats
+tx_fifo_errors	include/interface.h	/^    unsigned long tx_fifo_errors;$/;"	m	struct:user_net_device_stats
+tx_heartbeat_errors	include/interface.h	/^    unsigned long tx_heartbeat_errors;$/;"	m	struct:user_net_device_stats
+tx_packets	include/interface.h	/^    unsigned long long tx_packets;	\/* total packets transmitted    *\/$/;"	m	struct:user_net_device_stats
+tx_queue_len	include/interface.h	/^    int tx_queue_len;		\/* transmit queue length *\/$/;"	m	struct:interface
+tx_window_errors	include/interface.h	/^    unsigned long tx_window_errors;$/;"	m	struct:user_net_device_stats
+type	include/interface.h	/^    short type;			\/* if type               *\/$/;"	m	struct:interface
+type	lib/net-support.h	/^    int type;$/;"	m	struct:hwtype
+type	statistics.c	/^    enum State type;$/;"	m	struct:entry	file:
+udp_do_one	netstat.c	/^static void udp_do_one(int lnr, const char *line)$/;"	f	file:
+udp_info	netstat.c	/^static int udp_info(void)$/;"	f	file:
+udp_name	lib/inet.c	/^static struct service *tcp_name = NULL, *udp_name = NULL, *raw_name = NULL;$/;"	v	file:
+unix_aftype	lib/unix.c	/^struct aftype unix_aftype =$/;"	v
+unix_do_one	netstat.c	/^static void unix_do_one(int nr, const char *line)$/;"	f	file:
+unix_info	netstat.c	/^static int unix_info(void)$/;"	f	file:
+unspec_aftype	lib/unix.c	/^struct aftype unspec_aftype =$/;"	v
+unspec_hwtype	lib/loopback.c	/^struct hwtype unspec_hwtype =$/;"	v
+usage	arp.c	/^static void usage(void)$/;"	f	file:
+usage	hostname.c	/^static void usage(void)$/;"	f	file:
+usage	ifconfig.c	/^static void usage(void)$/;"	f	file:
+usage	ipmaddr.c	/^static void usage(void)$/;"	f	file:
+usage	iptunnel.c	/^static void usage(void)$/;"	f	file:
+usage	lib/inet6_sr.c	/^static int usage(void)$/;"	f	file:
+usage	lib/inet_sr.c	/^static int usage(void)$/;"	f	file:
+usage	lib/x25_sr.c	/^static int usage(void)$/;"	f	file:
+usage	mii-tool.c	/^const char *usage =$/;"	v
+usage	nameif.c	/^void usage(void)$/;"	f
+usage	netstat.c	/^static void usage(void)$/;"	f	file:
+usage	plipconfig.c	/^void usage(void)$/;"	f
+usage	rarp.c	/^static void usage(void)$/;"	f	file:
+usage	route.c	/^static void usage(void)$/;"	f	file:
+usage	slattach.c	/^usage(void)$/;"	f	file:
+use_syslog	nameif.c	/^int use_syslog; $/;"	v
+user_net_device_stats	include/interface.h	/^struct user_net_device_stats {$/;"	s
+users	ipmaddr.c	/^	int		users;$/;"	m	struct:ma_info	file:
+val_in	include/mii.h	/^    __u16	val_in;$/;"	m	struct:mii_data
+val_out	include/mii.h	/^    __u16	val_out;$/;"	m	struct:mii_data
+value	mii-tool.c	/^    u_short	value;$/;"	m	file:
+verbose	mii-tool.c	/^    verbose = 0,$/;"	v	file:
+version	arp.c	/^static void version(void)$/;"	f	file:
+version	hostname.c	/^static void version(void)$/;"	f	file:
+version	ifconfig.c	/^static void version(void)$/;"	f	file:
+version	ipmaddr.c	/^static void version(void)$/;"	f	file:
+version	iptunnel.c	/^static void version(void)$/;"	f	file:
+version	mii-tool.c	/^static char version[] =$/;"	v	file:
+version	netstat.c	/^static void version(void)$/;"	f	file:
+version	plipconfig.c	/^static void version(void)$/;"	f	file:
+version	route.c	/^static void version(void)$/;"	f	file:
+version	slattach.c	/^version(void)$/;"	f	file:
+version_string	rarp.c	/^static char version_string[] = RELEASE "\\nrarp 1.03 (2001-04-04)\\n";$/;"	v	file:
+warning	nameif.c	/^void warning(char *fmt, ...) $/;"	f
+watch_one_xcvr	mii-tool.c	/^static void watch_one_xcvr(int skfd, char *ifname, int index)$/;"	f	file:
+x25_aftype	lib/x25.c	/^struct aftype x25_aftype =$/;"	v
+x25_hwtype	lib/x25.c	/^struct hwtype x25_hwtype = {$/;"	v
+x25_info	netstat.c	/^static int x25_info(void)$/;"	f	file:
+xmalloc	lib/util.c	/^void *xmalloc(size_t sz)$/;"	f
+xmalloc	nameif.c	/^void *xmalloc(unsigned sz)$/;"	f
+xrealloc	lib/util.c	/^void *xrealloc(void *oldp, size_t sz)$/;"	f

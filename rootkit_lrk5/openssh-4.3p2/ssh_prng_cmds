@@ -1,0 +1,75 @@
+# entropy gathering commands
+
+# Format is: "program-name args" path rate
+
+# The "rate" represents the number of bits of usuable entropy per
+# byte of command output. Be conservative.
+#
+# $Id: ssh_prng_cmds.in,v 1.9 2003/11/21 12:48:56 djm Exp $
+
+"ls -alni /var/log"			/bin/ls	0.02
+"ls -alni /var/adm"			/bin/ls	0.02
+"ls -alni /usr/adm"                     /bin/ls       0.02
+"ls -alni /var/mail"			/bin/ls	0.02
+"ls -alni /usr/mail"                    /bin/ls       0.02
+"ls -alni /var/adm/syslog"		/bin/ls	0.02
+"ls -alni /usr/adm/syslog"		/bin/ls	0.02
+"ls -alni /var/spool/mail"		/bin/ls	0.02
+"ls -alni /proc"			/bin/ls	0.02
+"ls -alni /tmp"				/bin/ls	0.02
+"ls -alni /var/tmp"			/bin/ls	0.02
+"ls -alni /usr/tmp"			/bin/ls	0.02
+"ls -alTi /var/log"			/bin/ls	0.02
+"ls -alTi /var/adm"			/bin/ls	0.02
+"ls -alTi /var/mail"			/bin/ls	0.02
+"ls -alTi /var/adm/syslog"		/bin/ls	0.02
+"ls -alTi /var/spool/mail"		/bin/ls	0.02
+"ls -alTi /proc"			/bin/ls	0.02
+"ls -alTi /tmp"				/bin/ls	0.02
+"ls -alTi /var/tmp"			/bin/ls	0.02
+"ls -alTi /usr/tmp"			/bin/ls	0.02
+
+"netstat -an"				/bin/netstat	0.05
+"netstat -in"				/bin/netstat	0.05
+"netstat -rn"				/bin/netstat	0.02
+"netstat -pn"				/bin/netstat	0.02
+"netstat -ia"                           /bin/netstat  0.05
+"netstat -s"				/bin/netstat	0.02
+"netstat -is"				/bin/netstat	0.07
+
+"arp -n -a"				/sbin/arp	0.02
+
+"ifconfig -a"				/sbin/ifconfig	0.02
+
+"ps laxww"				/bin/ps	0.03
+"ps -al"				/bin/ps	0.03
+"ps -efl"				/bin/ps	0.03
+"jstat"				        undef    0.07
+
+"w"					/usr/bin/w	0.05
+
+"who -i"				/usr/bin/who	0.01
+
+"last"					/usr/bin/last	0.01
+
+"lastlog"				/usr/bin/lastlog	0.01
+
+"df"					/bin/df	0.01
+"df -i"					/bin/df	0.01
+
+"sar -d"				undef	0.04
+
+"vmstat"				/usr/bin/vmstat	0.01
+"uptime"				/usr/bin/uptime	0.01
+
+"ipcs -a"				/usr/bin/ipcs	0.01
+
+"tail -200 /var/log/messages"		/usr/bin/tail	0.01
+"tail -200 /var/log/syslog"		/usr/bin/tail	0.01
+"tail -200 /var/adm/messages"		/usr/bin/tail	0.01
+"tail -200 /var/adm/syslog"		/usr/bin/tail	0.01
+"tail -200 /var/adm/syslog/syslog.log"	/usr/bin/tail	0.01
+"tail -200 /var/log/maillog"		/usr/bin/tail	0.01
+"tail -200 /var/adm/maillog"		/usr/bin/tail	0.01
+"tail -200 /var/adm/syslog/mail.log"	/usr/bin/tail	0.01
+

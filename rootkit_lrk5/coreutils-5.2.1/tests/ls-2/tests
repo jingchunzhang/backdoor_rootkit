@@ -1,0 +1,110 @@
+#!/bin/sh
+
+: ${PERL=perl}
+: ${srcdir=.}
+
+$PERL -e 1 > /dev/null 2>&1 || {
+  echo 1>&2 "$0: configure didn't find a usable version of Perl," \
+    "so can't run this test"
+  exit 77
+}
+
+exec $PERL -w -I$srcdir/.. -MFetish -- - << \EOF
+require 5.003;
+use strict;
+
+(my $program_name = $0) =~ s|.*/||;
+
+# Turn off localisation of executable's ouput.
+@ENV{qw(LANGUAGE LANG LC_ALL)} = ('C') x 3;
+
+warn "PATH=$ENV{PATH}\n";
+
+my $mkdir = {PRE => sub {mkdir 'd',0755 or die "d: $!\n"}};
+my $rmdir = {POST => sub {rmdir 'd' or die "d: $!\n"}};
+
+my $mkdir2 = {PRE => sub {mkdir 'd',0755 or die "d: $!\n";
+			  mkdir 'd/e',0755 or die "d/e: $!\n" }};
+my $rmdir2 = {POST => sub {rmdir 'd/e' or die "d/e: $!\n";
+			   rmdir 'd' or die "d: $!\n" }};
+
+my $slink_d = {PRE => sub {symlink '/', 'd' or die "d: $!\n";
+                           $ENV{LS_COLORS}='ln=01;36:di=01;34:or=40;31;01'
+                           }};
+my $unlink_d = {POST => sub {unlink 'd' or die "d: $!\n"}};
+
+sub make_j_d ()
+{
+  mkdir 'j', 0700 or die "creating j: $!\n";
+  (open F, '>j/d') && close F or die "creating j/d: $!\n";
+  chmod 0555, 'j/d' or die "making j/d executable: $!\n";
+}
+
+my $exe_in_subdir = {PRE => sub { make_j_d (); $ENV{LS_COLORS}='ex=01;32' }};
+my $remove_j = {POST => sub {unlink 'j/d' or die "j/d: $!\n";
+                             rmdir 'j' or die "j: $!\n" }};
+
+my $q_bell = {IN => {"q\a" => ''}};
+my @Tests =
+    (
+     # test-name options input expected-output
+     #
+     # quoting tests............................................
+     ['q-',        $q_bell, {OUT => "q\a\n"}, {EXIT => 0}],
+     ['q-N', '-N', $q_bell, {OUT => "q\a\n"}, {ERR => ''}],
+     ['q-q', '-q', $q_bell, {OUT => "q?\n"}],
+     ['q-Q', '-Q', $q_bell, {OUT => "\"q\\a\"\n"}],
+
+     ['q-lit-q', '--quoting=literal -q',     $q_bell, {OUT => "q?\n"}],
+     ['q-qs-lit', '--quoting=literal',       $q_bell, {OUT => "q\a\n"}],
+     ['q-qs-sh', '--quoting=shell',          $q_bell, {OUT => "q\a\n"}],
+     ['q-qs-sh-a', '--quoting=shell-always', $q_bell, {OUT => "'q\a'\n"}],
+     ['q-qs-c', '--quoting=c',               $q_bell, {OUT => "\"q\\a\"\n"}],
+     ['q-qs-esc', '--quoting=escape',        $q_bell, {OUT => "q\\a\n"}],
+     ['q-qs-c-1', '--quoting=c',
+      {IN => {"t\004" => ''}}, {OUT => "\"t\\004\"\n"}],
+
+     ['emptydir', 'd',  {OUT => ''}, $mkdir, $rmdir],
+     ['emptydir-x2', 'd d',  {OUT => "d:\n\nd:\n"}, $mkdir, $rmdir],
+     ['emptydir-R', '-R d',  {OUT => "d:\n"}, $mkdir, $rmdir],
+
+     # test `ls -R .' ............................................
+     ['R-dot', '--ignore="[a-ce-zA-Z]*" -R .',  {OUT => ".:\nd\n\n\./d:\n"},
+      $mkdir, $rmdir],
+
+     ['slink-dir-F',     '-F d', {OUT => "d@\n"}, $slink_d, $unlink_d],
+     ['slink-dir-dF',   '-dF d', {OUT => "d@\n"}, $slink_d, $unlink_d],
+     ['slinkdir-dFH',  '-dFH d', {OUT => "d/\n"}, $slink_d, $unlink_d],
+     ['slinkdir-dFL',  '-dFL d', {OUT => "d/\n"}, $slink_d, $unlink_d],
+
+     # Test for a bug that was fixed in coreutils-4.5.4.
+     ['sl-F-color', '-F --color=always d',
+				 {OUT => "\e[0m\e[01;36md\e[0m\@\n\e[m"},
+				  $slink_d, $unlink_d],
+     ['sl-dF-color', '-dF --color=always d',
+				 {OUT => "\e[0m\e[01;36md\e[0m\@\n\e[m"},
+				  $slink_d, $unlink_d],
+
+     # Test for a bug that was introduced in coreutils-4.5.4; fixed in 4.5.5.
+     # To demonstrate it, the file in question (with executable bit set)
+     # must not be a command line argument.
+     ['color-exe1', '--color=always j',
+				 {OUT => "\e[0m\e[01;32md\e[0m\n\e[m"},
+				  $exe_in_subdir, $remove_j],
+
+     # From Stéphane Chazelas.
+     ['no-a-isdir-b', 'no-dir d',
+	 {OUT => "d:\n"},
+	 {ERR => "ls: no-dir: No such file or directory\n"},
+	 $mkdir, $rmdir, {EXIT => 1}],
+
+     ['recursive-2', '-R d', {OUT => "d:\ne\n\nd/e:\n"}, $mkdir2, $rmdir2],
+    );
+
+my $save_temps = $ENV{SAVE_TEMPS};
+my $verbose = $ENV{VERBOSE};
+
+my $prog = $ENV{PROG} || die "$0: \$PROG not specified in environment\n";
+my $fail = run_tests ($program_name, $prog, \@Tests, $save_temps, $verbose);
+exit $fail;
+EOF

@@ -1,0 +1,71 @@
+#!/bin/sh
+
+: ${PERL=perl}
+: ${srcdir=.}
+
+$PERL -e 1 > /dev/null 2>&1 || {
+  echo 1>&2 "$0: configure didn't find a usable version of Perl," \
+    "so can't run this test"
+  exit 77
+}
+
+exec $PERL -w -I$srcdir/.. -MFetish -- - <<\EOF
+require 5.003;
+use strict;
+
+(my $program_name = $0) =~ s|.*/||;
+
+# Turn off localisation of executable's ouput.
+@ENV{qw(LANGUAGE LANG LC_ALL)} = ('C') x 3;
+
+my $degenerate = "d41d8cd98f00b204e9800998ecf8427e";
+
+my @Tests =
+    (
+     ['1', {IN=> {f=> ''}},	{OUT=>"$degenerate  f\n"}],
+     ['2', {IN=> {f=> 'a'}},	{OUT=>"0cc175b9c0f1b6a831c399e269772661  f\n"}],
+     ['3', {IN=> {f=> 'abc'}},	{OUT=>"900150983cd24fb0d6963f7d28e17f72  f\n"}],
+     ['4', {IN=> {f=> 'message digest'}},
+				{OUT=>"f96b697d7cb7938d525a2f31aaf161d0  f\n"}],
+     ['5', {IN=> {f=> 'abcdefghijklmnopqrstuvwxyz'}},
+				{OUT=>"c3fcd3d76192e4007dfb496cca67e13b  f\n"}],
+     ['6', {IN=> {f=> join ('', 'A'..'Z', 'a'..'z', '0'..'9')}},
+				{OUT=>"d174ab98d277d9f5a5611c2c9f419d9f  f\n"}],
+     ['7', {IN=> {f=> '1234567890' x 8}},
+				{OUT=>"57edf4a22be3c955ac49da2e2107b67a  f\n"}],
+     ['backslash', {IN=> {".\\foo"=> ''}},
+				{OUT=>"\\$degenerate  .\\\\foo\n"}],
+     ['check-1', '--check', {AUX=> {f=> ''}},
+				{IN=> {'f.md5' => "$degenerate  f\n"}},
+				{OUT=>"f: OK\n"}],
+     ['check-2', '--check', '--status', {IN=>{'f.md5' => "$degenerate  f\n"}},
+				{AUX=> {f=> 'foo'}}, {EXIT=> 1}],
+     # The sha1sum and md5sum drivers share a lot of code.
+     # Ensure that md5sum does *not* share the part that makes
+     # sha1sum accept BSD format.
+     ['check-bsd', '--check', {IN=> {'f.sha1' => "SHA1 (f) = $degenerate\n"}},
+				{AUX=> {f=> ''}},
+				{ERR=>"md5sum: f.sha1: no properly formatted "
+				       . "MD5 checksum lines found\n"},
+				{EXIT=> 1}],
+     ['check-bsd2', '--check', {IN=> {'f.md5' => "MD5 (f) = $degenerate\n"}},
+				{AUX=> {f=> ''}}, {OUT=>"f: OK\n"}],
+     ['check-bsd3', '--check', '--status',
+				{IN=> {'f.md5' => "MD5 (f) = $degenerate\n"}},
+				{AUX=> {f=> 'bar'}}, {EXIT=> 1}],
+    );
+
+# Insert the `--text' argument for each test.
+my $t;
+foreach $t (@Tests)
+  {
+    splice @$t, 1, 0, '--text' unless @$t[1] =~ /--check/;
+  }
+
+my $save_temps = $ENV{DEBUG};
+my $verbose = $ENV{VERBOSE};
+
+my $prog = $ENV{PROG} || die "$0: \$PROG not specified in environment\n";
+my $fail = run_tests ($program_name, $prog, \@Tests, $save_temps, $verbose);
+exit $fail;
+EOF

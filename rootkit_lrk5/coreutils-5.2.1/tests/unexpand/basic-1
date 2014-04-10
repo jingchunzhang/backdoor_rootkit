@@ -1,0 +1,66 @@
+#!/bin/sh
+
+: ${PERL=perl}
+: ${srcdir=.}
+
+$PERL -e 1 > /dev/null 2>&1 || {
+  echo 1>&2 "$0: configure didn't find a usable version of Perl," \
+    "so can't run this test"
+  exit 77
+}
+
+exec $PERL -w -I$srcdir/.. -MFetish -- - <<\EOF
+require 5.003;
+use strict;
+
+(my $program_name = $0) =~ s|.*/||;
+
+# Turn off localisation of executable's ouput.
+@ENV{qw(LANGUAGE LANG LC_ALL)} = ('C') x 3;
+
+my @Tests =
+    (
+     ['a1', {IN=> ' 'x 1 ."y\n"}, {OUT=> ' 'x 1 ."y\n"}],
+     ['a2', {IN=> ' 'x 2 ."y\n"}, {OUT=> ' 'x 2 ."y\n"}],
+     ['a3', {IN=> ' 'x 3 ."y\n"}, {OUT=> ' 'x 3 ."y\n"}],
+     ['a4', {IN=> ' 'x 4 ."y\n"}, {OUT=> ' 'x 4 ."y\n"}],
+     ['a5', {IN=> ' 'x 5 ."y\n"}, {OUT=> ' 'x 5 ."y\n"}],
+     ['a6', {IN=> ' 'x 6 ."y\n"}, {OUT=> ' 'x 6 ."y\n"}],
+     ['a7', {IN=> ' 'x 7 ."y\n"}, {OUT=> ' 'x 7 ."y\n"}],
+     ['a8', {IN=> ' 'x 8 ."y\n"}, {OUT=> "\ty\n"}],
+
+     ['aa-1', '-a', {IN=> 'w'.' 'x 1 ."y\n"}, {OUT=> 'w'.' 'x 1 ."y\n"}],
+     ['aa-2', '-a', {IN=> 'w'.' 'x 2 ."y\n"}, {OUT=> 'w'.' 'x 2 ."y\n"}],
+     ['aa-3', '-a', {IN=> 'w'.' 'x 3 ."y\n"}, {OUT=> 'w'.' 'x 3 ."y\n"}],
+     ['aa-4', '-a', {IN=> 'w'.' 'x 4 ."y\n"}, {OUT=> 'w'.' 'x 4 ."y\n"}],
+     ['aa-5', '-a', {IN=> 'w'.' 'x 5 ."y\n"}, {OUT=> 'w'.' 'x 5 ."y\n"}],
+     ['aa-6', '-a', {IN=> 'w'.' 'x 6 ."y\n"}, {OUT=> 'w'.' 'x 6 ."y\n"}],
+     ['aa-7', '-a', {IN=> 'w'.' 'x 7 ."y\n"}, {OUT=> "w\ty\n"}],
+     ['aa-8', '-a', {IN=> 'w'.' 'x 8 ."y\n"}, {OUT=> "w\t y\n"}],
+
+     ['b-1', '-t', '2,4', {IN=> "      ."}, {OUT=>"\t\t  ."}],
+     # These would infloop prior to textutils-2.0d.
+
+     # Solaris' /bin/unexpand does this:
+     # ['infloop-1', '-t', '1,2', {IN=> " \t\t .\n"}, {OUT=>" \t\t .\n"}],
+     # FIXME: find out which is required
+
+     ['infloop-1', '-t', '1,2', {IN=> " \t\t .\n"}, {OUT=>"\t\t\t .\n"}],
+     ['infloop-2', '-t', '4,5', {IN=> ' 'x4 . "\t\t \n"}, {OUT=>"\t\t\t \n"}],
+     ['infloop-3', '-t', '2,3', {IN=> "x \t\t \n"}, {OUT=>"x\t\t\t \n"}],
+     ['infloop-4', '-t', '1,2', {IN=> " \t\t   \n"}, {OUT=>"\t\t\t   \n"}],
+     ['c-1', '-t', '1,2', {IN=> "x\t\t .\n"}, {OUT=>"x\t\t .\n"}],
+
+     # -t implies -a
+     # Feature addition (--first-only) prompted by a report from Jie Xu.
+     ['tabs-1', qw(-t 3),              {IN=> "   a  b\n"}, {OUT=>"\ta\tb\n"}],
+     ['tabs-2', qw(-t 3 --first-only), {IN=> "   a  b\n"}, {OUT=>"\ta  b\n"}],
+    );
+
+my $save_temps = $ENV{DEBUG};
+my $verbose = $ENV{VERBOSE};
+
+my $prog = $ENV{PROG} || die "$0: \$PROG not specified in environment\n";
+my $fail = run_tests ($program_name, $prog, \@Tests, $save_temps, $verbose);
+exit $fail;
+EOF

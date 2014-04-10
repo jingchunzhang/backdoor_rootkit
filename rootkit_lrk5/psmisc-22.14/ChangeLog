@@ -1,0 +1,666 @@
+Changes in 22.14
+================
+  * Fix file descriptor as weel as memory leaks in fuser
+	* Strip @ symbol from file names read from /proc/net/unix
+	* Above 2 changes close openSuSE bugs #536209, #529520, and #417841
+	  and provided by Werner Fink
+	* Applied patch from Werner Fink to avoid stat(2) on NFS mounts
+	* Zeros process group memory - Patch by jgorig SF#3152925 RH#666213
+	* fuser -m -s flags work - Patch by jgorig SF#31110178 RH#651794
+	* fuser silent if /proc/swaps not available SF#3072134
+	* ppc 64 support for peekfd by jgorig SF#3166444
+	* jiffies now ULL in killall SF#3138538
+	* pstree can show parents of a process. Patch supplied by Curtis
+	  Hawthorne SF#3135157
+	* killall creates right size buffer instead of MAX_PATH Debian #623425
+	* check for /proc/$$/stat not /proc/self/stat which is not available
+	  on hurd platforms. Same Debian bug as above
+	* fuser understands IPv6 addresses, removed comment in fuser.1 that it
+	  doesn't Debian #609904
+	* fuser -k only returns 0 if you kill something.
+	* fuser doesn't complain if /proc/#/fd disappears SF#3310990
+
+Changes in 22.13
+================
+	* configure patch for x86_64 properly applied SF#3029302 by snowman123
+	* patch configure so pt_regs isn't used on SuperH. Fix by
+	  Nobuhiro Iwamatsu in Debian #588986
+	* Fixed configure.ac so only mipsel not mips compiles peekfd
+
+Changes in 22.12
+================
+	* In fuser, switched the ipv6 and ipv4 checks around Debian #581604
+	* peekfd configure patch for x86_64 SF#2986027
+	* peekfd works with ARM and MIPS thanks to patch by Arnaud Patard
+	* peekfd off-by-one patch applied SF#1948351
+	* pstree -a doesn't segfault on grsec kernels Debian #588152
+
+Changes in 22.11
+================
+	* Another attempted at killall -SIGNAME Debian #573924
+
+Changes in 22.10
+================
+	* fuser -k -m ... won't kill itself Debian #562767
+	* fuser -NAME fixed SF #2924691, Debian #563388, Gentoo #297423
+	* Added locale.h include for killall on non NLS SF #2922163
+	* Reversed normal file fuser -k check Debian #563387
+
+Changes in 22.9
+===============
+	* short option l returned in fuser Debian #539087
+	* long options terminated with 0s Debian #551833
+	* fuser only kills normal processes, patch thanks to Erik Li SF# 2892724
+	* New fuser -M if you REALLY want mount points, patch thanks to
+	  Jeremie LE HEN SF#2899709
+	* Fixed killall options for VTALRM and ILL Debian #559011
+	* pstree -a does not compact threads Debian #525632
+	* new program prtstat which prints contents of /proc/<pid>/stat 
+	  Debian #281706
+	* killall restricts by date. Thanks to George Danchev Debian #544657
+	* long options terminated in pstree too to stop segfault
+	* Re-worked fuser getopt again so -KILL options work Gentoo #297423
+	* Fix off-by-one overflow in pstree SF# 2832375
+
+Changes in 22.8
+===============
+	* Added Czech PO file
+	* rc1 update of Italian, Polish, Indonesian, Swedish and Russian PO files
+	* Updated Finnish, Italian and Vietnamese PO files
+	* Applied patch from Kari Hautio for lazy umount'ed filesystems SF#2545632
+	* Applied patch from Anonymous SF submitter to fix killall -l
+	  Fixes SF#2002570
+	* fuser will print mounts,nfs exports and swaps with -v Debian #356655
+	  and SF#533958
+	* pstree and fuser have long options Debian #517412
+	* Fixed pstree -a off-by-one error in buffer, Debian #536243
+	* Changed configure.ac to not use CXX SF# 2789801
+
+Changes in 22.7
+===============
+2009-05-04 Craig Small
+	* Updated Polish, Russian, Swedish and Indonesian PO files
+
+2009-04-26 Craig Small
+	* Changed fuser.1 so signal is SIGNAL to reduce confusion about wether
+	  or not it is a parameter Debian #517413
+	* fuser.1 references pkill(1) Debian #517414
+
+2009-03-27 Craig Small
+	* Added Chinese (traditional) PO file
+
+2009-01-14 Craig Small
+	* Updated Russian PO file
+	* Clarified -m and -c for fuser Debian #467289
+
+2008-12-16 Craig Small
+	* Patch from Arnaud Giersch to fix udp ports in fuser Debian #502208
+	* pstree man page mentions -Z may not be available Debian #478327
+	* pstree handles UTF-8 lengths much better Debian #413503
+	* killall says no process found when process not found Debian #500097
+	* pstree makes a bigger buffer for -al flags Debian #352603
+
+2008-12-05 Craig Small
+	* Dynamically reallocate buffer for fuser patch from Don Armstrong
+
+2008-11-11 Craig Small
+	* Updated Indonesian PO file
+
+2008-08-09 Craig Small
+	* peekfd off by one problem in fds Debian #460530
+
+2007-11-19 Craig Small
+	* Patch from Marcus Watts for better comm handling in pstree
+	* Updated Hungarian po file
+
+2007-11-13 Craig Small
+	* Updated French and German po files
+	* Fuser -m detects more open sockets SF patch #1728412 Thnks marienz
+
+2007-11-07 Craig Small
+	* Updated Italian, Chinese simplified, Dutch, Swedish and Polish po files
+	* Removed old fuser
+
+Changes in 22.6
+===============
+2007-08-09 Craig Small
+	* killall.1 mentions you can use -SIGxxx as well as just -XXX for signal
+	  Debian #431082
+
+2007-07-04 Tomas Smetana
+	* Added support for PPC architecture for peekfd
+
+2007-06-25 Craig Small
+	* Updated the Chinese simplified po file
+
+2007-06-21 Tomas Smetana
+	* Added support for x86_64 architecture for peekfd
+
+2007-06-13 Craig Small
+	* Added Chinese simplified po file
+
+2007-05-31 Craig Small
+	* Updated Dutch, Vietnamese, Polish and Italian translations
+	* Patch for peekfd from Benno Schulenberg
+
+2007-04-30 Craig Small
+	* Fixed up NLS for fuser, patch from Benno Schulenberg
+	* killall asks for Signal (procname) if not SIGTERM
+
+Changes in 22.5
+===============
+2007-04-18 Craig Small
+	* Conditonally compile peekfd if the right registers are found
+
+Changes in 22.4
+===============
+2007-04-11 Craig Small
+	* fuser correctly parses remote tcp ports Debian #397033
+	* Removed extra blank lines in fuser Debian #386564
+
+2007-03-02  Karel Zak
+	* killall <path> does textual path comparision with value of the
+	  /proc/<pid>/exe link when a comparision with inode number failed.
+	  The old algorithme based on inode numbers doesn't work if since
+	  the process was started, the file at <path> has been replaced
+	  (e.g due prelink process).
+
+2007-03-02 Craig Small
+	* Added peekfd
+
+2007-03-02  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* m4/gettext.m4: Upgrade to gettext-0.16.1.
+	* m4/iconv.m4: Upgrade to gettext-0.16.1.
+	* m4/lib-ld.m4: Upgrade to gettext-0.16.1.
+	* m4/lib-link.m4: Upgrade to gettext-0.16.1.
+	* m4/lib-prefix.m4: Upgrade to gettext-0.16.1.
+	* m4/nls.m4: Upgrade to gettext-0.16.1.
+	* m4/po.m4: Upgrade to gettext-0.16.1.
+	* m4/progtest.m4: Upgrade to gettext-0.16.1.
+	* configure.ac (AM_GNU_GETTEXT_VERSION): Bump to 0.16.1.
+
+2006-09-28 Craig Small
+	* fuser tcp works on 64bit, after actually reading the submitted patch
+	  and applying it, thankyou nigel_ding, SF# 1551731
+	* Added Russian translation SF Patch #1288068
+
+Changes in 22.3
+================
+2006-08-09 Craig Small
+	* Updated Hungarian PO file
+
+2006-05-25 Craig Small
+	* Updated Swedish PO file
+	* Fixed fuser man page ... Debian #358880
+
+2006-04-05 Karel Zak
+	* fuser return code set correcly in silent mode Debian #361639
+	* fuser -l doesnt complain but list signal names only
+
+2006-03-24 Craig Small
+	* Updated Bulgarian and Italian PO files
+	* Added Japanese and Hungarian PO files
+	* Moved some NEWS into README
+	* Removed killall flag from NEWS, its really OLDS
+	* fuser -n tcp port,host,host2 parses correctly
+
+Changes in 22.2
+===============
+2006-03-09 Craig Small
+	* Updated Nowegian and Vietnamese PO files
+
+2006-03-07 Craig Small
+	* Updated Polish and Dutch PO files
+
+2006-01-27 Craig Small
+	* Unix sockets work on all hosts now, including ones that don't have
+	network device set to 0.
+	* TCP/UDP6 sockets are found a bit better.
+	* Makefile changed so signames builds in all locales. Thanks to Mike
+	  Frysinger for the patch.
+	* Return code works
+
+
+2006-01-23 Craig Small
+	* Updated Swedish, Vietnamese and Italian PO files
+	* Minor fixes for some error messages, thanks to Benno.
+
+
+2006-01-13 Craig Small
+	* Updated Polish and dutch PO files
+	* Added Bulgarian PO file
+
+Changes in 22.1
+===============
+2006-01-12 Craig Small
+	* Updated German PO file Debian #313934
+	* Updated Swedish PO file
+
+2006-01-04 Craig Small
+	* fuser signals eg -INT work better
+	* removed space out of fuser man page for -signal
+
+2005-12-16 Craig Small
+	* fuser -s flag works Debian #344901
+	* fix grep lines in Makefile for i386 arches Debian #344172
+	* Updsated Polish PO file
+
+Changes in 21.9
+===============
+2005-12-16 Craig Small 
+	* Fixed install-exec-hook so only symlink pstree.x11 if file does not
+	exist already.
+	* Updated Vietnamese PO file
+
+2005-12-02 Karel Zak
+	* buffer overflow in killall scanf removed
+
+2005-11-26 Paul Martin
+	* Fixed segfault in pstree -a Debian #338108
+
+2005-11-22 Craig Small
+	* fuser can not use IPv6, for things like uClibc
+	* configure has --disable-ipv6 for above
+
+2005-11-15 Craig Small
+	* fuser finds unix sockets. Debian #338868
+
+2005-11-05 Rene Rebe <rene@exactcode.de>
+	* fixed print_matches to only print unmatched objects if -a is
+	  specified and to output the header for -v
+	* Above patch fixes Debian #342765
+	* fixed argument parsing to handle groups like -av again
+
+Changes in 21.8
+===============
+	* fuser returns 1 if no match found like before.
+	* fuser.1 spells behavior correctly Debian: #337190
+
+
+Changes in 21.7
+===============
+	* Upgraded SELinux code to new api, thanks to Chris PeBenito
+	* define rpmatch for libraries that dont have it
+	* Fixed small typos in help, thanks to Benno Schulenberg
+	  fixes SF# 1150042
+	* Completed change from Flask to SELinux, thanks to Benno Schulenberg
+	* pstree works better with uClibc, thanks Mike Frysinger
+	* fuser rewritten: possibly fixes Debian #312560
+	* fuser prints F instead of f is access is write, thanks to Tet.
+	* pstree checks to see it is a real tty Debian #326500
+	* pstree shows child threads with {commandname} Debian #230924
+	* better capitalisation with usage SF# 1150042
+	* Added warning about fuser and tcp/udp access Debian #327813
+	* pstree defaults to ASCII not VT100 until problems with terminals
+	  are fixed Debian #288856
+	* fuser doesnt complain if it cannot scan some mount points Debian
+	  #299153
+
+	* Applied psmisc-21.4-alt-progname to find pstrees name
+	* configure.in checks for tinfo library
+	* both above fixes from ALTLinux
+
+	* Added -u option for killall to kill process by user
+	* Removed old FLASK_LINUX define in pstree
+	* Added -r for to killall  for regex matching for proc names
+	* Thanks to Karel Zak from RedHat for the patches
+
+
+
+Changes in 21.6
+===============
+
+2005-03-11
+	* Minor typo (specificiation) fixed
+	* Added closing bracket in fuser help
+	* Added Finnish translation
+	* Localised the yes/no prompts with rpmatch()
+	* Fixed NLS problems and some double ))s - Thanks to Jakub Bogusz
+	* Added Basque translation
+	* More NLS related fixes - Thanks to Guillem Jover
+	* killall aborts if it gets unknown flags Debian #250794
+	* Symbolic link created properly for pstree.x11 Debian #250096
+	* Strange mount points handled better Debian #178972
+	* Added Catalan translation
+	* killall can be case insenstive now
+	* Warning in killall.1 about process changing names Debian #187941
+	* Removed include termcap.h to fix RH include problem.
+	* Added Vietnamese translation
+	* Fixed --enable-flask logic SF#1094205
+	* Added Norwegian Bokmaal translation
+	* Fixed groff madness with fuser(1) Debian #298199
+	* Added Dutch translation
+
+Changes in 21.5
+===============
+2004-05-25 Craig Small <csmall@small.dropbear.id.au>
+	* Sven Dahl provides a patch for using psmisc with uclibc
+	* Sid flag in options is d not S. SF#791537
+	* Fixed typo in checking ss_family SF#845292
+	* Lines not truncated using UTF-8 SF Patch: #757164 Debian: #151523
+	* Case insensitve matching with -I flags SF Patch: #740662
+	* inode and devices use ino_t and dev_t SF#: 
+	* Allow pstree to use ASCII characters with -A flag, patch by
+	  Branden Robinson Debian: #240973
+	* Debug "here" statement removed
+	* POSIX -m option added, part of SF Bug: #901841
+	* fuser sends PIDs only to stdout, the rest goes to stderr.
+	  Changed for POSIX compatibility
+	* Silently ignore -f option, for POSIX
+	* Using automake 1.8 now
+	* Built source signames.h not distributed in tar Debian: #240986
+	* Manual page for fuser explains -SIG is ignored with no -k
+	  Debian: #222935
+
+2004-04-05  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Add m4.
+	(SUBDIRS): Remove intl.
+	(ACLOCAL_AMFLAGS): New variable.
+	(EXTRA_DIST): Add config.rpath.
+	* configure.in (AC_CONFIG_FILES): Add m4/Makefile.
+
+Changes in 21.4
+===============
+2003-11-28 Craig Small <csmall@small.dropbear.id.au>
+	* Typos in killall.1 fixed Closes Debian: #198189
+	* fuser -ki now tells user default is N Closes Debian: #197356
+	* pstree -a doesn't print space at end of line Closes Debian: #182099
+	* Works with new sort flags +2 -> -k 3 Thankyou Andrew Walrond
+	* pstree.x11 now just pstree with a trick Closes Debian: #201042
+	* Icons for pstree, thankyou Tatlin! Closes Debian: #192636
+	* Removed message if no processes found, 
+	* Excess blanks in fuser removed.
+	* Two lines above close Debian: #212795
+
+
+Changes in 21.3
+===============
+2003-04-03 Craig Small <csmall@small.dropbear.id.au>
+	* SELinux SID selection uses -d instead of -S to stop the confusion of
+	  signal names, no flags with upper case letters ok?
+	  Closes Debian: #193790, #163360
+	* Doesnt segfault on long cmdnames, thanks Ben Low Closes Debian: #187241
+	* Updated libtool and friends so it works on new coreutils
+
+2003-04-03 Craig Small <csmall@small.dropbear.id.au>
+	* More fixes for types, also some GCC 3.2 fixes, thanks to
+	  Stefan at SuSE
+
+2002-09-27 Craig Small <csmall@small.dropbear.id.au>
+	* Changed a long to a long long in pstree.
+
+Changes in 21.2
+===============
+2002-09-27 Craig Small <csmall@small.dropbear.id.au>
+	* Big bug in pstree, pstree -a would often fail badly. swapped variable
+	  not set.
+	* Removed pidof.1 and a variable not used.
+	* Thanks to Peter Breitenlohner for all this info and Adam Conrad for
+	  the test ppc machine.
+
+Changes in 21.1
+===============
+2002-09-05 Craig Small <csmall@small.dropbear.id.au>
+	* Added SELINUX patches from Russell Coker
+
+2002-08-19 Craig Small <csmall@small.dropbear.id.au>
+	* Changed killall.1 to be less ambigous, Debian #127851
+	
+2002-08-18
+	* Added patches from James Morrison so it works on Hurd
+	* Fixed UTF8 Problem. closes Debian #140960
+	* Return for fuser -k will mean no.
+
+2002-08-17
+	* Now has LFS support. Closes Debian #129157 and #156017
+	* Fixed pstree -a extra bracket problem, Closes Debian #96791
+
+2002-08-16  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Add m4.
+	* Makefile.am (SUBDIRS): Remove intl.
+	(SUBDIRS): Remove intl.
+	(ACLOCAL_AMFLAGS): New variable.
+	(EXTRA_DIST): Add config.rpath.
+	* configure.in (AC_OUTPUT): Add po/Makefile.in,
+	(AC_OUTPUT): Remove intl/Makefile.
+
+	* config.guess and config.sub are no longer syminks
+
+
+Changes in 21 (15-MAY-2002)
+===========================
+ - signames.h is cleaned no more wrong signal types
+ - More translatable strings
+ - Added Portuguese Language (thanks to Edesio Costa e Silva)
+ - Added Italian Language (thanks to Daniele Pagano)
+ - Added French Language (thanks to Marc Léger)
+ - Added German Language (thanks to Wolfgang Schorer)
+ - Added Swedish Language (thanks to Joakim Mared)
+
+Changes in 20.2 (18-OCT-2001)
+=============================
+ - Added NLS/gettext
+ - fuser no longer assume st_dev is 0 for sockets, needed for kernel 2.4.12
+   and above, Thanks to Alexander Viro for the patch.
+ - Search both IPv4 and IPv6 namespaces.
+ - Added patch for pstree -u (SF Patch: #455932 )
+
+Changes in 20.1 (31-MAR-2001)
+=============================
+ - command line -<num> put back in.
+ - got rid of annoying "sending signal #" debug message
+ - updated killall.1
+ - updated killall usage 
+ - verbose now tells you what signal it is killing with.
+ 
+Changes from 19 to 20 (14-DEC-2000)
+===================================
+ - New maintainer
+ - Uses automake/autoconf to determine things
+ - License changed to GPL
+ - signames.h generated better (suggested by Grant Erickson)
+ - uses getopt() for better command line stuff
+ - makes less assumptions about process name, closes Debian Bug #53337
+ - Doesn't use losetup for loop devices in fuser.
+ - Better selection of process name (thanks to David desJardins)
+
+Changes from version 18 to 19 (25-OCT-1999)
+===========================================
+
+ - pstree: "static int" was only "static" (fix by Jeremy Buhler)
+ - now uses cc -E instead of /lib/cpp (suggested by Kristofer Karas)
+ - fuser: -s conflicted with -k (reported by David Hinds)
+ - fuser: using -a with -s now yields an error
+ - added a sanity check for signames.h (suggested by John Summerfield)
+ - only "signals" < 100 are now added to signames.h, eliminating SIGSTKSZ
+
+
+Changes from version 17 to 18 (1-NOV-1998)
+==========================================
+
+ - fuser: usage summary listed -s (silent) as -q
+ - fuser: fuser x/y yielded confusing error message if x/y doesn't exist
+   (reported by Tigran Aivazian)
+ - fuser: new option -i for interactive killing (like killall -i)
+ - killall: tried to print a NULL pointer if full process name was unavailable
+   and killing failed
+ - killall: new option -g to kill process group instead of process
+ - killall: cosmetic PROC_BASE changes (by Florian La Roche)
+ - pidof: new option -g to show PGID instead of PID (by Florian La Roche)
+ - pstree: new option -H to highlight process specified by PID
+ - added -D_GNU_SOURCE to CFLAGS for glibc 2 compatibility
+ - Makefile should now also work with bash-2
+
+
+Changes from version 16 to 17 (17-FEB-1998)
+===========================================
+
+ - fuser: now also handles /proc of recent 2.1 kernels (fix by Andreas Schwab;
+   other fixed also proposed by Chris Wedgwood and Luca Berra)
+ - pstree now properly handles init with PID = PPID = 1
+ - fuser: no longer changes the name space for relative paths ending with the
+   name of a name space (e.g. something/tcp)
+ - fuser: now also reports mount points, swap files, and loop mounts
+ - updated the fuser man page
+ - killall: new option -w to wait for the killed processes to die
+ - killall: didn't handle malloc failure
+
+
+Changes from version 15 to 16 (28-JUL-1997)
+===========================================
+
+ - killall: now gets the list of all PIDs before killing processes, thereby
+   avoiding race between readdir and /proc (found by Boris Zentner)
+ - make install no longer changes BINDIR and MANDIR if they already exist
+ - changed psmisc.<version>.lsm to psmisc-<version>.lsm for consistency
+
+
+Changes from version 14 to 15 (16-JUN-1997)
+===========================================
+
+ - killall: killall -v didn't print the command name (fixed by Marty Leisner)
+ - fuser: fuser -a <unix_domain_socket>  could crash (reported by Helmut Geyer)
+ - fuser: fuser -m didn't consider UNIX domain sockets (fix based on a patch by
+   Andries Brouwer)
+ - fuser: fuser -a /a /a /b  no longer merges the first two entries
+ - changed package name format from psmisc.<version> to psmisc-<version> to
+   avoid annoyance messages from sunsite's archive scripts
+
+
+Changes from version 13 to 14 (19-APR-1997)
+===========================================
+
+ - killall: command-line parser didn't accept -signal (fixed by Chris Wedgwood)
+ - pidof: minor man page correction
+ - Makefile: pidof is now only installed when running make install-pidof
+ - added a file with installation instructions (INSTALL)
+
+
+Changes from version 12 to 13 (16-APR-1997)
+===========================================
+
+ - fuser: didn't check for out of memory condition after malloc (oops !)
+ - fuser: INET domain sockets can now be specified as
+   [local_port][,[remote_host][,[remote_port]]]
+ - fuser: now includes linux/kdev_t.h instead of linux/fs.h. This may break
+   compilation with some ancient kernels.
+ - killall: new option -q to suppress error message if no process was found
+ - killall: man page didn't reset font properly
+ - killall: now tries harder to handle very long names (> 15 characters)
+   (proposed by Erik Thiele)
+ - killall: new option -e to require exact name match
+ - killall: now lists PIDs if invoked as "pidof" (proposed by Peter Daum)
+ - minor Makefile change to eliminate need to patch for some versions of Linux
+
+
+Changes from version 11 to 12 (7-APR-1996)
+==========================================
+
+ - fuser is now able to look up INET and UNIX domain sockets
+ - pstree: new option -n to sort its output by PID
+ - pstree: new option -G to use VT100 line drawing characters
+
+
+Changes from version 10 to 11 (20-SEP-1995)
+===========================================
+
+ - added VERSION file
+ - size of command name is now defined in comm.h - the old approach of
+   obtaining values from linux/sched.h:struct task_struct doesn't work anymore)
+ - signames.h is now generated from cpp output (linux/signals.h no longer
+   defines them)
+ - all commands now print the version number when invoked with the -V option
+ - signames.h added to  make clean
+ - removed use of {,} expansion in mkdist
+ - various minor documentation fixes
+
+
+Changes from version 9 to 10 (28-MAR-1995)
+==========================================
+
+ - fuser: now prints header before first path (used to be on same line)
+ - fuser: fixed line wrapping for long paths (used to wrap too early)
+ - fuser: fixed a NULL pointer dereference in add_file
+ - pstree: now outputs strings obtained from termcap with tputs
+ - some cosmetic changes (to avoid certain warnings if using -Wconversion)
+ - updated e-mail address in README
+
+Changes from version 8 to 9 (22-JAN-1995)
+=========================================
+
+ - fuser: now works with Plan 9 semantics (i.e. what recent kernels use;
+   reported by Harald Koenig, Nick Simicich, and others)
+ - fuser: now also scans /proc/*/maps
+ - fuser: fixed NULL pointer dereferencing when processes are created while
+   fuser is running (fix by Pauline Middelink)
+ - fuser: now resets effective uid to real uid before killing, thereby making
+   suid installation a smaller security risk
+ - pstree: fixed process tree truncation (fix by Andreas Schwab)
+ - pstree: added support for UTF-8 line drawing characters (adapted a patch by
+   Johan Myreen)
+ - killall.1 now warns about potential compatibility problems with killall
+   on other systems (proposed by Christos Ricudis)
+ - added a copyright notice
+ - updated e-mail address
+
+Changes from version 7 to 8 (11-OCT-1994)
+=========================================
+
+ - pstree: added -a to display command line arguments
+ - pstree, fuser and killall: display an error message if /proc has
+   no process entries (i.e. if it is not mounted)
+ - killall: more detailed usage output
+ - killall: added killing by file
+ - fuser and killall: fixed generation of signal list to include SIGUSR[12]
+ - fuser: now also accepts signal numbers
+ - "make install": now also installs man pages; executable permissions changed
+   from 755 to 555; now installs fuser in /bin, killall and pstree in /usr/bin
+ - "make spotless": fixed typo
+ - man pages: minor corrections and improvements
+
+Changes from version 6 to 7
+===========================
+
+ - pstree: -h didn't work because of incorrect termcap usage
+ - pstree: changed branch drawing from --- to -+-
+					\-     `-
+ - pstree: fixed indentation inside compacted subtrees
+ - fuser and killall: don't kill themselves
+ - fuser: suppresses m(map) if file is e(xecuted)
+ - mkdist now includes itself
+ - minor updates on all man pages
+
+Changes from version 5 to 6
+===========================
+
+ - pstree: unknown display width expressed as zero width (TIOCGWINSZ) is
+	   now correctly handled.
+ - fuser: added -s for silent operation.
+ - fuser: added non-zero return code if no processes using any file are
+	  found.
+ - pstree and fuser: non-printable characters in command names (fuser: also
+     in file names) are now shown as \nnn (octal). \ is shown as \\.
+ - added "install" target to Makefile to install binaries in /usr/local/bin
+ - minor updates on all man pages.
+
+Changes from version 4 to 5
+===========================
+
+ - killall: added interactive and verbose modes (options -i and -v)
+ - fuser: added 0.99pl11 support (changed /proc/*/lib to /proc/*/mmap)
+ - fuser: mmap'ed files and shared libraries are now marked with "m"
+          (shlibs were marked with "s" and mmap'ed files weren't marked
+          at all)
+
+Changes from version 3 to 4
+===========================
+
+ - killall and fuser: now accept signal numbers too.
+ - pstree: added listing of process trees by user name.
+ - pstree: compaction sometimes generated wrong output.
+ - fuser: did only recognize the first occurrence of a file when using
+   the options -u or -v.
+ - changed Makefile to create stripped impure executables.

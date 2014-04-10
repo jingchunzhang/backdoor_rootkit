@@ -1,0 +1,7 @@
+     ../src/fuser.c \
+     ../src/killall.c \
+     ../src/peekfd.c \
+     ../src/killall.c \
+     ../src/prtstat.c \
+     ../src/pstree.c \
+     ../src/signals.c

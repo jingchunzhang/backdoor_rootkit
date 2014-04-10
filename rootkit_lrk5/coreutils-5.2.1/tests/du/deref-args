@@ -1,0 +1,52 @@
+#!/bin/sh
+# Ensure that --dereference-args (-D) gives reasonable names.
+# This test would fail for coreutils-5.0.91.
+
+if test "$VERBOSE" = yes; then
+  set -x
+  du --version
+fi
+
+. $srcdir/../envvar-check
+
+pwd=`pwd`
+t0=`echo "$0"|sed 's,.*/,,'`.tmp; tmp=$t0/$$
+trap 'status=$?; cd $pwd; chmod -R u+rwx $t0; rm -rf $t0 && exit $status' 0
+trap '(exit $?); exit $?' 1 2 13 15
+
+framework_failure=0
+mkdir -p $tmp || framework_failure=1
+cd $tmp || framework_failure=1
+mkdir -p dir/a
+ln -s dir slink
+seq --format=%100g 900 | head --bytes=64k > 64k
+ln -s 64k slink-to-64k
+
+if test $framework_failure = 1; then
+  echo "$0: failure in testing framework" 1>&2
+  (exit 1); exit 1
+fi
+
+fail=0
+
+du -D slink | sed 's/^[0-9][0-9]*	//' > out
+# Ensure that the trailing slash is preserved and handled properly.
+du -D slink/ | sed 's/^[0-9][0-9]*	//' >> out
+
+# Ensure that -D makes du dereference even symlinks to non-directories.
+# The sed command maps the 68 I get on an ext3 file system to the 64 I expected.
+# On tmpfs, I get 64.  Similarly, on SELinux-enabled systems, file security
+# context labels take up filesystem space, making du print 72 here.
+du -kD slink-to-64k | sed 's/^[67][0-9]/64/' >> out
+cat <<\EOF > exp
+slink/a
+slink
+slink/a
+slink/
+64	slink-to-64k
+EOF
+
+cmp out exp || fail=1
+test $fail = 1 && diff out exp 2> /dev/null
+
+(exit $fail); exit $fail

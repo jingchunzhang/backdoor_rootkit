@@ -1,0 +1,31 @@
+#! /bin/sh
+# Test -D option.
+# Note that the tests below use `ginstall', not install, because
+# that's the name of the binary in ../../src.
+
+if test "$VERBOSE" = yes; then
+  set -x
+  ginstall --version
+fi
+
+. $srcdir/../envvar-check
+
+pwd=`pwd`
+dir=install-D$$
+
+trap "cd $pwd; rm -rf $dir" 0 1 2 3 15
+
+mkdir $dir
+
+fail=0
+cd $dir
+file=file
+echo foo > $file
+
+# Before 4.0q, this would mistakenly create $file, not `dest'
+# in no-dir1/no-dir2/.
+ginstall -D $file no-dir1/no-dir2/dest || fail=1
+test -d no-dir1/no-dir2 || fail=1
+test -r no-dir1/no-dir2/dest || fail=1
+
+exit $fail

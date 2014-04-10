@@ -1,0 +1,10 @@
+quote.o quote.o: quote.c ../config.h quotearg.h \
+  /usr/lib/gcc/x86_64-redhat-linux/3.4.6/include/stddef.h quote.h
+
+../config.h:
+
+quotearg.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/3.4.6/include/stddef.h:
+
+quote.h:

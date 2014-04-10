@@ -1,0 +1,85 @@
+#!/bin/sh
+# -*-perl-*-
+
+: ${PERL=perl}
+: ${srcdir=.}
+
+$PERL -e 1 > /dev/null 2>&1 || {
+  echo 1>&2 "$0: configure didn't find a usable version of Perl," \
+    "so can't run this test"
+  exit 77
+}
+
+d=$srcdir/..
+exec $PERL -w -I$d -MFetish -- - << \EOF
+require 5.003;
+use strict;
+
+(my $program_name = $0) =~ s|.*/||;
+
+# Turn off localisation of executable's ouput.
+@ENV{qw(LANGUAGE LANG LC_ALL)} = ('C') x 3;
+
+my $prog = $ENV{PROG} || die "$0: \$PROG not specified in environment\n";
+
+my @Tests =
+    (
+     ['a', '5 + 6', {OUT => '11'}],
+     ['b', '5 - 6', {OUT => '-1'}],
+     ['c', '5 \* 6', {OUT => '30'}],
+     ['d', '100 / 6', {OUT => '16'}],
+     ['e', '100 % 6', {OUT => '4'}],
+
+     ['paren1', '\( 100 % 6 \)', {OUT => '4'}],
+     ['paren2', '\( 100 % 6 \) - 8', {OUT => '-4'}],
+     ['paren3', '9 / \( 100 % 6 \) - 8', {OUT => '-6'}],
+     ['paren4', '9 / \( \( 100 % 6 \) - 8 \)', {OUT => '-2'}],
+     ['paren5', '9 + \( 100 % 6 \)', {OUT => '13'}],
+
+     # Before 2.0.12, this would output `1'.
+     ['0bang', '00 \< 0!', {OUT => '0'}, {EXIT => 1}],
+
+     # In 5.1.3 and earlier, these would exit with status 0.
+     ['00', '00', {OUT => '00'}, {EXIT => 1}],
+     ['minus0', '-0', {OUT => '-0'}, {EXIT => 1}],
+
+     # In 5.1.3 and earlier, these would report errors.
+     ['andand', '0 \& 1 / 0', {OUT => '0'}, {EXIT => 1}],
+     ['oror', '1 \| 1 / 0', {OUT => '1'}, {EXIT => 0}],
+
+     # In 5.1.3 and earlier, this would output the empty string.
+     ['orempty', '"" \| ""', {OUT => '0'}, {EXIT => 1}],
+
+     # This evoked a syntax error diagnostic before 2.0.12.
+     ['minus2', '-- 2 + 2', {OUT => '4'}],
+
+     # This erroneously succeeded and output `3' before 2.0.12.
+     ['fail-a', '3 + -', {ERR => "$prog: non-numeric argument\n"},
+      {EXIT => 3}],
+
+     ['fail-b', '9 9', {ERR => "$prog: syntax error\n"},
+      {EXIT => 2}],
+     ['fail-c', {ERR => "$prog: too few arguments\n"
+		 . "Try `$prog --help' for more information.\n"},
+      {EXIT => 2}],
+    );
+
+# Append a newline to end of each expected `OUT' string.
+my $t;
+foreach $t (@Tests)
+  {
+    my $arg1 = $t->[1];
+    my $e;
+    foreach $e (@$t)
+      {
+	$e->{OUT} .= "\n"
+	  if ref $e eq 'HASH' and exists $e->{OUT};
+      }
+  }
+
+my $save_temps = $ENV{SAVE_TEMPS};
+my $verbose = $ENV{VERBOSE};
+
+my $fail = run_tests ($program_name, $prog, \@Tests, $save_temps, $verbose);
+exit $fail;
+EOF

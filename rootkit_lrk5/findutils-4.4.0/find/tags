@@ -1,0 +1,1544 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+-l	testsuite/Makefile	/^	-l='$(DEJATOOL)'; for tool in $$l; do \\$/;"	m
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run aclocal-1.10$/;"	m
+ACLOCAL	testsuite/Makefile	/^ACLOCAL = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run aclocal-1.10$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	testsuite/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ALLOCA	Makefile	/^ALLOCA = $/;"	m
+ALLOCA	testsuite/Makefile	/^ALLOCA = $/;"	m
+ALLOCA_H	Makefile	/^ALLOCA_H = alloca.h$/;"	m
+ALLOCA_H	testsuite/Makefile	/^ALLOCA_H = alloca.h$/;"	m
+ALLOC_STEP	parser.c	1598;"	d	file:
+AMTAR	Makefile	/^AMTAR = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run tar$/;"	m
+AMTAR	testsuite/Makefile	/^AMTAR = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run tar$/;"	m
+AND_PREC	defs.h	/^  AND_PREC,$/;"	e	enum:predicate_precedence
+AR	Makefile	/^AR = ar$/;"	m
+ARFLAGS	Makefile	/^ARFLAGS = cru$/;"	m
+ARG_ACTION	defs.h	/^    ARG_ACTION			\/* like -print *\/$/;"	e	enum:arg_type
+ARG_NOOP	defs.h	/^    ARG_NOOP,			\/* does nothing, returns true, internal use only *\/$/;"	e	enum:arg_type
+ARG_OPTION	defs.h	/^    ARG_OPTION,			\/* regular options like -maxdepth *\/$/;"	e	enum:arg_type
+ARG_POSITIONAL_OPTION	defs.h	/^    ARG_POSITIONAL_OPTION,	\/* options whose position is important (-follow) *\/$/;"	e	enum:arg_type
+ARG_PUNCTUATION	defs.h	/^    ARG_PUNCTUATION,		\/* like -o or ( *\/$/;"	e	enum:arg_type
+ARG_SPECIAL_PARSE	defs.h	/^    ARG_SPECIAL_PARSE,		\/* complex to parse, don't eat the test name before calling parse_xx(). *\/$/;"	e	enum:arg_type
+ARG_TEST	defs.h	/^    ARG_TEST,			\/* a like -name *\/$/;"	e	enum:arg_type
+ATTRIBUTE_NORETURN	defs.h	73;"	d
+ATTRIBUTE_NORETURN	defs.h	75;"	d
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run autoconf$/;"	m
+AUTOCONF	testsuite/Makefile	/^AUTOCONF = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run autoheader$/;"	m
+AUTOHEADER	testsuite/Makefile	/^AUTOHEADER = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run automake-1.10$/;"	m
+AUTOMAKE	testsuite/Makefile	/^AUTOMAKE = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run automake-1.10$/;"	m
+AUTOMAKE_OPTIONS	Makefile	/^AUTOMAKE_OPTIONS = std-options$/;"	m
+AUTOMAKE_OPTIONS	testsuite/Makefile	/^AUTOMAKE_OPTIONS = dejagnu$/;"	m
+AUXDIR	Makefile	/^AUXDIR = build-aux$/;"	m
+AUXDIR	testsuite/Makefile	/^AUXDIR = build-aux$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+AWK	testsuite/Makefile	/^AWK = gawk$/;"	m
+BITSIZEOF_PTRDIFF_T	Makefile	/^BITSIZEOF_PTRDIFF_T = $/;"	m
+BITSIZEOF_PTRDIFF_T	testsuite/Makefile	/^BITSIZEOF_PTRDIFF_T = $/;"	m
+BITSIZEOF_SIG_ATOMIC_T	Makefile	/^BITSIZEOF_SIG_ATOMIC_T = $/;"	m
+BITSIZEOF_SIG_ATOMIC_T	testsuite/Makefile	/^BITSIZEOF_SIG_ATOMIC_T = $/;"	m
+BITSIZEOF_SIZE_T	Makefile	/^BITSIZEOF_SIZE_T = $/;"	m
+BITSIZEOF_SIZE_T	testsuite/Makefile	/^BITSIZEOF_SIZE_T = $/;"	m
+BITSIZEOF_WCHAR_T	Makefile	/^BITSIZEOF_WCHAR_T = $/;"	m
+BITSIZEOF_WCHAR_T	testsuite/Makefile	/^BITSIZEOF_WCHAR_T = $/;"	m
+BITSIZEOF_WINT_T	Makefile	/^BITSIZEOF_WINT_T = $/;"	m
+BITSIZEOF_WINT_T	testsuite/Makefile	/^BITSIZEOF_WINT_T = $/;"	m
+BI_OP	defs.h	/^  BI_OP,$/;"	e	enum:predicate_type
+CC	Makefile	/^CC = gcc -std=gnu99$/;"	m
+CC	testsuite/Makefile	/^CC = gcc -std=gnu99$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	testsuite/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+CFLAGS	testsuite/Makefile	/^CFLAGS = -g -O2$/;"	m
+CHAR_BIT	defs.h	55;"	d
+CLEANFILES	testsuite/Makefile	/^CLEANFILES = *.log *.sum site.exp site.bak$/;"	m
+CLOSEDIR	pred.c	88;"	d	file:
+CLOSEDIR	pred.c	90;"	d	file:
+CLOSE_PAREN	defs.h	/^  CLOSE_PAREN$/;"	e	enum:predicate_type
+COMMA_PREC	defs.h	/^  COMMA_PREC,$/;"	e	enum:predicate_precedence
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+COMP_EQ	defs.h	/^  COMP_EQ$/;"	e	enum:comparison_type
+COMP_GT	defs.h	/^  COMP_GT,$/;"	e	enum:comparison_type
+COMP_LT	defs.h	/^  COMP_LT,$/;"	e	enum:comparison_type
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_FILES	testsuite/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONFIG_HEADER	testsuite/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPP	testsuite/Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	testsuite/Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	testsuite/Makefile	/^CYGPATH_W = echo$/;"	m
+ChdirSymlinkHandling	find.c	/^enum ChdirSymlinkHandling$/;"	g	file:
+DAYSECS	defs.h	102;"	d
+DEBUG_SV_BUG_16378	util.c	436;"	d	file:
+DEFAULT_ARG_SIZE	Makefile	/^DEFAULT_ARG_SIZE = $/;"	m
+DEFAULT_ARG_SIZE	testsuite/Makefile	/^DEFAULT_ARG_SIZE = $/;"	m
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	testsuite/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEJATOOL	testsuite/Makefile	/^DEJATOOL = find$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	testsuite/Makefile	/^DEPDIR = .deps$/;"	m
+DEV_BSIZE	pred.c	100;"	d	file:
+DEV_BSIZE	pred.c	102;"	d	file:
+DIRENT_H	Makefile	/^DIRENT_H = $/;"	m
+DIRENT_H	testsuite/Makefile	/^DIRENT_H = $/;"	m
+DIR_ALLOC_STEP	find.c	1084;"	d	file:
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	testsuite/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_COMMON	testsuite/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(srcdir)\/Makefile.in$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(libfindtools_a_SOURCES) $(am__find_SOURCES_DIST) \\$/;"	m
+DIST_SOURCES	testsuite/Makefile	/^DIST_SOURCES =$/;"	m
+DIST_SUBDIRS	Makefile	/^DIST_SUBDIRS = $(SUBDIRS)$/;"	m
+DebugExec	defs.h	/^    DebugExec             = 32,$/;"	e	enum:DebugOption
+DebugExpressionTree	defs.h	/^    DebugExpressionTree   = 1,$/;"	e	enum:DebugOption
+DebugHelp	defs.h	/^    DebugHelp             = 16,$/;"	e	enum:DebugOption
+DebugNone	defs.h	/^    DebugNone             = 0,$/;"	e	enum:DebugOption
+DebugOption	defs.h	/^enum DebugOption$/;"	g
+DebugSearch	defs.h	/^    DebugSearch           = 4,$/;"	e	enum:DebugOption
+DebugStat	defs.h	/^    DebugStat             = 2,$/;"	e	enum:DebugOption
+DebugSuccessRates	defs.h	/^    DebugSuccessRates     = 64$/;"	e	enum:DebugOption
+DebugTreeOpt	defs.h	/^    DebugTreeOpt          = 8,$/;"	e	enum:DebugOption
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_C	testsuite/Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_N	testsuite/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+ECHO_T	testsuite/Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EGREP	testsuite/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+EXEEXT	testsuite/Makefile	/^EXEEXT = $/;"	m
+EXPECT	testsuite/Makefile	/^EXPECT = expect$/;"	m
+EXTRA_DIST	Makefile	/^EXTRA_DIST = defs.h $(man_MANS)$/;"	m
+EXTRA_DIST	testsuite/Makefile	/^EXTRA_DIST = $(EXTRA_DIST_EXP) $(EXTRA_DIST_XO)$/;"	m
+EXTRA_DIST_EXP	testsuite/Makefile	/^EXTRA_DIST_EXP = \\$/;"	m
+EXTRA_DIST_XO	testsuite/Makefile	/^EXTRA_DIST_XO = \\$/;"	m
+EvaluationCost	defs.h	/^enum EvaluationCost$/;"	g
+FATAL_IF_SANITY_CHECK_FAILS	find.c	/^    FATAL_IF_SANITY_CHECK_FAILS,$/;"	e	enum:WdSanityCheckFatality	file:
+FCNTL_H	Makefile	/^FCNTL_H = fcntl.h$/;"	m
+FCNTL_H	testsuite/Makefile	/^FCNTL_H = fcntl.h$/;"	m
+FIND	testsuite/Makefile	/^FIND = ..\/find$/;"	m
+FINDFLAGS	testsuite/Makefile	/^FINDFLAGS = $/;"	m
+FINDLIBOBJS	Makefile	/^FINDLIBOBJS =  forcefindlib.o$/;"	m
+FINDLIBOBJS	testsuite/Makefile	/^FINDLIBOBJS =  forcefindlib.o$/;"	m
+FINDLIBS	Makefile	/^FINDLIBS = -lm -lm $/;"	m
+FINDLIBS	testsuite/Makefile	/^FINDLIBS = -lm -lm $/;"	m
+FNMATCH_H	Makefile	/^FNMATCH_H = $/;"	m
+FNMATCH_H	testsuite/Makefile	/^FNMATCH_H = $/;"	m
+GETOPT_H	Makefile	/^GETOPT_H = $/;"	m
+GETOPT_H	testsuite/Makefile	/^GETOPT_H = $/;"	m
+GETTEXT_MACRO_VERSION	Makefile	/^GETTEXT_MACRO_VERSION = 0.17$/;"	m
+GETTEXT_MACRO_VERSION	testsuite/Makefile	/^GETTEXT_MACRO_VERSION = 0.17$/;"	m
+GLIBC21	Makefile	/^GLIBC21 = yes$/;"	m
+GLIBC21	testsuite/Makefile	/^GLIBC21 = yes$/;"	m
+GMSGFMT	Makefile	/^GMSGFMT = \/usr\/bin\/msgfmt$/;"	m
+GMSGFMT	testsuite/Makefile	/^GMSGFMT = \/usr\/bin\/msgfmt$/;"	m
+GMSGFMT_015	Makefile	/^GMSGFMT_015 = :$/;"	m
+GMSGFMT_015	testsuite/Makefile	/^GMSGFMT_015 = :$/;"	m
+GNULIB_CALLOC_POSIX	Makefile	/^GNULIB_CALLOC_POSIX = 0$/;"	m
+GNULIB_CALLOC_POSIX	testsuite/Makefile	/^GNULIB_CALLOC_POSIX = 0$/;"	m
+GNULIB_CHOWN	Makefile	/^GNULIB_CHOWN = 1$/;"	m
+GNULIB_CHOWN	testsuite/Makefile	/^GNULIB_CHOWN = 1$/;"	m
+GNULIB_DUP2	Makefile	/^GNULIB_DUP2 = 1$/;"	m
+GNULIB_DUP2	testsuite/Makefile	/^GNULIB_DUP2 = 1$/;"	m
+GNULIB_FCHDIR	Makefile	/^GNULIB_FCHDIR = 1$/;"	m
+GNULIB_FCHDIR	testsuite/Makefile	/^GNULIB_FCHDIR = 1$/;"	m
+GNULIB_FFLUSH	Makefile	/^GNULIB_FFLUSH = 1$/;"	m
+GNULIB_FFLUSH	testsuite/Makefile	/^GNULIB_FFLUSH = 1$/;"	m
+GNULIB_FOPEN	Makefile	/^GNULIB_FOPEN = 0$/;"	m
+GNULIB_FOPEN	testsuite/Makefile	/^GNULIB_FOPEN = 0$/;"	m
+GNULIB_FPRINTF_POSIX	Makefile	/^GNULIB_FPRINTF_POSIX = 0$/;"	m
+GNULIB_FPRINTF_POSIX	testsuite/Makefile	/^GNULIB_FPRINTF_POSIX = 0$/;"	m
+GNULIB_FREOPEN	Makefile	/^GNULIB_FREOPEN = 0$/;"	m
+GNULIB_FREOPEN	testsuite/Makefile	/^GNULIB_FREOPEN = 0$/;"	m
+GNULIB_FSEEK	Makefile	/^GNULIB_FSEEK = 0$/;"	m
+GNULIB_FSEEK	testsuite/Makefile	/^GNULIB_FSEEK = 0$/;"	m
+GNULIB_FSEEKO	Makefile	/^GNULIB_FSEEKO = 1$/;"	m
+GNULIB_FSEEKO	testsuite/Makefile	/^GNULIB_FSEEKO = 1$/;"	m
+GNULIB_FTELL	Makefile	/^GNULIB_FTELL = 0$/;"	m
+GNULIB_FTELL	testsuite/Makefile	/^GNULIB_FTELL = 0$/;"	m
+GNULIB_FTELLO	Makefile	/^GNULIB_FTELLO = 1$/;"	m
+GNULIB_FTELLO	testsuite/Makefile	/^GNULIB_FTELLO = 1$/;"	m
+GNULIB_FTRUNCATE	Makefile	/^GNULIB_FTRUNCATE = 0$/;"	m
+GNULIB_FTRUNCATE	testsuite/Makefile	/^GNULIB_FTRUNCATE = 0$/;"	m
+GNULIB_GETCWD	Makefile	/^GNULIB_GETCWD = 1$/;"	m
+GNULIB_GETCWD	testsuite/Makefile	/^GNULIB_GETCWD = 1$/;"	m
+GNULIB_GETDELIM	Makefile	/^GNULIB_GETDELIM = 1$/;"	m
+GNULIB_GETDELIM	testsuite/Makefile	/^GNULIB_GETDELIM = 1$/;"	m
+GNULIB_GETLINE	Makefile	/^GNULIB_GETLINE = 1$/;"	m
+GNULIB_GETLINE	testsuite/Makefile	/^GNULIB_GETLINE = 1$/;"	m
+GNULIB_GETLOGIN_R	Makefile	/^GNULIB_GETLOGIN_R = 0$/;"	m
+GNULIB_GETLOGIN_R	testsuite/Makefile	/^GNULIB_GETLOGIN_R = 0$/;"	m
+GNULIB_GETPAGESIZE	Makefile	/^GNULIB_GETPAGESIZE = 0$/;"	m
+GNULIB_GETPAGESIZE	testsuite/Makefile	/^GNULIB_GETPAGESIZE = 0$/;"	m
+GNULIB_GETSUBOPT	Makefile	/^GNULIB_GETSUBOPT = 0$/;"	m
+GNULIB_GETSUBOPT	testsuite/Makefile	/^GNULIB_GETSUBOPT = 0$/;"	m
+GNULIB_IMAXABS	Makefile	/^GNULIB_IMAXABS = 0$/;"	m
+GNULIB_IMAXABS	testsuite/Makefile	/^GNULIB_IMAXABS = 0$/;"	m
+GNULIB_IMAXDIV	Makefile	/^GNULIB_IMAXDIV = 0$/;"	m
+GNULIB_IMAXDIV	testsuite/Makefile	/^GNULIB_IMAXDIV = 0$/;"	m
+GNULIB_LCHOWN	Makefile	/^GNULIB_LCHOWN = 1$/;"	m
+GNULIB_LCHOWN	testsuite/Makefile	/^GNULIB_LCHOWN = 1$/;"	m
+GNULIB_LSEEK	Makefile	/^GNULIB_LSEEK = 1$/;"	m
+GNULIB_LSEEK	testsuite/Makefile	/^GNULIB_LSEEK = 1$/;"	m
+GNULIB_MALLOC_POSIX	Makefile	/^GNULIB_MALLOC_POSIX = 1$/;"	m
+GNULIB_MALLOC_POSIX	testsuite/Makefile	/^GNULIB_MALLOC_POSIX = 1$/;"	m
+GNULIB_MBSCASECMP	Makefile	/^GNULIB_MBSCASECMP = 0$/;"	m
+GNULIB_MBSCASECMP	testsuite/Makefile	/^GNULIB_MBSCASECMP = 0$/;"	m
+GNULIB_MBSCASESTR	Makefile	/^GNULIB_MBSCASESTR = 1$/;"	m
+GNULIB_MBSCASESTR	testsuite/Makefile	/^GNULIB_MBSCASESTR = 1$/;"	m
+GNULIB_MBSCHR	Makefile	/^GNULIB_MBSCHR = 0$/;"	m
+GNULIB_MBSCHR	testsuite/Makefile	/^GNULIB_MBSCHR = 0$/;"	m
+GNULIB_MBSCSPN	Makefile	/^GNULIB_MBSCSPN = 0$/;"	m
+GNULIB_MBSCSPN	testsuite/Makefile	/^GNULIB_MBSCSPN = 0$/;"	m
+GNULIB_MBSLEN	Makefile	/^GNULIB_MBSLEN = 1$/;"	m
+GNULIB_MBSLEN	testsuite/Makefile	/^GNULIB_MBSLEN = 1$/;"	m
+GNULIB_MBSNCASECMP	Makefile	/^GNULIB_MBSNCASECMP = 0$/;"	m
+GNULIB_MBSNCASECMP	testsuite/Makefile	/^GNULIB_MBSNCASECMP = 0$/;"	m
+GNULIB_MBSNLEN	Makefile	/^GNULIB_MBSNLEN = 0$/;"	m
+GNULIB_MBSNLEN	testsuite/Makefile	/^GNULIB_MBSNLEN = 0$/;"	m
+GNULIB_MBSPBRK	Makefile	/^GNULIB_MBSPBRK = 0$/;"	m
+GNULIB_MBSPBRK	testsuite/Makefile	/^GNULIB_MBSPBRK = 0$/;"	m
+GNULIB_MBSPCASECMP	Makefile	/^GNULIB_MBSPCASECMP = 0$/;"	m
+GNULIB_MBSPCASECMP	testsuite/Makefile	/^GNULIB_MBSPCASECMP = 0$/;"	m
+GNULIB_MBSRCHR	Makefile	/^GNULIB_MBSRCHR = 0$/;"	m
+GNULIB_MBSRCHR	testsuite/Makefile	/^GNULIB_MBSRCHR = 0$/;"	m
+GNULIB_MBSSEP	Makefile	/^GNULIB_MBSSEP = 0$/;"	m
+GNULIB_MBSSEP	testsuite/Makefile	/^GNULIB_MBSSEP = 0$/;"	m
+GNULIB_MBSSPN	Makefile	/^GNULIB_MBSSPN = 0$/;"	m
+GNULIB_MBSSPN	testsuite/Makefile	/^GNULIB_MBSSPN = 0$/;"	m
+GNULIB_MBSSTR	Makefile	/^GNULIB_MBSSTR = 1$/;"	m
+GNULIB_MBSSTR	testsuite/Makefile	/^GNULIB_MBSSTR = 1$/;"	m
+GNULIB_MBSTOK_R	Makefile	/^GNULIB_MBSTOK_R = 0$/;"	m
+GNULIB_MBSTOK_R	testsuite/Makefile	/^GNULIB_MBSTOK_R = 0$/;"	m
+GNULIB_MEMMEM	Makefile	/^GNULIB_MEMMEM = 0$/;"	m
+GNULIB_MEMMEM	testsuite/Makefile	/^GNULIB_MEMMEM = 0$/;"	m
+GNULIB_MEMPCPY	Makefile	/^GNULIB_MEMPCPY = 1$/;"	m
+GNULIB_MEMPCPY	testsuite/Makefile	/^GNULIB_MEMPCPY = 1$/;"	m
+GNULIB_MEMRCHR	Makefile	/^GNULIB_MEMRCHR = 1$/;"	m
+GNULIB_MEMRCHR	testsuite/Makefile	/^GNULIB_MEMRCHR = 1$/;"	m
+GNULIB_MKDTEMP	Makefile	/^GNULIB_MKDTEMP = 0$/;"	m
+GNULIB_MKDTEMP	testsuite/Makefile	/^GNULIB_MKDTEMP = 0$/;"	m
+GNULIB_MKSTEMP	Makefile	/^GNULIB_MKSTEMP = 0$/;"	m
+GNULIB_MKSTEMP	testsuite/Makefile	/^GNULIB_MKSTEMP = 0$/;"	m
+GNULIB_OPEN	Makefile	/^GNULIB_OPEN = 0$/;"	m
+GNULIB_OPEN	testsuite/Makefile	/^GNULIB_OPEN = 0$/;"	m
+GNULIB_PRINTF_POSIX	Makefile	/^GNULIB_PRINTF_POSIX = 0$/;"	m
+GNULIB_PRINTF_POSIX	testsuite/Makefile	/^GNULIB_PRINTF_POSIX = 0$/;"	m
+GNULIB_PUTENV	Makefile	/^GNULIB_PUTENV = 0$/;"	m
+GNULIB_PUTENV	testsuite/Makefile	/^GNULIB_PUTENV = 0$/;"	m
+GNULIB_READLINK	Makefile	/^GNULIB_READLINK = 1$/;"	m
+GNULIB_READLINK	testsuite/Makefile	/^GNULIB_READLINK = 1$/;"	m
+GNULIB_REALLOC_POSIX	Makefile	/^GNULIB_REALLOC_POSIX = 1$/;"	m
+GNULIB_REALLOC_POSIX	testsuite/Makefile	/^GNULIB_REALLOC_POSIX = 1$/;"	m
+GNULIB_SLEEP	Makefile	/^GNULIB_SLEEP = 0$/;"	m
+GNULIB_SLEEP	testsuite/Makefile	/^GNULIB_SLEEP = 0$/;"	m
+GNULIB_SNPRINTF	Makefile	/^GNULIB_SNPRINTF = 0$/;"	m
+GNULIB_SNPRINTF	testsuite/Makefile	/^GNULIB_SNPRINTF = 0$/;"	m
+GNULIB_SPRINTF_POSIX	Makefile	/^GNULIB_SPRINTF_POSIX = 0$/;"	m
+GNULIB_SPRINTF_POSIX	testsuite/Makefile	/^GNULIB_SPRINTF_POSIX = 0$/;"	m
+GNULIB_STPCPY	Makefile	/^GNULIB_STPCPY = 1$/;"	m
+GNULIB_STPCPY	testsuite/Makefile	/^GNULIB_STPCPY = 1$/;"	m
+GNULIB_STPNCPY	Makefile	/^GNULIB_STPNCPY = 0$/;"	m
+GNULIB_STPNCPY	testsuite/Makefile	/^GNULIB_STPNCPY = 0$/;"	m
+GNULIB_STRCASESTR	Makefile	/^GNULIB_STRCASESTR = 1$/;"	m
+GNULIB_STRCASESTR	testsuite/Makefile	/^GNULIB_STRCASESTR = 1$/;"	m
+GNULIB_STRCHRNUL	Makefile	/^GNULIB_STRCHRNUL = 0$/;"	m
+GNULIB_STRCHRNUL	testsuite/Makefile	/^GNULIB_STRCHRNUL = 0$/;"	m
+GNULIB_STRDUP	Makefile	/^GNULIB_STRDUP = 1$/;"	m
+GNULIB_STRDUP	testsuite/Makefile	/^GNULIB_STRDUP = 1$/;"	m
+GNULIB_STRERROR	Makefile	/^GNULIB_STRERROR = 1$/;"	m
+GNULIB_STRERROR	testsuite/Makefile	/^GNULIB_STRERROR = 1$/;"	m
+GNULIB_STRNDUP	Makefile	/^GNULIB_STRNDUP = 1$/;"	m
+GNULIB_STRNDUP	testsuite/Makefile	/^GNULIB_STRNDUP = 1$/;"	m
+GNULIB_STRNLEN	Makefile	/^GNULIB_STRNLEN = 1$/;"	m
+GNULIB_STRNLEN	testsuite/Makefile	/^GNULIB_STRNLEN = 1$/;"	m
+GNULIB_STRPBRK	Makefile	/^GNULIB_STRPBRK = 0$/;"	m
+GNULIB_STRPBRK	testsuite/Makefile	/^GNULIB_STRPBRK = 0$/;"	m
+GNULIB_STRSEP	Makefile	/^GNULIB_STRSEP = 0$/;"	m
+GNULIB_STRSEP	testsuite/Makefile	/^GNULIB_STRSEP = 0$/;"	m
+GNULIB_STRTOIMAX	Makefile	/^GNULIB_STRTOIMAX = 1$/;"	m
+GNULIB_STRTOIMAX	testsuite/Makefile	/^GNULIB_STRTOIMAX = 1$/;"	m
+GNULIB_STRTOK_R	Makefile	/^GNULIB_STRTOK_R = 0$/;"	m
+GNULIB_STRTOK_R	testsuite/Makefile	/^GNULIB_STRTOK_R = 0$/;"	m
+GNULIB_STRTOUMAX	Makefile	/^GNULIB_STRTOUMAX = 1$/;"	m
+GNULIB_STRTOUMAX	testsuite/Makefile	/^GNULIB_STRTOUMAX = 1$/;"	m
+GNULIB_VASPRINTF	Makefile	/^GNULIB_VASPRINTF = 0$/;"	m
+GNULIB_VASPRINTF	testsuite/Makefile	/^GNULIB_VASPRINTF = 0$/;"	m
+GNULIB_VFPRINTF_POSIX	Makefile	/^GNULIB_VFPRINTF_POSIX = 0$/;"	m
+GNULIB_VFPRINTF_POSIX	testsuite/Makefile	/^GNULIB_VFPRINTF_POSIX = 0$/;"	m
+GNULIB_VPRINTF_POSIX	Makefile	/^GNULIB_VPRINTF_POSIX = 0$/;"	m
+GNULIB_VPRINTF_POSIX	testsuite/Makefile	/^GNULIB_VPRINTF_POSIX = 0$/;"	m
+GNULIB_VSNPRINTF	Makefile	/^GNULIB_VSNPRINTF = 0$/;"	m
+GNULIB_VSNPRINTF	testsuite/Makefile	/^GNULIB_VSNPRINTF = 0$/;"	m
+GNULIB_VSPRINTF_POSIX	Makefile	/^GNULIB_VSPRINTF_POSIX = 0$/;"	m
+GNULIB_VSPRINTF_POSIX	testsuite/Makefile	/^GNULIB_VSPRINTF_POSIX = 0$/;"	m
+GNULIB_WCWIDTH	Makefile	/^GNULIB_WCWIDTH = 1$/;"	m
+GNULIB_WCWIDTH	testsuite/Makefile	/^GNULIB_WCWIDTH = 1$/;"	m
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+GREP	testsuite/Makefile	/^GREP = \/bin\/grep$/;"	m
+HANDLECASE	ftsfind.c	197;"	d	file:
+HANDLE_TYPE	pred.c	624;"	d	file:
+HAVE_ATTRIBUTE_NORETURN	Makefile	/^HAVE_ATTRIBUTE_NORETURN = 1$/;"	m
+HAVE_ATTRIBUTE_NORETURN	testsuite/Makefile	/^HAVE_ATTRIBUTE_NORETURN = 1$/;"	m
+HAVE_CALLOC_POSIX	Makefile	/^HAVE_CALLOC_POSIX = 1$/;"	m
+HAVE_CALLOC_POSIX	testsuite/Makefile	/^HAVE_CALLOC_POSIX = 1$/;"	m
+HAVE_DECL_GETDELIM	Makefile	/^HAVE_DECL_GETDELIM = 1$/;"	m
+HAVE_DECL_GETDELIM	testsuite/Makefile	/^HAVE_DECL_GETDELIM = 1$/;"	m
+HAVE_DECL_GETLINE	Makefile	/^HAVE_DECL_GETLINE = 1$/;"	m
+HAVE_DECL_GETLINE	testsuite/Makefile	/^HAVE_DECL_GETLINE = 1$/;"	m
+HAVE_DECL_GETLOGIN_R	Makefile	/^HAVE_DECL_GETLOGIN_R = 1$/;"	m
+HAVE_DECL_GETLOGIN_R	testsuite/Makefile	/^HAVE_DECL_GETLOGIN_R = 1$/;"	m
+HAVE_DECL_IMAXABS	Makefile	/^HAVE_DECL_IMAXABS = 1$/;"	m
+HAVE_DECL_IMAXABS	testsuite/Makefile	/^HAVE_DECL_IMAXABS = 1$/;"	m
+HAVE_DECL_IMAXDIV	Makefile	/^HAVE_DECL_IMAXDIV = 1$/;"	m
+HAVE_DECL_IMAXDIV	testsuite/Makefile	/^HAVE_DECL_IMAXDIV = 1$/;"	m
+HAVE_DECL_MEMMEM	Makefile	/^HAVE_DECL_MEMMEM = 1$/;"	m
+HAVE_DECL_MEMMEM	testsuite/Makefile	/^HAVE_DECL_MEMMEM = 1$/;"	m
+HAVE_DECL_MEMRCHR	Makefile	/^HAVE_DECL_MEMRCHR = 1$/;"	m
+HAVE_DECL_MEMRCHR	testsuite/Makefile	/^HAVE_DECL_MEMRCHR = 1$/;"	m
+HAVE_DECL_MKDIR	Makefile	/^HAVE_DECL_MKDIR = 1$/;"	m
+HAVE_DECL_MKDIR	testsuite/Makefile	/^HAVE_DECL_MKDIR = 1$/;"	m
+HAVE_DECL_SNPRINTF	Makefile	/^HAVE_DECL_SNPRINTF = 1$/;"	m
+HAVE_DECL_SNPRINTF	testsuite/Makefile	/^HAVE_DECL_SNPRINTF = 1$/;"	m
+HAVE_DECL_STRDUP	Makefile	/^HAVE_DECL_STRDUP = 1$/;"	m
+HAVE_DECL_STRDUP	testsuite/Makefile	/^HAVE_DECL_STRDUP = 1$/;"	m
+HAVE_DECL_STRERROR	Makefile	/^HAVE_DECL_STRERROR = 1$/;"	m
+HAVE_DECL_STRERROR	testsuite/Makefile	/^HAVE_DECL_STRERROR = 1$/;"	m
+HAVE_DECL_STRNDUP	Makefile	/^HAVE_DECL_STRNDUP = 1$/;"	m
+HAVE_DECL_STRNDUP	testsuite/Makefile	/^HAVE_DECL_STRNDUP = 1$/;"	m
+HAVE_DECL_STRNLEN	Makefile	/^HAVE_DECL_STRNLEN = 1$/;"	m
+HAVE_DECL_STRNLEN	testsuite/Makefile	/^HAVE_DECL_STRNLEN = 1$/;"	m
+HAVE_DECL_STRTOIMAX	Makefile	/^HAVE_DECL_STRTOIMAX = 1$/;"	m
+HAVE_DECL_STRTOIMAX	testsuite/Makefile	/^HAVE_DECL_STRTOIMAX = 1$/;"	m
+HAVE_DECL_STRTOK_R	Makefile	/^HAVE_DECL_STRTOK_R = 1$/;"	m
+HAVE_DECL_STRTOK_R	testsuite/Makefile	/^HAVE_DECL_STRTOK_R = 1$/;"	m
+HAVE_DECL_STRTOUMAX	Makefile	/^HAVE_DECL_STRTOUMAX = 1$/;"	m
+HAVE_DECL_STRTOUMAX	testsuite/Makefile	/^HAVE_DECL_STRTOUMAX = 1$/;"	m
+HAVE_DECL_VSNPRINTF	Makefile	/^HAVE_DECL_VSNPRINTF = 1$/;"	m
+HAVE_DECL_VSNPRINTF	testsuite/Makefile	/^HAVE_DECL_VSNPRINTF = 1$/;"	m
+HAVE_DECL_WCWIDTH	Makefile	/^HAVE_DECL_WCWIDTH = 1$/;"	m
+HAVE_DECL_WCWIDTH	testsuite/Makefile	/^HAVE_DECL_WCWIDTH = 1$/;"	m
+HAVE_DUP2	Makefile	/^HAVE_DUP2 = 1$/;"	m
+HAVE_DUP2	testsuite/Makefile	/^HAVE_DUP2 = 1$/;"	m
+HAVE_FSEEKO	Makefile	/^HAVE_FSEEKO = 1$/;"	m
+HAVE_FSEEKO	testsuite/Makefile	/^HAVE_FSEEKO = 1$/;"	m
+HAVE_FTELLO	Makefile	/^HAVE_FTELLO = 1$/;"	m
+HAVE_FTELLO	testsuite/Makefile	/^HAVE_FTELLO = 1$/;"	m
+HAVE_FTRUNCATE	Makefile	/^HAVE_FTRUNCATE = 1$/;"	m
+HAVE_FTRUNCATE	testsuite/Makefile	/^HAVE_FTRUNCATE = 1$/;"	m
+HAVE_GETPAGESIZE	Makefile	/^HAVE_GETPAGESIZE = 1$/;"	m
+HAVE_GETPAGESIZE	testsuite/Makefile	/^HAVE_GETPAGESIZE = 1$/;"	m
+HAVE_GETSUBOPT	Makefile	/^HAVE_GETSUBOPT = 1$/;"	m
+HAVE_GETSUBOPT	testsuite/Makefile	/^HAVE_GETSUBOPT = 1$/;"	m
+HAVE_INTTYPES_H	Makefile	/^HAVE_INTTYPES_H = 1$/;"	m
+HAVE_INTTYPES_H	testsuite/Makefile	/^HAVE_INTTYPES_H = 1$/;"	m
+HAVE_IO_H	Makefile	/^HAVE_IO_H = 0$/;"	m
+HAVE_IO_H	testsuite/Makefile	/^HAVE_IO_H = 0$/;"	m
+HAVE_ISWCNTRL	Makefile	/^HAVE_ISWCNTRL = 1$/;"	m
+HAVE_ISWCNTRL	testsuite/Makefile	/^HAVE_ISWCNTRL = 1$/;"	m
+HAVE_LONG_LONG_INT	Makefile	/^HAVE_LONG_LONG_INT = 1$/;"	m
+HAVE_LONG_LONG_INT	testsuite/Makefile	/^HAVE_LONG_LONG_INT = 1$/;"	m
+HAVE_LSTAT	Makefile	/^HAVE_LSTAT = 1$/;"	m
+HAVE_LSTAT	testsuite/Makefile	/^HAVE_LSTAT = 1$/;"	m
+HAVE_MALLOC_POSIX	Makefile	/^HAVE_MALLOC_POSIX = 1$/;"	m
+HAVE_MALLOC_POSIX	testsuite/Makefile	/^HAVE_MALLOC_POSIX = 1$/;"	m
+HAVE_MEMPCPY	Makefile	/^HAVE_MEMPCPY = 1$/;"	m
+HAVE_MEMPCPY	testsuite/Makefile	/^HAVE_MEMPCPY = 1$/;"	m
+HAVE_MKDTEMP	Makefile	/^HAVE_MKDTEMP = 1$/;"	m
+HAVE_MKDTEMP	testsuite/Makefile	/^HAVE_MKDTEMP = 1$/;"	m
+HAVE_OS_H	Makefile	/^HAVE_OS_H = 0$/;"	m
+HAVE_OS_H	testsuite/Makefile	/^HAVE_OS_H = 0$/;"	m
+HAVE_READLINK	Makefile	/^HAVE_READLINK = 1$/;"	m
+HAVE_READLINK	testsuite/Makefile	/^HAVE_READLINK = 1$/;"	m
+HAVE_REALLOC_POSIX	Makefile	/^HAVE_REALLOC_POSIX = 1$/;"	m
+HAVE_REALLOC_POSIX	testsuite/Makefile	/^HAVE_REALLOC_POSIX = 1$/;"	m
+HAVE_SIGNED_SIG_ATOMIC_T	Makefile	/^HAVE_SIGNED_SIG_ATOMIC_T = $/;"	m
+HAVE_SIGNED_SIG_ATOMIC_T	testsuite/Makefile	/^HAVE_SIGNED_SIG_ATOMIC_T = $/;"	m
+HAVE_SIGNED_WCHAR_T	Makefile	/^HAVE_SIGNED_WCHAR_T = $/;"	m
+HAVE_SIGNED_WCHAR_T	testsuite/Makefile	/^HAVE_SIGNED_WCHAR_T = $/;"	m
+HAVE_SIGNED_WINT_T	Makefile	/^HAVE_SIGNED_WINT_T = $/;"	m
+HAVE_SIGNED_WINT_T	testsuite/Makefile	/^HAVE_SIGNED_WINT_T = $/;"	m
+HAVE_SLEEP	Makefile	/^HAVE_SLEEP = 1$/;"	m
+HAVE_SLEEP	testsuite/Makefile	/^HAVE_SLEEP = 1$/;"	m
+HAVE_STDINT_H	Makefile	/^HAVE_STDINT_H = 1$/;"	m
+HAVE_STDINT_H	testsuite/Makefile	/^HAVE_STDINT_H = 1$/;"	m
+HAVE_STPCPY	Makefile	/^HAVE_STPCPY = 1$/;"	m
+HAVE_STPCPY	testsuite/Makefile	/^HAVE_STPCPY = 1$/;"	m
+HAVE_STPNCPY	Makefile	/^HAVE_STPNCPY = 1$/;"	m
+HAVE_STPNCPY	testsuite/Makefile	/^HAVE_STPNCPY = 1$/;"	m
+HAVE_STRCASESTR	Makefile	/^HAVE_STRCASESTR = 1$/;"	m
+HAVE_STRCASESTR	testsuite/Makefile	/^HAVE_STRCASESTR = 1$/;"	m
+HAVE_STRCHRNUL	Makefile	/^HAVE_STRCHRNUL = 1$/;"	m
+HAVE_STRCHRNUL	testsuite/Makefile	/^HAVE_STRCHRNUL = 1$/;"	m
+HAVE_STRNDUP	Makefile	/^HAVE_STRNDUP = 1$/;"	m
+HAVE_STRNDUP	testsuite/Makefile	/^HAVE_STRNDUP = 1$/;"	m
+HAVE_STRPBRK	Makefile	/^HAVE_STRPBRK = 1$/;"	m
+HAVE_STRPBRK	testsuite/Makefile	/^HAVE_STRPBRK = 1$/;"	m
+HAVE_STRSEP	Makefile	/^HAVE_STRSEP = 1$/;"	m
+HAVE_STRSEP	testsuite/Makefile	/^HAVE_STRSEP = 1$/;"	m
+HAVE_STRUCT_TIMEVAL	Makefile	/^HAVE_STRUCT_TIMEVAL = 1$/;"	m
+HAVE_STRUCT_TIMEVAL	testsuite/Makefile	/^HAVE_STRUCT_TIMEVAL = 1$/;"	m
+HAVE_SYS_BITYPES_H	Makefile	/^HAVE_SYS_BITYPES_H = $/;"	m
+HAVE_SYS_BITYPES_H	testsuite/Makefile	/^HAVE_SYS_BITYPES_H = $/;"	m
+HAVE_SYS_INTTYPES_H	Makefile	/^HAVE_SYS_INTTYPES_H = $/;"	m
+HAVE_SYS_INTTYPES_H	testsuite/Makefile	/^HAVE_SYS_INTTYPES_H = $/;"	m
+HAVE_SYS_PARAM_H	Makefile	/^HAVE_SYS_PARAM_H = 0$/;"	m
+HAVE_SYS_PARAM_H	testsuite/Makefile	/^HAVE_SYS_PARAM_H = 0$/;"	m
+HAVE_SYS_TIME_H	Makefile	/^HAVE_SYS_TIME_H = 1$/;"	m
+HAVE_SYS_TIME_H	testsuite/Makefile	/^HAVE_SYS_TIME_H = 1$/;"	m
+HAVE_SYS_TYPES_H	Makefile	/^HAVE_SYS_TYPES_H = 1$/;"	m
+HAVE_SYS_TYPES_H	testsuite/Makefile	/^HAVE_SYS_TYPES_H = 1$/;"	m
+HAVE_UNISTD_H	Makefile	/^HAVE_UNISTD_H = 1$/;"	m
+HAVE_UNISTD_H	testsuite/Makefile	/^HAVE_UNISTD_H = 1$/;"	m
+HAVE_UNSIGNED_LONG_LONG_INT	Makefile	/^HAVE_UNSIGNED_LONG_LONG_INT = 1$/;"	m
+HAVE_UNSIGNED_LONG_LONG_INT	testsuite/Makefile	/^HAVE_UNSIGNED_LONG_LONG_INT = 1$/;"	m
+HAVE_VASPRINTF	Makefile	/^HAVE_VASPRINTF = 1$/;"	m
+HAVE_VASPRINTF	testsuite/Makefile	/^HAVE_VASPRINTF = 1$/;"	m
+HAVE_WCHAR_H	Makefile	/^HAVE_WCHAR_H = 1$/;"	m
+HAVE_WCHAR_H	testsuite/Makefile	/^HAVE_WCHAR_H = 1$/;"	m
+HAVE_WCTYPE_H	Makefile	/^HAVE_WCTYPE_H = 1$/;"	m
+HAVE_WCTYPE_H	testsuite/Makefile	/^HAVE_WCTYPE_H = 1$/;"	m
+HAVE_WINT_T	Makefile	/^HAVE_WINT_T = 1$/;"	m
+HAVE_WINT_T	testsuite/Makefile	/^HAVE_WINT_T = 1$/;"	m
+HAVE__BOOL	Makefile	/^HAVE__BOOL = 1$/;"	m
+HAVE__BOOL	testsuite/Makefile	/^HAVE__BOOL = 1$/;"	m
+INCLUDES	Makefile	/^INCLUDES = -I..\/gnulib\/lib -I$(top_srcdir)\/lib -I$(top_srcdir)\/gnulib\/lib -I..\/intl -DLOCALEDIR=\\"$(localedir)\\"$/;"	m
+INCLUDES	testsuite/Makefile	/^INCLUDES = $/;"	m
+INCLUDE_NEXT	Makefile	/^INCLUDE_NEXT = include_next$/;"	m
+INCLUDE_NEXT	testsuite/Makefile	/^INCLUDE_NEXT = include_next$/;"	m
+INC_DEFS_H	defs.h	21;"	d
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	testsuite/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	testsuite/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	testsuite/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	testsuite/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	testsuite/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	testsuite/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INT32_MAX_LT_INTMAX_MAX	Makefile	/^INT32_MAX_LT_INTMAX_MAX = 1$/;"	m
+INT32_MAX_LT_INTMAX_MAX	testsuite/Makefile	/^INT32_MAX_LT_INTMAX_MAX = 1$/;"	m
+INT64_MAX_EQ_LONG_MAX	Makefile	/^INT64_MAX_EQ_LONG_MAX = 0$/;"	m
+INT64_MAX_EQ_LONG_MAX	testsuite/Makefile	/^INT64_MAX_EQ_LONG_MAX = 0$/;"	m
+INTLLIBS	Makefile	/^INTLLIBS = $/;"	m
+INTLLIBS	testsuite/Makefile	/^INTLLIBS = $/;"	m
+INTL_MACOSX_LIBS	Makefile	/^INTL_MACOSX_LIBS = $/;"	m
+INTL_MACOSX_LIBS	testsuite/Makefile	/^INTL_MACOSX_LIBS = $/;"	m
+INTTYPES_H	Makefile	/^INTTYPES_H = inttypes.h$/;"	m
+INTTYPES_H	testsuite/Makefile	/^INTTYPES_H = inttypes.h$/;"	m
+ISDIGIT	parser.c	76;"	d	file:
+ISUPPER	parser.c	77;"	d	file:
+KIND_FORMAT	defs.h	/^    KIND_FORMAT,		\/* Regular format *\/$/;"	e	enum:SegmentKind
+KIND_PLAIN	defs.h	/^    KIND_PLAIN=0,		\/* Segment containing just plain text. *\/$/;"	e	enum:SegmentKind
+KIND_STOP	defs.h	/^    KIND_STOP=1,		\/* \\c -- stop printing and flush output. *\/$/;"	e	enum:SegmentKind
+LDADD	Makefile	/^LDADD = .\/libfindtools.a ..\/lib\/libfind.a ..\/gnulib\/lib\/libgnulib.a  -lrt -lm -lm $/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	testsuite/Makefile	/^LDFLAGS = $/;"	m
+LIBGNULIB_LIBDEPS	Makefile	/^LIBGNULIB_LIBDEPS = $/;"	m
+LIBGNULIB_LIBDEPS	testsuite/Makefile	/^LIBGNULIB_LIBDEPS = $/;"	m
+LIBGNULIB_LTLIBDEPS	Makefile	/^LIBGNULIB_LTLIBDEPS = $/;"	m
+LIBGNULIB_LTLIBDEPS	testsuite/Makefile	/^LIBGNULIB_LTLIBDEPS = $/;"	m
+LIBICONV	Makefile	/^LIBICONV = -liconv$/;"	m
+LIBICONV	testsuite/Makefile	/^LIBICONV = -liconv$/;"	m
+LIBINTL	Makefile	/^LIBINTL = $/;"	m
+LIBINTL	testsuite/Makefile	/^LIBINTL = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	testsuite/Makefile	/^LIBOBJS = $/;"	m
+LIBRARIES	Makefile	/^LIBRARIES = $(noinst_LIBRARIES)$/;"	m
+LIBS	Makefile	/^LIBS = $/;"	m
+LIBS	testsuite/Makefile	/^LIBS = $/;"	m
+LIBTESTS_LIBDEPS	Makefile	/^LIBTESTS_LIBDEPS = $/;"	m
+LIBTESTS_LIBDEPS	testsuite/Makefile	/^LIBTESTS_LIBDEPS = $/;"	m
+LIB_CLOCK_GETTIME	Makefile	/^LIB_CLOCK_GETTIME = -lrt$/;"	m
+LIB_CLOCK_GETTIME	testsuite/Makefile	/^LIB_CLOCK_GETTIME = -lrt$/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LOCALE_FR_UTF8	Makefile	/^LOCALE_FR_UTF8 = fr_FR.UTF-8$/;"	m
+LOCALE_FR_UTF8	testsuite/Makefile	/^LOCALE_FR_UTF8 = fr_FR.UTF-8$/;"	m
+LOCALE_TR_UTF8	Makefile	/^LOCALE_TR_UTF8 = tr_TR.UTF-8$/;"	m
+LOCALE_TR_UTF8	testsuite/Makefile	/^LOCALE_TR_UTF8 = tr_TR.UTF-8$/;"	m
+LOCALE_ZH_CN	Makefile	/^LOCALE_ZH_CN = zh_CN.GB18030$/;"	m
+LOCALE_ZH_CN	testsuite/Makefile	/^LOCALE_ZH_CN = zh_CN.GB18030$/;"	m
+LTLIBICONV	Makefile	/^LTLIBICONV = -liconv$/;"	m
+LTLIBICONV	testsuite/Makefile	/^LTLIBICONV = -liconv$/;"	m
+LTLIBINTL	Makefile	/^LTLIBINTL = $/;"	m
+LTLIBINTL	testsuite/Makefile	/^LTLIBINTL = $/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	testsuite/Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run makeinfo$/;"	m
+MAKEINFO	testsuite/Makefile	/^MAKEINFO = ${SHELL} \/data\/rk\/findutils-4.4.0\/build-aux\/missing --run makeinfo$/;"	m
+MANS	Makefile	/^MANS = $(man_MANS)$/;"	m
+MAX	pred.c	158;"	d	file:
+MAX	pred.c	159;"	d	file:
+MAX_PREC	defs.h	/^  MAX_PREC$/;"	e	enum:predicate_precedence
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKDIR_P	testsuite/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKINSTALLDIRS	Makefile	/^MKINSTALLDIRS = $(top_builddir)\/build-aux\/mkinstalldirs$/;"	m
+MKINSTALLDIRS	testsuite/Makefile	/^MKINSTALLDIRS = $(top_builddir)\/build-aux\/mkinstalldirs$/;"	m
+MODE_ALL	defs.h	92;"	d
+MODE_R	defs.h	89;"	d
+MODE_RW	defs.h	90;"	d
+MODE_RWX	defs.h	91;"	d
+MODE_WXUSR	defs.h	88;"	d
+MSGFMT	Makefile	/^MSGFMT = \/usr\/bin\/msgfmt$/;"	m
+MSGFMT	testsuite/Makefile	/^MSGFMT = \/usr\/bin\/msgfmt$/;"	m
+MSGFMT_015	Makefile	/^MSGFMT_015 = :$/;"	m
+MSGFMT_015	testsuite/Makefile	/^MSGFMT_015 = :$/;"	m
+MSGMERGE	Makefile	/^MSGMERGE = \/usr\/bin\/msgmerge$/;"	m
+MSGMERGE	testsuite/Makefile	/^MSGMERGE = \/usr\/bin\/msgmerge$/;"	m
+MountPointRecentlyMounted	find.c	/^    MountPointRecentlyMounted,$/;"	e	enum:MountPointStateChange	file:
+MountPointRecentlyUnmounted	find.c	/^    MountPointRecentlyUnmounted,$/;"	e	enum:MountPointStateChange	file:
+MountPointStateChange	find.c	/^enum MountPointStateChange$/;"	g	file:
+MountPointStateUnchanged	find.c	/^    MountPointStateUnchanged$/;"	e	enum:MountPointStateChange	file:
+NAMLEN	pred.c	71;"	d	file:
+NAMLEN	pred.c	74;"	d	file:
+NEGATE_PREC	defs.h	/^  NEGATE_PREC,$/;"	e	enum:predicate_precedence
+NEXT_DIRENT_H	Makefile	/^NEXT_DIRENT_H = $/;"	m
+NEXT_DIRENT_H	testsuite/Makefile	/^NEXT_DIRENT_H = $/;"	m
+NEXT_FCNTL_H	Makefile	/^NEXT_FCNTL_H = <fcntl.h>$/;"	m
+NEXT_FCNTL_H	testsuite/Makefile	/^NEXT_FCNTL_H = <fcntl.h>$/;"	m
+NEXT_INTTYPES_H	Makefile	/^NEXT_INTTYPES_H = <inttypes.h>$/;"	m
+NEXT_INTTYPES_H	testsuite/Makefile	/^NEXT_INTTYPES_H = <inttypes.h>$/;"	m
+NEXT_STDINT_H	Makefile	/^NEXT_STDINT_H = <stdint.h>$/;"	m
+NEXT_STDINT_H	testsuite/Makefile	/^NEXT_STDINT_H = <stdint.h>$/;"	m
+NEXT_STDIO_H	Makefile	/^NEXT_STDIO_H = <stdio.h>$/;"	m
+NEXT_STDIO_H	testsuite/Makefile	/^NEXT_STDIO_H = <stdio.h>$/;"	m
+NEXT_STDLIB_H	Makefile	/^NEXT_STDLIB_H = <stdlib.h>$/;"	m
+NEXT_STDLIB_H	testsuite/Makefile	/^NEXT_STDLIB_H = <stdlib.h>$/;"	m
+NEXT_STRING_H	Makefile	/^NEXT_STRING_H = <string.h>$/;"	m
+NEXT_STRING_H	testsuite/Makefile	/^NEXT_STRING_H = <string.h>$/;"	m
+NEXT_SYS_STAT_H	Makefile	/^NEXT_SYS_STAT_H = <sys\/stat.h>$/;"	m
+NEXT_SYS_STAT_H	testsuite/Makefile	/^NEXT_SYS_STAT_H = <sys\/stat.h>$/;"	m
+NEXT_SYS_TIME_H	Makefile	/^NEXT_SYS_TIME_H = <sys\/time.h>$/;"	m
+NEXT_SYS_TIME_H	testsuite/Makefile	/^NEXT_SYS_TIME_H = <sys\/time.h>$/;"	m
+NEXT_TIME_H	Makefile	/^NEXT_TIME_H = <time.h>$/;"	m
+NEXT_TIME_H	testsuite/Makefile	/^NEXT_TIME_H = <time.h>$/;"	m
+NEXT_UNISTD_H	Makefile	/^NEXT_UNISTD_H = <unistd.h>$/;"	m
+NEXT_UNISTD_H	testsuite/Makefile	/^NEXT_UNISTD_H = <unistd.h>$/;"	m
+NEXT_WCHAR_H	Makefile	/^NEXT_WCHAR_H = <wchar.h>$/;"	m
+NEXT_WCHAR_H	testsuite/Makefile	/^NEXT_WCHAR_H = <wchar.h>$/;"	m
+NEXT_WCTYPE_H	Makefile	/^NEXT_WCTYPE_H = <wctype.h>$/;"	m
+NEXT_WCTYPE_H	testsuite/Makefile	/^NEXT_WCTYPE_H = <wctype.h>$/;"	m
+NON_FATAL_IF_SANITY_CHECK_FAILS	find.c	/^    NON_FATAL_IF_SANITY_CHECK_FAILS$/;"	e	enum:WdSanityCheckFatality	file:
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	testsuite/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	testsuite/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NO_PREC	defs.h	/^  NO_PREC,$/;"	e	enum:predicate_precedence
+NO_TYPE	defs.h	/^  NO_TYPE,$/;"	e	enum:predicate_type
+NROFF	Makefile	/^NROFF = nroff$/;"	m
+N_	find.c	70;"	d	file:
+N_	find.c	73;"	d	file:
+N_	fstype.c	74;"	d	file:
+N_	fstype.c	77;"	d	file:
+N_	ftsfind.c	71;"	d	file:
+N_	ftsfind.c	74;"	d	file:
+N_	parser.c	63;"	d	file:
+N_	parser.c	66;"	d	file:
+N_	pred.c	57;"	d	file:
+N_	pred.c	60;"	d	file:
+N_	tree.c	35;"	d	file:
+N_	tree.c	38;"	d	file:
+N_	util.c	47;"	d	file:
+N_	util.c	50;"	d	file:
+N_DEBUGASSOC	util.c	70;"	d	file:
+NeedsAccessInfo	defs.h	/^  NeedsAccessInfo,$/;"	e	enum:EvaluationCost
+NeedsEventualExec	defs.h	/^  NeedsEventualExec,$/;"	e	enum:EvaluationCost
+NeedsImmediateExec	defs.h	/^  NeedsImmediateExec,$/;"	e	enum:EvaluationCost
+NeedsLinkName	defs.h	/^  NeedsLinkName,$/;"	e	enum:EvaluationCost
+NeedsNothing	defs.h	/^  NeedsNothing,$/;"	e	enum:EvaluationCost
+NeedsStatInfo	defs.h	/^  NeedsStatInfo,$/;"	e	enum:EvaluationCost
+NeedsSyncDiskHit	defs.h	/^  NeedsSyncDiskHit,$/;"	e	enum:EvaluationCost
+NeedsType	defs.h	/^  NeedsType,$/;"	e	enum:EvaluationCost
+NeedsUnknown	defs.h	/^  NeedsUnknown,$/;"	e	enum:EvaluationCost
+NeedsUserInteraction	defs.h	/^  NeedsUserInteraction,$/;"	e	enum:EvaluationCost
+NumEvaluationCosts	defs.h	/^  NumEvaluationCosts$/;"	e	enum:EvaluationCost
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	testsuite/Makefile	/^OBJEXT = o$/;"	m
+OPEN_PAREN	defs.h	/^  OPEN_PAREN,$/;"	e	enum:predicate_type
+OR_PREC	defs.h	/^  OR_PREC,$/;"	e	enum:predicate_precedence
+PACKAGE	Makefile	/^PACKAGE = findutils$/;"	m
+PACKAGE	testsuite/Makefile	/^PACKAGE = findutils$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = bug-findutils@gnu.org$/;"	m
+PACKAGE_BUGREPORT	testsuite/Makefile	/^PACKAGE_BUGREPORT = bug-findutils@gnu.org$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = GNU findutils$/;"	m
+PACKAGE_NAME	testsuite/Makefile	/^PACKAGE_NAME = GNU findutils$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = GNU findutils 4.4.0$/;"	m
+PACKAGE_STRING	testsuite/Makefile	/^PACKAGE_STRING = GNU findutils 4.4.0$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = findutils$/;"	m
+PACKAGE_TARNAME	testsuite/Makefile	/^PACKAGE_TARNAME = findutils$/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 4.4.0$/;"	m
+PACKAGE_VERSION	testsuite/Makefile	/^PACKAGE_VERSION = 4.4.0$/;"	m
+PARAMS	defs.h	69;"	d
+PARSE_ACTION	parser.c	217;"	d	file:
+PARSE_ACTION_NP	parser.c	220;"	d	file:
+PARSE_FUNC	defs.h	/^typedef boolean (*PARSE_FUNC)(const struct parser_table *p,$/;"	t
+PARSE_OPTION	parser.c	205;"	d	file:
+PARSE_POSOPT	parser.c	208;"	d	file:
+PARSE_PUNCTUATION	parser.c	223;"	d	file:
+PARSE_TEST	parser.c	211;"	d	file:
+PARSE_TEST_NP	parser.c	214;"	d	file:
+PASTE	parser.c	202;"	d	file:
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	testsuite/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PERM_ANY	defs.h	/^  PERM_ANY,$/;"	e	enum:permissions_type
+PERM_AT_LEAST	defs.h	/^  PERM_AT_LEAST,$/;"	e	enum:permissions_type
+PERM_EXACT	defs.h	/^  PERM_EXACT$/;"	e	enum:permissions_type
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	testsuite/Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	testsuite/Makefile	/^POST_UNINSTALL = :$/;"	m
+POSUB	Makefile	/^POSUB = po$/;"	m
+POSUB	testsuite/Makefile	/^POSUB = po$/;"	m
+PREDICATEFUNCTION	defs.h	/^typedef boolean PREDICATEFUNCTION(const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr);$/;"	t
+PRED_FUNC	defs.h	/^typedef boolean (*PRED_FUNC)(const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr);$/;"	t
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	testsuite/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	testsuite/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRIMARY_TYPE	defs.h	/^  PRIMARY_TYPE,$/;"	e	enum:predicate_type
+PRIPTR_PREFIX	Makefile	/^PRIPTR_PREFIX = ""$/;"	m
+PRIPTR_PREFIX	testsuite/Makefile	/^PRIPTR_PREFIX = ""$/;"	m
+PRI_MACROS_BROKEN	Makefile	/^PRI_MACROS_BROKEN = 0$/;"	m
+PRI_MACROS_BROKEN	testsuite/Makefile	/^PRI_MACROS_BROKEN = 0$/;"	m
+PROGRAMS	Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+PTRDIFF_T_SUFFIX	Makefile	/^PTRDIFF_T_SUFFIX = $/;"	m
+PTRDIFF_T_SUFFIX	testsuite/Makefile	/^PTRDIFF_T_SUFFIX = $/;"	m
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m
+RANLIB	testsuite/Makefile	/^RANLIB = ranlib$/;"	m
+RECURSIVE_CLEAN_TARGETS	Makefile	/^RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\\$/;"	m
+RECURSIVE_TARGETS	Makefile	/^RECURSIVE_TARGETS = all-recursive check-recursive dvi-recursive \\$/;"	m
+REPLACE_CHOWN	Makefile	/^REPLACE_CHOWN = 0$/;"	m
+REPLACE_CHOWN	testsuite/Makefile	/^REPLACE_CHOWN = 0$/;"	m
+REPLACE_FCHDIR	Makefile	/^REPLACE_FCHDIR = 0$/;"	m
+REPLACE_FCHDIR	testsuite/Makefile	/^REPLACE_FCHDIR = 0$/;"	m
+REPLACE_FFLUSH	Makefile	/^REPLACE_FFLUSH = 0$/;"	m
+REPLACE_FFLUSH	testsuite/Makefile	/^REPLACE_FFLUSH = 0$/;"	m
+REPLACE_FOPEN	Makefile	/^REPLACE_FOPEN = 0$/;"	m
+REPLACE_FOPEN	testsuite/Makefile	/^REPLACE_FOPEN = 0$/;"	m
+REPLACE_FPRINTF	Makefile	/^REPLACE_FPRINTF = 0$/;"	m
+REPLACE_FPRINTF	testsuite/Makefile	/^REPLACE_FPRINTF = 0$/;"	m
+REPLACE_FREOPEN	Makefile	/^REPLACE_FREOPEN = 0$/;"	m
+REPLACE_FREOPEN	testsuite/Makefile	/^REPLACE_FREOPEN = 0$/;"	m
+REPLACE_FSEEK	Makefile	/^REPLACE_FSEEK = 0$/;"	m
+REPLACE_FSEEK	testsuite/Makefile	/^REPLACE_FSEEK = 0$/;"	m
+REPLACE_FSEEKO	Makefile	/^REPLACE_FSEEKO = 0$/;"	m
+REPLACE_FSEEKO	testsuite/Makefile	/^REPLACE_FSEEKO = 0$/;"	m
+REPLACE_FTELL	Makefile	/^REPLACE_FTELL = 0$/;"	m
+REPLACE_FTELL	testsuite/Makefile	/^REPLACE_FTELL = 0$/;"	m
+REPLACE_FTELLO	Makefile	/^REPLACE_FTELLO = 0$/;"	m
+REPLACE_FTELLO	testsuite/Makefile	/^REPLACE_FTELLO = 0$/;"	m
+REPLACE_GETCWD	Makefile	/^REPLACE_GETCWD = 1$/;"	m
+REPLACE_GETCWD	testsuite/Makefile	/^REPLACE_GETCWD = 1$/;"	m
+REPLACE_GETLINE	Makefile	/^REPLACE_GETLINE = 0$/;"	m
+REPLACE_GETLINE	testsuite/Makefile	/^REPLACE_GETLINE = 0$/;"	m
+REPLACE_GETTIMEOFDAY	Makefile	/^REPLACE_GETTIMEOFDAY = 0$/;"	m
+REPLACE_GETTIMEOFDAY	testsuite/Makefile	/^REPLACE_GETTIMEOFDAY = 0$/;"	m
+REPLACE_LCHOWN	Makefile	/^REPLACE_LCHOWN = 0$/;"	m
+REPLACE_LCHOWN	testsuite/Makefile	/^REPLACE_LCHOWN = 0$/;"	m
+REPLACE_LOCALTIME_R	Makefile	/^REPLACE_LOCALTIME_R = 0$/;"	m
+REPLACE_LOCALTIME_R	testsuite/Makefile	/^REPLACE_LOCALTIME_R = 0$/;"	m
+REPLACE_LSEEK	Makefile	/^REPLACE_LSEEK = 0$/;"	m
+REPLACE_LSEEK	testsuite/Makefile	/^REPLACE_LSEEK = 0$/;"	m
+REPLACE_MEMMEM	Makefile	/^REPLACE_MEMMEM = 0$/;"	m
+REPLACE_MEMMEM	testsuite/Makefile	/^REPLACE_MEMMEM = 0$/;"	m
+REPLACE_MKSTEMP	Makefile	/^REPLACE_MKSTEMP = 0$/;"	m
+REPLACE_MKSTEMP	testsuite/Makefile	/^REPLACE_MKSTEMP = 0$/;"	m
+REPLACE_NANOSLEEP	Makefile	/^REPLACE_NANOSLEEP = GNULIB_PORTCHECK$/;"	m
+REPLACE_NANOSLEEP	testsuite/Makefile	/^REPLACE_NANOSLEEP = GNULIB_PORTCHECK$/;"	m
+REPLACE_OPEN	Makefile	/^REPLACE_OPEN = 0$/;"	m
+REPLACE_OPEN	testsuite/Makefile	/^REPLACE_OPEN = 0$/;"	m
+REPLACE_PRINTF	Makefile	/^REPLACE_PRINTF = 0$/;"	m
+REPLACE_PRINTF	testsuite/Makefile	/^REPLACE_PRINTF = 0$/;"	m
+REPLACE_PUTENV	Makefile	/^REPLACE_PUTENV = 0$/;"	m
+REPLACE_PUTENV	testsuite/Makefile	/^REPLACE_PUTENV = 0$/;"	m
+REPLACE_SNPRINTF	Makefile	/^REPLACE_SNPRINTF = 0$/;"	m
+REPLACE_SNPRINTF	testsuite/Makefile	/^REPLACE_SNPRINTF = 0$/;"	m
+REPLACE_SPRINTF	Makefile	/^REPLACE_SPRINTF = 0$/;"	m
+REPLACE_SPRINTF	testsuite/Makefile	/^REPLACE_SPRINTF = 0$/;"	m
+REPLACE_STRERROR	Makefile	/^REPLACE_STRERROR = 0$/;"	m
+REPLACE_STRERROR	testsuite/Makefile	/^REPLACE_STRERROR = 0$/;"	m
+REPLACE_STRPTIME	Makefile	/^REPLACE_STRPTIME = GNULIB_PORTCHECK$/;"	m
+REPLACE_STRPTIME	testsuite/Makefile	/^REPLACE_STRPTIME = GNULIB_PORTCHECK$/;"	m
+REPLACE_TIMEGM	Makefile	/^REPLACE_TIMEGM = GNULIB_PORTCHECK$/;"	m
+REPLACE_TIMEGM	testsuite/Makefile	/^REPLACE_TIMEGM = GNULIB_PORTCHECK$/;"	m
+REPLACE_VASPRINTF	Makefile	/^REPLACE_VASPRINTF = 0$/;"	m
+REPLACE_VASPRINTF	testsuite/Makefile	/^REPLACE_VASPRINTF = 0$/;"	m
+REPLACE_VFPRINTF	Makefile	/^REPLACE_VFPRINTF = 0$/;"	m
+REPLACE_VFPRINTF	testsuite/Makefile	/^REPLACE_VFPRINTF = 0$/;"	m
+REPLACE_VPRINTF	Makefile	/^REPLACE_VPRINTF = 0$/;"	m
+REPLACE_VPRINTF	testsuite/Makefile	/^REPLACE_VPRINTF = 0$/;"	m
+REPLACE_VSNPRINTF	Makefile	/^REPLACE_VSNPRINTF = 0$/;"	m
+REPLACE_VSNPRINTF	testsuite/Makefile	/^REPLACE_VSNPRINTF = 0$/;"	m
+REPLACE_VSPRINTF	Makefile	/^REPLACE_VSPRINTF = 0$/;"	m
+REPLACE_VSPRINTF	testsuite/Makefile	/^REPLACE_VSPRINTF = 0$/;"	m
+REPLACE_WCWIDTH	Makefile	/^REPLACE_WCWIDTH = 0$/;"	m
+REPLACE_WCWIDTH	testsuite/Makefile	/^REPLACE_WCWIDTH = 0$/;"	m
+RETRY_IF_SANITY_CHECK_FAILS	find.c	/^    RETRY_IF_SANITY_CHECK_FAILS,$/;"	e	enum:WdSanityCheckFatality	file:
+RUNTEST	testsuite/Makefile	/^RUNTEST = runtest$/;"	m
+RUNTESTDEFAULTFLAGS	testsuite/Makefile	/^RUNTESTDEFAULTFLAGS = --tool $$tool --srcdir $$srcdir$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	testsuite/Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	testsuite/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIGCHLD	pred.c	64;"	d	file:
+SIG_ATOMIC_T_SUFFIX	Makefile	/^SIG_ATOMIC_T_SUFFIX = $/;"	m
+SIG_ATOMIC_T_SUFFIX	testsuite/Makefile	/^SIG_ATOMIC_T_SUFFIX = $/;"	m
+SIZE_T_SUFFIX	Makefile	/^SIZE_T_SUFFIX = $/;"	m
+SIZE_T_SUFFIX	testsuite/Makefile	/^SIZE_T_SUFFIX = $/;"	m
+SORT	Makefile	/^SORT = \/bin\/sort$/;"	m
+SORT	testsuite/Makefile	/^SORT = \/bin\/sort$/;"	m
+SORT_SUPPORTS_Z	Makefile	/^SORT_SUPPORTS_Z = true$/;"	m
+SORT_SUPPORTS_Z	testsuite/Makefile	/^SORT_SUPPORTS_Z = true$/;"	m
+SOURCES	Makefile	/^SOURCES = $(libfindtools_a_SOURCES) $(find_SOURCES) $(ftsfind_SOURCES) \\$/;"	m
+SOURCES	testsuite/Makefile	/^SOURCES =$/;"	m
+STAT_MOUNTPOINTS	find.c	32;"	d	file:
+STAT_MOUNTPOINTS	ftsfind.c	35;"	d	file:
+STDBOOL_H	Makefile	/^STDBOOL_H = $/;"	m
+STDBOOL_H	testsuite/Makefile	/^STDBOOL_H = $/;"	m
+STDINT_H	Makefile	/^STDINT_H = $/;"	m
+STDINT_H	testsuite/Makefile	/^STDINT_H = $/;"	m
+STRINGIFY	ftsfind.c	196;"	d	file:
+STRINGIFY	parser.c	203;"	d	file:
+STRIP	Makefile	/^STRIP = $/;"	m
+STRIP	testsuite/Makefile	/^STRIP = $/;"	m
+ST_BLKSIZE	pred.c	111;"	d	file:
+ST_BLKSIZE	pred.c	125;"	d	file:
+ST_NBLOCKS	pred.c	113;"	d	file:
+ST_NBLOCKS	pred.c	118;"	d	file:
+ST_NBLOCKS	pred.c	137;"	d	file:
+ST_NBLOCKS	pred.c	147;"	d	file:
+ST_NBLOCKSIZE	pred.c	130;"	d	file:
+ST_NBLOCKSIZE	pred.c	134;"	d	file:
+ST_NBLOCKSIZE	pred.c	154;"	d	file:
+SUBDIRS	Makefile	/^SUBDIRS = . testsuite$/;"	m
+SYMLINK_ALWAYS_DEREF	defs.h	/^    SYMLINK_ALWAYS_DEREF,	\/* Option -L *\/$/;"	e	enum:SymlinkOption
+SYMLINK_DEREF_ARGSONLY	defs.h	/^    SYMLINK_DEREF_ARGSONLY	\/* Option -H *\/$/;"	e	enum:SymlinkOption
+SYMLINK_NEVER_DEREF	defs.h	/^    SYMLINK_NEVER_DEREF,	\/* Option -P *\/$/;"	e	enum:SymlinkOption
+SYS_STAT_H	Makefile	/^SYS_STAT_H = sys\/stat.h$/;"	m
+SYS_STAT_H	testsuite/Makefile	/^SYS_STAT_H = sys\/stat.h$/;"	m
+SYS_TIME_H	Makefile	/^SYS_TIME_H = $/;"	m
+SYS_TIME_H	testsuite/Makefile	/^SYS_TIME_H = $/;"	m
+SYS_TIME_H_DEFINES_STRUCT_TIMESPEC	Makefile	/^SYS_TIME_H_DEFINES_STRUCT_TIMESPEC = 0$/;"	m
+SYS_TIME_H_DEFINES_STRUCT_TIMESPEC	testsuite/Makefile	/^SYS_TIME_H_DEFINES_STRUCT_TIMESPEC = 0$/;"	m
+SafeChdirFailChdirFailed	find.c	/^    SafeChdirFailChdirFailed,$/;"	e	enum:SafeChdirStatus	file:
+SafeChdirFailDestUnreadable	find.c	/^    SafeChdirFailDestUnreadable$/;"	e	enum:SafeChdirStatus	file:
+SafeChdirFailNonexistent	find.c	/^    SafeChdirFailNonexistent,$/;"	e	enum:SafeChdirStatus	file:
+SafeChdirFailNotDir	find.c	/^    SafeChdirFailNotDir,$/;"	e	enum:SafeChdirStatus	file:
+SafeChdirFailStat	find.c	/^    SafeChdirFailStat,$/;"	e	enum:SafeChdirStatus	file:
+SafeChdirFailSymlink	find.c	/^    SafeChdirFailSymlink,$/;"	e	enum:SafeChdirStatus	file:
+SafeChdirFailWouldBeUnableToReturn	find.c	/^    SafeChdirFailWouldBeUnableToReturn,$/;"	e	enum:SafeChdirStatus	file:
+SafeChdirOK	find.c	/^    SafeChdirOK,$/;"	e	enum:SafeChdirStatus	file:
+SafeChdirStatus	find.c	/^enum SafeChdirStatus$/;"	g	file:
+SegmentKind	defs.h	/^enum SegmentKind $/;"	g
+SymlinkFollowOk	find.c	/^    SymlinkFollowOk		\/* see comment in process_top_path() *\/$/;"	e	enum:ChdirSymlinkHandling	file:
+SymlinkHandleDefault	find.c	/^    SymlinkHandleDefault,	\/* Normally the right choice *\/$/;"	e	enum:ChdirSymlinkHandling	file:
+SymlinkOption	defs.h	/^enum SymlinkOption $/;"	g
+TIME_BUF_LEN	pred.c	2182;"	d	file:
+TIME_H_DEFINES_STRUCT_TIMESPEC	Makefile	/^TIME_H_DEFINES_STRUCT_TIMESPEC = 1$/;"	m
+TIME_H_DEFINES_STRUCT_TIMESPEC	testsuite/Makefile	/^TIME_H_DEFINES_STRUCT_TIMESPEC = 1$/;"	m
+TraversalDirection	find.c	/^enum TraversalDirection$/;"	g	file:
+TraversingDown	find.c	/^    TraversingDown$/;"	e	enum:TraversalDirection	file:
+TraversingUp	find.c	/^    TraversingUp,$/;"	e	enum:TraversalDirection	file:
+U	Makefile	/^U = $/;"	m
+U	testsuite/Makefile	/^U = $/;"	m
+UINT32_MAX_LT_UINTMAX_MAX	Makefile	/^UINT32_MAX_LT_UINTMAX_MAX = 1$/;"	m
+UINT32_MAX_LT_UINTMAX_MAX	testsuite/Makefile	/^UINT32_MAX_LT_UINTMAX_MAX = 1$/;"	m
+UINT64_MAX_EQ_ULONG_MAX	Makefile	/^UINT64_MAX_EQ_ULONG_MAX = 0$/;"	m
+UINT64_MAX_EQ_ULONG_MAX	testsuite/Makefile	/^UINT64_MAX_EQ_ULONG_MAX = 0$/;"	m
+UNI_OP	defs.h	/^  UNI_OP,$/;"	e	enum:predicate_type
+USE_NLS	Makefile	/^USE_NLS = yes$/;"	m
+USE_NLS	testsuite/Makefile	/^USE_NLS = yes$/;"	m
+USE_SAFE_CHDIR	find.c	31;"	d	file:
+USE_SAFE_CHDIR	ftsfind.c	34;"	d	file:
+VERSION	Makefile	/^VERSION = 4.4.0$/;"	m
+VERSION	testsuite/Makefile	/^VERSION = 4.4.0$/;"	m
+WCHAR_H	Makefile	/^WCHAR_H = $/;"	m
+WCHAR_H	testsuite/Makefile	/^WCHAR_H = $/;"	m
+WCHAR_T_SUFFIX	Makefile	/^WCHAR_T_SUFFIX = $/;"	m
+WCHAR_T_SUFFIX	testsuite/Makefile	/^WCHAR_T_SUFFIX = $/;"	m
+WCTYPE_H	Makefile	/^WCTYPE_H = $/;"	m
+WCTYPE_H	testsuite/Makefile	/^WCTYPE_H = $/;"	m
+WINT_T_SUFFIX	Makefile	/^WINT_T_SUFFIX = $/;"	m
+WINT_T_SUFFIX	testsuite/Makefile	/^WINT_T_SUFFIX = $/;"	m
+WdSanityCheckFatality	find.c	/^enum WdSanityCheckFatality$/;"	g	file:
+XGETTEXT	Makefile	/^XGETTEXT = \/usr\/bin\/xgettext$/;"	m
+XGETTEXT	testsuite/Makefile	/^XGETTEXT = \/usr\/bin\/xgettext$/;"	m
+XGETTEXT_015	Makefile	/^XGETTEXT_015 = :$/;"	m
+XGETTEXT_015	testsuite/Makefile	/^XGETTEXT_015 = :$/;"	m
+XGETTEXT_EXTRA_OPTIONS	Makefile	/^XGETTEXT_EXTRA_OPTIONS =  --flag=error:3:c-format --flag=error_at_line:5:c-format$/;"	m
+XGETTEXT_EXTRA_OPTIONS	testsuite/Makefile	/^XGETTEXT_EXTRA_OPTIONS =  --flag=error:3:c-format --flag=error_at_line:5:c-format$/;"	m
+XVAL_ATIME	defs.h	/^    XVAL_ATIME, XVAL_BIRTHTIME, XVAL_CTIME, XVAL_MTIME, XVAL_TIME$/;"	e	enum:xval
+XVAL_BIRTHTIME	defs.h	/^    XVAL_ATIME, XVAL_BIRTHTIME, XVAL_CTIME, XVAL_MTIME, XVAL_TIME$/;"	e	enum:xval
+XVAL_CTIME	defs.h	/^    XVAL_ATIME, XVAL_BIRTHTIME, XVAL_CTIME, XVAL_MTIME, XVAL_TIME$/;"	e	enum:xval
+XVAL_MTIME	defs.h	/^    XVAL_ATIME, XVAL_BIRTHTIME, XVAL_CTIME, XVAL_MTIME, XVAL_TIME$/;"	e	enum:xval
+XVAL_TIME	defs.h	/^    XVAL_ATIME, XVAL_BIRTHTIME, XVAL_CTIME, XVAL_MTIME, XVAL_TIME$/;"	e	enum:xval
+YACC	Makefile	/^YACC = bison -y$/;"	m
+YACC	testsuite/Makefile	/^YACC = bison -y$/;"	m
+YFLAGS	Makefile	/^YFLAGS = $/;"	m
+YFLAGS	testsuite/Makefile	/^YFLAGS = $/;"	m
+_	find.c	62;"	d	file:
+_	find.c	64;"	d	file:
+_	fstype.c	69;"	d	file:
+_	fstype.c	71;"	d	file:
+_	ftsfind.c	64;"	d	file:
+_	ftsfind.c	66;"	d	file:
+_	parser.c	58;"	d	file:
+_	parser.c	60;"	d	file:
+_	pred.c	52;"	d	file:
+_	pred.c	54;"	d	file:
+_	tree.c	30;"	d	file:
+_	tree.c	32;"	d	file:
+_	util.c	42;"	d	file:
+_	util.c	44;"	d	file:
+_VICEIOCTL	fstype.c	122;"	d	file:
+_VICEIOCTL	fstype.c	123;"	d	file:
+abs_builddir	Makefile	/^abs_builddir = \/data\/rk\/findutils-4.4.0\/find$/;"	m
+abs_builddir	testsuite/Makefile	/^abs_builddir = \/data\/rk\/findutils-4.4.0\/find\/testsuite$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/data\/rk\/findutils-4.4.0\/find$/;"	m
+abs_srcdir	testsuite/Makefile	/^abs_srcdir = \/data\/rk\/findutils-4.4.0\/find\/testsuite$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/data\/rk\/findutils-4.4.0$/;"	m
+abs_top_builddir	testsuite/Makefile	/^abs_top_builddir = \/data\/rk\/findutils-4.4.0$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/data\/rk\/findutils-4.4.0$/;"	m
+abs_top_srcdir	testsuite/Makefile	/^abs_top_srcdir = \/data\/rk\/findutils-4.4.0$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	testsuite/Makefile	/^ac_ct_CC = gcc$/;"	m
+access_callback	pred.c	/^access_callback(void *context)$/;"	f	file:
+access_check_args	pred.c	/^struct access_check_args$/;"	s	file:
+access_type	pred.c	/^  int access_type;$/;"	m	struct:access_check_args	file:
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/gnulib\/m4\/alloca.m4 \\$/;"	m
+am__aclocal_m4_deps	testsuite/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/gnulib\/m4\/alloca.m4 \\$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	testsuite/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	testsuite/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__find_SOURCES_DIST	Makefile	/^am__find_SOURCES_DIST = find.c ftsfind.c$/;"	m
+am__ftsfind_SOURCES_DIST	Makefile	/^am__ftsfind_SOURCES_DIST = ftsfind.c$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__include	testsuite/Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)" "$(DESTDIR)$(man1dir)"$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	testsuite/Makefile	/^am__leading_dot = .$/;"	m
+am__oldfind_SOURCES_DIST	Makefile	/^am__oldfind_SOURCES_DIST = find.c$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__quote	testsuite/Makefile	/^am__quote = $/;"	m
+am__tar	Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__tar	testsuite/Makefile	/^am__tar = ${AMTAR} chof - "$$tardir"$/;"	m
+am__untar	Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am__untar	testsuite/Makefile	/^am__untar = ${AMTAR} xf -$/;"	m
+am_find_OBJECTS	Makefile	/^am_find_OBJECTS = ftsfind.$(OBJEXT)$/;"	m
+am_libfindtools_a_OBJECTS	Makefile	/^am_libfindtools_a_OBJECTS = finddata.$(OBJEXT) fstype.$(OBJEXT) \\$/;"	m
+am_oldfind_OBJECTS	Makefile	/^am_oldfind_OBJECTS = find.$(OBJEXT)$/;"	m
+apply_predicate	util.c	/^apply_predicate(const char *pathname, struct stat *stat_buf, struct predicate *p)$/;"	f
+arg_text	defs.h	/^  char *arg_text;$/;"	m	struct:predicate
+arg_type	defs.h	/^enum arg_type$/;"	g
+args	defs.h	/^  } args;$/;"	m	struct:predicate	typeref:union:predicate::__anon1
+artificial	defs.h	/^  boolean artificial;$/;"	m	struct:predicate
+at_top	find.c	/^at_top (char *pathname,$/;"	f	file:
+binPROGRAMS_INSTALL	Makefile	/^binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)$/;"	m
+bin_PROGRAMS	Makefile	/^bin_PROGRAMS = find$(EXEEXT) oldfind$(EXEEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	testsuite/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindtextdomain	find.c	66;"	d	file:
+bindtextdomain	ftsfind.c	68;"	d	file:
+blank_rtrim	pred.c	/^blank_rtrim (str, buf)$/;"	f	file:
+blocksize	defs.h	/^  int blocksize;$/;"	m	struct:size_val
+boolean	defs.h	/^typedef bool boolean;$/;"	t
+build	Makefile	/^build = i686-pc-linux-gnu$/;"	m
+build	testsuite/Makefile	/^build = i686-pc-linux-gnu$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+build_alias	testsuite/Makefile	/^build_alias = $/;"	m
+build_cpu	Makefile	/^build_cpu = i686$/;"	m
+build_cpu	testsuite/Makefile	/^build_cpu = i686$/;"	m
+build_expression_tree	tree.c	/^build_expression_tree(int argc, char *argv[], int end_of_leading_options)$/;"	f
+build_os	Makefile	/^build_os = linux-gnu$/;"	m
+build_os	testsuite/Makefile	/^build_os = linux-gnu$/;"	m
+build_triplet	Makefile	/^build_triplet = i686-pc-linux-gnu$/;"	m
+build_triplet	testsuite/Makefile	/^build_triplet = i686-pc-linux-gnu$/;"	m
+build_vendor	Makefile	/^build_vendor = pc$/;"	m
+build_vendor	testsuite/Makefile	/^build_vendor = pc$/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+builddir	testsuite/Makefile	/^builddir = .$/;"	m
+calculate_derived_rates	tree.c	/^calculate_derived_rates(struct predicate *p)$/;"	f
+can_access	pred.c	/^can_access(int access_type)$/;"	f	file:
+cb_errno	pred.c	/^  int cb_errno;$/;"	m	struct:access_check_args	file:
+chdir_back	find.c	/^chdir_back (void)$/;"	f	file:
+check_name_arg	parser.c	/^check_name_arg(const char *pred, const char *arg)$/;"	f	file:
+check_nofollow	util.c	/^check_nofollow(void)$/;"	f
+check_normalization	tree.c	/^static void check_normalization(struct predicate *p, boolean at_root)$/;"	f	file:
+check_option_combinations	parser.c	/^check_option_combinations(const struct predicate *p)$/;"	f
+check_path_safety	parser.c	/^check_path_safety(const char *action, char **argv)$/;"	f	file:
+check_sorted	tree.c	/^check_sorted(void *base, size_t members, size_t membersize,$/;"	f	file:
+checked_fflush	pred.c	/^checked_fflush(struct format_val *dest)$/;"	f	file:
+checked_fprintf	pred.c	/^checked_fprintf(struct format_val *dest, const char *fmt, ...)$/;"	f	file:
+checked_fwrite	pred.c	/^checked_fwrite(void *p, size_t siz, size_t nmemb, struct format_val *dest)$/;"	f	file:
+checked_print_quoted	pred.c	/^checked_print_quoted (struct format_val *dest,$/;"	f	file:
+cleanup	util.c	/^cleanup(void)$/;"	f
+close_stdin	defs.h	/^  boolean close_stdin;		\/* If true, close stdin in the child. *\/$/;"	m	struct:exec_val
+collect_arg	parser.c	/^collect_arg(char **argv, int *arg_ptr, const char **collected_arg)$/;"	f	file:
+collect_arg_stat_info	parser.c	/^collect_arg_stat_info(char **argv, int *arg_ptr, struct stat *p)$/;"	f	file:
+compare_ts	pred.c	/^compare_ts(struct timespec ts1,$/;"	f	file:
+comparison_type	defs.h	/^enum comparison_type$/;"	g
+complete_execdirs_cb	ftsfind.c	/^complete_execdirs_cb(void *context)$/;"	f	file:
+complete_pending_execdirs	util.c	/^complete_pending_execdirs(int dir_fd)$/;"	f
+complete_pending_execs	util.c	/^complete_pending_execs(struct predicate *p)$/;"	f
+consider_arm_swap	tree.c	/^consider_arm_swap(struct predicate *p)$/;"	f	file:
+consider_visiting	ftsfind.c	/^consider_visiting(FTS *p, FTSENT *ent)$/;"	f	file:
+constrain_rate	tree.c	/^constrain_rate(float rate)$/;"	f	file:
+cost	tree.c	/^  enum EvaluationCost   cost;$/;"	m	struct:pred_cost_lookup	typeref:enum:pred_cost_lookup::EvaluationCost	file:
+cost	tree.c	/^  enum EvaluationCost cost;$/;"	m	struct:cost_assoc	typeref:enum:cost_assoc::EvaluationCost	file:
+cost_assoc	tree.c	/^struct cost_assoc$/;"	s	file:
+cost_name	tree.c	/^cost_name (enum EvaluationCost cost)$/;"	f	file:
+cost_table	tree.c	/^struct cost_assoc cost_table[] = $/;"	v	typeref:struct:cost_assoc
+cost_table_comparison	tree.c	/^cost_table_comparison(const void *p1, const void *p2)$/;"	f	file:
+costlookup	tree.c	/^static struct pred_cost_lookup costlookup[] = $/;"	v	typeref:struct:pred_cost_lookup	file:
+ctime_format	pred.c	/^ctime_format (struct timespec ts)$/;"	f	file:
+ctl	defs.h	/^  struct buildcmd_control ctl;$/;"	m	struct:exec_val	typeref:struct:exec_val::buildcmd_control
+cur_day_start	defs.h	/^  struct timespec      cur_day_start;$/;"	m	struct:options	typeref:struct:options::timespec
+curdepth	defs.h	/^  int curdepth;$/;"	m	struct:state
+curr_fd	ftsfind.c	/^static int curr_fd = -1;$/;"	v	file:
+cwd_dir_fd	defs.h	/^  int cwd_dir_fd;$/;"	m	struct:state
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	testsuite/Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	testsuite/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+debug_option_assoc	util.c	/^struct debug_option_assoc$/;"	s	file:
+debug_options	defs.h	/^  unsigned long debug_options;$/;"	m	struct:options
+debug_stat	util.c	/^debug_stat (const char *file, struct stat *bufp)$/;"	f
+debugassoc	util.c	/^static struct debug_option_assoc debugassoc[] = $/;"	v	typeref:struct:debug_option_assoc	file:
+default_prints	util.c	/^default_prints (struct predicate *pred)$/;"	f
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/build-aux\/depcomp$/;"	m
+dest_is_tty	defs.h	/^  boolean dest_is_tty;		\/* True if the destination is a terminal. *\/$/;"	m	struct:format_val
+dev	defs.h	/^  dev_t dev;$/;"	m	struct:dir_id
+dev	defs.h	/^  dev_t dev;$/;"	m	struct:samefile_file_id
+dev_present	find.c	/^dev_present(dev_t dev, const dev_t *list, size_t n)$/;"	f	file:
+digest_mode	util.c	/^digest_mode(mode_t mode,$/;"	f
+dir_alloc	find.c	/^static int dir_alloc = 0;$/;"	v	file:
+dir_curr	find.c	/^static int dir_curr = -1;$/;"	v	file:
+dir_fd	defs.h	/^  int dir_fd;			\/* The directory to do the exec in. *\/$/;"	m	struct:exec_val
+dir_id	defs.h	/^struct dir_id$/;"	s
+dir_ids	find.c	/^static struct dir_id *dir_ids = NULL;$/;"	v	typeref:struct:dir_id	file:
+dirchange_is_fatal	find.c	/^dirchange_is_fatal(const char *specific_what,$/;"	f	file:
+dirent	pred.c	73;"	d	file:
+do_arm_swaps	tree.c	/^do_arm_swaps(struct predicate *p)$/;"	f	file:
+do_complete_pending_execdirs	util.c	/^do_complete_pending_execdirs(struct predicate *p, int dir_fd)$/;"	f	file:
+do_dir_first	defs.h	/^  boolean do_dir_first;$/;"	m	struct:options
+do_fprintf	pred.c	/^do_fprintf(struct format_val *dest,$/;"	f	file:
+do_parse_xmin	parser.c	/^do_parse_xmin (const struct parser_table* entry,$/;"	f	file:
+do_process_predicate	find.c	/^static void do_process_predicate(char *pathname,$/;"	f	file:
+do_process_top_dir	find.c	/^static void do_process_top_dir(char *pathname,$/;"	f	file:
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	testsuite/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docstring	util.c	/^  char *docstring;$/;"	m	struct:debug_option_assoc	file:
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	testsuite/Makefile	/^dvidir = ${docdir}$/;"	m
+endgrent	parser.c	80;"	d	file:
+endpwent	parser.c	83;"	d	file:
+err_quoting_style	defs.h	/^  enum quoting_style err_quoting_style;$/;"	m	struct:options	typeref:enum:options::quoting_style
+error_severity	ftsfind.c	/^error_severity(int level)$/;"	f	file:
+est_success_rate	defs.h	/^  float est_success_rate;$/;"	m	struct:predicate
+estimate_costs	tree.c	/^estimate_costs (struct predicate *tree)$/;"	f	file:
+estimate_file_age_success_rate	parser.c	/^estimate_file_age_success_rate(float num_days)$/;"	f	file:
+estimate_fstype_success_rate	parser.c	/^static float estimate_fstype_success_rate(const char *fsname)$/;"	f	file:
+estimate_pattern_match_rate	parser.c	/^estimate_pattern_match_rate(const char *pattern, int is_regex)$/;"	f	file:
+estimate_timestamp_success_rate	parser.c	/^estimate_timestamp_success_rate(time_t when)$/;"	f	file:
+eval_tree	tree.c	/^static struct predicate *eval_tree  = NULL;$/;"	v	typeref:struct:predicate	file:
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	testsuite/Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_val	defs.h	/^struct exec_val$/;"	s
+exec_vec	defs.h	/^    struct exec_val exec_vec;	\/* exec ok *\/$/;"	m	union:predicate::__anon1	typeref:struct:predicate::__anon1::exec_val
+execdirs_outstanding	defs.h	/^  boolean execdirs_outstanding;$/;"	m	struct:state
+exit_status	defs.h	/^  int exit_status;$/;"	m	struct:state
+explicit_depth	defs.h	/^   boolean explicit_depth;$/;"	m	struct:options
+fallback_stat	util.c	/^fallback_stat(const char *name, struct stat *p, int prev_rv)$/;"	f	file:
+fatal_file_error	util.c	/^fatal_file_error(const char *name)$/;"	f
+fd	defs.h	/^  int   fd;$/;"	m	struct:samefile_file_id
+file_sparseness	pred.c	/^file_sparseness(const struct stat *p)$/;"	f	file:
+file_system_type_uncached	fstype.c	/^file_system_type_uncached (const struct stat *statp, const char *path)$/;"	f	file:
+filename	defs.h	/^  const char *filename;		\/* We need the filename for error messages. *\/$/;"	m	struct:format_val
+filename	pred.c	/^  const char *filename;$/;"	m	struct:access_check_args	file:
+filesystem_type	fstype.c	/^filesystem_type (const struct stat *statp, const char *path)$/;"	f
+find	ftsfind.c	/^find(char *arg)$/;"	f	file:
+find_DEPENDENCIES	Makefile	/^find_DEPENDENCIES = .\/libfindtools.a ..\/lib\/libfind.a \\$/;"	m
+find_LDADD	Makefile	/^find_LDADD = $(LDADD)$/;"	m
+find_OBJECTS	Makefile	/^find_OBJECTS = $(am_find_OBJECTS)$/;"	m
+find_SOURCES	Makefile	/^find_SOURCES = ftsfind.c$/;"	m
+find_parser	parser.c	/^find_parser (char *search_name)$/;"	f
+first_nonoption_arg	parser.c	/^static const char *first_nonoption_arg = NULL;$/;"	v	file:
+flush_and_close_output_files	util.c	/^flush_and_close_output_files(struct predicate *p)$/;"	f	file:
+fn	tree.c	/^  PRED_FUNC             fn;$/;"	m	struct:pred_cost_lookup	file:
+fnmatch_sanitycheck	parser.c	/^fnmatch_sanitycheck(void)$/;"	f	file:
+following_links	util.c	/^following_links(void)$/;"	f
+format_char	defs.h	/^  char format_char[2];		\/* Format chars if kind is KIND_FORMAT *\/$/;"	m	struct:segment
+format_date	pred.c	/^format_date (struct timespec ts, int kind)$/;"	f	file:
+format_val	defs.h	/^struct format_val$/;"	s
+found_parser	parser.c	/^found_parser(const char *original_arg, const struct parser_table *entry)$/;"	f
+free_file_system_list	fstype.c	/^free_file_system_list(struct mount_entry *p)$/;"	f	file:
+fs_likely_to_be_automounted	find.c	/^fs_likely_to_be_automounted(const char *fs)$/;"	f	file:
+fstatat	util.c	475;"	d	file:
+fstatat	util.c	476;"	d	file:
+fstype_known	fstype.c	/^static int fstype_known = 0;$/;"	v	file:
+ftsfind_DEPENDENCIES	Makefile	/^ftsfind_DEPENDENCIES = .\/libfindtools.a ..\/lib\/libfind.a \\$/;"	m
+ftsfind_LDADD	Makefile	/^ftsfind_LDADD = $(LDADD)$/;"	m
+ftsfind_OBJECTS	Makefile	/^ftsfind_OBJECTS = $(am_ftsfind_OBJECTS)$/;"	m
+ftsoptions	ftsfind.c	/^static int ftsoptions = FTS_NOSTAT|FTS_TIGHT_CYCLE_CHECK;$/;"	v	file:
+full_days	defs.h	/^  boolean full_days;$/;"	m	struct:options
+get_comp_type	parser.c	/^get_comp_type(const char **str, enum comparison_type *comp_type)$/;"	f	file:
+get_current_dirfd	find.c	/^int get_current_dirfd(void)$/;"	f
+get_current_dirfd	ftsfind.c	/^int get_current_dirfd(void)$/;"	f
+get_eval_tree	tree.c	/^get_eval_tree(void)$/;"	f
+get_expr	tree.c	/^get_expr (struct predicate **input,$/;"	f
+get_fts_info_name	ftsfind.c	/^get_fts_info_name(int info)$/;"	f	file:
+get_info	util.c	/^get_info (const char *pathname,$/;"	f
+get_mount_state	find.c	/^get_mount_state(dev_t newdev)$/;"	f	file:
+get_mounted_devices	fstype.c	/^get_mounted_devices (size_t *n)$/;"	f
+get_mounted_filesystems	fstype.c	/^get_mounted_filesystems (void)$/;"	f
+get_new_pred	tree.c	/^get_new_pred (const struct parser_table *entry)$/;"	f
+get_new_pred_chk_op	tree.c	/^get_new_pred_chk_op (const struct parser_table *entry)$/;"	f
+get_noop	parser.c	/^get_noop(void)$/;"	f	file:
+get_num	parser.c	/^get_num (const char *str,$/;"	f	file:
+get_pred_cost	tree.c	/^get_pred_cost(const struct predicate *p)$/;"	f	file:
+get_relative_timestamp	parser.c	/^get_relative_timestamp (const char *str,$/;"	f	file:
+get_start_dirfd	util.c	/^int get_start_dirfd(void)$/;"	f
+get_stat_Ytime	parser.c	/^get_stat_Ytime(const struct stat *p,$/;"	f	file:
+get_statinfo	util.c	/^get_statinfo (const char *pathname, const char *name, struct stat *p)$/;"	f
+getrate	tree.c	/^getrate(const struct predicate *p)$/;"	f	file:
+gid	defs.h	/^    gid_t gid;			\/* group *\/$/;"	m	union:predicate::__anon1
+gid_allocated	parser.c	/^unsigned gid_allocated;$/;"	v
+gid_unused	parser.c	/^char *gid_unused = NULL;$/;"	v
+gl_LIBOBJS	Makefile	/^gl_LIBOBJS =  argmatch.o basename.o canonicalize.o chdir-long.o close-stream.o closein.o closeout.o creat-safer.o cycle-check.o dirname.o dup-safer.o exitfail.o fd-safer.o filemode.o filenamecat.o fopen-safer.o fstatat.o fts.o getcwd.o gettime.o hash.o human.o i-ring.o idcache.o modechange.o mountlist.o open-safer.o openat-proc.o pipe-safer.o quote.o quotearg.o same.o save-cwd.o savedir.o strftime.o stripslash.o xgetcwd.o xmalloc.o xstrtod.o xstrtol.o xstrtol-error.o xstrtoul.o yesno.o$/;"	m
+gl_LIBOBJS	testsuite/Makefile	/^gl_LIBOBJS =  argmatch.o basename.o canonicalize.o chdir-long.o close-stream.o closein.o closeout.o creat-safer.o cycle-check.o dirname.o dup-safer.o exitfail.o fd-safer.o filemode.o filenamecat.o fopen-safer.o fstatat.o fts.o getcwd.o gettime.o hash.o human.o i-ring.o idcache.o modechange.o mountlist.o open-safer.o openat-proc.o pipe-safer.o quote.o quotearg.o same.o save-cwd.o savedir.o strftime.o stripslash.o xgetcwd.o xmalloc.o xstrtod.o xstrtol.o xstrtol-error.o xstrtoul.o yesno.o$/;"	m
+gl_LTLIBOBJS	Makefile	/^gl_LTLIBOBJS =  argmatch.lo basename.lo canonicalize.lo chdir-long.lo close-stream.lo closein.lo closeout.lo creat-safer.lo cycle-check.lo dirname.lo dup-safer.lo exitfail.lo fd-safer.lo filemode.lo filenamecat.lo fopen-safer.lo fstatat.lo fts.lo getcwd.lo gettime.lo hash.lo human.lo i-ring.lo idcache.lo modechange.lo mountlist.lo open-safer.lo openat-proc.lo pipe-safer.lo quote.lo quotearg.lo same.lo save-cwd.lo savedir.lo strftime.lo stripslash.lo xgetcwd.lo xmalloc.lo xstrtod.lo xstrtol.lo xstrtol-error.lo xstrtoul.lo yesno.lo$/;"	m
+gl_LTLIBOBJS	testsuite/Makefile	/^gl_LTLIBOBJS =  argmatch.lo basename.lo canonicalize.lo chdir-long.lo close-stream.lo closein.lo closeout.lo creat-safer.lo cycle-check.lo dirname.lo dup-safer.lo exitfail.lo fd-safer.lo filemode.lo filenamecat.lo fopen-safer.lo fstatat.lo fts.lo getcwd.lo gettime.lo hash.lo human.lo i-ring.lo idcache.lo modechange.lo mountlist.lo open-safer.lo openat-proc.lo pipe-safer.lo quote.lo quotearg.lo same.lo save-cwd.lo savedir.lo strftime.lo stripslash.lo xgetcwd.lo xmalloc.lo xstrtod.lo xstrtol.lo xstrtol-error.lo xstrtoul.lo yesno.lo$/;"	m
+gltests_LIBOBJS	Makefile	/^gltests_LIBOBJS = $/;"	m
+gltests_LIBOBJS	testsuite/Makefile	/^gltests_LIBOBJS = $/;"	m
+gltests_LTLIBOBJS	Makefile	/^gltests_LTLIBOBJS = $/;"	m
+gltests_LTLIBOBJS	testsuite/Makefile	/^gltests_LTLIBOBJS = $/;"	m
+have_stat	defs.h	/^  boolean have_stat;$/;"	m	struct:state
+have_type	defs.h	/^  boolean have_type;$/;"	m	struct:state
+head	tree.c	/^  struct predicate *head;$/;"	m	struct:predlist	typeref:struct:predlist::predicate	file:
+hook_fstatat	util.c	/^static int hook_fstatat(int fd, const char *name, struct stat *p, int flags)$/;"	f	file:
+host	Makefile	/^host = i686-pc-linux-gnu$/;"	m
+host	testsuite/Makefile	/^host = i686-pc-linux-gnu$/;"	m
+host_alias	Makefile	/^host_alias = $/;"	m
+host_alias	testsuite/Makefile	/^host_alias = $/;"	m
+host_cpu	Makefile	/^host_cpu = i686$/;"	m
+host_cpu	testsuite/Makefile	/^host_cpu = i686$/;"	m
+host_os	Makefile	/^host_os = linux-gnu$/;"	m
+host_os	testsuite/Makefile	/^host_os = linux-gnu$/;"	m
+host_triplet	Makefile	/^host_triplet = i686-pc-linux-gnu$/;"	m
+host_triplet	testsuite/Makefile	/^host_triplet = i686-pc-linux-gnu$/;"	m
+host_vendor	Makefile	/^host_vendor = pc$/;"	m
+host_vendor	testsuite/Makefile	/^host_vendor = pc$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	testsuite/Makefile	/^htmldir = ${docdir}$/;"	m
+ignore_readdir_race	defs.h	/^  boolean ignore_readdir_race;$/;"	m	struct:options
+in_afs	fstype.c	/^in_afs (char *path)$/;"	f	file:
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	testsuite/Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	testsuite/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+init_mounted_dev_list	find.c	/^init_mounted_dev_list(int mandatory)$/;"	f	file:
+init_pred_perf	tree.c	/^init_pred_perf(struct predicate *pred)$/;"	f	file:
+ino	defs.h	/^  ino_t ino;$/;"	m	struct:dir_id
+ino	defs.h	/^  ino_t ino;$/;"	m	struct:samefile_file_id
+insert_depthspec	parser.c	/^insert_depthspec(const struct parser_table* entry, char **argv, int *arg_ptr,$/;"	f	file:
+insert_exec_ok	parser.c	/^insert_exec_ok (const char *action,$/;"	f	file:
+insert_fls	parser.c	/^insert_fls (const struct parser_table* entry, const char *filename)$/;"	f	file:
+insert_fprint	parser.c	/^insert_fprint(const struct parser_table* entry, const char *filename)$/;"	f	file:
+insert_fprintf	parser.c	/^insert_fprintf (struct format_val *vec,$/;"	f	file:
+insert_num	parser.c	/^insert_num (char **argv, int *arg_ptr, const struct parser_table *entry)$/;"	f	file:
+insert_primary	util.c	/^insert_primary (const struct parser_table *entry)$/;"	f
+insert_primary_withpred	util.c	/^insert_primary_withpred (const struct parser_table *entry, PRED_FUNC pred_func)$/;"	f
+insert_regex	parser.c	/^insert_regex (char **argv,$/;"	f	file:
+insert_type	parser.c	/^insert_type (char **argv, int *arg_ptr,$/;"	f	file:
+inside_dir	ftsfind.c	/^static void inside_dir(int dir_fd)$/;"	f	file:
+install_sh	Makefile	/^install_sh = $(SHELL) \/data\/rk\/findutils-4.4.0\/build-aux\/install-sh$/;"	m
+install_sh	testsuite/Makefile	/^install_sh = $(SHELL) \/data\/rk\/findutils-4.4.0\/build-aux\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	testsuite/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	testsuite/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	testsuite/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+is_fts_enabled	find.c	/^boolean is_fts_enabled(int *ftsoptions)$/;"	f
+is_fts_enabled	ftsfind.c	/^is_fts_enabled(int *fts_options)$/;"	f
+is_ok	pred.c	/^is_ok(const char *program, const char *arg)$/;"	f	file:
+isascii	parser.c	71;"	d	file:
+isascii	parser.c	73;"	d	file:
+issue_loop_warning	find.c	/^issue_loop_warning(const char *name, const char *pathname, int level)$/;"	f	file:
+issue_loop_warning	ftsfind.c	/^issue_loop_warning(FTSENT * ent)$/;"	f	file:
+kind	defs.h	/^  enum comparison_type kind;$/;"	m	struct:long_val	typeref:enum:long_val::comparison_type
+kind	defs.h	/^  enum comparison_type kind;$/;"	m	struct:size_val	typeref:enum:size_val::comparison_type
+kind	defs.h	/^  enum comparison_type kind;$/;"	m	struct:time_val	typeref:enum:time_val::comparison_type
+kind	defs.h	/^  enum permissions_type kind;$/;"	m	struct:perm_val	typeref:enum:perm_val::permissions_type
+l_val	defs.h	/^  uintmax_t l_val;$/;"	m	struct:long_val
+last_pred	tree.c	/^static struct predicate *last_pred = NULL;$/;"	v	typeref:struct:predicate	file:
+launch	pred.c	/^launch (const struct buildcmd_control *ctl,$/;"	f
+left_dir	ftsfind.c	/^static void left_dir(void)$/;"	f	file:
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	testsuite/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	testsuite/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libfindtools_a_AR	Makefile	/^libfindtools_a_AR = $(AR) $(ARFLAGS)$/;"	m
+libfindtools_a_LIBADD	Makefile	/^libfindtools_a_LIBADD =$/;"	m
+libfindtools_a_OBJECTS	Makefile	/^libfindtools_a_OBJECTS = $(am_libfindtools_a_OBJECTS)$/;"	m
+libfindtools_a_SOURCES	Makefile	/^libfindtools_a_SOURCES = finddata.c fstype.c parser.c pred.c tree.c util.c$/;"	m
+list	Makefile	/^	list='$(DIST_SUBDIRS)'; for subdir in $$list; do \\$/;"	m
+literal_control_chars	defs.h	/^  boolean literal_control_chars;$/;"	m	struct:options
+literal_control_chars	defs.h	/^  boolean literal_control_chars;$/;"	m	struct:predicate
+localedir	Makefile	/^localedir = $(datadir)\/locale$/;"	m
+localedir	testsuite/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	testsuite/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+long_val	defs.h	/^struct long_val$/;"	s
+looks_like_expression	util.c	/^looks_like_expression(const char *arg, boolean leading)$/;"	f
+main	find.c	/^main (int argc, char **argv)$/;"	f
+main	ftsfind.c	/^main (int argc, char **argv)$/;"	f
+make_segment	parser.c	/^make_segment (struct segment **segment,$/;"	f	file:
+man1dir	Makefile	/^man1dir = $(mandir)\/man1$/;"	m
+man_MANS	Makefile	/^man_MANS = find.1$/;"	m
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	testsuite/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+match_lname	pred.c	/^match_lname (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr, boolean ignore_case)$/;"	f	file:
+maxdepth	defs.h	/^  int maxdepth;$/;"	m	struct:options
+merge_lists	tree.c	/^merge_lists(struct predlist lists[], int nlists,$/;"	f	file:
+merge_pred	tree.c	/^merge_pred (struct predicate *beg_list, struct predicate *end_list, struct predicate **last_p)$/;"	f	file:
+mindepth	defs.h	/^  int mindepth;$/;"	m	struct:options
+mkdir_p	Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkdir_p	testsuite/Makefile	/^mkdir_p = \/bin\/mkdir -p$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(SHELL) $(top_srcdir)\/build-aux\/mkinstalldirs$/;"	m
+mkinstalldirs	testsuite/Makefile	/^mkinstalldirs = $(SHELL) $(top_srcdir)\/build-aux\/mkinstalldirs$/;"	m
+mode_to_filetype	pred.c	/^mode_to_filetype(mode_t m)$/;"	f	file:
+months	pred.c	/^static char * months[] = $/;"	v	file:
+mounted_devices	find.c	/^static dev_t *mounted_devices = NULL;$/;"	v	file:
+multiple	defs.h	/^  boolean multiple;		\/* -exec {} \\+ denotes multiple argument. *\/$/;"	m	struct:exec_val
+must_read_fs_list	fstype.c	/^must_read_fs_list(bool need_fs_type)$/;"	f	file:
+name	tree.c	/^  char *name;$/;"	m	struct:cost_assoc	file:
+name	util.c	/^  char *name;$/;"	m	struct:debug_option_assoc	file:
+need_stat	defs.h	/^  boolean need_stat;$/;"	m	struct:predicate
+need_type	defs.h	/^  boolean need_type;$/;"	m	struct:predicate
+negative	defs.h	/^  boolean negative;		\/* Defined only when representing time_t.  *\/$/;"	m	struct:long_val
+new_impl_pred_exec	pred.c	/^new_impl_pred_exec (int dir_fd, const char *pathname,$/;"	f	file:
+new_insert_exec_ok	parser.c	/^new_insert_exec_ok (const char *action,$/;"	f	file:
+next	defs.h	/^  struct segment *next;		\/* Next segment for this predicate. *\/$/;"	m	struct:segment	typeref:struct:segment::segment
+ngettext	find.c	67;"	d	file:
+no_default_print	defs.h	/^  boolean no_default_print;$/;"	m	struct:predicate
+no_leaf_check	defs.h	/^  boolean no_leaf_check;$/;"	m	struct:options
+noinst_LIBRARIES	Makefile	/^noinst_LIBRARIES = libfindtools.a$/;"	m
+non_posix_mode	parser.c	/^non_posix_mode(const char *mode)$/;"	f	file:
+nonfatal_file_error	util.c	/^nonfatal_file_error(const char *name)$/;"	f
+noop	parser.c	/^static const struct parser_table *noop = NULL;$/;"	v	typeref:struct:parser_table	file:
+now	util.c	/^now(void)$/;"	f	file:
+num_args	defs.h	/^  int num_args;$/;"	m	struct:exec_val
+num_mounted_devices	find.c	/^static size_t num_mounted_devices = 0u;$/;"	v	file:
+numinfo	defs.h	/^    struct long_val numinfo;	\/* gid inum links  uid *\/$/;"	m	union:predicate::__anon1	typeref:struct:predicate::__anon1::long_val
+oldfind_DEPENDENCIES	Makefile	/^oldfind_DEPENDENCIES = .\/libfindtools.a ..\/lib\/libfind.a \\$/;"	m
+oldfind_LDADD	Makefile	/^oldfind_LDADD = $(LDADD)$/;"	m
+oldfind_OBJECTS	Makefile	/^oldfind_OBJECTS = $(am_oldfind_OBJECTS)$/;"	m
+oldfind_SOURCES	Makefile	/^oldfind_SOURCES = find.c$/;"	m
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	testsuite/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+op_assoc	tree.c	/^struct op_assoc$/;"	s	file:
+open_nofollow_available	defs.h	/^  boolean open_nofollow_available;$/;"	m	struct:options
+open_output_file	parser.c	/^open_output_file (const char *path, struct format_val *p)$/;"	f	file:
+open_stdout	parser.c	/^open_stdout (struct format_val *p)$/;"	f	file:
+opt_expr	tree.c	/^opt_expr (struct predicate **eval_treep)$/;"	f	file:
+optimisation_level	defs.h	/^  unsigned short optimisation_level;$/;"	m	struct:options
+optionh_stat	util.c	/^optionh_stat(const char *name, struct stat *p)$/;"	f
+optionl_stat	util.c	/^optionl_stat(const char *name, struct stat *p)$/;"	f
+optionp_stat	util.c	/^optionp_stat(const char *name, struct stat *p)$/;"	f
+options	defs.h	/^struct options$/;"	s
+options	finddata.c	/^struct options options;$/;"	v	typeref:struct:options
+output_block_size	defs.h	/^  int output_block_size;	\/* Output block size.  *\/$/;"	m	struct:options
+p_cost	defs.h	/^  enum EvaluationCost p_cost;$/;"	m	struct:predicate	typeref:enum:predicate::EvaluationCost
+p_name	defs.h	/^  char *p_name;$/;"	m	struct:predicate
+p_prec	defs.h	/^  enum predicate_precedence p_prec;$/;"	m	struct:predicate	typeref:enum:predicate::predicate_precedence
+p_type	defs.h	/^  enum predicate_type p_type;$/;"	m	struct:predicate	typeref:enum:predicate::predicate_type
+parse_accesscheck	parser.c	/^parse_accesscheck (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_amin	parser.c	/^parse_amin (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_and	parser.c	/^parse_and (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_anewer	parser.c	/^parse_anewer (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_begin_user_args	parser.c	/^parse_begin_user_args (char **args, int argno,$/;"	f
+parse_closeparen	parser.c	/^parse_closeparen (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f
+parse_cmin	parser.c	/^parse_cmin (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_cnewer	parser.c	/^parse_cnewer (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_comma	parser.c	/^parse_comma (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_d	parser.c	/^parse_d (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_daystart	parser.c	/^parse_daystart (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_delete	parser.c	/^parse_delete (const struct parser_table* entry, char *argv[], int *arg_ptr)$/;"	f	file:
+parse_depth	parser.c	/^parse_depth (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_empty	parser.c	/^parse_empty (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_end_user_args	parser.c	/^parse_end_user_args (char **args, int argno,$/;"	f
+parse_entry_newerXY	parser.c	/^static struct parser_table const parse_entry_newerXY = $/;"	v	file:
+parse_exec	parser.c	/^parse_exec (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_execdir	parser.c	/^parse_execdir (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_false	parser.c	/^parse_false (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_fls	parser.c	/^parse_fls (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_follow	parser.c	/^parse_follow (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_fprint	parser.c	/^parse_fprint (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_fprint0	parser.c	/^parse_fprint0 (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_fprintf	parser.c	/^parse_fprintf (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_fstype	parser.c	/^parse_fstype (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_gid	parser.c	/^parse_gid (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_group	parser.c	/^parse_group (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_help	parser.c	/^parse_help (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_ignore_race	parser.c	/^parse_ignore_race (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_ilname	parser.c	/^parse_ilname (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_iname	parser.c	/^parse_iname (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_inum	parser.c	/^parse_inum (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_ipath	parser.c	/^parse_ipath (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_iregex	parser.c	/^parse_iregex (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_iwholename	parser.c	/^parse_iwholename (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_links	parser.c	/^parse_links (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_lname	parser.c	/^parse_lname (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_ls	parser.c	/^parse_ls (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_maxdepth	parser.c	/^parse_maxdepth (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_mindepth	parser.c	/^parse_mindepth (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_mmin	parser.c	/^parse_mmin (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_name	parser.c	/^parse_name (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_negate	parser.c	/^parse_negate (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_newer	parser.c	/^parse_newer (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_newerXY	parser.c	/^parse_newerXY (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_nogroup	parser.c	/^parse_nogroup (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_noignore_race	parser.c	/^parse_noignore_race (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_noleaf	parser.c	/^parse_noleaf (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_noop	parser.c	/^parse_noop (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_nouser	parser.c	/^parse_nouser (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_nowarn	parser.c	/^parse_nowarn (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_ok	parser.c	/^parse_ok (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_okdir	parser.c	/^parse_okdir (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_openparen	parser.c	/^parse_openparen (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f
+parse_or	parser.c	/^parse_or (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_path	parser.c	/^parse_path (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_perm	parser.c	/^parse_perm (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_print	parser.c	/^parse_print (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f
+parse_print0	parser.c	/^parse_print0 (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_printf	parser.c	/^parse_printf (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_prune	parser.c	/^parse_prune (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_quit	parser.c	/^parse_quit  (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_regex	parser.c	/^parse_regex (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_regextype	parser.c	/^parse_regextype (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_samefile	parser.c	/^parse_samefile (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_size	parser.c	/^parse_size (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_table	parser.c	/^static struct parser_table const parse_table[] =$/;"	v	file:
+parse_time	parser.c	/^parse_time (const struct parser_table* entry, char *argv[], int *arg_ptr)$/;"	f	file:
+parse_true	parser.c	/^parse_true (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_type	parser.c	/^parse_type (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_uid	parser.c	/^parse_uid (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_used	parser.c	/^parse_used (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_user	parser.c	/^parse_user (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_version	parser.c	/^parse_version (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_warn	parser.c	/^parse_warn (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_wholename	parser.c	/^parse_wholename (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_xdev	parser.c	/^parse_xdev (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parse_xtype	parser.c	/^parse_xtype (const struct parser_table* entry, char **argv, int *arg_ptr)$/;"	f	file:
+parser_entry	defs.h	/^  const struct parser_table* parser_entry;$/;"	m	struct:predicate	typeref:struct:predicate::parser_table
+parser_func	defs.h	/^  PARSE_FUNC parser_func;$/;"	m	struct:parser_table
+parser_name	defs.h	/^  char *parser_name;$/;"	m	struct:parser_table
+parser_table	defs.h	/^struct parser_table$/;"	s
+partial_quotearg_n	ftsfind.c	/^partial_quotearg_n(int n, char *s, size_t len, enum quoting_style style)$/;"	f	file:
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	testsuite/Makefile	/^pdfdir = ${docdir}$/;"	m
+perf	defs.h	/^  struct predicate_performance_info perf;$/;"	m	struct:predicate	typeref:struct:predicate::predicate_performance_info
+perform_arm_swap	tree.c	/^perform_arm_swap(struct predicate *p)$/;"	f	file:
+perform_delete	pred.c	/^perform_delete(int flags)$/;"	f	file:
+perm	defs.h	/^    struct perm_val perm;	\/* perm *\/$/;"	m	union:predicate::__anon1	typeref:struct:predicate::__anon1::perm_val
+perm_val	defs.h	/^struct perm_val$/;"	s
+permissions_type	defs.h	/^enum permissions_type$/;"	g
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/findutils$/;"	m
+pkgdatadir	testsuite/Makefile	/^pkgdatadir = $(datadir)\/findutils$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/findutils$/;"	m
+pkgincludedir	testsuite/Makefile	/^pkgincludedir = $(includedir)\/findutils$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/findutils$/;"	m
+pkglibdir	testsuite/Makefile	/^pkglibdir = $(libdir)\/findutils$/;"	m
+posixly_correct	defs.h	/^  boolean posixly_correct;$/;"	m	struct:options
+prec	tree.c	/^  short prec;$/;"	m	struct:prec_assoc	file:
+prec_assoc	tree.c	/^struct prec_assoc$/;"	s	file:
+prec_name	tree.c	/^  char *prec_name;$/;"	m	struct:prec_assoc	file:
+prec_name	tree.c	/^prec_name (prec)$/;"	f	file:
+prec_table	tree.c	/^static struct prec_assoc prec_table[] =$/;"	v	typeref:struct:prec_assoc	file:
+pred_amin	defs.h	/^PREDICATEFUNCTION pred_amin;$/;"	v
+pred_amin	pred.c	/^pred_amin (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_and	defs.h	/^PREDICATEFUNCTION pred_and;$/;"	v
+pred_and	pred.c	/^pred_and (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_anewer	defs.h	/^PREDICATEFUNCTION pred_anewer;$/;"	v
+pred_anewer	pred.c	/^pred_anewer (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_assoc	pred.c	/^struct pred_assoc$/;"	s	file:
+pred_atime	defs.h	/^PREDICATEFUNCTION pred_atime;$/;"	v
+pred_atime	pred.c	/^pred_atime (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_closeparen	defs.h	/^PREDICATEFUNCTION pred_closeparen;$/;"	v
+pred_closeparen	pred.c	/^pred_closeparen (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_cmin	defs.h	/^PREDICATEFUNCTION pred_cmin;$/;"	v
+pred_cmin	pred.c	/^pred_cmin (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_cnewer	defs.h	/^PREDICATEFUNCTION pred_cnewer;$/;"	v
+pred_cnewer	pred.c	/^pred_cnewer (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_comma	defs.h	/^PREDICATEFUNCTION pred_comma;$/;"	v
+pred_comma	pred.c	/^pred_comma (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_cost_compare	tree.c	/^pred_cost_compare(const struct predicate *p1, const struct predicate *p2, boolean wantfailure)$/;"	f	file:
+pred_cost_lookup	tree.c	/^struct pred_cost_lookup$/;"	s	file:
+pred_ctime	defs.h	/^PREDICATEFUNCTION pred_ctime;$/;"	v
+pred_ctime	pred.c	/^pred_ctime (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_delete	defs.h	/^PREDICATEFUNCTION pred_delete;$/;"	v
+pred_delete	pred.c	/^pred_delete (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_empty	defs.h	/^PREDICATEFUNCTION pred_empty;$/;"	v
+pred_empty	pred.c	/^pred_empty (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_exec	defs.h	/^PREDICATEFUNCTION pred_exec;$/;"	v
+pred_exec	pred.c	/^pred_exec (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_execdir	defs.h	/^PREDICATEFUNCTION pred_execdir;$/;"	v
+pred_execdir	pred.c	/^pred_execdir (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_executable	defs.h	/^PREDICATEFUNCTION pred_executable;$/;"	v
+pred_executable	pred.c	/^pred_executable (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_false	defs.h	/^PREDICATEFUNCTION pred_false;$/;"	v
+pred_false	pred.c	/^pred_false (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_fls	defs.h	/^PREDICATEFUNCTION pred_fls;$/;"	v
+pred_fls	pred.c	/^pred_fls (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_fprint	defs.h	/^PREDICATEFUNCTION pred_fprint;$/;"	v
+pred_fprint	pred.c	/^pred_fprint (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_fprint0	defs.h	/^PREDICATEFUNCTION pred_fprint0;$/;"	v
+pred_fprint0	pred.c	/^pred_fprint0 (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_fprintf	defs.h	/^PREDICATEFUNCTION pred_fprintf;$/;"	v
+pred_fprintf	pred.c	/^pred_fprintf (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_fstype	defs.h	/^PREDICATEFUNCTION pred_fstype;$/;"	v
+pred_fstype	pred.c	/^pred_fstype (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_func	defs.h	/^  PRED_FUNC    pred_func;$/;"	m	struct:parser_table
+pred_func	defs.h	/^  PRED_FUNC pred_func;$/;"	m	struct:predicate
+pred_func	pred.c	/^  PRED_FUNC pred_func;$/;"	m	struct:pred_assoc	file:
+pred_gid	defs.h	/^PREDICATEFUNCTION pred_gid;$/;"	v
+pred_gid	pred.c	/^pred_gid (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_group	defs.h	/^PREDICATEFUNCTION pred_group;$/;"	v
+pred_group	pred.c	/^pred_group (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_ilname	defs.h	/^PREDICATEFUNCTION pred_ilname;$/;"	v
+pred_ilname	pred.c	/^pred_ilname (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_iname	defs.h	/^PREDICATEFUNCTION pred_iname;$/;"	v
+pred_iname	pred.c	/^pred_iname (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_inum	defs.h	/^PREDICATEFUNCTION pred_inum;$/;"	v
+pred_inum	pred.c	/^pred_inum (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_ipath	defs.h	/^PREDICATEFUNCTION pred_ipath;$/;"	v
+pred_ipath	pred.c	/^pred_ipath (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_is	defs.h	508;"	d
+pred_left	defs.h	/^  struct predicate *pred_left;$/;"	m	struct:predicate	typeref:struct:predicate::predicate
+pred_links	defs.h	/^PREDICATEFUNCTION pred_links;$/;"	v
+pred_links	pred.c	/^pred_links (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_lname	defs.h	/^PREDICATEFUNCTION pred_lname;$/;"	v
+pred_lname	pred.c	/^pred_lname (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_ls	defs.h	/^PREDICATEFUNCTION pred_ls;$/;"	v
+pred_ls	pred.c	/^pred_ls (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_mmin	defs.h	/^PREDICATEFUNCTION pred_mmin;$/;"	v
+pred_mmin	pred.c	/^pred_mmin (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_mtime	defs.h	/^PREDICATEFUNCTION pred_mtime;$/;"	v
+pred_mtime	pred.c	/^pred_mtime (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_name	defs.h	/^PREDICATEFUNCTION pred_name;$/;"	v
+pred_name	pred.c	/^  char *pred_name;$/;"	m	struct:pred_assoc	file:
+pred_name	pred.c	/^pred_name (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_name_common	pred.c	/^pred_name_common (const char *pathname, const char *str, int flags)$/;"	f	file:
+pred_negate	defs.h	/^PREDICATEFUNCTION pred_negate;$/;"	v
+pred_negate	pred.c	/^pred_negate (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_newer	defs.h	/^PREDICATEFUNCTION pred_newer;$/;"	v
+pred_newer	pred.c	/^pred_newer (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_newerXY	defs.h	/^PREDICATEFUNCTION pred_newerXY;$/;"	v
+pred_newerXY	pred.c	/^pred_newerXY (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_next	defs.h	/^  struct predicate *pred_next;$/;"	m	struct:predicate	typeref:struct:predicate::predicate
+pred_nogroup	defs.h	/^PREDICATEFUNCTION pred_nogroup;$/;"	v
+pred_nogroup	pred.c	/^pred_nogroup (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_nouser	defs.h	/^PREDICATEFUNCTION pred_nouser;$/;"	v
+pred_nouser	pred.c	/^pred_nouser (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_ok	defs.h	/^PREDICATEFUNCTION pred_ok;$/;"	v
+pred_ok	pred.c	/^pred_ok (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_okdir	defs.h	/^PREDICATEFUNCTION pred_okdir;$/;"	v
+pred_okdir	pred.c	/^pred_okdir (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_openparen	defs.h	/^PREDICATEFUNCTION pred_openparen;$/;"	v
+pred_openparen	pred.c	/^pred_openparen (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_or	defs.h	/^PREDICATEFUNCTION pred_or;$/;"	v
+pred_or	pred.c	/^pred_or (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_path	defs.h	/^PREDICATEFUNCTION pred_path;$/;"	v
+pred_path	pred.c	/^pred_path (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_perm	defs.h	/^PREDICATEFUNCTION pred_perm;$/;"	v
+pred_perm	pred.c	/^pred_perm (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_print	defs.h	/^PREDICATEFUNCTION pred_print;$/;"	v
+pred_print	pred.c	/^pred_print (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_print0	defs.h	/^PREDICATEFUNCTION pred_print0;$/;"	v
+pred_print0	pred.c	/^pred_print0 (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_prune	defs.h	/^PREDICATEFUNCTION pred_prune;$/;"	v
+pred_prune	pred.c	/^pred_prune (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_quit	defs.h	/^PREDICATEFUNCTION pred_quit;$/;"	v
+pred_quit	pred.c	/^pred_quit (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_readable	defs.h	/^PREDICATEFUNCTION pred_readable;$/;"	v
+pred_readable	pred.c	/^pred_readable (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_regex	defs.h	/^PREDICATEFUNCTION pred_regex;$/;"	v
+pred_regex	pred.c	/^pred_regex (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_right	defs.h	/^  struct predicate *pred_right;$/;"	m	struct:predicate	typeref:struct:predicate::predicate
+pred_samefile	defs.h	/^PREDICATEFUNCTION pred_samefile;$/;"	v
+pred_samefile	pred.c	/^pred_samefile (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_sanity_check	pred.c	/^pred_sanity_check(const struct predicate *predicates)$/;"	f
+pred_size	defs.h	/^PREDICATEFUNCTION pred_size;$/;"	v
+pred_size	pred.c	/^pred_size (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_table	pred.c	/^struct pred_assoc pred_table[] =$/;"	v	typeref:struct:pred_assoc
+pred_table_sorted	tree.c	/^static int pred_table_sorted = 0;$/;"	v	file:
+pred_timewindow	pred.c	/^pred_timewindow(struct timespec ts, struct predicate const *pred_ptr, int window)$/;"	f	file:
+pred_true	defs.h	/^PREDICATEFUNCTION pred_true;$/;"	v
+pred_true	pred.c	/^pred_true (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_type	defs.h	/^PREDICATEFUNCTION pred_type;$/;"	v
+pred_type	pred.c	/^pred_type (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_uid	defs.h	/^PREDICATEFUNCTION pred_uid;$/;"	v
+pred_uid	pred.c	/^pred_uid (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_used	defs.h	/^PREDICATEFUNCTION pred_used;$/;"	v
+pred_used	pred.c	/^pred_used (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_user	defs.h	/^PREDICATEFUNCTION pred_user;$/;"	v
+pred_user	pred.c	/^pred_user (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_writable	defs.h	/^PREDICATEFUNCTION pred_writable;$/;"	v
+pred_writable	pred.c	/^pred_writable (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+pred_xtype	defs.h	/^PREDICATEFUNCTION pred_xtype;$/;"	v
+pred_xtype	pred.c	/^pred_xtype (const char *pathname, struct stat *stat_buf, struct predicate *pred_ptr)$/;"	f
+predicate	defs.h	/^struct predicate$/;"	s
+predicate_is_cost_free	tree.c	/^predicate_is_cost_free(const struct predicate *p)$/;"	f	file:
+predicate_performance_info	defs.h	/^struct predicate_performance_info$/;"	s
+predicate_precedence	defs.h	/^enum predicate_precedence$/;"	g
+predicate_type	defs.h	/^enum predicate_type$/;"	g
+predicates	tree.c	/^static struct predicate *predicates = NULL;$/;"	v	typeref:struct:predicate	file:
+predlist	tree.c	/^struct predlist $/;"	s	file:
+predlist_init	tree.c	/^predlist_init(struct predlist *p)$/;"	f	file:
+predlist_insert	tree.c	/^predlist_insert(struct predlist *list,$/;"	f	file:
+predlist_merge_sort	tree.c	/^predlist_merge_sort(struct predlist *list,$/;"	f	file:
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m
+prefix	testsuite/Makefile	/^prefix = \/usr\/local$/;"	m
+prep_child_for_exec	pred.c	/^prep_child_for_exec (boolean close_stdin, int dir_fd)$/;"	f	file:
+prev_depth	ftsfind.c	/^static int prev_depth = INT_MIN; \/* fts_level can be < 0 *\/$/;"	v	file:
+print_list	pred.c	/^print_list (FILE *fp, struct predicate *node)$/;"	f
+print_optlist	pred.c	/^print_optlist (FILE *fp, const struct predicate *p)$/;"	f
+print_parenthesised	pred.c	/^print_parenthesised(FILE *fp, struct predicate *node)$/;"	f	file:
+print_predicate	tree.c	/^void print_predicate(FILE *fp, const struct predicate *p)$/;"	f
+print_tree	tree.c	/^print_tree (FILE *fp, struct predicate *node, int indent)$/;"	f
+printf_vec	defs.h	/^    struct format_val printf_vec; \/* printf fprintf fprint ls fls print0 fprint0 print *\/$/;"	m	union:predicate::__anon1	typeref:struct:predicate::__anon1::format_val
+process_all_startpoints	ftsfind.c	/^process_all_startpoints(int argc, char *argv[])$/;"	f	file:
+process_debug_options	util.c	/^process_debug_options(char *arg)$/;"	f	file:
+process_dir	find.c	/^process_dir (char *pathname, char *name, int pathlen, const struct stat *statp, char *parent)$/;"	f	file:
+process_leading_options	util.c	/^process_leading_options(int argc, char *argv[])$/;"	f
+process_optimisation_option	util.c	/^process_optimisation_option(const char *arg)$/;"	f	file:
+process_path	find.c	/^process_path (char *pathname, char *name, boolean leaf, char *parent,$/;"	f	file:
+process_top_path	find.c	/^process_top_path (char *pathname, mode_t mode)$/;"	f	file:
+program_name	finddata.c	/^char *program_name;$/;"	v
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	testsuite/Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+psdir	testsuite/Makefile	/^psdir = ${docdir}$/;"	m
+quote_opts	defs.h	/^  struct quoting_options *quote_opts;$/;"	m	struct:format_val	typeref:struct:format_val::quoting_options
+refresh_mounted_dev_list	find.c	/^refresh_mounted_dev_list(void)$/;"	f	file:
+reftime	defs.h	/^    struct time_val reftime;	\/* newer newerXY anewer cnewer mtime atime ctime mmin amin cmin *\/$/;"	m	union:predicate::__anon1	typeref:struct:predicate::__anon1::time_val
+regex	defs.h	/^    struct re_pattern_buffer *regex; \/* regex *\/$/;"	m	union:predicate::__anon1	typeref:struct:predicate::__anon1::re_pattern_buffer
+regex_options	defs.h	/^  int regex_options;$/;"	m	struct:options
+rel_pathname	defs.h	/^  char *rel_pathname;$/;"	m	struct:state
+replace_vec	defs.h	/^  char **replace_vec;		\/* Command arguments (for ";" style) *\/$/;"	m	struct:exec_val
+report_file_err	util.c	/^report_file_err(int exitval, int errno_value, const char *name)$/;"	f	file:
+safe_atoi	parser.c	/^safe_atoi (const char *s)$/;"	f	file:
+safely_chdir	find.c	/^safely_chdir(const char *dest,$/;"	f	file:
+safely_chdir_lstat	find.c	/^safely_chdir_lstat(const char *dest,$/;"	f	file:
+safely_chdir_nofollow	find.c	/^safely_chdir_nofollow(const char *dest,$/;"	f	file:
+safely_quote_err_filename	util.c	/^safely_quote_err_filename (int n, char const *arg)$/;"	f
+samefile_file_id	defs.h	/^struct samefile_file_id$/;"	s
+samefileid	defs.h	/^    struct samefile_file_id samefileid; \/* samefile *\/$/;"	m	union:predicate::__anon1	typeref:struct:predicate::__anon1::samefile_file_id
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	testsuite/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+scan_rest	tree.c	/^scan_rest (struct predicate **input,$/;"	f	file:
+segkind	defs.h	/^  enum SegmentKind segkind;     \/* KIND_FORMAT, KIND_PLAIN, KIND_STOP *\/$/;"	m	struct:segment	typeref:enum:segment::SegmentKind
+segment	defs.h	/^  struct segment *segment;	\/* Linked list of segments. *\/$/;"	m	struct:format_val	typeref:struct:format_val::segment
+segment	defs.h	/^struct segment$/;"	s
+set_close_on_exec	ftsfind.c	/^static void set_close_on_exec(int fd)$/;"	f	file:
+set_follow_state	parser.c	/^set_follow_state(enum SymlinkOption opt)$/;"	f
+set_fstype_devno	fstype.c	/^set_fstype_devno(struct mount_entry *p)$/;"	f	file:
+set_new_parent	tree.c	/^set_new_parent (struct predicate *curr, enum predicate_precedence high_prec, struct predicate **prevp)$/;"	f	file:
+set_option_defaults	util.c	/^set_option_defaults(struct options *p)$/;"	f
+set_stat_placeholders	util.c	/^set_stat_placeholders(struct stat *p)$/;"	f
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	testsuite/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+show_outstanding_execdirs	ftsfind.c	/^show_outstanding_execdirs(FILE *fp)$/;"	f	file:
+show_success_rates	pred.c	/^void show_success_rates(const struct predicate *p)$/;"	f
+show_valid_debug_options	util.c	/^show_valid_debug_options(FILE *fp, int full)$/;"	f	file:
+side_effects	defs.h	/^  boolean side_effects;$/;"	m	struct:predicate
+size	defs.h	/^    struct size_val size;	\/* size *\/$/;"	m	union:predicate::__anon1	typeref:struct:predicate::__anon1::size_val
+size	defs.h	/^  uintmax_t size;$/;"	m	struct:size_val
+size_val	defs.h	/^struct size_val$/;"	s
+specific_dirname	find.c	/^specific_dirname(const char *dir)$/;"	f	file:
+srcdir	Makefile	/^srcdir = .$/;"	m
+srcdir	testsuite/Makefile	/^	srcdir=`$(am__cd) $(srcdir) && pwd`; export srcdir; \\$/;"	m
+srcdir	testsuite/Makefile	/^srcdir = .$/;"	m
+start_time	defs.h	/^  struct timespec      start_time;		\/* Time at start of execution.  *\/$/;"	m	struct:options	typeref:struct:options::timespec
+starting_desc	finddata.c	/^int starting_desc;$/;"	v
+starting_dir	finddata.c	/^char const *starting_dir = ".";$/;"	v
+starting_path_length	defs.h	/^  int starting_path_length;$/;"	m	struct:state
+starting_stat_buf	find.c	/^static struct stat starting_stat_buf;$/;"	v	typeref:struct:stat	file:
+stat_count	util.c	/^static uintmax_t stat_count = 0u;$/;"	v	file:
+state	defs.h	/^  struct buildcmd_state   state;$/;"	m	struct:exec_val	typeref:struct:exec_val::buildcmd_state
+state	defs.h	/^struct state$/;"	s
+state	finddata.c	/^struct state state;$/;"	v	typeref:struct:state
+stay_on_filesystem	defs.h	/^  boolean stay_on_filesystem;$/;"	m	struct:options
+stop_at_current_level	defs.h	/^  boolean stop_at_current_level;$/;"	m	struct:state
+str	defs.h	/^    const char *str;		\/* fstype [i]lname [i]name [i]path *\/$/;"	m	union:predicate::__anon1
+stream	defs.h	/^  FILE *stream;			\/* Output stream to print on. *\/$/;"	m	struct:format_val
+stream_is_tty	parser.c	/^stream_is_tty(FILE *fp)$/;"	f	file:
+subdir	Makefile	/^subdir = find$/;"	m
+subdir	testsuite/Makefile	/^subdir = find\/testsuite$/;"	m
+subtree_has_side_effects	tree.c	/^subtree_has_side_effects(const struct predicate *p)$/;"	f	file:
+successes	defs.h	/^  unsigned long successes;$/;"	m	struct:predicate_performance_info
+symlink_handling	defs.h	/^  enum SymlinkOption symlink_handling;$/;"	m	struct:options	typeref:enum:options::SymlinkOption
+symlink_loop	ftsfind.c	/^symlink_loop(const char *name)$/;"	f	file:
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	testsuite/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+tail	tree.c	/^  struct predicate *tail;$/;"	m	struct:predlist	typeref:struct:predlist::predicate	file:
+target_alias	Makefile	/^target_alias = $/;"	m
+target_alias	testsuite/Makefile	/^target_alias = $/;"	m
+text	defs.h	/^  char *text;			\/* Plain text or `%' format string. *\/$/;"	m	struct:segment
+text_len	defs.h	/^  int text_len;			\/* Length of `text'. *\/$/;"	m	struct:segment
+textdomain	find.c	65;"	d	file:
+textdomain	ftsfind.c	67;"	d	file:
+time_val	defs.h	/^struct time_val$/;"	s
+top_builddir	Makefile	/^top_builddir = ..$/;"	m
+top_builddir	testsuite/Makefile	/^top_builddir = ..\/..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..$/;"	m
+top_srcdir	testsuite/Makefile	/^top_srcdir = ..\/..$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	testsuite/Makefile	/^transform = $(program_transform_name)$/;"	m
+traverse_tree	util.c	/^traverse_tree(struct predicate *tree,$/;"	f	file:
+ts	defs.h	/^  struct timespec      ts;$/;"	m	struct:time_val	typeref:struct:time_val::timespec
+ts_difference	pred.c	/^static double ts_difference(struct timespec ts1,$/;"	f	file:
+type	defs.h	/^    mode_t type;		\/* type *\/$/;"	m	union:predicate::__anon1
+type	defs.h	/^  enum arg_type type;$/;"	m	struct:parser_table	typeref:enum:parser_table::arg_type
+type	defs.h	/^  mode_t type;			\/* this is the actual type *\/$/;"	m	struct:state
+type	tree.c	/^  short type;$/;"	m	struct:op_assoc	file:
+type_name	tree.c	/^  char *type_name;$/;"	m	struct:op_assoc	file:
+type_name	tree.c	/^type_name (type)$/;"	f	file:
+type_table	tree.c	/^static struct op_assoc type_table[] =$/;"	v	typeref:struct:op_assoc	file:
+uid	defs.h	/^    uid_t uid;			\/* user *\/$/;"	m	union:predicate::__anon1
+uid_allocated	parser.c	/^unsigned uid_allocated;$/;"	v
+uid_unused	parser.c	/^char *uid_unused = NULL;$/;"	v
+usage	util.c	/^usage (FILE *fp, int status, char *msg)$/;"	f
+use_current_dir	defs.h	/^  boolean use_current_dir;      \/* If nonzero, don't chdir to start dir *\/$/;"	m	struct:exec_val
+val	defs.h	/^  mode_t val[2];$/;"	m	struct:perm_val
+val	util.c	/^  int    val;$/;"	m	struct:debug_option_assoc	file:
+visit	ftsfind.c	/^visit(FTS *p, FTSENT *ent, struct stat *pstat)$/;"	f	file:
+visits	defs.h	/^  unsigned long visits;$/;"	m	struct:predicate_performance_info
+warnings	defs.h	/^  boolean warnings;$/;"	m	struct:options
+wd_sanity_check	find.c	/^wd_sanity_check(const char *thing_to_stat,$/;"	f	file:
+weekdays	pred.c	/^static const char *weekdays[] = $/;"	v	file:
+worst_cost	tree.c	/^worst_cost (const struct predicate *p)$/;"	f	file:
+xstat	defs.h	/^  int (*xstat) (const char *name, struct stat *statbuf);$/;"	m	struct:options
+xval	defs.h	/^  enum xval            xval; $/;"	m	struct:time_val	typeref:enum:time_val::xval
+xval	defs.h	/^enum xval $/;"	g

@@ -1,0 +1,1 @@
+gnulib-version.o gnulib-version.o: gnulib-version.c

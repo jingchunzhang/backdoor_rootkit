@@ -1,0 +1,65 @@
+#!/bin/sh
+# Make sure touch can set the mtime on an empty file.
+# Volker Borchert reported that touch 3.16r (and presumably all before that)
+# fails to work on SunOS 4.1.3 with `most of the recommended patches' when
+# the empty file is on an NFS-mounted 4.2 volume.
+
+if test "$VERBOSE" = yes; then
+  set -x
+  touch --version
+fi
+
+DEFAULT_SLEEP_SECONDS=2
+SLEEP_SECONDS=${SLEEP_SECONDS=$DEFAULT_SLEEP_SECONDS}
+
+fail=0
+
+# FIXME: find writable directories on other partitions
+# and run the test in those directories, too.
+
+: ${TOUCH_DIR_LIST=.}
+
+framework_failure=0
+
+for d in $TOUCH_DIR_LIST; do
+  rm -rf $d/a $d/b
+  > $d/a || framework_failure=1
+  test -f $d/a || framework_failure=1
+  > $d/b || framework_failure=1
+  test -f $d/b || framework_failure=1
+done
+
+if test $framework_failure = 1; then
+  echo 'failure in testing framework'
+  exit 1
+fi
+
+echo sleeping for $SLEEP_SECONDS seconds...
+sleep $SLEEP_SECONDS
+for d in $TOUCH_DIR_LIST; do
+  touch $d/a || fail=1
+  set x `ls -t $d/a $d/b`
+  test "$*" = "x $d/a $d/b" || fail=1
+done
+
+echo sleeping for $SLEEP_SECONDS seconds...
+sleep $SLEEP_SECONDS
+for d in $TOUCH_DIR_LIST; do
+  touch $d/b
+  set x `ls -t $d/a $d/b`
+  test "$*" = "x $d/b $d/a" || fail=1
+
+  rm -rf $d/a $d/b
+done
+
+if test $fail != 0; then
+  cat 1>&2 <<EOF
+*** This test has just failed.  That can happen when the test is run in an
+*** NFS-mounted directory on a system whose clock is not well synchronized
+*** with that of the NFS server.  If you think that is the reason, set the
+*** environment variable SLEEP_SECONDS to some number of seconds larger than
+*** the default of $DEFAULT_SLEEP_SECONDS and rerun the test.
+EOF
+fi
+
+exit $fail

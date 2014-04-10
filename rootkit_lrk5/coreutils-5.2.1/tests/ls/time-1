@@ -1,0 +1,127 @@
+#!/bin/sh
+# Test some of ls's sorting options.
+
+if test "$VERBOSE" = yes; then
+  set -x
+  ls --version
+fi
+
+# Avoid any possible glitches due to daylight-saving changes near the
+# time stamps used during the test.
+TZ=UTC0
+export TZ
+
+# Avoid glitches due to the environment specifying `ls' styles.
+unset QUOTING_STYLE
+unset TIME_STYLE
+
+tmp=t-ls.$$
+
+framework_failure=0
+mkdir $tmp || framework_failure=1
+cd $tmp || framework_failure=1
+
+t1='1998-01-15 21:00'
+t2='1998-01-15 22:00'
+t3='1998-01-15 23:00'
+
+u1='1998-01-14 11:00'
+u2='1998-01-14 12:00'
+u3='1998-01-14 13:00'
+
+touch -m -d "$t3" a || framework_failure=1
+touch -m -d "$t2" b || framework_failure=1
+touch -m -d "$t1" c || framework_failure=1
+
+touch -a -d "$u3" c || framework_failure=1
+touch -a -d "$u2" b || framework_failure=1
+# Make sure A has ctime at least 1 second more recent than C's.
+sleep 2
+touch -a -d "$u1" a || framework_failure=1
+
+fail=0
+
+# A has ctime more recent than C.
+set `ls -c a c`
+test "$*" = 'a c' || fail=1
+
+# Sleep so long in an attempt to avoid spurious failures
+# due to NFS caching and/or clock skew.
+sleep 2
+
+# Create a link, updating c's ctime.
+ln c d || framework_failure=1
+
+# Before we go any further, verify that touch's -m option works.
+set -- `ls --full -l a`
+case "$*" in
+  *" $t3:00.000000000 +0000 a") ;;
+  *)
+  # This might be what's making HPUX 11 systems fail this test.
+  cat >&2 << EOF
+A basic test of touch -m has just failed, so the subsequent
+tests in this file will not be run.
+
+In the output below, the date of last modification for \`a' should
+have been $t3.
+EOF
+  #`
+  ls --full -l a
+  framework_failure=1
+  ;;
+esac
+
+# Now test touch's -a option.
+set -- `ls --full -lu a`
+case "$*" in
+  *" $u1:00.000000000 +0000 a") ;;
+  *)
+  # This might be what's making HPUX 11 systems fail this test.
+  cat >&2 << EOF
+A basic test of touch -a has just failed, so the subsequent
+tests in this file will not be run.
+
+In the output below, the date of last access for \`a' should
+have been $u1.
+EOF
+  ls --full -lu a
+  (exit 77); exit
+  ;;
+esac
+
+if test $framework_failure = 1; then
+  echo 'failure in testing framework'
+  exit 1
+fi
+
+set `ls -ut a b c`
+test "$*" = 'c b a' && : || fail=1
+test $fail = 1 && ls -l --full-time --time=access a b c
+
+set `ls -t a b c`
+test "$*" = 'a b c' && : || fail=1
+test $fail = 1 && ls -l --full-time a b c
+
+# Now, C should have ctime more recent than A.
+set `ls -ct a c`
+if test "$*" = 'c a'; then
+  : ok
+else
+  # In spite of documentation, (e.g., stat(2)), neither link nor chmod
+  # update a file's st_ctime on SunOS4.1.4.
+  cat >&2 << \EOF
+failed ls ctime test -- this failure is expected at least for SunOS4.1.4
+and for tmpfs file systems on Solaris 5.5.1.
+
+In the output below, `c' should have had a ctime more recent than
+that of `a', but does not.
+EOF
+  #'
+  ls -ctl --full-time a c
+  fail=1
+fi
+
+cd ..
+rm -rf $tmp
+
+exit $fail

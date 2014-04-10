@@ -1,0 +1,113 @@
+.TH PSTREE 1 2011-02-22 "Linux" "User Commands"
+.SH NAME
+pstree \- display a tree of processes
+.SH SYNOPSIS
+.ad l
+.B pstree
+.RB [ \-a | \-\-arguments ]
+.RB [ \-c | \-\-compact ]
+.RB [ \-h | \-\-highlight\-all | \-H \fIpid\fB | \-\-highlight\-pid\ \fIpid\fB ]
+.RB [ \-l | \-\-long ]
+.RB [ \-n | \-\-numeric\-sort ]
+.RB [ \-p | \-\-show\-pids ]
+.RB [ \-s | \-\-show\-parents ]
+.RB [ \-u | \-\-uid\-changes ]
+.RB [ \-Z | \-\-security\-context ]
+.RB [ \-A | \-\-ascii | \-G | \-\-vt100 | \-U | \-\-unicode ]
+.RB [ \fIpid\fB | \fIuser\fB]
+.br
+.B pstree
+.RB \-V | \-\-version
+.ad b
+.SH DESCRIPTION
+.B pstree
+shows running processes as a tree. The tree is rooted at either
+\fIpid\fP or \fBinit\fP if \fIpid\fP is omitted. If a user name is specified,
+all process trees rooted at processes owned by that user are shown.
+.PP
+\fBpstree\fP visually merges identical branches by putting them in square
+brackets and prefixing them with the repetition count, e.g.
+.nf
+.sp
+    init\-+\-getty
+         |\-getty
+         |\-getty
+         `\-getty
+.sp
+.fi
+becomes
+.nf
+.sp
+    init\-\-\-4*[getty]
+.sp
+.fi
+.PP
+.PP
+Child threads of a process are found under the parent process and are shown
+with the process name in curly braces, e.g.
+.nf
+.sp
+    icecast2\-\-\-13*[{icecast2}]
+.sp
+.fi
+.PP
+If \fBpstree\fR is called as \fBpstree.x11\fR then it will prompt the user
+at the end of the line to press return and will not return until that
+has happened. This is useful for when \fBpstree\fR is run in a xterminal.
+
+.SH OPTIONS
+.IP \fB\-a\fP
+Show command line arguments. If the command line of a process is swapped out,
+that process is shown in parentheses. \fB\-a\fP implicitly disables compaction
+for processes but not threads.
+.IP \fB\-A\fP
+Use ASCII characters to draw the tree.
+.IP \fB\-c\fP
+Disable compaction of identical subtrees. By default, subtrees are compacted
+whenever possible.
+.IP \fB\-G\fP
+Use VT100 line drawing characters.
+.IP \fB\-h\fP
+Highlight the current process and its ancestors. This is a no-op if the
+terminal doesn't support highlighting or if neither the current process
+nor any of its ancestors are in the subtree being shown.
+.IP \fB\-H\fP
+Like \fB\-h\fP, but highlight the specified process instead. Unlike with
+\fB\-h\fP, \fBpstree\fP fails when using \fB\-H\fP if highlighting is not
+available.
+.IP \fB\-l\fP
+Display long lines. By default, lines are truncated to the display width or
+132 if output is sent to a non-tty or if the display width is unknown.
+.IP \fB\-n\fP
+Sort processes with the same ancestor by PID instead of by name. (Numeric
+sort.)
+.IP \fB\-p\fP
+Show PIDs. PIDs are shown as decimal numbers in parentheses after each
+process name. \fB\-p\fP implicitly disables compaction.
+.IP \fB\-s\fP
+Show parent processes of the specified process.
+.IP \fB\-u\fP
+Show uid transitions. Whenever the uid of a process differs from the uid of
+its parent, the new uid is shown in parentheses after the process name.
+.IP \fB\-U\fP
+Use UTF-8 (Unicode) line drawing characters. Under Linux 1.1-54 and above,
+UTF-8 mode is entered on the console with \fBecho \-e '\\033%8'\fP and left
+with \fBecho \-e '\\033%@'\fP
+.IP \fB\-V\fP
+Display version information.
+.IP \fB\-Z\fP
+(SELinux) Show security context for each process. This flag will only work if
+pstree is compilied with SELinux support.
+.SH FILES
+.nf
+/proc	location of the proc file system
+.fi
+.SH AUTHORS
+Werner Almesberger <werner@almesberger.net>
+Craig Small <csmall@enc.com.au>
+.SH BUGS
+Some character sets may be incompatible with the VT100 characters.
+
+.SH "SEE ALSO"
+.BR ps "(1), " top (1).
+.\"{{{}}}

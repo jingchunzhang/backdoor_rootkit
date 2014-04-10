@@ -1,0 +1,71 @@
+#!/bin/sh
+# -*- perl -*-
+
+: ${PERL=perl}
+: ${srcdir=.}
+
+$PERL -e 1 > /dev/null 2>&1 || {
+  echo 1>&2 "$0: configure didn't find a usable version of Perl," \
+    "so can't run this test"
+  exit 77
+}
+
+d=$srcdir/..
+exec $PERL -w -I$d -MFetish -- - << \EOF
+require 5.003;
+use strict;
+
+(my $program_name = $0) =~ s|.*/||;
+
+# Turn off localisation of executable's ouput.
+@ENV{qw(LANGUAGE LANG LC_ALL)} = ('C') x 3;
+
+my $prog = $ENV{PROG} || die "$0: \$PROG not specified in environment\n";
+
+my @Tests =
+  (
+   ['onearg-1',	qw(10),		{OUT => [(1..10)]}],
+   ['onearg-2',	qw(-1)],
+   ['neg-1',	qw(-10 10 10),	{OUT => [qw(-10 0 10)]}],
+   ['neg-2',	qw(-.1 .1 .1),	{OUT => [qw(-0.1 0 0.1)]}],
+   ['neg-3',	qw(1 -1 0),	{OUT => [qw(1 0)]}],
+   ['neg-4',	qw(1 -1 -1),	{OUT => [qw(1 0 -1)]}],
+
+   ['eq-wid-1',	qw(-w 1 -1 -1),	{OUT => [qw(01 00 -1)]}],
+
+   # Prior to 2.0g, this test would fail on e.g., HPUX systems
+   # because it'd end up using %3.1f as the format instead of %4.1f.
+   ['eq-wid-2',	qw(-w -.1 .1 .1),{OUT => [qw(-0.1 00.0 00.1)]}],
+
+   # Prior to coreutils-4.5.11, some of these were not accepted.
+   ['fmt-1',	qw(-f %2.1f 1.5 .5 2),{OUT => [qw(1.5 2.0)]}],
+   ['fmt-2',	qw(-f %0.1f 1.5 .5 2),{OUT => [qw(1.5 2.0)]}],
+   ['fmt-3',	qw(-f %.1f  1.5 .5 2),{OUT => [qw(1.5 2.0)]}],
+
+   ['fmt-4',	qw(-f %3.0f 1 2),     {OUT => ['  1', '  2']}],
+   ['fmt-5',	qw(-f %-3.0f 1 2),    {OUT => ['1  ', '2  ']}],
+   ['fmt-6',	qw(-f %+3.0f 1 2),    {OUT => [' +1', ' +2']}],
+   ['fmt-7',	qw(-f %0+3.0f 1 2),   {OUT => [qw(+01 +02)]}],
+   ['fmt-8',	qw(-f %0+.0f 1 2),    {OUT => [qw(+1 +2)]}],
+   ['fmt-9',	'-f "% -3.0f"', qw(-1 0), {OUT => ['-1 ', ' 0 ']}],
+   ['fmt-a',	'-f "% -.0f"',qw(-1 0), {OUT => ['-1', ' 0']}],
+  );
+
+# Append a newline to each entry in the OUT array.
+my $t;
+foreach $t (@Tests)
+  {
+    my $e;
+    foreach $e (@$t)
+      {
+	$e->{OUT} = join ("\n", @{$e->{OUT}}) . "\n"
+	  if ref $e eq 'HASH' and exists $e->{OUT};
+      }
+  }
+
+my $save_temps = $ENV{SAVE_TEMPS};
+my $verbose = $ENV{VERBOSE};
+
+my $fail = run_tests ($program_name, $prog, \@Tests, $save_temps, $verbose);
+exit $fail;
+EOF

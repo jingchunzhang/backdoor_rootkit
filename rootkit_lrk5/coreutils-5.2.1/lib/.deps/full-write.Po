@@ -1,0 +1,30 @@
+full-write.o full-write.o: full-write.c ../config.h full-write.h \
+  /usr/lib/gcc/x86_64-redhat-linux/3.4.6/include/stddef.h \
+  /usr/include/errno.h /usr/include/features.h /usr/include/sys/cdefs.h \
+  /usr/include/gnu/stubs.h /usr/include/bits/errno.h \
+  /usr/include/linux/errno.h /usr/include/asm/errno.h \
+  /usr/include/asm-x86_64/errno.h safe-write.h
+
+../config.h:
+
+full-write.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/3.4.6/include/stddef.h:
+
+/usr/include/errno.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-x86_64/errno.h:
+
+safe-write.h:

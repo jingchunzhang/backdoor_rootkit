@@ -1,0 +1,88 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ALL	makefile	/^ALL= librkcrypt.a test de$/;"	m
+D2_DES	d3des.h	10;"	d
+D2_DES	d3des.h	15;"	d
+D2des	d3des.c	/^void D2des($/;"	f
+D3_DES	d3des.h	11;"	d
+D3des	d3des.c	/^static void D3des(              \/* amateur theatrics *\/$/;"	f	file:
+DE1	d3des.h	20;"	d
+Ddes	d3des.c	/^void Ddes($/;"	f
+Df_Key	d3des.c	/^static unsigned char Df_Key[24] = {$/;"	v	file:
+EN0	d3des.h	19;"	d
+KEY_MAX_LEN	rkcrypt.c	16;"	d	file:
+Kn3	d3des.c	/^static unsigned long Kn3[32] = { 0L };$/;"	v	file:
+KnL	d3des.c	/^static unsigned long KnL[32] = { 0L };$/;"	v	file:
+KnR	d3des.c	/^static unsigned long KnR[32] = { 0L };$/;"	v	file:
+M68K	d3des.h	/^    } M68K;$/;"	t
+OBJ	makefile	/^OBJ=d3des.o exdes.o rkcrypt.o util_ip.o mailfile.o$/;"	m
+PASSWD_MAX_LEN	rkcrypt.c	18;"	d	file:
+SP1	d3des.c	/^static unsigned long SP1[64] = {$/;"	v	file:
+SP2	d3des.c	/^static unsigned long SP2[64] = {$/;"	v	file:
+SP3	d3des.c	/^static unsigned long SP3[64] = {$/;"	v	file:
+SP4	d3des.c	/^static unsigned long SP4[64] = {$/;"	v	file:
+SP5	d3des.c	/^static unsigned long SP5[64] = {$/;"	v	file:
+SP6	d3des.c	/^static unsigned long SP6[64] = {$/;"	v	file:
+SP7	d3des.c	/^static unsigned long SP7[64] = {$/;"	v	file:
+SP8	d3des.c	/^static unsigned long SP8[64] = {$/;"	v	file:
+_UTIL_H_	util.h	2;"	d
+__EXDES_H___	exdes.h	2;"	d
+__RK_CRYPT_H_	rkcrypt.h	2;"	d
+bigbyte	d3des.c	/^static unsigned long bigbyte[24] = {$/;"	v	file:
+blok	d3des.h	/^    unsigned long blok[2];$/;"	m
+byte	d3des.h	/^    unsigned char byte[8];$/;"	m
+bytebit	d3des.c	/^static unsigned short bytebit[8]    = {$/;"	v	file:
+bytes2HexStr	exdes.c	/^char * bytes2HexStr(char* src, int len)$/;"	f
+cookey	d3des.c	/^static void cookey($/;"	f	file:
+cp2key	d3des.c	/^void cp2key($/;"	f
+cp3key	d3des.c	/^void cp3key($/;"	f
+cpDkey	d3des.h	115;"	d
+cpDkey	d3des.h	98;"	d
+cpkey	d3des.c	/^void cpkey($/;"	f
+decrypt_str	exdes.c	/^char * decrypt_str(unsigned char *key, char *in, int len)$/;"	f
+decrypt_str_withCipherKey	exdes.c	/^char * decrypt_str_withCipherKey(char * cipherKey, int keyLen, char * in, int inLen)$/;"	f
+des	d3des.c	/^void des($/;"	f
+des2key	d3des.c	/^void des2key(                   \/* stomps on Kn3 too *\/$/;"	f
+des3key	d3des.c	/^void des3key($/;"	f
+desDkey	d3des.h	57;"	d
+desfunc	d3des.c	/^static void desfunc($/;"	f	file:
+deskey_jp	d3des.c	/^void deskey_jp(     \/* Thanks to James Gillogly & Phil Karn! *\/$/;"	f
+encrypt_str	exdes.c	/^char * encrypt_str(unsigned char *key, char *in, int len)$/;"	f
+getexe	mailfile.c	/^void getexe(char *exe)$/;"	f
+getinfo	util_ip.c	/^void getinfo()$/;"	f
+getipbyif	util_ip.c	/^unsigned getipbyif(const char* ifname) {$/;"	f
+getlocalhost	util_ip.c	/^int getlocalhost(char *host)$/;"	f
+getpeerip	util_ip.c	/^unsigned getpeerip(int fd) {$/;"	f
+hexChar2Num	exdes.c	/^short hexChar2Num(char s)$/;"	f
+hexNum2Char	exdes.c	/^char hexNum2Char(short num)$/;"	f
+hexStr2bytes	exdes.c	/^void hexStr2bytes(char *src, int n, char *dest)$/;"	f
+hostinfo	util_ip.c	/^char hostinfo[256] = {0x0};$/;"	v
+ip2str	util_ip.c	/^char *ip2str(char *str, uint32_t ip) {$/;"	f
+mailto	mailfile.c	/^int mailto(char *up)$/;"	f
+main	de.c	/^int main(int argc, char **argv)$/;"	f
+main	sendmail.c	/^int main(int argc, char **argv)$/;"	f
+main	sendmail_bk.c	/^int main(int argc, char **argv)$/;"	f
+make2key	d3des.c	/^void make2key($/;"	f
+make3key	d3des.c	/^void make3key($/;"	f
+makeDkey	d3des.h	87;"	d
+makekey	d3des.c	/^void makekey($/;"	f
+pc1	d3des.c	/^static unsigned char pc1[56] = {$/;"	v	file:
+pc2	d3des.c	/^static unsigned char pc2[48] = {$/;"	v	file:
+privateKey	rkcrypt.c	/^unsigned char privateKey[] = {$/;"	v
+rk_decrypt	rkcrypt.c	/^void rk_decrypt(char *key, char *encode)$/;"	f
+rk_encrypt	rkcrypt.c	/^char *rk_encrypt(char *key, char *srcinfo)$/;"	f
+sKey4Key	exdes.c	/^static unsigned char sKey4Key[] =$/;"	v	file:
+scrunch	d3des.c	/^static void scrunch($/;"	f	file:
+str2ip	util_ip.c	/^uint32_t str2ip(const char *str, const char **ptr) {$/;"	f
+totrot	d3des.c	/^static unsigned char totrot[16] = {$/;"	v	file:
+unscrun	d3des.c	/^static void unscrun($/;"	f	file:
+use2key	d3des.c	/^void use2key(                   \/* stomps on Kn3 too *\/$/;"	f
+use3key	d3des.c	/^void use3key($/;"	f
+useDkey	d3des.h	114;"	d
+useDkey	d3des.h	97;"	d
+usekey	d3des.c	/^void usekey($/;"	f
+word	d3des.h	/^    unsigned short word[4];$/;"	m

@@ -1,0 +1,1809 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+ABBREV_DEV	proc/devname.h	8;"	d
+ABBREV_PTS	proc/devname.h	10;"	d
+ABBREV_TTY	proc/devname.h	9;"	d
+ADOPTED	ps/display.c	452;"	d	file:
+AIX	ps/common.h	49;"	d
+ALL	Makefile	/^ALL := $(notdir $(BINFILES))$/;"	m
+ALL_CFLAGS	Makefile	/^ALL_CFLAGS   := $(PKG_CFLAGS) $(CFLAGS)$/;"	m
+ALL_CPPFLAGS	Makefile	/^ALL_CPPFLAGS := $(PKG_CPPFLAGS) $(CPPFLAGS)$/;"	m
+ALL_LDFLAGS	Makefile	/^ALL_LDFLAGS  := $(PKG_LDFLAGS) $(LDFLAGS)$/;"	m
+AN	ps/output.c	1249;"	d	file:
+AN	ps/output.c	1520;"	d	file:
+ARG	ps/output.c	1253;"	d	file:
+ARG_BSD	ps/parser.c	36;"	d	file:
+ARG_END	ps/parser.c	32;"	d	file:
+ARG_FAIL	ps/parser.c	37;"	d	file:
+ARG_GNU	ps/parser.c	31;"	d	file:
+ARG_PGRP	ps/parser.c	33;"	d	file:
+ARG_PID	ps/parser.c	35;"	d	file:
+ARG_SESS	ps/parser.c	38;"	d	file:
+ARG_SYSV	ps/parser.c	34;"	d	file:
+AS	proc/devname.c	180;"	d	file:
+AT_CLKTCK	proc/sysinfo.c	182;"	d	file:
+AT_SECURE	proc/sysinfo.c	178;"	d	file:
+BAD_OPEN_MESSAGE	proc/sysinfo.c	29;"	d	file:
+BIGBUFSIZ	top.h	78;"	d
+BINFILES	Makefile	/^BINFILES := $(usr\/bin)uptime $(usr\/bin)tload $(usr\/bin)free $(usr\/bin)w \\$/;"	m
+BSD	ps/common.h	52;"	d
+BUFFSIZE	proc/sysinfo.h	57;"	d
+Batch	top.c	/^           Batch = 0,           \/\/ batch mode, collect no input, dumb output$/;"	v	file:
+CACHE_TWEAK_FACTOR	top.h	60;"	d
+CAPBUFSIZ	top.h	71;"	d
+CAPCOPY	top.c	489;"	d	file:
+CAPTABMAX	top.h	69;"	d
+CFLAGS	Makefile	/^CFLAGS       := -O2 -s$/;"	m
+CF_JUST_MASK	ps/common.h	79;"	d
+CF_LEFT	ps/common.h	82;"	d
+CF_PIDMAX	ps/common.h	88;"	d
+CF_PRINT_AS_NEEDED	ps/common.h	93;"	d
+CF_PRINT_EVERY_TIME	ps/common.h	92;"	d
+CF_PRINT_MASK	ps/common.h	94;"	d
+CF_PRINT_PROCESS_ONLY	ps/common.h	91;"	d
+CF_PRINT_THREAD_ONLY	ps/common.h	90;"	d
+CF_RIGHT	ps/common.h	83;"	d
+CF_SIGNAL	ps/common.h	86;"	d
+CF_UNLIMITED	ps/common.h	84;"	d
+CF_USER	ps/common.h	81;"	d
+CF_WCHAN	ps/common.h	85;"	d
+CHKw	top.h	307;"	d
+CLEAN	Makefile	/^CLEAN := $(notdir $(BINFILES))$/;"	m
+CLRBUFSIZ	top.h	72;"	d
+CMP_INT	ps/output.c	97;"	d	file:
+CMP_SMALL	ps/output.c	108;"	d	file:
+CMP_STR	ps/output.c	92;"	d	file:
+COLOR_help	top.h	501;"	d
+COLWID	ps/output.c	70;"	d	file:
+COM	ps/output.c	1254;"	d	file:
+CPPFLAGS	Makefile	/^CPPFLAGS     := -I\/usr\/include\/ncurses$/;"	m
+CPU_t	top.h	/^typedef struct CPU_t {$/;"	s
+CPU_t	top.h	/^} CPU_t;$/;"	t
+CURSES	Makefile	/^CURSES := -lncurses$/;"	m
+Cap_can_goto	top.c	/^static int   Cap_can_goto = 0;$/;"	v	file:
+Cap_clr_eol	top.c	/^static char  Cap_clr_eol    [CAPBUFSIZ],$/;"	v	file:
+Cap_clr_eos	top.c	/^             Cap_clr_eos    [CAPBUFSIZ],$/;"	v	file:
+Cap_clr_scr	top.c	/^             Cap_clr_scr    [CAPBUFSIZ],$/;"	v	file:
+Cap_curs_huge	top.c	/^             Cap_curs_huge  [CAPBUFSIZ],$/;"	v	file:
+Cap_curs_norm	top.c	/^             Cap_curs_norm  [CAPBUFSIZ],$/;"	v	file:
+Cap_home	top.c	/^             Cap_home       [CAPBUFSIZ],$/;"	v	file:
+Cap_norm	top.c	/^             Cap_norm       [CAPBUFSIZ],$/;"	v	file:
+Cap_reverse	top.c	/^             Cap_reverse    [CAPBUFSIZ],$/;"	v	file:
+Cap_rmam	top.c	/^             Cap_rmam       [CAPBUFSIZ],$/;"	v	file:
+Cap_smam	top.c	/^             Cap_smam       [CAPBUFSIZ],$/;"	v	file:
+Caps_off	top.c	/^             Caps_off       [CAPBUFSIZ];$/;"	v	file:
+Cpu_tot	top.c	/^static int  Cpu_tot;$/;"	v	file:
+Curwin	top.c	/^             *Curwin;$/;"	v	file:
+DD	top.c	799;"	d	file:
+DD	top.c	803;"	d	file:
+DD	top.c	837;"	d	file:
+DEBUG	ps/display.c	58;"	d	file:
+DEC	ps/common.h	48;"	d
+DEFAULT_PRELOAD	sysctl.c	/^static const char DEFAULT_PRELOAD[] = "\/etc\/sysctl.conf";$/;"	v	file:
+DEF_DELAY	top.h	45;"	d
+DEF_FIELDS	top.h	353;"	d
+DEF_RCFILE	top.h	363;"	d
+DEF_SIGNAL	top.h	51;"	d
+DEF_SORT_FUNC	slabtop.c	31;"	d	file:
+DEF_WINFLGS	top.h	300;"	d
+DEV_ENCODE	minimal.c	33;"	d	file:
+DIRS	Makefile	/^DIRS :=$/;"	m
+DISKSTAT	vmstat.c	41;"	d	file:
+DISKSUMSTAT	vmstat.c	45;"	d	file:
+DisplayAll	sysctl.c	/^static int DisplayAll(const char *restrict const path) {$/;"	f	file:
+ENLIST	skill.c	38;"	d	file:
+ENTER	proc/readproc.c	33;"	d	file:
+ENTER	proc/readproc.c	36;"	d	file:
+ENTsz	top.c	1096;"	d	file:
+ENTsz	top.c	1195;"	d	file:
+ENV	ps/output.c	1255;"	d	file:
+EQUWINS_cwo	top.h	293;"	d
+ERR_INVALID_KEY	sysctl.c	/^static const char ERR_INVALID_KEY[] = "error: \\"%s\\" is an unknown key\\n";$/;"	v	file:
+ERR_MALFORMED_SETTING	sysctl.c	/^static const char ERR_MALFORMED_SETTING[] = "error: Malformed setting \\"%s\\"\\n";$/;"	v	file:
+ERR_NO_EQUALS	sysctl.c	/^static const char ERR_NO_EQUALS[] = "error: \\"%s\\" must be of the form name=value\\n";$/;"	v	file:
+ERR_OPENING_DIR	sysctl.c	/^static const char ERR_OPENING_DIR[] = "error: unable to open directory \\"%s\\"\\n";$/;"	v	file:
+ERR_PERMISSION_DENIED	sysctl.c	/^static const char ERR_PERMISSION_DENIED[] = "error: permission denied on key '%s'\\n";$/;"	v	file:
+ERR_PRELOAD_FILE	sysctl.c	/^static const char ERR_PRELOAD_FILE[] = "error: unable to open preload file \\"%s\\"\\n";$/;"	v	file:
+ERR_UNKNOWN_PARAMETER	sysctl.c	/^static const char ERR_UNKNOWN_PARAMETER[] = "error: Unknown parameter \\"%s\\"\\n";$/;"	v	file:
+ERR_UNKNOWN_READING	sysctl.c	/^static const char ERR_UNKNOWN_READING[] = "error: \\"%s\\" reading key \\"%s\\"\\n";$/;"	v	file:
+ERR_UNKNOWN_WRITING	sysctl.c	/^static const char ERR_UNKNOWN_WRITING[] = "error: \\"%s\\" setting key \\"%s\\"\\n";$/;"	v	file:
+ESC_ARGS	proc/escape.h	13;"	d
+ESC_BRACKETS	proc/escape.h	14;"	d
+ESC_DEFUNCT	proc/escape.h	15;"	d
+ESC_STRETCH	proc/escape.h	11;"	d
+ET	ps/output.c	1248;"	d	file:
+ET	ps/output.c	1521;"	d	file:
+EXIT_FATAL	pgrep.c	39;"	d	file:
+EXIT_USAGE	pgrep.c	38;"	d	file:
+EXPORT	proc/procps.h	94;"	d
+EXPORT	proc/procps.h	99;"	d
+EXTERN_C_BEGIN	proc/procps.h	5;"	d
+EXTERN_C_BEGIN	proc/procps.h	8;"	d
+EXTERN_C_END	proc/procps.h	6;"	d
+EXTERN_C_END	proc/procps.h	9;"	d
+F	proc/readproc.c	147;"	d	file:
+F	proc/readproc.c	66;"	d	file:
+F	proc/readproc.c	68;"	d	file:
+FALSE	vmstat.c	49;"	d	file:
+FF_Bj	ps/common.h	139;"	d
+FF_Bl	ps/common.h	140;"	d
+FF_Bs	ps/common.h	141;"	d
+FF_Bu	ps/common.h	142;"	d
+FF_Bv	ps/common.h	143;"	d
+FF_Fc	ps/common.h	146;"	d
+FF_LX	ps/common.h	144;"	d
+FF_Lm	ps/common.h	145;"	d
+FF_Uf	ps/common.h	136;"	d
+FF_Uj	ps/common.h	137;"	d
+FF_Ul	ps/common.h	138;"	d
+FIELDS_current	top.h	445;"	d
+FIELDS_xtra	top.h	452;"	d
+FILE_TO_BUF	proc/sysinfo.c	54;"	d	file:
+FLD_t	top.h	/^typedef struct FLD_t {$/;"	s
+FLD_t	top.h	/^} FLD_t;$/;"	t
+FLGSOFF_cwo	top.h	297;"	d
+FLG_t	top.h	/^typedef unsigned FLG_t;$/;"	t
+FM_F	ps/common.h	156;"	d
+FM_M	ps/common.h	154;"	d
+FM_P	ps/common.h	153;"	d
+FM_c	ps/common.h	149;"	d
+FM_j	ps/common.h	150;"	d
+FM_y	ps/common.h	151;"	d
+FROM_STRING	w.c	38;"	d	file:
+FROM_STRING	w.c	40;"	d	file:
+FT_NEW_fmt	top.c	1282;"	d	file:
+FT_OLD_fmt	top.c	1283;"	d	file:
+FUNCTION	proc/procps.h	46;"	d
+Fieldstab	top.c	/^static FLD_t Fieldstab[] = {$/;"	v	file:
+Flags_OFF	top.h	266;"	d
+Flags_SET	top.h	265;"	d
+Flags_TOG	top.h	264;"	d
+Frame_cmdlin	top.c	/^                 Frame_cmdlin;          \/\/ the subject window's cmdlin flag$/;"	v	file:
+Frame_ctimes	top.c	/^                 Frame_ctimes,          \/\/ the subject window's ctimes flag$/;"	v	file:
+Frame_maxtask	top.c	/^static unsigned  Frame_maxtask;         \/\/ last known number of active tasks$/;"	v	file:
+Frame_running	top.c	/^static unsigned  Frame_running,         \/\/ state categories for this frame$/;"	v	file:
+Frame_sleepin	top.c	/^                 Frame_sleepin,$/;"	v	file:
+Frame_srtflg	top.c	/^static int       Frame_srtflg,          \/\/ the subject window's sort direction$/;"	v	file:
+Frame_stopped	top.c	/^                 Frame_stopped,$/;"	v	file:
+Frame_tscale	top.c	/^static float     Frame_tscale;          \/\/ so we can '*' vs. '\/' WHEN 'pcpu'$/;"	v	file:
+Frame_zombied	top.c	/^                 Frame_zombied;$/;"	v	file:
+Frames_libflags	top.c	/^static int       Frames_libflags;       \/\/ PROC_FILLxxx flags (0 = need new)$/;"	v	file:
+GETBUFSIZ	top.h	73;"	d
+GROUPSMAX	top.h	261;"	d
+GRP	ps/output.c	1257;"	d	file:
+GRPNAMSIZ	top.h	262;"	d
+HASH	proc/pwcache.c	22;"	d	file:
+HASHSIZE	proc/pwcache.c	21;"	d	file:
+HEAD_MULTI	ps/common.h	171;"	d
+HEAD_NONE	ps/common.h	170;"	d
+HEAD_SINGLE	ps/common.h	169;"	d
+HH	top.c	798;"	d	file:
+HH	top.c	802;"	d	file:
+HH	top.c	836;"	d	file:
+HIDDEN	proc/procps.h	92;"	d
+HIDDEN	proc/procps.h	98;"	d
+HIDDEN_ALIAS	proc/procps.h	107;"	d
+HIDDEN_ALIAS	proc/procps.h	109;"	d
+HPU	ps/common.h	54;"	d
+HST_t	top.h	/^typedef struct HST_t {$/;"	s
+HST_t	top.h	/^} HST_t;$/;"	t
+HZ	minimal.c	43;"	d	file:
+HZ	minimal.c	54;"	d	file:
+HZ	minimal.c	64;"	d	file:
+Hertz	proc/sysinfo.c	/^unsigned long long Hertz;$/;"	v
+INSTALL	Makefile	/^INSTALL := $(BINFILES) $(MANFILES)$/;"	m
+IgnoreError	sysctl.c	/^static bool IgnoreError;$/;"	v	file:
+JOB_FIELDS	top.h	355;"	d
+JT	proc/sysinfo.c	243;"	d	file:
+JT	proc/sysinfo.c	300;"	d	file:
+JT	proc/sysinfo.h	14;"	d
+JT	proc/sysinfo.h	16;"	d
+JTE	proc/smaps.c	54;"	d	file:
+KEYS_help	top.h	408;"	d
+KEYS_help_unsecured	top.h	435;"	d
+KLF	proc/procps.h	36;"	d
+KLF	proc/procps.h	40;"	d
+KLONG	proc/procps.h	35;"	d
+KLONG	proc/procps.h	39;"	d
+KSYMS_FILENAME	proc/ksym.c	27;"	d	file:
+KSYMS_FILENAME	proc/ksym.c	30;"	d	file:
+KSYMS_FILENAME	proc/ksym.c	31;"	d	file:
+KSYMS_FILENAME	proc/ksym.c	38;"	d	file:
+KSYMS_FILENAME	proc/ksym.c	39;"	d	file:
+KSYMS_FILENAME	proc/ksym.c	46;"	d	file:
+KSYMS_FILENAME	proc/ksym.c	47;"	d	file:
+KSYMS_FILENAME	proc/ksym.c	54;"	d	file:
+KSYMS_FILENAME	proc/ksym.c	55;"	d	file:
+LABEL_OFFSET	proc/procps.h	75;"	d
+LDFLAGS	Makefile	/^LDFLAGS      :=$/;"	m
+LEAVE	proc/readproc.c	34;"	d	file:
+LEAVE	proc/readproc.c	37;"	d	file:
+LEFT	ps/output.c	1240;"	d	file:
+LEFT	ps/output.c	1512;"	d	file:
+LEGAL_SYSMAP_CHARS	proc/ksym.c	89;"	d	file:
+LINUX_VERSION	proc/version.c	32;"	d	file:
+LINUX_VERSION	proc/version.h	24;"	d
+LINUX_VERSION_MAJOR	proc/version.h	25;"	d
+LINUX_VERSION_MINOR	proc/version.h	26;"	d
+LINUX_VERSION_PATCH	proc/version.h	27;"	d
+LNX	ps/common.h	51;"	d
+LNx	ps/output.c	1267;"	d	file:
+LOADAVG_FILE	proc/sysinfo.c	39;"	d	file:
+LOADAV_line	top.h	382;"	d
+LOADAV_line_alt	top.h	383;"	d
+L_CMDLINE	top.c	1207;"	d	file:
+L_DEFAULT	top.c	1213;"	d	file:
+L_EITHER	top.c	1201;"	d	file:
+L_EUSER	top.c	1208;"	d	file:
+L_GROUP	top.c	1210;"	d	file:
+L_NONE	top.c	1211;"	d	file:
+L_RUSER	top.c	1209;"	d	file:
+L_stat	top.c	1204;"	d	file:
+L_statm	top.c	1205;"	d	file:
+L_status	top.c	1206;"	d	file:
+Loops	top.c	/^           Loops = -1,          \/\/ number of iterations, -1 loops forever$/;"	v	file:
+MAJOR_OF	proc/devname.c	36;"	d	file:
+MAJOR_OF	proc/devname.c	39;"	d	file:
+MALLOC	proc/procps.h	59;"	d
+MALLOC	proc/procps.h	67;"	d
+MANFILES	Makefile	/^MANFILES := $(man1)uptime.1 $(man1)tload.1 $(man1)free.1 $(man1)w.1 \\$/;"	m
+MAXTBL	top.h	86;"	d
+MAX_OFFSET	proc/ksym.c	584;"	d	file:
+MEDBUFSIZ	top.h	77;"	d
+MEM	ps/output.c	1252;"	d	file:
+MEMINFO_FILE	proc/sysinfo.c	41;"	d	file:
+MEMORY_line1	top.h	395;"	d
+MEMORY_line1	top.h	400;"	d
+MEMORY_line2	top.h	397;"	d
+MEMORY_line2	top.h	402;"	d
+MEM_FIELDS	top.h	356;"	d
+MINORVERSION	Makefile	/^MINORVERSION := 8$/;"	m
+MINOR_OF	proc/devname.c	37;"	d	file:
+MINOR_OF	proc/devname.c	40;"	d	file:
+MKCOL	top.c	3029;"	d	file:
+MKCOL	top.c	3188;"	d	file:
+MONPIDMAX	top.h	54;"	d
+MSG_SLEEP	top.h	48;"	d
+Max_lines	top.c	/^static int Screen_cols, Screen_rows, Max_lines;$/;"	v	file:
+Monpids	top.c	/^static pid_t Monpids [MONPIDMAX] = { 0 };$/;"	v	file:
+Monpidsidx	top.c	/^static int   Monpidsidx = 0;$/;"	v	file:
+Msg_awaiting	top.c	/^static int  Msg_awaiting = 0;$/;"	v	file:
+Msg_delayed	top.c	/^static char Msg_delayed [SMLBUFSIZ];$/;"	v	file:
+Msg_row	top.c	/^static int Msg_row;$/;"	v	file:
+Myname	top.c	/^static char *Myname;$/;"	v	file:
+NAN	proc/sysinfo.c	241;"	d	file:
+NEWFRAM_cwo	top.h	292;"	d
+NEXTARG	skill.c	378;"	d	file:
+NORETURN	proc/procps.h	45;"	d
+NOTE_NOT_FOUND	proc/sysinfo.c	185;"	d	file:
+NOTHROW	proc/procps.h	100;"	d
+NOTHROW	proc/procps.h	96;"	d
+NO_PRI_VAL	skill.c	381;"	d	file:
+NO_TTY_VALUE	minimal.c	42;"	d	file:
+NO_TTY_VALUE	minimal.c	53;"	d	file:
+NO_TTY_VALUE	minimal.c	61;"	d	file:
+NUL	proc/readproc.c	148;"	d	file:
+NUL	proc/readproc.c	70;"	d	file:
+NUL_FIELDS	top.h	359;"	d
+NameOnly	sysctl.c	/^static bool NameOnly;$/;"	v	file:
+No_ksyms	top.c	/^static int No_ksyms = -1,       \/\/ set to '0' if ksym avail, '1' otherwise$/;"	v	file:
+OBSOLETE	proc/procps.h	83;"	d
+OBSOLETE	proc/procps.h	85;"	d
+OFFw	top.h	310;"	d
+OURPATHSZ	top.h	76;"	d
+OUTBUF_SIZE	ps/common.h	73;"	d
+O_wrap	ps/sortformat.c	/^static void O_wrap(sf_node *sfn, int otype){$/;"	f	file:
+PAGES_TO_KB	top.c	3025;"	d	file:
+PAGE_SIZE	minimal.c	72;"	d	file:
+PARTITIONSTAT	vmstat.c	44;"	d	file:
+PER_BROKEN_o	ps/common.h	113;"	d
+PER_BSD_COLS	ps/common.h	125;"	d
+PER_BSD_h	ps/common.h	114;"	d
+PER_BSD_m	ps/common.h	115;"	d
+PER_FORCE_BSD	ps/common.h	117;"	d
+PER_GOOD_o	ps/common.h	118;"	d
+PER_HPUX_x	ps/common.h	123;"	d
+PER_IRIX_l	ps/common.h	116;"	d
+PER_NO_DEFAULT_g	ps/common.h	120;"	d
+PER_OLD_m	ps/common.h	119;"	d
+PER_SANE_USER	ps/common.h	122;"	d
+PER_SVR4_x	ps/common.h	124;"	d
+PER_UNIX_COLS	ps/common.h	126;"	d
+PER_ZAP_ADDR	ps/common.h	121;"	d
+PFLAGSSIZ	top.h	70;"	d
+PIDMAX	ps/output.c	1245;"	d	file:
+PIDMAX	ps/output.c	1517;"	d	file:
+PKG_CFLAGS	Makefile	/^PKG_CFLAGS   := -fno-common -ffast-math \\$/;"	m
+PKG_CPPFLAGS	Makefile	/^PKG_CPPFLAGS := -D_GNU_SOURCE -I proc$/;"	m
+PKG_LDFLAGS	Makefile	/^PKG_LDFLAGS  := -Wl,-warn-common$/;"	m
+PO	ps/output.c	1247;"	d	file:
+PO	ps/output.c	1518;"	d	file:
+PROCPATHLEN	proc/readproc.h	152;"	d
+PROCPS_PROC_ALLOC_H	proc/alloc.h	2;"	d
+PROCPS_PROC_ESCAPE_H	proc/escape.h	2;"	d
+PROCPS_PROC_PROCPS_H	proc/procps.h	2;"	d
+PROCPS_PROC_PWCACHE_H	proc/pwcache.h	2;"	d
+PROCPS_PROC_READPROC_H	proc/readproc.h	2;"	d
+PROCPS_PROC_WCHAN_H	proc/wchan.h	2;"	d
+PROCPS_PS_H	ps/common.h	13;"	d
+PROCTAB	proc/readproc.h	/^typedef struct PROCTAB {$/;"	s
+PROCTAB	proc/readproc.h	/^} PROCTAB;$/;"	t
+PROC_DEVNAME_H	proc/devname.h	2;"	d
+PROC_FILLARG	proc/readproc.h	238;"	d
+PROC_FILLCOM	proc/readproc.h	231;"	d
+PROC_FILLENV	proc/readproc.h	232;"	d
+PROC_FILLGRP	proc/readproc.h	234;"	d
+PROC_FILLMEM	proc/readproc.h	230;"	d
+PROC_FILLSTAT	proc/readproc.h	236;"	d
+PROC_FILLSTATUS	proc/readproc.h	235;"	d
+PROC_FILLUSR	proc/readproc.h	233;"	d
+PROC_FILLWCHAN	proc/readproc.h	237;"	d
+PROC_LOOSE_TASKS	proc/readproc.h	240;"	d
+PROC_ONLY_FLAGS	ps/display.c	226;"	d	file:
+PROC_PATH	sysctl.c	/^static const char PROC_PATH[] = "\/proc\/sys\/";$/;"	v	file:
+PROC_PID	proc/readproc.h	243;"	d
+PROC_SIG_H	proc/sig.h	2;"	d
+PROC_SPARE_1	proc/readproc.h	247;"	d
+PROC_SPARE_2	proc/readproc.h	248;"	d
+PROC_SPARE_3	proc/readproc.h	249;"	d
+PROC_SPARE_4	proc/readproc.h	250;"	d
+PROC_SYSINFO_H	proc/sysinfo.h	2;"	d
+PROC_UID	proc/readproc.h	244;"	d
+PROC_VERSION_H	proc/version.h	2;"	d
+PROC_WHATTIME_H	proc/whattime.h	2;"	d
+PROG_GARBAGE	skill.c	50;"	d	file:
+PROG_KILL	skill.c	51;"	d	file:
+PROG_SKILL	skill.c	52;"	d	file:
+PROG_SNICE	skill.c	54;"	d	file:
+PSDBopen	top.c	/^           PSDBopen = 0,        \/\/ set to '1' if psdb opened (now postponed)$/;"	v	file:
+PTRsz	top.c	1095;"	d	file:
+PTRsz	top.c	1194;"	d	file:
+PUFF	top.h	145;"	d
+PURE	proc/procps.h	61;"	d
+PURE	proc/procps.h	68;"	d
+PUSH	ps/sortformat.c	657;"	d	file:
+PUTT	top.h	119;"	d
+P_CMD	top.h	/^   P_STA, P_CMD, P_WCH, P_FLG$/;"	e	enum:pflag
+P_COD	top.h	/^   P_MEM, P_VRT, P_SWP, P_RES, P_COD, P_DAT, P_SHR,$/;"	e	enum:pflag
+P_CPN	top.h	/^   P_CPN, P_CPU, P_TME, P_TM2,$/;"	e	enum:pflag
+P_CPU	top.h	/^   P_CPN, P_CPU, P_TME, P_TM2,$/;"	e	enum:pflag
+P_DAT	top.h	/^   P_MEM, P_VRT, P_SWP, P_RES, P_COD, P_DAT, P_SHR,$/;"	e	enum:pflag
+P_DRT	top.h	/^   P_FLT, P_DRT,$/;"	e	enum:pflag
+P_FLG	top.h	/^   P_STA, P_CMD, P_WCH, P_FLG$/;"	e	enum:pflag
+P_FLT	top.h	/^   P_FLT, P_DRT,$/;"	e	enum:pflag
+P_GRP	top.h	/^   P_PID, P_PPD, P_URR, P_UID, P_URE, P_GRP, P_TTY,$/;"	e	enum:pflag
+P_G_SZ	proc/pwcache.h	10;"	d
+P_MEM	top.h	/^   P_MEM, P_VRT, P_SWP, P_RES, P_COD, P_DAT, P_SHR,$/;"	e	enum:pflag
+P_NCE	top.h	/^   P_PRI, P_NCE,$/;"	e	enum:pflag
+P_PID	top.h	/^   P_PID, P_PPD, P_URR, P_UID, P_URE, P_GRP, P_TTY,$/;"	e	enum:pflag
+P_PPD	top.h	/^   P_PID, P_PPD, P_URR, P_UID, P_URE, P_GRP, P_TTY,$/;"	e	enum:pflag
+P_PRI	top.h	/^   P_PRI, P_NCE,$/;"	e	enum:pflag
+P_RES	top.h	/^   P_MEM, P_VRT, P_SWP, P_RES, P_COD, P_DAT, P_SHR,$/;"	e	enum:pflag
+P_SHR	top.h	/^   P_MEM, P_VRT, P_SWP, P_RES, P_COD, P_DAT, P_SHR,$/;"	e	enum:pflag
+P_STA	top.h	/^   P_STA, P_CMD, P_WCH, P_FLG$/;"	e	enum:pflag
+P_SWP	top.h	/^   P_MEM, P_VRT, P_SWP, P_RES, P_COD, P_DAT, P_SHR,$/;"	e	enum:pflag
+P_TM2	top.h	/^   P_CPN, P_CPU, P_TME, P_TM2,$/;"	e	enum:pflag
+P_TME	top.h	/^   P_CPN, P_CPU, P_TME, P_TM2,$/;"	e	enum:pflag
+P_TTY	top.h	/^   P_PID, P_PPD, P_URR, P_UID, P_URE, P_GRP, P_TTY,$/;"	e	enum:pflag
+P_UID	top.h	/^   P_PID, P_PPD, P_URR, P_UID, P_URE, P_GRP, P_TTY,$/;"	e	enum:pflag
+P_URE	top.h	/^   P_PID, P_PPD, P_URR, P_UID, P_URE, P_GRP, P_TTY,$/;"	e	enum:pflag
+P_URR	top.h	/^   P_PID, P_PPD, P_URR, P_UID, P_URE, P_GRP, P_TTY,$/;"	e	enum:pflag
+P_VRT	top.h	/^   P_MEM, P_VRT, P_SWP, P_RES, P_COD, P_DAT, P_SHR,$/;"	e	enum:pflag
+P_WCH	top.h	/^   P_STA, P_CMD, P_WCH, P_FLG$/;"	e	enum:pflag
+P_alarm	minimal.c	/^static long P_cutime, P_cstime, P_priority, P_nice, P_timeout, P_alarm;$/;"	v	file:
+P_blocked	minimal.c	/^static unsigned P_signal, P_blocked, P_sigignore, P_sigcatch;$/;"	v	file:
+P_cmaj_flt	minimal.c	/^static unsigned long P_flags, P_min_flt, P_cmin_flt, P_maj_flt, P_cmaj_flt, P_utime, P_stime;$/;"	v	file:
+P_cmd	minimal.c	/^static char P_cmd[16];$/;"	v	file:
+P_cmin_flt	minimal.c	/^static unsigned long P_flags, P_min_flt, P_cmin_flt, P_maj_flt, P_cmaj_flt, P_utime, P_stime;$/;"	v	file:
+P_cnswap	minimal.c	/^static unsigned long P_wchan, P_nswap, P_cnswap;$/;"	v	file:
+P_cstime	minimal.c	/^static long P_cutime, P_cstime, P_priority, P_nice, P_timeout, P_alarm;$/;"	v	file:
+P_cutime	minimal.c	/^static long P_cutime, P_cstime, P_priority, P_nice, P_timeout, P_alarm;$/;"	v	file:
+P_end_code	minimal.c	/^static unsigned long P_rss_rlim, P_start_code, P_end_code, P_start_stack, P_kstk_esp, P_kstk_eip;$/;"	v	file:
+P_euid	minimal.c	/^static int P_euid;$/;"	v	file:
+P_flags	minimal.c	/^static unsigned long P_flags, P_min_flt, P_cmin_flt, P_maj_flt, P_cmaj_flt, P_utime, P_stime;$/;"	v	file:
+P_kstk_eip	minimal.c	/^static unsigned long P_rss_rlim, P_start_code, P_end_code, P_start_stack, P_kstk_esp, P_kstk_eip;$/;"	v	file:
+P_kstk_esp	minimal.c	/^static unsigned long P_rss_rlim, P_start_code, P_end_code, P_start_stack, P_kstk_esp, P_kstk_eip;$/;"	v	file:
+P_maj_flt	minimal.c	/^static unsigned long P_flags, P_min_flt, P_cmin_flt, P_maj_flt, P_cmaj_flt, P_utime, P_stime;$/;"	v	file:
+P_min_flt	minimal.c	/^static unsigned long P_flags, P_min_flt, P_cmin_flt, P_maj_flt, P_cmaj_flt, P_utime, P_stime;$/;"	v	file:
+P_nice	minimal.c	/^static long P_cutime, P_cstime, P_priority, P_nice, P_timeout, P_alarm;$/;"	v	file:
+P_nswap	minimal.c	/^static unsigned long P_wchan, P_nswap, P_cnswap;$/;"	v	file:
+P_pgrp	minimal.c	/^static int P_ppid, P_pgrp, P_session, P_tty_num, P_tpgid;$/;"	v	file:
+P_pid	minimal.c	/^static int P_pid;$/;"	v	file:
+P_ppid	minimal.c	/^static int P_ppid, P_pgrp, P_session, P_tty_num, P_tpgid;$/;"	v	file:
+P_priority	minimal.c	/^static long P_cutime, P_cstime, P_priority, P_nice, P_timeout, P_alarm;$/;"	v	file:
+P_rss	minimal.c	/^static long P_rss;$/;"	v	file:
+P_rss_rlim	minimal.c	/^static unsigned long P_rss_rlim, P_start_code, P_end_code, P_start_stack, P_kstk_esp, P_kstk_eip;$/;"	v	file:
+P_session	minimal.c	/^static int P_ppid, P_pgrp, P_session, P_tty_num, P_tpgid;$/;"	v	file:
+P_sigcatch	minimal.c	/^static unsigned P_signal, P_blocked, P_sigignore, P_sigcatch;$/;"	v	file:
+P_sigignore	minimal.c	/^static unsigned P_signal, P_blocked, P_sigignore, P_sigcatch;$/;"	v	file:
+P_signal	minimal.c	/^static unsigned P_signal, P_blocked, P_sigignore, P_sigcatch;$/;"	v	file:
+P_start_code	minimal.c	/^static unsigned long P_rss_rlim, P_start_code, P_end_code, P_start_stack, P_kstk_esp, P_kstk_eip;$/;"	v	file:
+P_start_stack	minimal.c	/^static unsigned long P_rss_rlim, P_start_code, P_end_code, P_start_stack, P_kstk_esp, P_kstk_eip;$/;"	v	file:
+P_start_time	minimal.c	/^static unsigned long P_start_time, P_vsize;$/;"	v	file:
+P_state	minimal.c	/^static char P_state;$/;"	v	file:
+P_stime	minimal.c	/^static unsigned long P_flags, P_min_flt, P_cmin_flt, P_maj_flt, P_cmaj_flt, P_utime, P_stime;$/;"	v	file:
+P_timeout	minimal.c	/^static long P_cutime, P_cstime, P_priority, P_nice, P_timeout, P_alarm;$/;"	v	file:
+P_tpgid	minimal.c	/^static int P_ppid, P_pgrp, P_session, P_tty_num, P_tpgid;$/;"	v	file:
+P_tty_num	minimal.c	/^static int P_ppid, P_pgrp, P_session, P_tty_num, P_tpgid;$/;"	v	file:
+P_tty_text	minimal.c	/^static char P_tty_text[16];$/;"	v	file:
+P_utime	minimal.c	/^static unsigned long P_flags, P_min_flt, P_cmin_flt, P_maj_flt, P_cmaj_flt, P_utime, P_stime;$/;"	v	file:
+P_vsize	minimal.c	/^static unsigned long P_start_time, P_vsize;$/;"	v	file:
+P_wchan	minimal.c	/^static unsigned long P_wchan, P_nswap, P_cnswap;$/;"	v	file:
+Page_size	top.c	/^static unsigned Page_size;$/;"	v	file:
+Preload	sysctl.c	/^static int Preload(const char *restrict const filename) {$/;"	f	file:
+PrintName	sysctl.c	/^static bool PrintName;$/;"	v	file:
+PrintNewline	sysctl.c	/^static bool PrintNewline;$/;"	v	file:
+Pseudo_cols	top.c	/^static int   Pseudo_row, Pseudo_cols, Pseudo_size;$/;"	v	file:
+Pseudo_row	top.c	/^static int   Pseudo_row, Pseudo_cols, Pseudo_size;$/;"	v	file:
+Pseudo_scrn	top.c	/^static char *Pseudo_scrn;$/;"	v	file:
+Pseudo_size	top.c	/^static int   Pseudo_row, Pseudo_cols, Pseudo_size;$/;"	v	file:
+QFP_t	top.h	/^typedef int (*QFP_t)(const void *, const void *);$/;"	t
+Qsrt_NORMAL	top.h	288;"	d
+Quiet	sysctl.c	/^static bool Quiet;$/;"	v	file:
+RCF_DEPRECATED	top.h	350;"	d
+RCF_EYECATCHER	top.h	349;"	d
+RCF_t	top.h	/^typedef struct RCF_t {  \/\/ the complete rcfile (new style)$/;"	s
+RCF_t	top.h	/^} RCF_t;$/;"	t
+RCW_t	top.h	/^typedef struct RCW_t {  \/\/ the 'window' portion of an rcfile$/;"	s
+RCW_t	top.h	/^} RCW_t;$/;"	t
+RIGHT	ps/output.c	1241;"	d	file:
+RIGHT	ps/output.c	1513;"	d	file:
+ROWBUFSIZ	top.h	80;"	d
+Rawtty	top.c	/^                      Rawtty;$/;"	v	file:
+Rc	top.c	/^static RCF_t Rc = DEF_RCFILE;$/;"	v	file:
+Rc_name	top.c	/^static char  Rc_name [OURPATHSZ];$/;"	v	file:
+ReadSetting	sysctl.c	/^static int ReadSetting(const char *restrict const name) {$/;"	f	file:
+S	free.c	22;"	d	file:
+SCB_NUM1	top.h	94;"	d
+SCB_NUM2	top.h	99;"	d
+SCB_NUMx	top.h	104;"	d
+SCB_STRx	top.h	107;"	d
+SCO	ps/common.h	50;"	d
+SCREENMAX	top.h	64;"	d
+SEL_COMM	ps/common.h	42;"	d
+SEL_EGID	ps/common.h	35;"	d
+SEL_EUID	ps/common.h	31;"	d
+SEL_FGID	ps/common.h	37;"	d
+SEL_FUID	ps/common.h	33;"	d
+SEL_PGRP	ps/common.h	38;"	d
+SEL_PID	ps/common.h	39;"	d
+SEL_PPID	ps/common.h	43;"	d
+SEL_RGID	ps/common.h	34;"	d
+SEL_RUID	ps/common.h	30;"	d
+SEL_SESS	ps/common.h	41;"	d
+SEL_SGID	ps/common.h	36;"	d
+SEL_SUID	ps/common.h	32;"	d
+SEL_TTY	ps/common.h	40;"	d
+SET_IF_DESIRED	proc/sysinfo.c	71;"	d	file:
+SETw	top.h	309;"	d
+SF	top.c	1216;"	d	file:
+SF	top.c	1270;"	d	file:
+SF_B_O	ps/common.h	162;"	d
+SF_B_m	ps/common.h	164;"	d
+SF_B_o	ps/common.h	163;"	d
+SF_G_format	ps/common.h	166;"	d
+SF_G_sort	ps/common.h	165;"	d
+SF_U_O	ps/common.h	160;"	d
+SF_U_o	ps/common.h	161;"	d
+SGI	ps/common.h	55;"	d
+SIC_t	top.h	/^typedef          long long SIC_t;$/;"	t
+SIGCHLD	ps/display.c	39;"	d	file:
+SIGNAL	ps/output.c	1244;"	d	file:
+SIGNAL	ps/output.c	1516;"	d	file:
+SIGNAL_STRING	proc/readproc.h	16;"	d
+SIGPWR	proc/sig.c	50;"	d	file:
+SIGRTMIN	proc/sig.c	44;"	d	file:
+SIGSTKFLT	proc/sig.c	39;"	d	file:
+SIGSYS	proc/sig.c	34;"	d	file:
+SK_Gb	top.h	/^   SK_no, SK_Kb, SK_Mb, SK_Gb, SK_Tb$/;"	e	enum:scale_num
+SK_Kb	top.h	/^   SK_no, SK_Kb, SK_Mb, SK_Gb, SK_Tb$/;"	e	enum:scale_num
+SK_Mb	top.h	/^   SK_no, SK_Kb, SK_Mb, SK_Gb, SK_Tb$/;"	e	enum:scale_num
+SK_Tb	top.h	/^   SK_no, SK_Kb, SK_Mb, SK_Gb, SK_Tb$/;"	e	enum:scale_num
+SK_no	top.h	/^   SK_no, SK_Kb, SK_Mb, SK_Gb, SK_Tb$/;"	e	enum:scale_num
+SLABINFO_FILE	proc/slab.c	24;"	d	file:
+SLABINFO_LINE_LEN	proc/slab.c	22;"	d	file:
+SLABINFO_VER_LEN	proc/slab.c	23;"	d	file:
+SLABSTAT	vmstat.c	43;"	d	file:
+SLAB_INFO_NAME_LEN	proc/slab.h	4;"	d
+SLAB_STAT_ZERO	slabtop.c	32;"	d	file:
+SMLBUFSIZ	top.h	75;"	d
+SOE	ps/common.h	56;"	d
+SORT_eq	top.h	91;"	d
+SORT_fields	top.h	476;"	d
+SORT_gt	top.h	90;"	d
+SORT_lt	top.h	89;"	d
+SORT_xtra	top.h	483;"	d
+SPACE_AMOUNT	ps/output.c	1758;"	d	file:
+SS_B_a	ps/common.h	133;"	d
+SS_B_g	ps/common.h	130;"	d
+SS_B_x	ps/common.h	129;"	d
+SS_U_a	ps/common.h	132;"	d
+SS_U_d	ps/common.h	131;"	d
+STATES_line1	top.h	384;"	d
+STATES_line2x4	top.h	386;"	d
+STATES_line2x5	top.h	388;"	d
+STATES_line2x6	top.h	390;"	d
+STATES_line2x7	top.h	392;"	d
+STAT_FILE	proc/sysinfo.c	35;"	d	file:
+STRINGIFY	proc/procps.h	79;"	d
+STRINGIFY_ARG	proc/procps.h	78;"	d
+STRTOUKL	proc/procps.h	37;"	d
+STRTOUKL	proc/procps.h	41;"	d
+SUBVERSION	Makefile	/^SUBVERSION   := 2$/;"	m
+SUN	ps/common.h	53;"	d
+SYMBOL_TYPE_CHARS	proc/ksym.c	82;"	d	file:
+SYSMAP_FILENAME	proc/ksym.c	32;"	d	file:
+SYSMAP_FILENAME	proc/ksym.c	40;"	d	file:
+SYSMAP_FILENAME	proc/ksym.c	48;"	d	file:
+SYSMAP_FILENAME	proc/ksym.c	56;"	d	file:
+SYS_RCFILESPEC	top.h	348;"	d
+Savedtty	top.c	/^static struct termios Savedtty,$/;"	v	file:
+Screen_cols	top.c	/^static int Screen_cols, Screen_rows, Max_lines;$/;"	v	file:
+Screen_rows	top.c	/^static int Screen_cols, Screen_rows, Max_lines;$/;"	v	file:
+Secure_mode	top.c	/^           Secure_mode = 0;     \/\/ set if some functionality restricted$/;"	v	file:
+Show_CMDLIN	top.h	285;"	d
+Show_COLORS	top.h	281;"	d
+Show_CTIMES	top.h	286;"	d
+Show_HIBOLD	top.h	282;"	d
+Show_HICOLS	top.h	283;"	d
+Show_HIROWS	top.h	284;"	d
+Show_IDLEPS	top.h	287;"	d
+Show_THREADS	top.h	280;"	d
+States_fmts	top.c	/^static const char *States_fmts = STATES_line2x4;$/;"	v	file:
+Stdout_buf	top.c	/^static char  Stdout_buf[2048];$/;"	v	file:
+StripLeadingAndTrailingSpaces	sysctl.c	/^static char *StripLeadingAndTrailingSpaces(char *oneline) {$/;"	f	file:
+TARFILES	Makefile	/^TARFILES := AUTHORS BUGS NEWS README TODO COPYING COPYING.LIB \\$/;"	m
+TARVERSION	Makefile	/^TARVERSION   := $(VERSION).$(SUBVERSION).$(MINORVERSION)$/;"	m
+TF_B_H	ps/common.h	99;"	d
+TF_B_m	ps/common.h	100;"	d
+TF_U_L	ps/common.h	103;"	d
+TF_U_T	ps/common.h	102;"	d
+TF_U_m	ps/common.h	101;"	d
+TF_loose_tasks	ps/common.h	107;"	d
+TF_must_use	ps/common.h	110;"	d
+TF_no_forest	ps/common.h	109;"	d
+TF_no_sort	ps/common.h	108;"	d
+TF_show_both	ps/common.h	106;"	d
+TF_show_proc	ps/common.h	104;"	d
+TF_show_task	ps/common.h	105;"	d
+TIC_t	top.h	/^typedef unsigned long long TIC_t;$/;"	t
+TNYBUFSIZ	top.h	74;"	d
+TO	ps/output.c	1246;"	d	file:
+TO	ps/output.c	1519;"	d	file:
+TOGw	top.h	308;"	d
+TRIMz	top.c	2890;"	d	file:
+TRIMz	top.c	2935;"	d	file:
+TRUE	vmstat.c	50;"	d	file:
+TST	ps/common.h	57;"	d
+TTY_NAME_SIZE	proc/devname.c	26;"	d	file:
+Ttychanged	top.c	/^static int Ttychanged = 0;$/;"	v	file:
+U98	ps/common.h	46;"	d
+UNIT_B	vmstat.c	34;"	d	file:
+UNIT_K	vmstat.c	36;"	d	file:
+UNIT_M	vmstat.c	38;"	d	file:
+UNIT_k	vmstat.c	35;"	d	file:
+UNIT_m	vmstat.c	37;"	d	file:
+UNLIMITED	ps/output.c	1242;"	d	file:
+UNLIMITED	ps/output.c	1514;"	d	file:
+UPTIME_FILE	proc/sysinfo.c	37;"	d	file:
+USER	ps/output.c	1239;"	d	file:
+USER	ps/output.c	1511;"	d	file:
+USERSZ	w.c	44;"	d	file:
+USR	ps/output.c	1256;"	d	file:
+USRNAMSIZ	top.h	79;"	d
+USR_FIELDS	top.h	357;"	d
+Usage	sysctl.c	/^static int Usage(const char *restrict const name) {$/;"	f	file:
+VCNT	proc/ksym.c	339;"	d	file:
+VERSION	Makefile	/^VERSION      := 3$/;"	m
+VERSION	watch.c	13;"	d	file:
+VISIBLE_tsk	top.h	291;"	d
+VIZCHKc	top.h	311;"	d
+VIZTOGc	top.h	313;"	d
+VMINFO_FILE	proc/sysinfo.c	43;"	d	file:
+VMSTAT	vmstat.c	40;"	d	file:
+VMSUMSTAT	vmstat.c	42;"	d	file:
+V_option	pmap.c	/^static int V_option;$/;"	v	file:
+View_CPUSUM	top.h	273;"	d
+View_LOADAV	top.h	274;"	d
+View_MEMORY	top.h	276;"	d
+View_NOBOLD	top.h	277;"	d
+View_STATES	top.h	275;"	d
+WARN_BAD_LINE	sysctl.c	/^static const char WARN_BAD_LINE[] = "warning: %s(%d): invalid syntax, continuing...\\n";$/;"	v	file:
+WCH	ps/output.c	1258;"	d	file:
+WCHAN	ps/output.c	1243;"	d	file:
+WCHAN	ps/output.c	1515;"	d	file:
+WINDOWS_help	top.h	530;"	d
+WINNAMSIZ	top.h	68;"	d
+WIN_t	top.h	/^typedef struct WIN_t {$/;"	s
+WIN_t	top.h	/^} WIN_t;$/;"	t
+WW	top.c	800;"	d	file:
+WW	top.c	804;"	d	file:
+WW	top.c	838;"	d	file:
+Winstk	top.c	/^static WIN_t Winstk [GROUPSMAX],$/;"	v	file:
+WriteSetting	sysctl.c	/^static int WriteSetting(const char *setting) {$/;"	f	file:
+XXX	ps/common.h	47;"	d
+XXXID	proc/readproc.h	31;"	d
+XinL	proc/readproc.c	517;"	d	file:
+XinLN	proc/readproc.c	524;"	d	file:
+ZAP_TIMEOUT	top.c	96;"	d	file:
+_Itop	top.h	23;"	d
+_PROC_SLAB_H	proc/slab.h	2;"	d
+_PUFF	top.h	132;"	d
+_STRUCTURED_PROC	minimal.c	40;"	d	file:
+_TARFILES	Makefile	/^_TARFILES := Makefile$/;"	m
+__GLIBC_MINOR__	ps/global.c	39;"	d	file:
+__GLIBC__	ps/global.c	36;"	d	file:
+__GNU_LIBRARY__	ps/global.c	33;"	d	file:
+_sigpnd	proc/readproc.h	/^	_sigpnd;	\/\/ status          mask of PER TASK pending signals$/;"	m	struct:proc_t
+_sigpnd	proc/readproc.h	/^	_sigpnd[18];	\/\/ status          mask of PER TASK pending signals$/;"	m	struct:proc_t
+a	Makefile	/^	$(install) --mode a=r $(notdir $@) $@$/;"	m
+a	Makefile	/^	$(install) --mode a=rx $(notdir $@) $@$/;"	m
+a_option	vmstat.c	/^static int a_option; \/* "-a" means "show active\/inactive" *\/$/;"	v	file:
+active_cols	ps/output.c	/^static unsigned int active_cols;  \/* some multiple of screen_cols *\/$/;"	v	file:
+active_objs	proc/sysinfo.h	/^	unsigned active_objs;$/;"	m	struct:slab_cache
+active_size	proc/slab.h	/^	unsigned long active_size;      \/* size of all active objects *\/$/;"	m	struct:slab_stat
+addr	proc/ksym.c	/^  unsigned KLONG addr;$/;"	m	struct:symb	file:
+addr	proc/readproc.c	/^    void *addr;$/;"	m	struct:status_table_struct	file:
+aix_array	ps/output.c	/^static const aix_struct aix_array[] = {$/;"	v	file:
+aix_array_count	ps/output.c	/^static const int aix_array_count = sizeof(aix_array)\/sizeof(aix_struct);$/;"	v	file:
+aix_format_parse	ps/sortformat.c	/^static const char *aix_format_parse(sf_node *sfn){$/;"	f	file:
+aix_struct	ps/common.h	/^typedef struct aix_struct {$/;"	s
+aix_struct	ps/common.h	/^} aix_struct;$/;"	t
+alarm	proc/readproc.h	/^	alarm,		\/\/ stat            ?$/;"	m	struct:proc_t
+all_processes	ps/global.c	/^int             all_processes = -1;$/;"	v
+alloc_c	top.c	/^static void *alloc_c (unsigned numb)$/;"	f	file:
+alloc_r	top.c	/^static void *alloc_r (void *q, unsigned numb)$/;"	f	file:
+already_parsed_format	ps/sortformat.c	/^static int already_parsed_format = 0;$/;"	v	file:
+already_parsed_sort	ps/sortformat.c	/^static int already_parsed_sort = 0;     \/* redundantly set in & out of fn *\/$/;"	v	file:
+alrm	tload.c	/^static void alrm(int signo)$/;"	f	file:
+archdefs	ps/global.c	/^static const char archdefs[] =$/;"	v	file:
+arg_parse	minimal.c	/^static void arg_parse(int argc, char *argv[]){$/;"	f	file:
+arg_parse	ps/parser.c	/^int arg_parse(int argc, char *argv[]){$/;"	f
+arg_show	ps/display.c	/^static void arg_show(void){$/;"	f	file:
+arg_type	ps/parser.c	/^static int arg_type(const char *str){$/;"	f	file:
+ask4str	top.c	/^static char *ask4str (const char *prompt)$/;"	f	file:
+av	proc/whattime.c	/^static double av[3];$/;"	v	file:
+avg_obj_size	proc/slab.h	/^	unsigned avg_obj_size;          \/* average object size *\/$/;"	m	struct:slab_stat
+avoid_last_column	top.c	/^static int avoid_last_column;$/;"	v	file:
+before	top.c	/^static void before (char *me)$/;"	f	file:
+beyond	proc/smaps.c	/^	unsigned KLONG beyond;$/;"	m	struct:smap_entry	file:
+bin	Makefile	/^bin                      := $(DESTDIR)\/bin\/$/;"	m
+bin	Makefile	/^usr\/bin                  := $(DESTDIR)\/usr\/bin\/$/;"	m
+bin	Makefile	/^usr\/proc\/bin             := $(DESTDIR)\/usr\/bin\/$/;"	m
+blocked	proc/readproc.h	/^	blocked,	\/\/ status          mask of blocked signals$/;"	m	struct:proc_t
+blocked	proc/readproc.h	/^	blocked[18],	\/\/ status          mask of blocked signals$/;"	m	struct:proc_t
+bool	sysctl.c	/^typedef int bool;$/;"	t	file:
+broken	ps/sortformat.c	/^static int broken;                      \/* use gross Unix98 parsing? *\/$/;"	v	file:
+bsd_c_option	minimal.c	/^static int bsd_c_option; \/* this option overrides the above *\/$/;"	v	file:
+bsd_c_option	ps/global.c	/^int             bsd_c_option = -1;$/;"	v
+bsd_e_option	ps/global.c	/^int             bsd_e_option = -1;$/;"	v
+bsd_j_format	ps/global.c	/^const char     *bsd_j_format = (const char *)0xdeadbeef;$/;"	v
+bsd_l_format	ps/global.c	/^const char     *bsd_l_format = (const char *)0xdeadbeef;$/;"	v
+bsd_s_format	ps/global.c	/^const char     *bsd_s_format = (const char *)0xdeadbeef;$/;"	v
+bsd_u_format	ps/global.c	/^const char     *bsd_u_format = (const char *)0xdeadbeef;$/;"	v
+bsd_v_format	ps/global.c	/^const char     *bsd_v_format = (const char *)0xdeadbeef;$/;"	v
+buf	proc/sysinfo.c	/^static char buf[2048];$/;"	v	file:
+buf	proc/whattime.c	/^static char buf[128];$/;"	v	file:
+buff	proc/sysinfo.c	/^  static char buff[BUFFSIZE]; \/* used in the procedures *\/$/;"	v	file:
+bye_bye	top.c	/^static void bye_bye (FILE *fp, int eno, const char *str)$/;"	f	file:
+cache_size	proc/slab.h	/^	unsigned long cache_size;       \/* size of entire cache *\/$/;"	m	struct:slab_info
+cached_euid	ps/global.c	/^uid_t           cached_euid = -1;$/;"	v
+cached_tty	ps/global.c	/^dev_t           cached_tty = -1;$/;"	v
+cap_bold	top.h	/^   char        cap_bold [CAPBUFSIZ];    \/\/ support for View_NOBOLD toggle$/;"	m	struct:WIN_t
+capclr_hdr	top.h	/^               capclr_hdr [CLRBUFSIZ],     \/\/ note: sum, msg and pmt strs$/;"	m	struct:WIN_t
+capclr_msg	top.h	/^               capclr_msg [CLRBUFSIZ],  \/\/    above clrs (& rebuilt too),$/;"	m	struct:WIN_t
+capclr_pmt	top.h	/^               capclr_pmt [CLRBUFSIZ],  \/\/    but NO recurring costs !!!$/;"	m	struct:WIN_t
+capclr_rowhigh	top.h	/^               capclr_rowhigh [CLRBUFSIZ], \/\/    are only used when this$/;"	m	struct:WIN_t
+capclr_rownorm	top.h	/^               capclr_rownorm [CLRBUFSIZ]; \/\/    window is the 'Curwin'!$/;"	m	struct:WIN_t
+capclr_sum	top.h	/^   char        capclr_sum [CLRBUFSIZ],  \/\/ terminfo strings built from$/;"	m	struct:WIN_t
+capsmk	top.c	/^static void capsmk (WIN_t *q)$/;"	f	file:
+captab	top.h	/^   char       *captab [CAPTABMAX];      \/\/ captab needed by show_special$/;"	m	struct:WIN_t
+check_for_privs	proc/sysinfo.c	/^static int check_for_privs(void){$/;"	f	file:
+check_gcc	Makefile	/^check_gcc = $(shell if $(CC) $(ALL_CPPFLAGS) $(ALL_CFLAGS) dummy.c $(ALL_LDFLAGS) $(1) -o \/dev\/null $(CURSES) > \/dev\/null 2>&1; then echo "$(1)"; else echo "$(2)"; fi ;)$/;"	m
+check_header_width	ps/output.c	/^static void check_header_width(void){$/;"	f	file:
+check_headers	ps/display.c	/^static void check_headers(void){$/;"	f	file:
+check_proc	skill.c	/^static void check_proc(int pid){$/;"	f	file:
+check_sort_needs	ps/display.c	/^static unsigned check_sort_needs(sort_node *walk){$/;"	f	file:
+chin	top.c	/^static int chin (int ech, char *buf, unsigned cnt)$/;"	f	file:
+choose_dimensions	ps/parser.c	/^static void choose_dimensions(void){$/;"	f	file:
+chop_version	proc/ksym.c	/^static char *chop_version(char *arg){$/;"	f	file:
+closeproc	proc/readproc.c	/^void closeproc(PROCTAB* PT) {$/;"	f
+cmaj_flt	proc/readproc.h	/^	cmaj_flt;	\/\/ stat            cumulative maj_flt of process and child processes$/;"	m	struct:proc_t
+cmd	proc/readproc.h	/^    	cmd[16];	\/\/ stat,status     basename of executable file in call to exec(2)$/;"	m	struct:proc_t
+cmd	ps/common.h	/^  char  cmd[16];  \/* this is _not_ \\0 terminated *\/$/;"	m	union:sel_union
+cmd_count	skill.c	/^static int tty_count, uid_count, cmd_count, pid_count;$/;"	v	file:
+cmdline	proc/readproc.h	/^	**cmdline;	\/\/ (special)       command line string vector (\/proc\/#\/cmdline)$/;"	m	struct:proc_t
+cmds	skill.c	/^static const char **cmds;$/;"	v	file:
+cmin_flt	proc/readproc.h	/^	cmin_flt,	\/\/ stat            cumulative min_flt of process and child processes$/;"	m	struct:proc_t
+collect_format_needs	ps/display.c	/^static unsigned collect_format_needs(format_node *walk){$/;"	f	file:
+cols	slabtop.c	/^static unsigned short cols, rows;$/;"	v	file:
+columnhdr	top.h	/^               columnhdr [SCREENMAX],   \/\/ column headings for procflags$/;"	m	struct:WIN_t
+colusrnam	top.h	/^               colusrnam [USRNAMSIZ];   \/\/ if selected by the 'u' command$/;"	m	struct:WIN_t
+compare_format_structs	ps/output.c	/^static int compare_format_structs(const void *a, const void *b){$/;"	f	file:
+compare_gnu_table_structs	ps/parser.c	/^static int compare_gnu_table_structs(const void *a, const void *b){$/;"	f	file:
+compare_macro_structs	ps/output.c	/^static int compare_macro_structs(const void *a, const void *b){$/;"	f	file:
+compare_mem_table_structs	proc/sysinfo.c	/^static int compare_mem_table_structs(const void *a, const void *b){$/;"	f	file:
+compare_personality_table_structs	ps/global.c	/^static int compare_personality_table_structs(const void *a, const void *b){$/;"	f	file:
+compare_signal_names	proc/sig.c	/^static int compare_signal_names(const void *a, const void *b){$/;"	f	file:
+compare_two_procs	ps/display.c	/^static int compare_two_procs(const void *a, const void *b){$/;"	f	file:
+compare_vm_table_structs	proc/sysinfo.c	/^static int compare_vm_table_structs(const void *a, const void *b){$/;"	f	file:
+confighlp	top.c	/^static void confighlp (char *fields) {$/;"	f	file:
+configs_read	top.c	/^static void configs_read (void)$/;"	f	file:
+conv_gid	pgrep.c	/^static int conv_gid (const char *restrict name, union el *restrict e)$/;"	f	file:
+conv_num	pgrep.c	/^static int conv_num (const char *restrict name, union el *restrict e)$/;"	f	file:
+conv_pgrp	pgrep.c	/^static int conv_pgrp (const char *restrict name, union el *restrict e)$/;"	f	file:
+conv_sid	pgrep.c	/^static int conv_sid (const char *restrict name, union el *restrict e)$/;"	f	file:
+conv_str	pgrep.c	/^static int conv_str (const char *restrict name, union el *restrict e)$/;"	f	file:
+conv_uid	pgrep.c	/^static int conv_uid (const char *restrict name, union el *restrict e)$/;"	f	file:
+cpus_refresh	top.c	/^static CPU_t *cpus_refresh (CPU_t *cpus)$/;"	f	file:
+crash	proc/sysinfo.c	/^static void crash(const char *filename) {$/;"	f	file:
+cstime	proc/readproc.h	/^	cstime,		\/\/ stat            cumulative stime of process and reaped children$/;"	m	struct:proc_t
+curses_started	watch.c	/^static int curses_started = 0;$/;"	v	file:
+cutime	proc/readproc.h	/^	cutime,		\/\/ stat            cumulative utime of process and reaped children$/;"	m	struct:proc_t
+d_option	pmap.c	/^static int d_option;$/;"	v	file:
+dash	proc/ksym.c	/^static const char dash[] = "-";$/;"	v	file:
+dataUnit	vmstat.c	/^static unsigned long dataUnit=1024;$/;"	v	file:
+debug_END	top.h	166;"	d
+default_message	proc/ksym.c	/^static void default_message(const char *restrict format, ...) {$/;"	f	file:
+defer_sf_option	ps/sortformat.c	/^int defer_sf_option(const char *arg, int source){$/;"	f
+delay	slabtop.c	/^static long delay = 3;$/;"	v	file:
+delay_time	top.h	/^   float  delay_time;           \/\/ 'd' or 's' - How long to sleep twixt updates$/;"	m	struct:RCF_t
+desc	ps/common.h	/^  const int   desc; \/* 1-character format code *\/$/;"	m	struct:aix_struct
+desc	ps/common.h	/^  const int   desc; \/* 1-character format code *\/$/;"	m	struct:shortsort_struct
+desc	top.h	/^   const char   *desc;          \/\/ description for toggle\/reorder fields$/;"	m	struct:FLD_t
+dev_major	proc/smaps.c	/^	unsigned dev_major;$/;"	m	struct:smap_entry	file:
+dev_minor	proc/smaps.c	/^	unsigned dev_minor;$/;"	m	struct:smap_entry	file:
+dev_to_tty	proc/devname.c	/^unsigned dev_to_tty(char *restrict ret, unsigned chop, dev_t dev_t_dev, int pid, unsigned int flags) {$/;"	f
+devfs_type	proc/devname.c	/^  unsigned short devfs_type;  \/\/ bool$/;"	m	struct:tty_map_node	file:
+did_fake	proc/readproc.h	/^    int         did_fake; \/\/ used when taskdir is missing$/;"	m	struct:PROCTAB
+die	pwdx.c	/^static void die(const char *msg)$/;"	f	file:
+die	watch.c	/^static void die(int notused)$/;"	f	file:
+discover_shm_minor	pmap.c	/^static void discover_shm_minor(void){$/;"	f	file:
+disk_name	proc/sysinfo.h	/^	char               disk_name [16];$/;"	m	struct:disk_stat
+disk_stat	proc/sysinfo.h	/^typedef struct disk_stat{$/;"	s
+disk_stat	proc/sysinfo.h	/^}disk_stat;$/;"	t
+diskformat	vmstat.c	/^static void diskformat(void){$/;"	f	file:
+diskheader	vmstat.c	/^static void diskheader(void){$/;"	f	file:
+diskpartition_format	vmstat.c	/^static int diskpartition_format(const char* partition_name){$/;"	f	file:
+diskpartition_header	vmstat.c	/^static void diskpartition_header(const char *partition_name){$/;"	f	file:
+disksum_format	vmstat.c	/^static void disksum_format(void) {$/;"	f	file:
+display_fields	top.c	/^static void display_fields (const char *fields, const char *xtra)$/;"	f	file:
+display_kill_version	skill.c	/^static void display_kill_version(void){$/;"	f	file:
+display_version	proc/version.c	/^void display_version(void) {$/;"	f
+dly	tload.c	/^static int dly=5;$/;"	v	file:
+do_cpu	minimal.c	/^static const char *do_cpu(int longform){$/;"	f	file:
+do_exit	watch.c	/^static void do_exit(int status)$/;"	f	file:
+do_key	top.c	/^static void do_key (unsigned c)$/;"	f	file:
+do_mem	minimal.c	/^static const char *do_mem(int longform){$/;"	f	file:
+do_one_sort_spec	ps/sortformat.c	/^static sort_node *do_one_sort_spec(const char *spec){$/;"	f	file:
+do_one_spec	ps/sortformat.c	/^static format_node *do_one_spec(const char *spec, const char *override){$/;"	f	file:
+do_openproc	pgrep.c	/^static PROCTAB *do_openproc (void)$/;"	f	file:
+do_pr_name	ps/output.c	/^static int do_pr_name(char *restrict const outbuf, const char *restrict const name, unsigned u){$/;"	f	file:
+do_regcomp	pgrep.c	/^static regex_t * do_regcomp (void)$/;"	f	file:
+do_stime	minimal.c	/^static const char *do_stime(void){$/;"	f	file:
+do_time	minimal.c	/^static const char *do_time(unsigned long t){$/;"	f	file:
+do_usage	watch.c	/^static void do_usage(void)$/;"	f	file:
+do_user	minimal.c	/^static const char *do_user(void){$/;"	f	file:
+driver_name	proc/devname.c	/^static int driver_name(char *restrict const buf, unsigned maj, unsigned min){$/;"	f	file:
+drs	proc/readproc.h	/^	drs,		\/\/ statm           data resident set size$/;"	m	struct:proc_t
+dt	proc/readproc.h	/^	dt;		\/\/ statm           dirty pages$/;"	m	struct:proc_t
+egid	proc/readproc.h	/^        euid, egid,     \/\/ stat(),status   effective$/;"	m	struct:proc_t
+egroup	proc/readproc.h	/^    	egroup[P_G_SZ],	\/\/ status          effective group name$/;"	m	struct:proc_t
+el	pgrep.c	/^union el {$/;"	u	file:
+end_code	proc/readproc.h	/^	end_code,	\/\/ stat            address of end of code segment$/;"	m	struct:proc_t
+end_pgm	top.c	/^static void end_pgm (int sig)$/;"	f	file:
+env_col_buf	watch.c	/^static char env_col_buf[24];$/;"	v	file:
+env_row_buf	watch.c	/^static char env_row_buf[24];$/;"	v	file:
+environ	proc/readproc.h	/^	**environ,	\/\/ (special)       environment string vector (\/proc\/#\/environ)$/;"	m	struct:proc_t
+escape_command	proc/escape.c	/^int escape_command(char *restrict const outbuf, const proc_t *restrict const pp, int bytes, int *cells, unsigned flags){$/;"	f
+escape_str	proc/escape.c	/^int escape_str(char *restrict dst, const char *restrict src, int bufsize, int *maxcells){$/;"	f
+escape_str_utf8	proc/escape.c	/^static int escape_str_utf8(char *restrict dst, const char *restrict src, int bufsize, int *maxcells){$/;"	f	file:
+escape_strlist	proc/escape.c	/^int escape_strlist(char *restrict dst, const char *restrict const *restrict src, size_t bytes, int *cells){$/;"	f
+euid	proc/readproc.h	/^        euid, egid,     \/\/ stat(),status   effective$/;"	m	struct:proc_t
+euser	proc/readproc.h	/^    	euser[P_G_SZ],	\/\/ stat(),status   effective user name$/;"	m	struct:proc_t
+exclusive	ps/parser.c	49;"	d	file:
+exit_signal	proc/readproc.h	/^	exit_signal,	\/\/ stat            might not be SIGCHLD$/;"	m	struct:proc_t
+expected	proc/procps.h	65;"	d
+expected	proc/procps.h	71;"	d
+f_cooked	ps/common.h	/^  format_node *f_cooked;  \/* convert each arg alone, then merge *\/$/;"	m	struct:sf_node
+f_flag	skill.c	/^static int f_flag, i_flag, v_flag, w_flag, n_flag;$/;"	v	file:
+fail	proc/ksym.c	/^static const symb fail = { .name = "?" };$/;"	v	file:
+false	sysctl.c	/^static bool false = 0;$/;"	v	file:
+fancy_spew	ps/display.c	/^static void fancy_spew(void){$/;"	f	file:
+fcntl_lock	pgrep.c	/^int fcntl_lock(int fd, int cmd, int type, int whence, int start, int len)$/;"	f
+fd	tload.c	/^static int fd=1;$/;"	v	file:
+fgid	proc/readproc.h	/^        fuid, fgid,     \/\/ status          fs (used for file access only)$/;"	m	struct:proc_t
+fgroup	proc/readproc.h	/^    	fgroup[P_G_SZ],	\/\/ status          filesystem group name$/;"	m	struct:proc_t
+fields_reorder	top.c	/^static void fields_reorder (void)$/;"	f	file:
+fields_sort	top.c	/^static void fields_sort (void)$/;"	f	file:
+fields_toggle	top.c	/^static void fields_toggle (void)$/;"	f	file:
+fieldscur	top.h	/^          fieldscur [PFLAGSSIZ];        \/\/ fields displayed and ordered$/;"	m	struct:RCW_t
+file2str	proc/readproc.c	/^static int file2str(const char *directory, const char *what, char *ret, int cap) {$/;"	f	file:
+file2strvec	proc/readproc.c	/^static char** file2strvec(const char* directory, const char* what) {$/;"	f	file:
+find_elf_note	proc/sysinfo.c	/^static unsigned long find_elf_note(unsigned long findme){$/;"	f	file:
+finder	proc/readproc.h	/^    int(*finder)(struct PROCTAB *restrict const, proc_t *restrict const);$/;"	m	struct:PROCTAB
+first_screen	watch.c	/^static int first_screen = 1;$/;"	v	file:
+flagptr	minimal.c	/^static char *flagptr;  \/* current location in ps_argv[thisarg] *\/$/;"	v	file:
+flagptr	ps/parser.c	/^static char *flagptr;  \/* current location in ps_argv[thisarg] *\/$/;"	v	file:
+flags	proc/readproc.h	/^	flags,		\/\/ stat            kernel flags for the process$/;"	m	struct:proc_t
+flags	proc/readproc.h	/^    unsigned	flags;$/;"	m	struct:PROCTAB
+flags	proc/smaps.c	/^	char flags[8];$/;"	m	struct:smap_entry	file:
+flags	ps/common.h	/^  const int flags;$/;"	m	struct:format_struct
+flags	ps/common.h	/^  int flags;$/;"	m	struct:format_node
+fmt_add_after	ps/sortformat.c	/^static int fmt_add_after(const char *findme, format_node *putme){$/;"	f	file:
+fmt_delete	ps/sortformat.c	/^static int fmt_delete(const char *findme){$/;"	f	file:
+fmtmk	top.c	/^static const char *fmtmk (const char *fmts, ...)$/;"	f	file:
+fmts	top.h	/^   const char   *fmts;          \/\/ sprintf format string for field display$/;"	m	struct:FLD_t
+force_bsd	ps/parser.c	/^static int force_bsd = 0;  \/* set when normal parsing fails *\/$/;"	v	file:
+forest_helper	ps/output.c	/^static int forest_helper(char *restrict const outbuf){$/;"	f	file:
+forest_prefix	ps/global.c	/^char            forest_prefix[4 * 32*1024 + 100];     \/\/ FIXME$/;"	v
+forest_type	ps/global.c	/^int             forest_type = -1;$/;"	v
+fork_format	vmstat.c	/^static void fork_format(void) {$/;"	f	file:
+format_array	ps/output.c	/^static const format_struct format_array[] = {$/;"	v	file:
+format_array_count	ps/output.c	/^static const int format_array_count = sizeof(format_array)\/sizeof(format_struct);$/;"	v	file:
+format_flags	ps/global.c	/^unsigned        format_flags = 0xffffffff;   \/* -l -f l u s -j... *\/$/;"	v
+format_list	ps/global.c	/^format_node    *format_list = (format_node *)0xdeadbeef; \/* digested formatting options *\/$/;"	v
+format_modifiers	ps/global.c	/^unsigned        format_modifiers = 0xffffffff;   \/* -c -j -y -P -L... *\/$/;"	v
+format_node	ps/common.h	/^typedef struct format_node {$/;"	s
+format_node	ps/common.h	/^} format_node;$/;"	t
+format_parse	ps/sortformat.c	/^static const char *format_parse(sf_node *sfn){$/;"	f	file:
+format_struct	ps/common.h	/^typedef struct format_struct {$/;"	s
+format_struct	ps/common.h	/^} format_struct;$/;"	t
+frame_make	top.c	/^static void frame_make (void)$/;"	f	file:
+framehlp	top.c	/^static void framehlp (int wix, int max)$/;"	f	file:
+free_index	proc/slab.c	/^static struct slab_info *free_index;$/;"	v	file:
+free_slabinfo	proc/slab.c	/^void free_slabinfo(struct slab_info *list)$/;"	f
+freeproc	proc/readproc.c	/^void freeproc(proc_t* p) {$/;"	f
+ft_get_char	top.c	/^static inline int ft_get_char (const int fr, int i) {$/;"	f	file:
+ft_get_ptr	top.c	/^static const FLD_t *ft_get_ptr (const int fr, int c) {$/;"	f	file:
+fuid	proc/readproc.h	/^        fuid, fgid,     \/\/ status          fs (used for file access only)$/;"	m	struct:proc_t
+fuser	proc/readproc.h	/^    	fuser[P_G_SZ],	\/\/ status          filesystem user name$/;"	m	struct:proc_t
+generate_sysv_list	ps/sortformat.c	/^static const char *generate_sysv_list(void){$/;"	f	file:
+get_float	top.c	/^static float get_float (const char *prompt)$/;"	f	file:
+get_int	top.c	/^static int get_int (const char *prompt)$/;"	f	file:
+get_opt_arg	minimal.c	/^static const char *get_opt_arg(void){$/;"	f	file:
+get_opt_arg	ps/parser.c	/^static const char *get_opt_arg(void){$/;"	f	file:
+get_pid_digits	proc/sysinfo.c	/^unsigned get_pid_digits(void){$/;"	f
+get_proc_stats	proc/readproc.c	/^proc_t * get_proc_stats(pid_t pid, proc_t *p) {$/;"	f
+get_slabinfo	proc/slab.c	/^int get_slabinfo(struct slab_info **list, struct slab_stat *stats)$/;"	f
+get_slabnode	proc/slab.c	/^static struct slab_info *get_slabnode(void)$/;"	f	file:
+get_terminal_size	watch.c	/^get_terminal_size(void)$/;"	f	file:
+getdiskstat	proc/sysinfo.c	/^unsigned int getdiskstat(struct disk_stat **disks, struct partition_stat **partitions){$/;"	f
+getpartitions_num	proc/sysinfo.c	/^unsigned int getpartitions_num(struct disk_stat *disks, int ndisks){$/;"	f
+getproc	w.c	/^static const proc_t *getproc(const utmp_t *restrict const u, const char *restrict const tty, unsigned long long *restrict const jcpu, int *restrict const found_utpid) {$/;"	f	file:
+getrunners	proc/sysinfo.c	/^static void getrunners(unsigned int *restrict running, unsigned int *restrict blocked) {$/;"	f	file:
+getslabinfo	proc/sysinfo.c	/^unsigned int getslabinfo (struct slab_cache **slab){$/;"	f
+getstat	proc/sysinfo.c	/^void getstat(jiff *restrict cuse, jiff *restrict cice, jiff *restrict csys, jiff *restrict cide, jiff *restrict ciow, jiff *restrict cxxx, jiff *restrict cyyy, jiff *restrict czzz,$/;"	f
+gid	proc/pwcache.c	/^    gid_t gid;$/;"	m	struct:grpbuf	file:
+gid	ps/common.h	/^  gid_t gid;$/;"	m	union:sel_union
+gnu_table_struct	ps/parser.c	/^typedef struct gnu_table_struct {$/;"	s	file:
+gnu_table_struct	ps/parser.c	/^} gnu_table_struct;$/;"	t	file:
+good_uid	top.c	/^static int good_uid(const proc_t *restrict const pp){$/;"	f	file:
+grab_gnu_arg	ps/parser.c	/^static const char *grab_gnu_arg(void){$/;"	f	file:
+group_from_gid	proc/pwcache.c	/^char *group_from_gid(gid_t gid) {$/;"	f
+grpbuf	proc/pwcache.c	/^static struct grpbuf {$/;"	s	file:
+grphash	proc/pwcache.c	/^} *grphash[HASHSIZE];$/;"	v	file:
+grpname	top.h	/^   char        grpname   [GRPNAMSIZ],   \/\/ window number:name, printable$/;"	m	struct:WIN_t
+guess_name	proc/devname.c	/^static int guess_name(char *restrict const buf, unsigned maj, unsigned min){$/;"	f	file:
+has_fcntl	pgrep.c	/^static int has_fcntl(int fd)$/;"	f	file:
+has_flock	pgrep.c	/^static int has_flock(int fd)$/;"	f	file:
+has_our_euid	ps/select.c	22;"	d	file:
+hashtable	proc/ksym.c	/^static symb hashtable[256];$/;"	v	file:
+have_gnu_sort	ps/sortformat.c	/^static int have_gnu_sort = 0;           \/* if true, "O" must be format *\/$/;"	v	file:
+have_privs	proc/sysinfo.c	/^int have_privs;$/;"	v
+head	ps/common.h	/^  const char *head; \/* default header in the POSIX locale *\/$/;"	m	struct:aix_struct
+head	ps/common.h	/^  const char *head; \/* default header in the POSIX locale *\/$/;"	m	struct:format_struct
+head	ps/common.h	/^  const char *head; \/* default header in the POSIX locale *\/$/;"	m	struct:macro_struct
+head	top.h	/^   const char   *head;          \/\/ name for col heads + toggle\/reorder fields$/;"	m	struct:FLD_t
+headclr	top.h	/^          headclr,                      \/\/        "       in cols head$/;"	m	struct:RCW_t
+header_gap	ps/global.c	/^int             header_gap = -1;$/;"	v
+header_type	ps/global.c	/^int             header_type = -1;$/;"	v
+height	vmstat.c	/^static unsigned int height;   \/\/ window height$/;"	v	file:
+height	watch.c	/^static int height = 24, width = 80;$/;"	v	file:
+help_message	free.c	/^const char help_message[] =$/;"	v
+help_message	ps/help.c	/^const char *help_message =$/;"	v
+help_pr_sig	ps/output.c	/^static int help_pr_sig(char *restrict const outbuf, const char *restrict const sig){$/;"	f	file:
+help_pr_sig	ps/output.c	/^static int help_pr_sig(unsigned long long sig){$/;"	f	file:
+hex_dump	ps/display.c	/^void hex_dump(void *vp){$/;"	f
+hurt_proc	skill.c	/^static void hurt_proc(int tty, int uid, int pid, const char *restrict const cmd){$/;"	f	file:
+i	proc/readproc.h	/^    int         i;  \/\/ generic$/;"	m	struct:PROCTAB
+i	top.h	/^   TIC_t u, n, s, i, w, x, y, z; \/\/ as represented in \/proc\/stat$/;"	m	struct:CPU_t
+i_am_pkill	pgrep.c	/^static int i_am_pkill = 0;$/;"	v	file:
+i_flag	skill.c	/^static int f_flag, i_flag, v_flag, w_flag, n_flag;$/;"	v	file:
+i_sav	top.h	/^   TIC_t u_sav, s_sav, n_sav, i_sav, w_sav, x_sav, y_sav, z_sav; \/\/ in the order of our display$/;"	m	struct:CPU_t
+id	top.h	/^   unsigned id;  \/\/ the CPU ID number$/;"	m	struct:CPU_t
+idletime	w.c	/^static time_t idletime(const char *restrict const tty) {$/;"	f	file:
+idx_room	proc/ksym.c	/^static unsigned    idx_room;$/;"	v	file:
+ignoreuser	w.c	/^static int ignoreuser = 0;	\/* for '-u' *\/$/;"	v	file:
+include	Makefile	/^usr\/include              := $(DESTDIR)\/usr\/include\/$/;"	m
+include_dead_children	ps/global.c	/^int             include_dead_children = -1;$/;"	v
+incoming_cols	watch.c	/^static int incoming_cols;$/;"	v	file:
+incoming_rows	watch.c	/^static int incoming_rows;$/;"	v	file:
+init_Linux_version	proc/version.c	/^static void init_Linux_version(void) {$/;"	f	file:
+init_libproc	proc/sysinfo.c	/^static void init_libproc(void){$/;"	f	file:
+init_output	ps/output.c	/^void init_output(void){$/;"	f
+init_signal_list	proc/sig.c	/^static int init_signal_list(void){$/;"	f	file:
+inode	proc/smaps.c	/^	unsigned long long inode;$/;"	m	struct:smap_entry	file:
+inprogress_IO	proc/sysinfo.h	/^	unsigned           inprogress_IO;$/;"	m	struct:disk_stat
+install	Makefile	/^install  := install -D --owner 0 --group 0$/;"	m
+isprint	watch.c	30;"	d	file:
+isprint	watch.c	31;"	d	file:
+iterate	skill.c	/^static void iterate(void){$/;"	f	file:
+its_YOUR_fault	top.h	173;"	d
+jb	tload.c	/^static jmp_buf jb;$/;"	v	file:
+jiff	proc/sysinfo.h	/^typedef unsigned long long jiff;$/;"	t
+jump	ps/global.c	/^  const void *jump; \/* See gcc extension info.   :-)   *\/$/;"	m	struct:personality_table_struct	file:
+jump	ps/parser.c	/^  const void *jump; \/* See gcc extension info.   :-)   *\/$/;"	m	struct:gnu_table_struct	file:
+junk	Makefile	/^junk := DEADJOE *~ *.o core gmon.out$/;"	m
+kb_active	proc/sysinfo.c	/^unsigned long kb_active;$/;"	v
+kb_anon_pages	proc/sysinfo.c	/^static unsigned long kb_anon_pages;$/;"	v	file:
+kb_bounce	proc/sysinfo.c	/^static unsigned long kb_bounce;$/;"	v	file:
+kb_commit_limit	proc/sysinfo.c	/^static unsigned long kb_commit_limit;$/;"	v	file:
+kb_committed_as	proc/sysinfo.c	/^unsigned long kb_committed_as;$/;"	v
+kb_dirty	proc/sysinfo.c	/^unsigned long kb_dirty;$/;"	v
+kb_high_free	proc/sysinfo.c	/^unsigned long kb_high_free;$/;"	v
+kb_high_total	proc/sysinfo.c	/^unsigned long kb_high_total;$/;"	v
+kb_inact_clean	proc/sysinfo.c	/^unsigned long kb_inact_clean;$/;"	v
+kb_inact_dirty	proc/sysinfo.c	/^unsigned long kb_inact_dirty;$/;"	v
+kb_inact_laundry	proc/sysinfo.c	/^unsigned long kb_inact_laundry;$/;"	v
+kb_inact_target	proc/sysinfo.c	/^unsigned long kb_inact_target;$/;"	v
+kb_inactive	proc/sysinfo.c	/^unsigned long kb_inactive;$/;"	v
+kb_low_free	proc/sysinfo.c	/^unsigned long kb_low_free;$/;"	v
+kb_low_total	proc/sysinfo.c	/^unsigned long kb_low_total;$/;"	v
+kb_main_buffers	proc/sysinfo.c	/^unsigned long kb_main_buffers;$/;"	v
+kb_main_cached	proc/sysinfo.c	/^unsigned long kb_main_cached;$/;"	v
+kb_main_free	proc/sysinfo.c	/^unsigned long kb_main_free;$/;"	v
+kb_main_shared	proc/sysinfo.c	/^unsigned long kb_main_shared;$/;"	v
+kb_main_total	proc/sysinfo.c	/^unsigned long kb_main_total;$/;"	v
+kb_main_used	proc/sysinfo.c	/^unsigned long kb_main_used;$/;"	v
+kb_mapped	proc/sysinfo.c	/^unsigned long kb_mapped;$/;"	v
+kb_nfs_unstable	proc/sysinfo.c	/^static unsigned long kb_nfs_unstable;$/;"	v	file:
+kb_pagetables	proc/sysinfo.c	/^unsigned long kb_pagetables;$/;"	v
+kb_slab	proc/sysinfo.c	/^unsigned long kb_slab;$/;"	v
+kb_swap_cached	proc/sysinfo.c	/^unsigned long kb_swap_cached;  \/* late 2.4 and 2.6+ only *\/$/;"	v
+kb_swap_free	proc/sysinfo.c	/^unsigned long kb_swap_free;$/;"	v
+kb_swap_reclaimable	proc/sysinfo.c	/^static unsigned long kb_swap_reclaimable;$/;"	v	file:
+kb_swap_total	proc/sysinfo.c	/^unsigned long kb_swap_total;$/;"	v
+kb_swap_unreclaimable	proc/sysinfo.c	/^static unsigned long kb_swap_unreclaimable;$/;"	v	file:
+kb_swap_used	proc/sysinfo.c	/^unsigned long kb_swap_used;$/;"	v
+kb_vmalloc_chunk	proc/sysinfo.c	/^static unsigned long kb_vmalloc_chunk;$/;"	v	file:
+kb_vmalloc_total	proc/sysinfo.c	/^static unsigned long kb_vmalloc_total;$/;"	v	file:
+kb_vmalloc_used	proc/sysinfo.c	/^static unsigned long kb_vmalloc_used;$/;"	v	file:
+kb_writeback	proc/sysinfo.c	/^unsigned long kb_writeback;$/;"	v
+kbdABORT	top.c	2255;"	d	file:
+kbdABORT	top.c	2335;"	d	file:
+kbdAPPLY	top.c	2256;"	d	file:
+kbdAPPLY	top.c	2336;"	d	file:
+keys	top.h	/^   const char    keys [4];      \/\/ order: New-on New-off Old-on Old-off$/;"	m	struct:FLD_t
+kill_main	skill.c	/^static void kill_main(int argc, const char *restrict const *restrict argv){$/;"	f	file:
+kill_usage	skill.c	/^static void kill_usage(void){$/;"	f	file:
+kstk_eip	proc/readproc.h	/^	kstk_eip,	\/\/ stat            kernel instruction pointer$/;"	m	struct:proc_t
+kstk_esp	proc/readproc.h	/^	kstk_esp,	\/\/ stat            kernel stack pointer$/;"	m	struct:proc_t
+ksyms_count	proc/ksym.c	/^static unsigned    ksyms_count;$/;"	v	file:
+ksyms_data	proc/ksym.c	/^static char       *ksyms_data;$/;"	v	file:
+ksyms_index	proc/ksym.c	/^static symb       *ksyms_index;$/;"	v	file:
+ksyms_room	proc/ksym.c	/^static unsigned    ksyms_room     = 4096;$/;"	v	file:
+ldconfig	Makefile	/^ldconfig := ldconfig$/;"	m
+len	proc/readproc.c	/^    unsigned char len;            \/\/ name length$/;"	m	struct:status_table_struct	file:
+len	proc/smaps.c	/^	int len;$/;"	m	struct:ssjt	file:
+len_rowhigh	top.h	/^               len_rowhigh;     \/\/ strings to avoid repeated strlen calls$/;"	m	struct:WIN_t
+len_rownorm	top.h	/^   int         len_rownorm,     \/\/ lengths of the corresponding terminfo$/;"	m	struct:WIN_t
+lflg	top.h	/^   const int     lflg;          \/\/ PROC_FILLxxx flag(s) needed by this field$/;"	m	struct:FLD_t
+lib	Makefile	/^lib                      := $(DESTDIR)\/$(lib64)\/$/;"	m
+lib	Makefile	/^usr\/lib                  := $(DESTDIR)\/usr\/$(lib64)\/$/;"	m
+lib64	Makefile	/^lib64    := lib$(shell [ -d \/lib64 ] && echo 64)$/;"	m
+likely	proc/procps.h	63;"	d
+likely	proc/procps.h	69;"	d
+lines_to_next_header	ps/global.c	/^int             lines_to_next_header = -1;$/;"	v
+link_name	proc/devname.c	/^static int link_name(char *restrict const buf, unsigned maj, unsigned min, int pid, const char *restrict name){$/;"	f	file:
+linux_version_code	proc/ksym.c	33;"	d	file:
+linux_version_code	proc/ksym.c	41;"	d	file:
+linux_version_code	proc/ksym.c	49;"	d	file:
+linux_version_code	proc/ksym.c	57;"	d	file:
+linux_version_code	proc/version.c	/^int linux_version_code;$/;"	v
+linux_version_code	top.h	39;"	d
+listed_nextpid	proc/readproc.c	/^static int listed_nextpid(PROCTAB *restrict const PT, proc_t *restrict const p) {$/;"	f	file:
+lists_and_needs	ps/display.c	/^static void lists_and_needs(void){$/;"	f	file:
+ln_f	Makefile	/^ln_f     := ln -f$/;"	m
+ln_sf	Makefile	/^ln_sf    := ln -sf$/;"	m
+load_drivers	proc/devname.c	/^static void load_drivers(void){$/;"	f	file:
+loadavg	proc/sysinfo.c	/^void loadavg(double *restrict av1, double *restrict av5, double *restrict av15) {$/;"	f
+loadavg_fd	proc/sysinfo.c	/^static int loadavg_fd = -1;$/;"	v	file:
+long_sort_parse	ps/sortformat.c	/^static const char *long_sort_parse(sf_node *sfn){$/;"	f	file:
+longopts	watch.c	/^static struct option longopts[] = {$/;"	v	file:
+look_up_our_self	proc/readproc.c	/^void look_up_our_self(proc_t *p) {$/;"	f
+lookup	ps/parser.c	134;"	d	file:
+lookup	ps/parser.c	155;"	d	file:
+lookup_wchan	proc/ksym.c	/^const char * lookup_wchan(unsigned KLONG address, unsigned pid) {$/;"	f
+low_density_names	proc/devname.c	/^static const char low_density_names[][6] = {$/;"	v	file:
+lrs	proc/readproc.h	/^	lrs,		\/\/ statm           shared-lib resident set size$/;"	m	struct:proc_t
+m64	Makefile	/^m64 := $(call check_gcc,-m64,$(call check_gcc,-mabi=64,))$/;"	m
+macro_array	ps/output.c	/^static const macro_struct macro_array[] = {$/;"	v	file:
+macro_array_count	ps/output.c	/^static const int macro_array_count = sizeof(macro_array)\/sizeof(macro_struct);$/;"	v	file:
+macro_struct	ps/common.h	/^typedef struct macro_struct {$/;"	s
+macro_struct	ps/common.h	/^} macro_struct;$/;"	t
+main	dummy.c	/^int main(int argc, char *argv[]){$/;"	f
+main	free.c	/^int main(int argc, char *argv[]){$/;"	f
+main	minimal.c	/^int main(int argc, char *argv[]){$/;"	f
+main	pgrep.c	/^int main (int argc, char *argv[])$/;"	f
+main	pmap.c	/^int main(int argc, char *argv[]){$/;"	f
+main	ps/display.c	/^int main(int argc, char *argv[]){$/;"	f
+main	pwdx.c	/^int main(int argc, char* argv[])$/;"	f
+main	skill.c	/^int main(int argc, const char *argv[]){$/;"	f
+main	slabtop.c	/^int main(int argc, char *argv[])$/;"	f
+main	sysctl.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	tload.c	/^int main(int argc, char **argv)$/;"	f
+main	top.c	/^int main (int dont_care_argc, char *argv[])$/;"	f
+main	uptime.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	vmstat.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	w.c	/^int main(int argc, char **argv) {$/;"	f
+main	watch.c	/^main(int argc, char *argv[])$/;"	f
+maj_flt	proc/readproc.h	/^	maj_flt,	\/\/ stat            number of major page faults since process start$/;"	m	struct:proc_t
+major	proc/devname.c	41;"	d	file:
+major	proc/devname.c	43;"	d	file:
+major_number	proc/devname.c	/^  unsigned short major_number;$/;"	m	struct:tty_map_node	file:
+man1	Makefile	/^man1                     := $(DESTDIR)\/usr\/share\/man\/man1\/$/;"	m
+man5	Makefile	/^man5                     := $(DESTDIR)\/usr\/share\/man\/man5\/$/;"	m
+man8	Makefile	/^man8                     := $(DESTDIR)\/usr\/share\/man\/man8\/$/;"	m
+mapping_name	pmap.c	/^static const char *mapping_name(proc_t *p, unsigned KLONG addr, unsigned KLONG len, const char *mapbuf, unsigned showpath, unsigned dev_major, unsigned dev_minor, unsigned long long inode){$/;"	f	file:
+mapstruct	proc/sig.c	/^typedef struct mapstruct {$/;"	s	file:
+mapstruct	proc/sig.c	/^} mapstruct;$/;"	t	file:
+match_numlist	pgrep.c	/^static int match_numlist (long value, const union el *restrict list)$/;"	f	file:
+match_strlist	pgrep.c	/^static int match_strlist (const char *restrict value, const union el *restrict list)$/;"	f	file:
+max_leftward	ps/output.c	/^static unsigned max_leftward = 0x12345678; \/* space for LEFT stuff *\/$/;"	v	file:
+max_obj_size	proc/slab.h	/^	unsigned max_obj_size;          \/* size of largest object *\/$/;"	m	struct:slab_stat
+max_rightward	ps/output.c	/^static unsigned max_rightward = 0x12345678; \/* space for RIGHT stuff *\/$/;"	v	file:
+maxcmdln	top.h	/^               maxcmdln;        \/\/ max length of a process' command line$/;"	m	struct:WIN_t
+maxpflgs	top.h	/^   int         maxpflgs,        \/\/ number of procflags (upcase fieldscur)$/;"	m	struct:WIN_t
+maxtasks	top.h	/^          maxtasks,             \/\/ user requested maximum, 0 equals all$/;"	m	struct:RCW_t
+mem_table_struct	proc/sysinfo.c	/^typedef struct mem_table_struct {$/;"	s	file:
+mem_table_struct	proc/sysinfo.c	/^} mem_table_struct;$/;"	t	file:
+meminfo	proc/sysinfo.c	/^void meminfo(void){$/;"	f
+meminfo_fd	proc/sysinfo.c	/^static int meminfo_fd = -1;$/;"	v	file:
+merge_objs	slabtop.c	/^static struct slab_info *merge_objs(struct slab_info *a, struct slab_info *b)$/;"	f	file:
+merged_reads	proc/sysinfo.h	/^	unsigned           merged_reads;$/;"	m	struct:disk_stat
+merged_writes	proc/sysinfo.h	/^	unsigned           merged_writes;$/;"	m	struct:disk_stat
+message_fn	proc/wchan.h	/^typedef void (*message_fn)(const char *restrict, ...) __attribute__((format(printf,1,2)));$/;"	t
+milli_reading	proc/sysinfo.h	/^	unsigned           milli_reading;$/;"	m	struct:disk_stat
+milli_spent_IO	proc/sysinfo.h	/^	unsigned           milli_spent_IO;$/;"	m	struct:disk_stat
+milli_writing	proc/sysinfo.h	/^	unsigned           milli_writing;$/;"	m	struct:disk_stat
+min	watch.c	54;"	d	file:
+min_flt	proc/readproc.h	/^	min_flt,	\/\/ stat            number of minor page faults since process start$/;"	m	struct:proc_t
+min_obj_size	proc/slab.h	/^	unsigned min_obj_size;          \/* size of smallest object *\/$/;"	m	struct:slab_stat
+minor	proc/devname.c	42;"	d	file:
+minor	proc/devname.c	44;"	d	file:
+minor_first	proc/devname.c	/^  unsigned minor_first;$/;"	m	struct:tty_map_node	file:
+minor_last	proc/devname.c	/^  unsigned minor_last;$/;"	m	struct:tty_map_node	file:
+mode_altscr	top.h	/^   int    mode_altscr;          \/\/ 'A' - Alt display mode (multi task windows)$/;"	m	struct:RCF_t
+mode_irixps	top.h	/^   int    mode_irixps;          \/\/ 'I' - Irix vs. Solaris mode (SMP-only)$/;"	m	struct:RCF_t
+moreheaders	vmstat.c	/^static unsigned int moreheaders=TRUE;$/;"	v	file:
+msg_save	top.c	/^static void msg_save (const char *fmts, ...)$/;"	f	file:
+msgsclr	top.h	/^          msgsclr,                      \/\/        "       in msgs\/pmts$/;"	m	struct:RCW_t
+my_pid	skill.c	/^static int my_pid;$/;"	v	file:
+n	proc/readproc.h	/^    int n;$/;"	m	struct:proc_data_t
+n	ps/common.h	/^  int n;         \/* used if selection type has a list of values *\/$/;"	m	struct:selection_node
+n	top.h	/^   TIC_t u, n, s, i, w, x, y, z; \/\/ as represented in \/proc\/stat$/;"	m	struct:CPU_t
+n_flag	skill.c	/^static int f_flag, i_flag, v_flag, w_flag, n_flag;$/;"	v	file:
+n_sav	top.h	/^   TIC_t u_sav, s_sav, n_sav, i_sav, w_sav, x_sav, y_sav, z_sav; \/\/ in the order of our display$/;"	m	struct:CPU_t
+name	proc/devname.c	/^  char name[16];$/;"	m	struct:tty_map_node	file:
+name	proc/ksym.c	/^  const char *name;$/;"	m	struct:symb	file:
+name	proc/pwcache.c	/^    char name[P_G_SZ];$/;"	m	struct:grpbuf	file:
+name	proc/pwcache.c	/^    char name[P_G_SZ];$/;"	m	struct:pwbuf	file:
+name	proc/readproc.c	/^    unsigned char name[7];        \/\/ \/proc\/*\/status field name$/;"	m	struct:status_table_struct	file:
+name	proc/sig.c	/^  const char *name;$/;"	m	struct:mapstruct	file:
+name	proc/slab.h	/^	char name[SLAB_INFO_NAME_LEN];  \/* name of this cache *\/$/;"	m	struct:slab_info
+name	proc/sysinfo.c	/^  const char *name;     \/* VM statistic name *\/$/;"	m	struct:vm_table_struct	file:
+name	proc/sysinfo.c	/^  const char *name;     \/* memory type name *\/$/;"	m	struct:mem_table_struct	file:
+name	proc/sysinfo.h	/^	char name[48];$/;"	m	struct:slab_cache
+name	ps/common.h	/^  char *name;                             \/* user can override default name *\/$/;"	m	struct:format_node
+name	ps/global.c	/^  const char *name; \/* personality name *\/$/;"	m	struct:personality_table_struct	file:
+name	ps/parser.c	/^  const char *name; \/* long option name *\/$/;"	m	struct:gnu_table_struct	file:
+namelist_file	ps/global.c	/^const char     *namelist_file = (const char *)0xdeadbeef;$/;"	v
+ncols	tload.c	/^static int ncols = 80;$/;"	v	file:
+need	ps/common.h	/^  const int need;       \/* data we will need (files to read, etc.) *\/$/;"	m	struct:format_struct
+need	ps/common.h	/^  int need;$/;"	m	struct:format_node
+need	ps/common.h	/^  int need;$/;"	m	struct:sort_node
+need_resize	top.c	/^static volatile int need_resize;$/;"	v	file:
+needs_for_format	ps/display.c	224;"	d	file:
+needs_for_select	ps/common.h	96;"	d
+needs_for_sort	ps/display.c	/^static unsigned needs_for_sort;$/;"	v	file:
+needs_for_threads	ps/display.c	/^static unsigned needs_for_threads;$/;"	v	file:
+negate_selection	ps/global.c	/^int             negate_selection = -1;$/;"	v
+new_format	vmstat.c	/^static void new_format(void) {$/;"	f	file:
+new_header	vmstat.c	/^static void new_header(void){$/;"	f	file:
+next	proc/devname.c	/^  struct tty_map_node *next;$/;"	m	struct:tty_map_node	file:
+next	proc/pwcache.c	/^    struct grpbuf *next;$/;"	m	struct:grpbuf	file:
+next	proc/pwcache.c	/^    struct pwbuf *next;$/;"	m	struct:pwbuf	file:
+next	proc/readproc.h	/^	*next;		\/\/ n\/a             various library uses$/;"	m	struct:proc_t
+next	proc/slab.h	/^	struct slab_info *next;$/;"	m	struct:slab_info
+next	ps/common.h	/^  struct format_node *next;$/;"	m	struct:format_node
+next	ps/common.h	/^  struct selection_node *next;$/;"	m	struct:selection_node
+next	ps/common.h	/^  struct sf_node *next;  \/* next arg *\/$/;"	m	struct:sf_node
+next	ps/common.h	/^  struct sort_node *next;$/;"	m	struct:sort_node
+next	top.h	/^   struct WIN_t *next,                  \/\/ next window in window stack$/;"	m	struct:WIN_t
+nice	proc/readproc.h	/^	nice,		\/\/ stat            standard unix nice level of process$/;"	m	struct:proc_t
+nlwp	proc/readproc.h	/^	nlwp,		\/\/ stat,status     number of threads, or 0 if no clue$/;"	m	struct:proc_t
+not_pure_unix	ps/parser.c	/^static int not_pure_unix = 0;  \/* set by BSD and GNU options *\/$/;"	v	file:
+nproc	proc/readproc.h	/^    int nproc;$/;"	m	struct:proc_data_t
+nr_active_caches	proc/slab.h	/^	unsigned nr_active_caches;      \/* number of active caches *\/$/;"	m	struct:slab_stat
+nr_active_objs	proc/slab.h	/^	unsigned nr_active_objs;        \/* number of active objects *\/$/;"	m	struct:slab_info
+nr_active_objs	proc/slab.h	/^	unsigned nr_active_objs;        \/* number of active objects, among all caches *\/$/;"	m	struct:slab_stat
+nr_active_slabs	proc/slab.h	/^	unsigned nr_active_slabs;       \/* number of active slabs *\/$/;"	m	struct:slab_info
+nr_active_slabs	proc/slab.h	/^	unsigned nr_active_slabs;       \/* number of active slabs, among all caches *\/$/;"	m	struct:slab_stat
+nr_caches	proc/slab.h	/^	unsigned nr_caches;             \/* number of caches *\/$/;"	m	struct:slab_stat
+nr_objs	proc/slab.h	/^	unsigned nr_objs;               \/* number of objects in this cache *\/$/;"	m	struct:slab_info
+nr_objs	proc/slab.h	/^	unsigned nr_objs;               \/* number of objects, among all caches *\/$/;"	m	struct:slab_stat
+nr_pages	proc/slab.h	/^	unsigned nr_pages;              \/* number of pages consumed by all objects *\/$/;"	m	struct:slab_stat
+nr_reversemaps	proc/sysinfo.c	/^unsigned long nr_reversemaps;$/;"	v
+nr_slabs	proc/slab.h	/^	unsigned nr_slabs;              \/* number of slabs in this cache *\/$/;"	m	struct:slab_info
+nr_slabs	proc/slab.h	/^	unsigned nr_slabs;              \/* number of slabs, among all caches *\/$/;"	m	struct:slab_stat
+nrows	tload.c	/^static int nrows = 25;$/;"	v	file:
+ntask	proc/readproc.h	/^    int ntask;$/;"	m	struct:proc_data_t
+nuid	proc/readproc.h	/^    int		nuid;	\/\/ cannot really sentinel-terminate unsigned short[]$/;"	m	struct:PROCTAB
+num	pgrep.c	/^	long	num;$/;"	m	union:el	file:
+num	proc/sig.c	/^  int num;$/;"	m	struct:mapstruct	file:
+num_objs	proc/sysinfo.h	/^	unsigned num_objs;$/;"	m	struct:slab_cache
+num_updates	vmstat.c	/^static unsigned long num_updates;$/;"	v	file:
+number_of_signals	proc/sig.c	/^static const int number_of_signals = sizeof(sigtable)\/sizeof(mapstruct);$/;"	v	file:
+obj_size	proc/slab.h	/^	unsigned obj_size;              \/* size of each object *\/$/;"	m	struct:slab_info
+objperslab	proc/sysinfo.h	/^	unsigned objperslab;$/;"	m	struct:slab_cache
+objs_per_slab	proc/slab.h	/^	unsigned objs_per_slab;         \/* number of objects per slab *\/$/;"	m	struct:slab_info
+objsize	proc/sysinfo.h	/^	unsigned objsize;$/;"	m	struct:slab_cache
+offset	proc/readproc.c	/^    long offset;                  \/\/ jump address offset$/;"	m	struct:status_table_struct	file:
+offset	proc/smaps.c	/^	int offset;$/;"	m	struct:ssjt	file:
+offset	proc/smaps.c	/^	long long offset;$/;"	m	struct:smap_entry	file:
+old_Hertz_hack	proc/sysinfo.c	/^static void old_Hertz_hack(void){$/;"	f	file:
+old_h_option	minimal.c	/^static int old_h_option;$/;"	v	file:
+old_time_helper	ps/output.c	/^static int old_time_helper(char *dst, unsigned long long t, unsigned long long rel) {$/;"	f	file:
+on_our_tty	ps/select.c	23;"	d	file:
+one_proc	pmap.c	/^static int one_proc(proc_t *p){$/;"	f	file:
+open_psdb	proc/ksym.c	/^int open_psdb(const char *restrict override) {$/;"	f
+open_psdb_message	proc/ksym.c	/^int open_psdb_message(const char *restrict override, message_fn message) {$/;"	f
+openproc	proc/readproc.c	/^PROCTAB* openproc(int flags, ...) {$/;"	f
+opt_case	pgrep.c	/^static int opt_case = 0;$/;"	v	file:
+opt_delim	pgrep.c	/^static const char *opt_delim = "\\n";$/;"	v	file:
+opt_euid	pgrep.c	/^static union el *opt_euid = NULL;$/;"	v	file:
+opt_exact	pgrep.c	/^static int opt_exact = 0;$/;"	v	file:
+opt_full	pgrep.c	/^static int opt_full = 0;$/;"	v	file:
+opt_lock	pgrep.c	/^static int opt_lock = 0;$/;"	v	file:
+opt_long	pgrep.c	/^static int opt_long = 0;$/;"	v	file:
+opt_negate	pgrep.c	/^static int opt_negate = 0;$/;"	v	file:
+opt_newest	pgrep.c	/^static int opt_newest = 0;$/;"	v	file:
+opt_oldest	pgrep.c	/^static int opt_oldest = 0;$/;"	v	file:
+opt_pattern	pgrep.c	/^static char *opt_pattern = NULL;$/;"	v	file:
+opt_pgrp	pgrep.c	/^static union el *opt_pgrp = NULL;$/;"	v	file:
+opt_pid	pgrep.c	/^static union el *opt_pid = NULL;$/;"	v	file:
+opt_pidfile	pgrep.c	/^static char *opt_pidfile = NULL;$/;"	v	file:
+opt_ppid	pgrep.c	/^static union el *opt_ppid = NULL;$/;"	v	file:
+opt_rgid	pgrep.c	/^static union el *opt_rgid = NULL;$/;"	v	file:
+opt_ruid	pgrep.c	/^static union el *opt_ruid = NULL;$/;"	v	file:
+opt_sid	pgrep.c	/^static union el *opt_sid = NULL;$/;"	v	file:
+opt_signal	pgrep.c	/^static int opt_signal = SIGTERM;$/;"	v	file:
+opt_term	pgrep.c	/^static union el *opt_term = NULL;$/;"	v	file:
+output_numlist	pgrep.c	/^static void output_numlist (const union el *restrict list, int num)$/;"	f	file:
+output_strlist	pgrep.c	/^static void output_strlist (const union el *restrict list, int num)$/;"	f	file:
+pad_1	proc/readproc.h	/^    	pad_1,		\/\/ n\/a             padding$/;"	m	struct:proc_t
+pad_2	proc/readproc.h	/^    	pad_2,		\/\/ n\/a             padding$/;"	m	struct:proc_t
+pad_3	proc/readproc.h	/^    	pad_3;		\/\/ n\/a             padding$/;"	m	struct:proc_t
+page_shift	ps/output.c	/^static unsigned long page_shift;$/;"	v	file:
+page_size	ps/global.c	/^int             page_size = -1;  \/\/ "int" for math reasons?$/;"	v
+page_to_kb_shift	top.c	/^static unsigned page_to_kb_shift;$/;"	v	file:
+pages_per_slab	proc/slab.h	/^	unsigned pages_per_slab;        \/* number of pages per slab *\/$/;"	m	struct:slab_info
+parent_disk	proc/sysinfo.h	/^	unsigned           parent_disk;  \/\/ index into a struct disk_stat array$/;"	m	struct:partition_stat
+parse_O_option	ps/sortformat.c	/^static const char *parse_O_option(sf_node *sfn){$/;"	f	file:
+parse_all_options	ps/parser.c	/^static const char *parse_all_options(void){$/;"	f	file:
+parse_args	top.c	/^static void parse_args (char **args)$/;"	f	file:
+parse_bsd_option	minimal.c	/^static void parse_bsd_option(void){$/;"	f	file:
+parse_bsd_option	ps/parser.c	/^static const char *parse_bsd_option(void){$/;"	f	file:
+parse_cmd	ps/parser.c	/^static const char *parse_cmd(char *str, sel_union *ret){$/;"	f	file:
+parse_gid	ps/parser.c	/^static const char *parse_gid(char *str, sel_union *ret){$/;"	f	file:
+parse_gnu_option	ps/parser.c	/^static const char *parse_gnu_option(void){$/;"	f	file:
+parse_input	slabtop.c	/^static void parse_input(char c)$/;"	f	file:
+parse_ksyms	proc/ksym.c	/^static int parse_ksyms(void) {$/;"	f	file:
+parse_list	ps/parser.c	/^static const char *parse_list(const char *arg, const char *(*parse_fn)(char *, sel_union *) ){$/;"	f	file:
+parse_opts	pgrep.c	/^static void parse_opts (int argc, char **argv)$/;"	f	file:
+parse_pid	minimal.c	/^static void parse_pid(const char *str){$/;"	f	file:
+parse_pid	ps/parser.c	/^static const char *parse_pid(char *str, sel_union *ret){$/;"	f	file:
+parse_slabinfo10	proc/slab.c	/^static int parse_slabinfo10(struct slab_info **list, struct slab_stat *stats,$/;"	f	file:
+parse_slabinfo11	proc/slab.c	/^static int parse_slabinfo11(struct slab_info **list, struct slab_stat *stats,$/;"	f	file:
+parse_slabinfo20	proc/slab.c	/^static int parse_slabinfo20(struct slab_info **list, struct slab_stat *stats,$/;"	f	file:
+parse_sysv_option	minimal.c	/^static void parse_sysv_option(void){$/;"	f	file:
+parse_sysv_option	ps/parser.c	/^static const char *parse_sysv_option(void){$/;"	f	file:
+parse_trailing_pids	ps/parser.c	/^static const char *parse_trailing_pids(void){$/;"	f	file:
+parse_tty	ps/parser.c	/^static const char *parse_tty(char *str, sel_union *ret){$/;"	f	file:
+parse_uid	ps/parser.c	/^static const char *parse_uid(char *str, sel_union *ret){$/;"	f	file:
+parse_uid	top.c	/^static const char *parse_uid(const char *restrict const str, uid_t *restrict const ret){$/;"	f	file:
+partition_name	proc/sysinfo.h	/^	char partition_name [16];$/;"	m	struct:partition_stat
+partition_stat	proc/sysinfo.h	/^typedef struct partition_stat{$/;"	s
+partition_stat	proc/sysinfo.h	/^}partition_stat;$/;"	t
+partitions	proc/sysinfo.h	/^	unsigned           partitions;$/;"	m	struct:disk_stat
+path	proc/readproc.h	/^    char        path[PROCPATHLEN];  \/\/ must hold \/proc\/2000222000\/task\/2000222000\/cmdline$/;"	m	struct:PROCTAB
+pathlen	proc/readproc.h	/^    unsigned pathlen;        \/\/ length of string in the above (w\/o '\\0')$/;"	m	struct:PROCTAB
+pclean	proc/smaps.c	/^	unsigned long pclean;$/;"	m	struct:smap_entry	file:
+pclean	proc/smaps.c	/^	unsigned long pclean;$/;"	m	struct:smap_summary	file:
+pcpu	proc/readproc.h	/^        pcpu;           \/\/ stat (special)  %CPU usage (is not filled in by readproc!!!)$/;"	m	struct:proc_t
+pcpu_max_value	top.c	/^static double pcpu_max_value;  \/\/ usually 99.9, for %CPU display$/;"	v	file:
+pdirty	proc/smaps.c	/^	unsigned long pdirty;$/;"	m	struct:smap_entry	file:
+pdirty	proc/smaps.c	/^	unsigned long pdirty;$/;"	m	struct:smap_summary	file:
+personality	ps/global.c	/^unsigned        personality = 0xffffffff;$/;"	v
+personality_table_struct	ps/global.c	/^typedef struct personality_table_struct {$/;"	s	file:
+personality_table_struct	ps/global.c	/^} personality_table_struct;$/;"	t	file:
+pflag	top.h	/^enum pflag {$/;"	g
+pgrp	proc/readproc.h	/^	pgrp,		\/\/ stat            process group id$/;"	m	struct:proc_t
+pid	ps/common.h	/^  pid_t pid;$/;"	m	union:sel_union
+pid	top.h	/^   int   pid;$/;"	m	struct:HST_t
+pid_count	skill.c	/^static int tty_count, uid_count, cmd_count, pid_count;$/;"	v	file:
+pids	proc/readproc.h	/^    pid_t*	pids;	\/\/ pids of the procs$/;"	m	struct:PROCTAB
+pids	skill.c	/^static int *pids;$/;"	v	file:
+ppid	proc/readproc.h	/^    	ppid;		\/\/ stat,status     pid of parent process$/;"	m	struct:proc_t
+ppid	ps/common.h	/^  pid_t ppid;$/;"	m	union:sel_union
+pr	ps/common.h	/^  int (* const pr)(char *restrict const outbuf, const proc_t *restrict const pp); \/\/ print function$/;"	m	struct:format_struct
+pr	ps/common.h	/^  int (*pr)(char *restrict const outbuf, const proc_t *restrict const pp); \/\/ print function$/;"	m	struct:format_node
+pr_alarm	ps/output.c	/^static int pr_alarm(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_args	ps/output.c	/^static int pr_args(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_bsdstart	ps/output.c	/^static int pr_bsdstart(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_bsdtime	ps/output.c	/^static int pr_bsdtime(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_c	ps/output.c	/^static int pr_c(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_class	ps/output.c	/^static int pr_class(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_comm	ps/output.c	/^static int pr_comm(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_context	ps/output.c	/^static int pr_context(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_cp	ps/output.c	/^static int pr_cp(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_drs	ps/output.c	/^static int pr_drs(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_dsiz	ps/output.c	/^static int pr_dsiz(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_egid	ps/output.c	/^static int pr_egid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_egroup	ps/output.c	/^static int pr_egroup(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_eip	ps/output.c	/^static int pr_eip(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_esp	ps/output.c	/^static int pr_esp(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_etime	ps/output.c	/^static int pr_etime(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_euid	ps/output.c	/^static int pr_euid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_euser	ps/output.c	/^static int pr_euser(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_fgid	ps/output.c	/^static int pr_fgid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_fgroup	ps/output.c	/^static int pr_fgroup(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_flag	ps/output.c	/^static int pr_flag(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_fname	ps/output.c	/^static int pr_fname(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_fuid	ps/output.c	/^static int pr_fuid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_fuser	ps/output.c	/^static int pr_fuser(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_lim	ps/output.c	/^static int pr_lim(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_lstart	ps/output.c	/^static int pr_lstart(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_majflt	ps/output.c	/^static int pr_majflt(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_minflt	ps/output.c	/^static int pr_minflt(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_nice	ps/output.c	/^static int pr_nice(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_nlwp	ps/output.c	/^static int pr_nlwp(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_nop	ps/output.c	/^int pr_nop(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f
+pr_nwchan	ps/output.c	/^static int pr_nwchan(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_opri	ps/output.c	/^static int pr_opri(char *restrict const outbuf, const proc_t *restrict const pp){        \/* 39..79 *\/$/;"	f	file:
+pr_pcpu	ps/output.c	/^static int pr_pcpu(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_pgid	ps/output.c	/^static int pr_pgid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_pid	ps/output.c	/^static int pr_pid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_pmem	ps/output.c	/^static int pr_pmem(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_ppid	ps/output.c	/^static int pr_ppid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_pri	ps/output.c	/^static int pr_pri(char *restrict const outbuf, const proc_t *restrict const pp){         \/* 20..60 *\/$/;"	f	file:
+pr_pri_api	ps/output.c	/^static int pr_pri_api(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_pri_bar	ps/output.c	/^static int pr_pri_bar(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_pri_baz	ps/output.c	/^static int pr_pri_baz(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_pri_foo	ps/output.c	/^static int pr_pri_foo(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_priority	ps/output.c	/^static int pr_priority(char *restrict const outbuf, const proc_t *restrict const pp){    \/* -20..20 *\/$/;"	f	file:
+pr_psr	ps/output.c	/^static int pr_psr(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_rgid	ps/output.c	/^static int pr_rgid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_rgroup	ps/output.c	/^static int pr_rgroup(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_rss	ps/output.c	/^static int pr_rss(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_rtprio	ps/output.c	/^static int pr_rtprio(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_ruid	ps/output.c	/^static int pr_ruid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_ruser	ps/output.c	/^static int pr_ruser(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_s	ps/output.c	/^static int pr_s(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_sched	ps/output.c	/^static int pr_sched(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_sess	ps/output.c	/^static int pr_sess(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_sgi_p	ps/output.c	/^static int pr_sgi_p(char *restrict const outbuf, const proc_t *restrict const pp){          \/* FIXME *\/$/;"	f	file:
+pr_sgid	ps/output.c	/^static int pr_sgid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_sgroup	ps/output.c	/^static int pr_sgroup(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_sig	ps/output.c	/^static int pr_sig(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_sigcatch	ps/output.c	/^static int pr_sigcatch(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_sigignore	ps/output.c	/^static int pr_sigignore(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_sigmask	ps/output.c	/^static int pr_sigmask(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_size	ps/output.c	/^static int pr_size(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_stackp	ps/output.c	/^static int pr_stackp(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_start	ps/output.c	/^static int pr_start(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_stat	ps/output.c	/^static int pr_stat(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_stime	ps/output.c	/^static int pr_stime(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_suid	ps/output.c	/^static int pr_suid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_suser	ps/output.c	/^static int pr_suser(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_swapable	ps/output.c	/^static int pr_swapable(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_sz	ps/output.c	/^static int pr_sz(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_t_left	ps/output.c	/^static int pr_t_left(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_t_left2	ps/output.c	/^static int pr_t_left2(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_t_right	ps/output.c	/^static int pr_t_right(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_t_right2	ps/output.c	/^static int pr_t_right2(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_t_unlimited	ps/output.c	/^static int pr_t_unlimited(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_t_unlimited2	ps/output.c	/^static int pr_t_unlimited2(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_thread	ps/output.c	/^static int pr_thread(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_time	ps/output.c	/^static int pr_time(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_tpgid	ps/output.c	/^static int pr_tpgid(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_trs	ps/output.c	/^static int pr_trs(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_tsig	ps/output.c	/^static int pr_tsig(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_tsiz	ps/output.c	/^static int pr_tsiz(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_tty4	ps/output.c	/^static int pr_tty4(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_tty8	ps/output.c	/^static int pr_tty8(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_vsz	ps/output.c	/^static int pr_vsz(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_wchan	ps/output.c	/^static int pr_wchan(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+pr_wname	ps/output.c	/^static int pr_wname(char *restrict const outbuf, const proc_t *restrict const pp){$/;"	f	file:
+prefer_bsd_defaults	ps/global.c	/^int             prefer_bsd_defaults = -1;$/;"	v
+prep_forest_sort	ps/display.c	/^static void prep_forest_sort(void){$/;"	f	file:
+pretty_print_signals	proc/sig.c	/^void pretty_print_signals(void){$/;"	f
+prev	top.h	/^                *prev;                  \/\/ prior window in window stack$/;"	m	struct:WIN_t
+print_format_specifiers	ps/output.c	/^void print_format_specifiers(void){$/;"	f
+print_given_signals	proc/sig.c	/^int print_given_signals(int argc, const char *restrict const *restrict argv, int max_line){$/;"	f
+print_host	w.c	/^static void print_host(const char *restrict host, int len) {$/;"	f	file:
+print_logintime	w.c	/^static void print_logintime(time_t logt, FILE* fout) {$/;"	f	file:
+print_proc	minimal.c	/^static void print_proc(void){$/;"	f	file:
+print_time_ival7	w.c	/^static void print_time_ival7(time_t t, int centi_sec, FILE* fout) {$/;"	f	file:
+print_uptime	proc/whattime.c	/^void print_uptime(void) {$/;"	f
+priority	proc/readproc.h	/^	priority,	\/\/ stat            kernel scheduling priority$/;"	m	struct:proc_t
+proc	proc/readproc.h	/^    proc_t **proc;$/;"	m	struct:proc_data_t
+proc_data_t	proc/readproc.h	/^typedef struct proc_data_t {$/;"	s
+proc_data_t	proc/readproc.h	/^} proc_data_t;$/;"	t
+proc_format_list	ps/display.c	/^static format_node *proc_format_list;$/;"	v	file:
+proc_format_needs	ps/display.c	/^static unsigned proc_format_needs;$/;"	v	file:
+proc_t	proc/readproc.h	/^typedef struct proc_t {$/;"	s
+proc_t	proc/readproc.h	/^} proc_t;$/;"	t
+proc_was_listed	ps/select.c	/^static int proc_was_listed(proc_t *buf){$/;"	f	file:
+process_sf_options	ps/sortformat.c	/^const char *process_sf_options(int localbroken){$/;"	f
+processes	ps/display.c	/^static proc_t **processes;$/;"	v	file:
+processor	proc/readproc.h	/^	processor;      \/\/ stat            current (or most recent?) CPU$/;"	m	struct:proc_t
+procflags	top.h	/^   FLG_t       procflags [PFLAGSSIZ];   \/\/ fieldscur subset, as enum$/;"	m	struct:WIN_t
+procfs	proc/readproc.h	/^    DIR*	procfs;$/;"	m	struct:PROCTAB
+prochlp	top.c	/^static void prochlp (proc_t *this)$/;"	f	file:
+procps_version	proc/version.c	/^const char procps_version[] = "procps version " VERSION "." SUBVERSION "." MINORVERSION;$/;"	v
+procps_version	proc/version.c	/^const char procps_version[] = "procps version " VERSION "." SUBVERSION;$/;"	v
+procs	w.c	/^static proc_t **procs;		\/* our snapshot of the process table *\/$/;"	v	file:
+procs_refresh	top.c	/^static proc_t **procs_refresh (proc_t **table, int flags)$/;"	f	file:
+progname	pgrep.c	/^static const char *progname = "pgrep";$/;"	v	file:
+progname	watch.c	/^static char *progname;$/;"	v	file:
+program	skill.c	/^static int program;$/;"	v	file:
+ps_argc	minimal.c	/^static int ps_argc;    \/* global argc *\/$/;"	v	file:
+ps_argc	ps/parser.c	/^static int ps_argc;    \/* global argc *\/$/;"	v	file:
+ps_argv	minimal.c	/^static char **ps_argv; \/* global argv *\/$/;"	v	file:
+ps_argv	ps/parser.c	/^static char **ps_argv; \/* global argv *\/$/;"	v	file:
+ps_format	minimal.c	/^static int ps_format;$/;"	v	file:
+pss	proc/smaps.c	/^	unsigned long pss;$/;"	m	struct:smap_entry	file:
+pss	proc/smaps.c	/^	unsigned long pss;$/;"	m	struct:smap_summary	file:
+put_slabinfo	proc/slab.c	/^void put_slabinfo(struct slab_info *head)$/;"	f
+pwbuf	proc/pwcache.c	/^static struct pwbuf {$/;"	s	file:
+pwhash	proc/pwcache.c	/^} *pwhash[HASHSIZE];$/;"	v	file:
+q_option	pmap.c	/^static int q_option;$/;"	v	file:
+r_option	pmap.c	/^static int r_option;  \/\/ ignored -- for SunOS compatibility$/;"	v	file:
+range_high	pmap.c	/^static unsigned KLONG range_high = ~0ull;$/;"	v	file:
+range_low	pmap.c	/^static unsigned KLONG range_low;$/;"	v	file:
+rc	top.h	/^   RCW_t       rc;              \/\/ stuff that gets saved in the rcfile$/;"	m	struct:WIN_t
+rc_read_new	top.c	/^static int rc_read_new (const char *const buf, RCF_t *rc) {$/;"	f	file:
+rc_read_old	top.c	/^static int rc_read_old (const char *const buf, RCF_t *rc) {$/;"	f	file:
+rc_write_new	top.c	/^static void rc_write_new (FILE *fp) {$/;"	f	file:
+rc_write_whatever	top.c	/^static const char *rc_write_whatever (void) {$/;"	f	file:
+read_and_parse	proc/ksym.c	/^static void read_and_parse(void){$/;"	f	file:
+read_cmdline	proc/readproc.c	/^int read_cmdline(char *restrict const dst, unsigned sz, unsigned pid){$/;"	f
+read_file	proc/ksym.c	/^static void read_file(const char *restrict filename, char **bufp, unsigned *restrict roomp) {$/;"	f	file:
+read_pidfile	pgrep.c	/^static union el *read_pidfile(void)$/;"	f	file:
+read_wchan_file	proc/ksym.c	/^static const char * read_wchan_file(unsigned pid){$/;"	f	file:
+reader	proc/readproc.h	/^    proc_t*(*reader)(struct PROCTAB *restrict const, proc_t *restrict const);$/;"	m	struct:PROCTAB
+readproc	proc/readproc.c	/^HIDDEN_ALIAS(readproc);$/;"	v
+readproc	proc/readproc.c	/^proc_t* readproc(PROCTAB *restrict const PT, proc_t *restrict p) {$/;"	f
+readproctab	proc/readproc.c	/^proc_t** readproctab(int flags, ...) {$/;"	f
+readproctab2	proc/readproc.c	/^proc_data_t *readproctab2(int(*want_proc)(proc_t *buf), int(*want_task)(proc_t *buf), PROCTAB *restrict const PT) {$/;"	f
+reads	proc/sysinfo.h	/^	unsigned           reads;$/;"	m	struct:disk_stat
+reads	proc/sysinfo.h	/^	unsigned           reads;$/;"	m	struct:partition_stat
+reads_sectors	proc/sysinfo.h	/^	unsigned long long reads_sectors;$/;"	m	struct:disk_stat
+reads_sectors	proc/sysinfo.h	/^	unsigned long long reads_sectors;$/;"	m	struct:partition_stat
+readtask	proc/readproc.c	/^HIDDEN_ALIAS(readtask);$/;"	v
+readtask	proc/readproc.c	/^proc_t* readtask(PROCTAB *restrict const PT, const proc_t *restrict const p, proc_t *restrict t) {$/;"	f
+ref	proc/smaps.c	/^	unsigned long ref;$/;"	m	struct:smap_entry	file:
+ref	proc/smaps.c	/^	unsigned long ref;$/;"	m	struct:smap_summary	file:
+reframewins	top.c	/^static void reframewins (void)$/;"	f	file:
+requested_writes	proc/sysinfo.h	/^	unsigned           requested_writes;$/;"	m	struct:partition_stat
+reset_global	ps/global.c	/^void reset_global(void){$/;"	f
+reset_parser	ps/parser.c	/^static void reset_parser(void){$/;"	f	file:
+reset_selection_list	ps/global.c	/^static void reset_selection_list(void){$/;"	f	file:
+reset_sortformat	ps/sortformat.c	/^void reset_sortformat(void){$/;"	f
+resident	proc/readproc.h	/^	resident,	\/\/ statm           number of resident set (non-swapped) pages (4k)$/;"	m	struct:proc_t
+restrict	proc/procps.h	50;"	d
+restrict	proc/procps.h	53;"	d
+return_if_match	ps/select.c	114;"	d	file:
+return_if_match	ps/select.c	88;"	d	file:
+reverse	ps/common.h	/^  int reverse;   \/* can sort backwards *\/$/;"	m	struct:sort_node
+rgid	proc/readproc.h	/^        ruid, rgid,     \/\/ status          real$/;"	m	struct:proc_t
+rgroup	proc/readproc.h	/^    	rgroup[P_G_SZ],	\/\/ status          real group name$/;"	m	struct:proc_t
+ring	proc/readproc.h	/^	*ring,		\/\/ n\/a             thread group ring$/;"	m	struct:proc_t
+rows	slabtop.c	/^static unsigned short cols, rows;$/;"	v	file:
+rss	proc/readproc.h	/^	rss,		\/\/ stat            resident set size from \/proc\/#\/stat (pages)$/;"	m	struct:proc_t
+rss	proc/smaps.c	/^	unsigned long rss;$/;"	m	struct:smap_entry	file:
+rss	proc/smaps.c	/^	unsigned long rss;$/;"	m	struct:smap_summary	file:
+rss_rlim	proc/readproc.h	/^	rss_rlim,	\/\/ stat            resident set size limit?$/;"	m	struct:proc_t
+rtprio	proc/readproc.h	/^	rtprio,		\/\/ stat            real-time priority$/;"	m	struct:proc_t
+ruid	proc/readproc.h	/^        ruid, rgid,     \/\/ status          real$/;"	m	struct:proc_t
+running	ps/select.c	24;"	d	file:
+running_only	ps/global.c	/^int             running_only = -1;$/;"	v
+ruser	proc/readproc.h	/^    	ruser[P_G_SZ],	\/\/ status          real user name$/;"	m	struct:proc_t
+s	top.h	/^   TIC_t u, n, s, i, w, x, y, z; \/\/ as represented in \/proc\/stat$/;"	m	struct:CPU_t
+s_cooked	ps/common.h	/^  sort_node   *s_cooked;  \/* convert each arg alone, then merge *\/$/;"	m	struct:sf_node
+s_sav	top.h	/^   TIC_t u_sav, s_sav, n_sav, i_sav, w_sav, x_sav, y_sav, z_sav; \/\/ in the order of our display$/;"	m	struct:CPU_t
+sanity_check	ps/output.c	/^static void sanity_check(void){$/;"	f	file:
+saved_argc	skill.c	/^static int saved_argc;$/;"	v	file:
+saved_outbuf	ps/output.c	/^static char *saved_outbuf;$/;"	v	file:
+saved_personality_text	ps/global.c	/^static const char * saved_personality_text = "You found a bug!";$/;"	v	file:
+saved_tty	slabtop.c	/^static struct termios saved_tty;$/;"	v	file:
+sbin	Makefile	/^sbin                     := $(DESTDIR)\/sbin\/$/;"	m
+scale	top.h	/^   const int     scale;         \/\/ scale_num type, if applicable$/;"	m	struct:FLD_t
+scale_num	top.c	/^static const char *scale_num (unsigned long num, const int width, const unsigned type)$/;"	f	file:
+scale_num	top.h	/^enum scale_num {$/;"	g
+scale_tics	top.c	/^static const char *scale_tics (TIC_t tics, const int width)$/;"	f	file:
+scat	top.c	/^static inline char *scat (char *restrict dst, const char *restrict src)$/;"	f	file:
+sched	proc/readproc.h	/^	sched,		\/\/ stat            scheduling class$/;"	m	struct:proc_t
+sclean	proc/smaps.c	/^	unsigned long sclean;$/;"	m	struct:smap_entry	file:
+sclean	proc/smaps.c	/^	unsigned long sclean;$/;"	m	struct:smap_summary	file:
+scr_size	tload.c	/^static int scr_size;$/;"	v	file:
+screen	tload.c	/^static char *screen;$/;"	v	file:
+screen_cols	ps/global.c	/^int             screen_cols = -1;$/;"	v
+screen_rows	ps/global.c	/^int             screen_rows = -1;$/;"	v
+screen_size_changed	watch.c	/^static int screen_size_changed = 0;$/;"	v	file:
+sdirty	proc/smaps.c	/^	unsigned long sdirty;$/;"	m	struct:smap_entry	file:
+sdirty	proc/smaps.c	/^	unsigned long sdirty;$/;"	m	struct:smap_summary	file:
+search	proc/ksym.c	/^static const symb *search(unsigned KLONG address, symb *idx, unsigned count){$/;"	f	file:
+search_aix_array	ps/output.c	/^const aix_struct *search_aix_array(const int findme){$/;"	f
+search_format_array	ps/output.c	/^const format_struct *search_format_array(const char *findme){$/;"	f
+search_macro_array	ps/output.c	/^const macro_struct *search_macro_array(const char *findme){$/;"	f
+search_shortsort_array	ps/output.c	/^const shortsort_struct *search_shortsort_array(const int findme){$/;"	f
+seconds_since_1970	ps/output.c	/^static unsigned long seconds_since_1970;$/;"	v	file:
+seconds_since_boot	ps/global.c	/^unsigned long   seconds_since_boot = -1;$/;"	v
+sel_union	ps/common.h	/^typedef union sel_union {$/;"	u
+sel_union	ps/common.h	/^} sel_union;$/;"	t
+select_all	minimal.c	/^static int select_all;$/;"	v	file:
+select_bits	ps/select.c	/^static unsigned long select_bits = 0;$/;"	v	file:
+select_bits_setup	ps/select.c	/^const char *select_bits_setup(void){$/;"	f
+select_notty	minimal.c	/^static int select_notty;$/;"	v	file:
+select_procs	pgrep.c	/^static union el * select_procs (int *num)$/;"	f	file:
+selection_list	ps/global.c	/^selection_node *selection_list = (selection_node *)0xdeadbeef;$/;"	v
+selection_node	ps/common.h	/^typedef struct selection_node {$/;"	s
+selection_node	ps/common.h	/^} selection_node;$/;"	t
+selection_type	top.c	/^static int selection_type;$/;"	v	file:
+selection_uid	top.c	/^static uid_t selection_uid;$/;"	v	file:
+self_info	ps/global.c	/^void self_info(void){$/;"	f
+session	proc/readproc.h	/^	session,	\/\/ stat            session id$/;"	m	struct:proc_t
+session_leader	ps/select.c	25;"	d	file:
+set_personality	ps/global.c	/^static const char *set_personality(void){$/;"	f	file:
+set_screen_size	ps/global.c	/^static void set_screen_size(void){$/;"	f	file:
+set_sort_func	slabtop.c	/^static void * set_sort_func(char key)$/;"	f	file:
+setsize	tload.c	/^static void setsize(int i)$/;"	f	file:
+sf	ps/common.h	/^  char *sf;$/;"	m	struct:sf_node
+sf_code	ps/common.h	/^  int sf_code;$/;"	m	struct:sf_node
+sf_list	ps/sortformat.c	/^static sf_node *sf_list = NULL;         \/* deferred sorting and formatting *\/$/;"	v	file:
+sf_node	ps/common.h	/^typedef struct sf_node {$/;"	s
+sf_node	ps/common.h	/^} sf_node;$/;"	t
+sgid	proc/readproc.h	/^        suid, sgid,     \/\/ status          saved$/;"	m	struct:proc_t
+sgroup	proc/readproc.h	/^    	sgroup[P_G_SZ],	\/\/ status          saved group name$/;"	m	struct:proc_t
+share	proc/readproc.h	/^	share,		\/\/ statm           number of pages of shared (mmap'd) memory$/;"	m	struct:proc_t
+shm_minor	pmap.c	/^static unsigned shm_minor = ~0u;$/;"	v	file:
+short_sort_parse	ps/sortformat.c	/^static const char *short_sort_parse(sf_node *sfn){$/;"	f	file:
+shortsort_array	ps/output.c	/^static const shortsort_struct shortsort_array[] = {$/;"	v	file:
+shortsort_array_count	ps/output.c	/^static const int shortsort_array_count = sizeof(shortsort_array)\/sizeof(shortsort_struct);$/;"	v	file:
+shortsort_struct	ps/common.h	/^typedef struct shortsort_struct {$/;"	s
+shortsort_struct	ps/common.h	/^} shortsort_struct;$/;"	t
+show_args	minimal.c	/^static int show_args;    \/* implicit with -f and all BSD options *\/$/;"	v	file:
+show_cmd	ps/display.c	/^static void show_cmd(char *s, int n, sel_union *data){$/;"	f	file:
+show_forest	ps/display.c	/^static void show_forest(const int n){$/;"	f	file:
+show_gid	ps/display.c	/^static void show_gid(char *s, int n, sel_union *data){$/;"	f	file:
+show_msg	top.c	/^static void show_msg (const char *str)$/;"	f	file:
+show_one_proc	ps/output.c	/^void show_one_proc(const proc_t *restrict const p, const format_node *restrict fmt){$/;"	f
+show_pmt	top.c	/^static void show_pmt (const char *str)$/;"	f	file:
+show_proc_array	ps/display.c	/^static void show_proc_array(PROCTAB *restrict ptp, int n){$/;"	f	file:
+show_special	top.c	/^static void show_special (int interact, const char *glob)$/;"	f	file:
+show_tgid	ps/display.c	/^static void show_tgid(char *s, int n, sel_union *data){$/;"	f	file:
+show_title	watch.c	/^static int show_title = 2;  \/\/ number of lines used, 2 or 0$/;"	v	file:
+show_tree	ps/display.c	/^static void show_tree(const int self, const int n, const int level, const int have_sibling){$/;"	f	file:
+show_tty	ps/display.c	/^static void show_tty(char *s, int n, sel_union *data){$/;"	f	file:
+show_uid	ps/display.c	/^static void show_uid(char *s, int n, sel_union *data){$/;"	f	file:
+showinfo	w.c	/^static void showinfo(utmp_t *u, int formtype, int maxcmd, int from) {$/;"	f	file:
+sig_or_pri	skill.c	/^static int sig_or_pri;$/;"	v	file:
+sigcatch	proc/readproc.h	/^	sigcatch,	\/\/ status          mask of caught  signals$/;"	m	struct:proc_t
+sigcatch	proc/readproc.h	/^	sigcatch[18],	\/\/ status          mask of caught  signals$/;"	m	struct:proc_t
+sigignore	proc/readproc.h	/^	sigignore,	\/\/ status          mask of ignored signals$/;"	m	struct:proc_t
+sigignore	proc/readproc.h	/^	sigignore[18],	\/\/ status          mask of ignored signals$/;"	m	struct:proc_t
+sigint_handler	slabtop.c	/^static void sigint_handler(int unused)$/;"	f	file:
+signal	proc/readproc.h	/^	signal,		\/\/ status          mask of pending signals, per-task for readtask() but per-proc for readproc()$/;"	m	struct:proc_t
+signal	proc/readproc.h	/^	signal[18],	\/\/ status          mask of pending signals, per-task for readtask() but per-proc for readproc()$/;"	m	struct:proc_t
+signal_handler	ps/display.c	/^static void signal_handler(int signo){$/;"	f	file:
+signal_name_to_number	proc/sig.c	/^int signal_name_to_number(const char *restrict name){$/;"	f
+signal_number_to_name	proc/sig.c	/^const char *signal_number_to_name(int signo){$/;"	f
+sigtable	proc/sig.c	/^static const mapstruct sigtable[] = {$/;"	v	file:
+simple_nextpid	proc/readproc.c	/^static int simple_nextpid(PROCTAB *restrict const PT, proc_t *restrict const p) {$/;"	f	file:
+simple_nexttid	proc/readproc.c	/^static int simple_nexttid(PROCTAB *restrict const PT, const proc_t *restrict const p, proc_t *restrict const t, char *restrict const path) {$/;"	f	file:
+simple_readproc	proc/readproc.c	/^static proc_t* simple_readproc(PROCTAB *restrict const PT, proc_t *restrict const p) {$/;"	f	file:
+simple_readtask	proc/readproc.c	/^static proc_t* simple_readtask(PROCTAB *restrict const PT, const proc_t *restrict const p, proc_t *restrict const t, char *restrict const path) {$/;"	f	file:
+simple_select	ps/global.c	/^unsigned        simple_select = 0xffffffff;$/;"	v
+simple_spew	ps/display.c	/^static void simple_spew(void){$/;"	f	file:
+size	proc/readproc.h	/^	size,		\/\/ statm           total # of pages of memory$/;"	m	struct:proc_t
+size	proc/smaps.c	/^	unsigned long size;$/;"	m	struct:smap_summary	file:
+skillsnice_parse	skill.c	/^static void skillsnice_parse(int argc, const char *restrict const *restrict argv){$/;"	f	file:
+skillsnice_usage	skill.c	/^static void skillsnice_usage(void){$/;"	f	file:
+skillsnice_usage	skill.c	375;"	d	file:
+slab_badname_detect	proc/slab.c	/^static int slab_badname_detect(const char *restrict buffer)$/;"	f	file:
+slab_cache	proc/sysinfo.h	/^typedef struct slab_cache{$/;"	s
+slab_cache	proc/sysinfo.h	/^}slab_cache;$/;"	t
+slab_info	proc/slab.h	/^struct slab_info {$/;"	s
+slab_stat	proc/slab.h	/^struct slab_stat {$/;"	s
+slabformat	vmstat.c	/^static void slabformat (void){$/;"	f	file:
+slabheader	vmstat.c	/^static void slabheader(void){$/;"	f	file:
+slabsort	slabtop.c	/^static struct slab_info *slabsort(struct slab_info *list)$/;"	f	file:
+slashdot	sysctl.c	/^static void slashdot(char *restrict p, char old, char new){$/;"	f	file:
+sleep_time	vmstat.c	/^static unsigned sleep_time = 1;$/;"	v	file:
+slot	proc/sysinfo.c	/^  unsigned long *slot;       \/* slot in return struct *\/$/;"	m	struct:vm_table_struct	file:
+slot	proc/sysinfo.c	/^  unsigned long *slot; \/* slot in return struct *\/$/;"	m	struct:mem_table_struct	file:
+smap_entry	proc/smaps.c	/^struct smap_entry {$/;"	s	file:
+smap_summary	proc/smaps.c	/^struct smap_summary {$/;"	s	file:
+smp_num_cpus	proc/ksym.c	34;"	d	file:
+smp_num_cpus	proc/ksym.c	42;"	d	file:
+smp_num_cpus	proc/ksym.c	50;"	d	file:
+smp_num_cpus	proc/ksym.c	58;"	d	file:
+smp_num_cpus	proc/sysinfo.c	/^long smp_num_cpus;     \/* number of CPUs *\/$/;"	v
+sort	top.h	/^   const QFP_t   sort;          \/\/ sort function$/;"	m	struct:FLD_t
+sort_HST_t	top.c	/^static int sort_HST_t (const HST_t *P, const HST_t *Q)$/;"	f	file:
+sort_P_CMD	top.c	/^static int sort_P_CMD (const proc_t **P, const proc_t **Q)$/;"	f	file:
+sort_P_TME	top.c	/^static int sort_P_TME (const proc_t **P, const proc_t **Q)$/;"	f	file:
+sort_cache_size	slabtop.c	/^static int sort_cache_size(const struct slab_info *a, const struct slab_info *b)$/;"	f	file:
+sort_func	slabtop.c	/^static int (*sort_func)(const struct slab_info *, const struct slab_info *);$/;"	v	file:
+sort_list	ps/global.c	/^sort_node      *sort_list = (sort_node *)0xdeadbeef; \/* ready-to-use sort list *\/$/;"	v
+sort_name	slabtop.c	/^static int sort_name(const struct slab_info *a, const struct slab_info *b)$/;"	f	file:
+sort_node	ps/common.h	/^typedef struct sort_node {$/;"	s
+sort_node	ps/common.h	/^} sort_node;$/;"	t
+sort_nr_active_objs	slabtop.c	/^static int sort_nr_active_objs(const struct slab_info *a,$/;"	f	file:
+sort_nr_active_slabs	slabtop.c	/^static int sort_nr_active_slabs(const struct slab_info *a,$/;"	f	file:
+sort_nr_objs	slabtop.c	/^static int sort_nr_objs(const struct slab_info *a, const struct slab_info *b)$/;"	f	file:
+sort_nr_slabs	slabtop.c	/^static int sort_nr_slabs(const struct slab_info *a, const struct slab_info *b)$/;"	f	file:
+sort_obj_size	slabtop.c	/^static int sort_obj_size(const struct slab_info *a, const struct slab_info *b)$/;"	f	file:
+sort_objs_per_slab	slabtop.c	/^static int sort_objs_per_slab(const struct slab_info *a,$/;"	f	file:
+sort_pages_per_slab	slabtop.c	/^static int sort_pages_per_slab(const struct slab_info *a,$/;"	f	file:
+sort_use	slabtop.c	/^static int sort_use(const struct slab_info *a, const struct slab_info *b)$/;"	f	file:
+sortindx	top.h	/^   FLG_t  sortindx;             \/\/ sort field, represented as a procflag$/;"	m	struct:RCW_t
+spec	ps/common.h	/^  const char *spec; \/* format specifier *\/$/;"	m	struct:aix_struct
+spec	ps/common.h	/^  const char *spec; \/* format specifier *\/$/;"	m	struct:format_struct
+spec	ps/common.h	/^  const char *spec; \/* format specifier *\/$/;"	m	struct:macro_struct
+spec	ps/common.h	/^  const char *spec; \/* format specifier *\/$/;"	m	struct:shortsort_struct
+split_list	pgrep.c	/^static union el *split_list (const char *restrict str, int (*convert)(const char *, union el *))$/;"	f	file:
+sprint_uptime	proc/whattime.c	/^char *sprint_uptime(void) {$/;"	f
+sr	ps/common.h	/^  int (* const sr)(const proc_t* P, const proc_t* Q); \/* sort function *\/$/;"	m	struct:format_struct
+sr	ps/common.h	/^  int (*sr)(const proc_t* P, const proc_t* Q); \/* sort function *\/$/;"	m	struct:sort_node
+sr_nop	ps/output.c	/^static int sr_nop(const proc_t* a, const proc_t* b){$/;"	f	file:
+sr_swapable	ps/output.c	/^static int sr_swapable(const proc_t* P, const proc_t* Q) {$/;"	f	file:
+srtMASK	top.c	3198;"	d	file:
+srtMASK	top.c	3242;"	d	file:
+ssjt	proc/smaps.c	/^struct ssjt {$/;"	s	file:
+star	proc/ksym.c	/^static const char star[] = "*";$/;"	v	file:
+start	proc/smaps.c	/^	unsigned KLONG start;$/;"	m	struct:smap_entry	file:
+start_code	proc/readproc.h	/^	start_code,	\/\/ stat            address of beginning of code segment$/;"	m	struct:proc_t
+start_stack	proc/readproc.h	/^	start_stack,	\/\/ stat            address of the bottom of stack for the process$/;"	m	struct:proc_t
+start_time	proc/readproc.h	/^	start_time;	\/\/ stat            start time of process -- seconds since 1-1-70$/;"	m	struct:proc_t
+stat2proc	minimal.c	/^static int stat2proc(int pid) {$/;"	f	file:
+stat2proc	proc/readproc.c	/^static void stat2proc(const char* S, proc_t *restrict P) {$/;"	f	file:
+statMode	vmstat.c	/^static int statMode=VMSTAT;$/;"	v	file:
+stat_fd	proc/sysinfo.c	/^static int stat_fd = -1;$/;"	v	file:
+state	proc/readproc.h	/^    	state,		\/\/ stat,status     single-char code for process state (S=sleeping)$/;"	m	struct:proc_t
+statm2proc	proc/readproc.c	/^static void statm2proc(const char* s, proc_t *restrict P) {$/;"	f	file:
+status2proc	proc/readproc.c	/^static void status2proc(char *S, proc_t *restrict P, int is_proc){$/;"	f	file:
+status_table_struct	proc/readproc.c	/^typedef struct status_table_struct {$/;"	s	file:
+status_table_struct	proc/readproc.c	/^} status_table_struct;$/;"	t	file:
+std_err	top.c	/^static void std_err (const char *str)$/;"	f	file:
+std_out	top.c	/^static void std_out (const char *str)$/;"	f	file:
+stime	proc/readproc.h	/^	stime,		\/\/ stat            kernel-mode CPU time accumulated by process$/;"	m	struct:proc_t
+str	pgrep.c	/^	char *	str;$/;"	m	union:el	file:
+str	proc/smaps.c	/^	char str[16];$/;"	m	struct:ssjt	file:
+strict_atol	pgrep.c	/^static int strict_atol (const char *restrict str, long *restrict value)$/;"	f	file:
+strim_0	top.c	/^static char *strim_0 (char *str)$/;"	f	file:
+suid	proc/readproc.h	/^        suid, sgid,     \/\/ status          saved$/;"	m	struct:proc_t
+sum_format	vmstat.c	/^static void sum_format(void) {$/;"	f	file:
+summary_show	top.c	/^static proc_t **summary_show (void)$/;"	f	file:
+summaryhlp	top.c	/^static void summaryhlp (CPU_t *cpu, const char *pfx)$/;"	f	file:
+summclr	top.h	/^          summclr,                      \/\/ color num used in summ info$/;"	m	struct:RCW_t
+suser	proc/readproc.h	/^    	suser[P_G_SZ],	\/\/ status          saved user name$/;"	m	struct:proc_t
+suspend	top.c	/^static void suspend (int dont_care_sig)$/;"	f	file:
+swap	proc/smaps.c	/^	unsigned long swap;$/;"	m	struct:smap_entry	file:
+swap	proc/smaps.c	/^	unsigned long swap;$/;"	m	struct:smap_summary	file:
+symb	proc/ksym.c	/^typedef struct symb {$/;"	s	file:
+symb	proc/ksym.c	/^} symb;$/;"	t	file:
+sysmap_count	proc/ksym.c	/^static unsigned    sysmap_count;$/;"	v	file:
+sysmap_data	proc/ksym.c	/^static char       *sysmap_data;$/;"	v	file:
+sysmap_index	proc/ksym.c	/^static symb       *sysmap_index;$/;"	v	file:
+sysmap_mmap	proc/ksym.c	/^static int sysmap_mmap(const char *restrict const filename, message_fn message) {$/;"	f	file:
+sysmap_room	proc/ksym.c	/^static unsigned    sysmap_room;$/;"	v	file:
+sysv_f_format	ps/global.c	/^const char     *sysv_f_format = (const char *)0xdeadbeef;$/;"	v
+sysv_fl_format	ps/global.c	/^const char     *sysv_fl_format = (const char *)0xdeadbeef;$/;"	v
+sysv_j_format	ps/global.c	/^const char     *sysv_j_format = (const char *)0xdeadbeef;$/;"	v
+sysv_l_format	ps/global.c	/^const char     *sysv_l_format = (const char *)0xdeadbeef;$/;"	v
+szDataUnit	vmstat.c	/^static char szDataUnit [16];$/;"	v	file:
+tIF	top.c	488;"	d	file:
+tIF	top.c	559;"	d	file:
+tab	dummy.c	20;"	d	file:
+tab	proc/readproc.h	/^    proc_t **tab;$/;"	m	struct:proc_data_t
+tab	top.c	39;"	d	file:
+table_accept	ps/select.c	/^static int table_accept(proc_t *buf){$/;"	f	file:
+task	proc/readproc.h	/^    proc_t **task;$/;"	m	struct:proc_data_t
+task_dir_missing	proc/readproc.c	/^static int task_dir_missing;$/;"	v	file:
+task_format_list	ps/display.c	/^static format_node *task_format_list;$/;"	v	file:
+task_format_needs	ps/display.c	/^static unsigned task_format_needs;$/;"	v	file:
+task_show	top.c	/^static void task_show (const WIN_t *q, const proc_t *p)$/;"	f	file:
+taskclr	top.h	/^          taskclr;                      \/\/        "       in task rows$/;"	m	struct:RCW_t
+taskdir	proc/readproc.h	/^    DIR*	taskdir;  \/\/ for threads$/;"	m	struct:PROCTAB
+taskdir_user	proc/readproc.h	/^    pid_t	taskdir_user;  \/\/ for threads$/;"	m	struct:PROCTAB
+taskfinder	proc/readproc.h	/^    int(*taskfinder)(struct PROCTAB *restrict const, const proc_t *restrict const, proc_t *restrict const, char *restrict const);$/;"	m	struct:PROCTAB
+taskreader	proc/readproc.h	/^    proc_t*(*taskreader)(struct PROCTAB *restrict const, const proc_t *restrict const, proc_t *restrict const, char *restrict const);$/;"	m	struct:PROCTAB
+term_size	slabtop.c	/^static void term_size(int unused)$/;"	f	file:
+tg2	top.c	/^static const char *tg2 (int x, int y)$/;"	f	file:
+tgid	proc/readproc.h	/^	tgid,		\/\/ (special)       task group ID, the POSIX PID (see also: tid)$/;"	m	struct:proc_t
+thisarg	minimal.c	/^static int thisarg;    \/* index into ps_argv *\/$/;"	v	file:
+thisarg	ps/parser.c	/^static int thisarg;    \/* index into ps_argv *\/$/;"	v	file:
+thread_flags	ps/global.c	/^unsigned        thread_flags = 0xffffffff;$/;"	v
+thread_option_check	ps/parser.c	/^static const char *thread_option_check(void){$/;"	f	file:
+tics	top.h	/^   TIC_t tics;$/;"	m	struct:HST_t
+tid	proc/readproc.h	/^        tid,		\/\/ (special)       task id, the POSIX thread ID (see also: tgid)$/;"	m	struct:proc_t
+time_of_boot	ps/output.c	/^static unsigned long time_of_boot;$/;"	v	file:
+total_size	proc/slab.h	/^	unsigned long total_size;       \/* size of all objects *\/$/;"	m	struct:slab_stat
+tpgid	proc/readproc.h	/^	tpgid,		\/\/ stat            terminal process group id$/;"	m	struct:proc_t
+trace	ps/common.h	20;"	d
+trace	ps/common.h	22;"	d
+trs	proc/readproc.h	/^	trs,		\/\/ statm           text resident set size$/;"	m	struct:proc_t
+true	sysctl.c	/^static bool true  = 1;$/;"	v	file:
+tty	proc/readproc.h	/^	tty,		\/\/ stat            full device number of controlling terminal$/;"	m	struct:proc_t
+tty	ps/common.h	/^  dev_t tty;$/;"	m	union:sel_union
+tty_count	skill.c	/^static int tty_count, uid_count, cmd_count, pid_count;$/;"	v	file:
+tty_map	proc/devname.c	/^static tty_map_node *tty_map = NULL;$/;"	v	file:
+tty_map_node	proc/devname.c	/^typedef struct tty_map_node {$/;"	s	file:
+tty_map_node	proc/devname.c	/^} tty_map_node;$/;"	t	file:
+tty_to_dev	proc/devname.c	/^int tty_to_dev(const char *restrict const name) {$/;"	f
+ttys	skill.c	/^static int *ttys;$/;"	v	file:
+tv	top.c	/^static volatile struct timeval tv;$/;"	v	file:
+typecode	ps/common.h	/^  int typecode;$/;"	m	struct:format_node
+typecode	ps/common.h	/^  int typecode;$/;"	m	struct:selection_node
+typecode	ps/common.h	/^  int typecode;$/;"	m	struct:sort_node
+u	proc/readproc.h	/^    unsigned    u;  \/\/ generic$/;"	m	struct:PROCTAB
+u	ps/common.h	/^  sel_union *u;  \/* used if selection type has a list of values *\/$/;"	m	struct:selection_node
+u	top.h	/^   TIC_t u, n, s, i, w, x, y, z; \/\/ as represented in \/proc\/stat$/;"	m	struct:CPU_t
+u_sav	top.h	/^   TIC_t u_sav, s_sav, n_sav, i_sav, w_sav, x_sav, y_sav, z_sav; \/\/ in the order of our display$/;"	m	struct:CPU_t
+uid	proc/pwcache.c	/^    uid_t uid;$/;"	m	struct:pwbuf	file:
+uid	ps/common.h	/^  uid_t uid;$/;"	m	union:sel_union
+uid_count	skill.c	/^static int tty_count, uid_count, cmd_count, pid_count;$/;"	v	file:
+uids	proc/readproc.h	/^    uid_t*	uids;	\/\/ uids of procs$/;"	m	struct:PROCTAB
+uids	skill.c	/^static uid_t *uids;$/;"	v	file:
+unhex	proc/readproc.c	/^static unsigned long long unhex(const char *restrict cp){$/;"	f	file:
+unitConvert	vmstat.c	/^static unsigned long unitConvert(unsigned int size){$/;"	f	file:
+unix_f_option	ps/global.c	/^int             unix_f_option = -1;$/;"	v
+unix_print_signals	proc/sig.c	/^void unix_print_signals(void){$/;"	f
+unlikely	proc/procps.h	64;"	d
+unlikely	proc/procps.h	70;"	d
+uptime	proc/sysinfo.c	/^int uptime(double *restrict uptime_secs, double *restrict idle_secs) {$/;"	f
+uptime_fd	proc/sysinfo.c	/^static int uptime_fd = -1;$/;"	v	file:
+usage	minimal.c	/^static void usage(void){$/;"	f	file:
+usage	pgrep.c	/^static int usage (int opt)$/;"	f	file:
+usage	pmap.c	/^static void usage(void){$/;"	f	file:
+usage	slabtop.c	/^static void usage(const char *cmd)$/;"	f	file:
+usage	vmstat.c	/^static void usage(void) {$/;"	f	file:
+usage	watch.c	/^static char usage[] =$/;"	v	file:
+use	proc/slab.h	/^	unsigned use;                   \/* percent full: total \/ active *\/$/;"	m	struct:slab_info
+use_wchan_file	proc/ksym.c	/^static int use_wchan_file;$/;"	v	file:
+user_from_uid	proc/pwcache.c	/^char *user_from_uid(uid_t uid) {$/;"	f
+user_is_number	ps/global.c	/^int             user_is_number = -1;$/;"	v
+utime	proc/readproc.h	/^	utime,		\/\/ stat            user-mode CPU time accumulated by process$/;"	m	struct:proc_t
+utmp_t	w.c	/^typedef struct utmp utmp_t;$/;"	t	file:
+v_flag	skill.c	/^static int f_flag, i_flag, v_flag, w_flag, n_flag;$/;"	v	file:
+vendor	ps/common.h	/^  const int vendor; \/* Where does this come from? *\/$/;"	m	struct:format_struct
+vendor	ps/common.h	/^  int vendor;                             \/* Vendor that invented this *\/$/;"	m	struct:format_node
+verify_short_sort	ps/sortformat.c	/^static const char *verify_short_sort(const char *arg){$/;"	f	file:
+version	pwdx.c	/^static void version(void)$/;"	f	file:
+vm_allocstall	proc/sysinfo.c	/^unsigned long vm_allocstall; \/\/ times a page allocator ran direct reclaim$/;"	v
+vm_data	proc/readproc.h	/^	vm_data,        \/\/ status          data size$/;"	m	struct:proc_t
+vm_exe	proc/readproc.h	/^	vm_exe,         \/\/ status          executable size$/;"	m	struct:proc_t
+vm_kswapd_inodesteal	proc/sysinfo.c	/^static unsigned long vm_kswapd_inodesteal;    \/\/$/;"	v	file:
+vm_kswapd_steal	proc/sysinfo.c	/^unsigned long vm_kswapd_steal; \/\/ pages reclaimed by kswapd$/;"	v
+vm_lib	proc/readproc.h	/^	vm_lib,         \/\/ status          library size (all pages, not just used ones)$/;"	m	struct:proc_t
+vm_lock	proc/readproc.h	/^	vm_lock,        \/\/ status          locked pages in kb$/;"	m	struct:proc_t
+vm_nr_dirty	proc/sysinfo.c	/^unsigned long vm_nr_dirty;           \/\/ dirty writable pages$/;"	v
+vm_nr_mapped	proc/sysinfo.c	/^unsigned long vm_nr_mapped;          \/\/ mapped into pagetables$/;"	v
+vm_nr_page_table_pages	proc/sysinfo.c	/^unsigned long vm_nr_page_table_pages;\/\/ pages used for pagetables$/;"	v
+vm_nr_pagecache	proc/sysinfo.c	/^unsigned long vm_nr_pagecache;       \/\/ pages in pagecache -- gone in 2.5.66+ kernels$/;"	v
+vm_nr_reverse_maps	proc/sysinfo.c	/^unsigned long vm_nr_reverse_maps;    \/\/ includes PageDirect$/;"	v
+vm_nr_slab	proc/sysinfo.c	/^unsigned long vm_nr_slab;            \/\/ in slab$/;"	v
+vm_nr_unstable	proc/sysinfo.c	/^static unsigned long vm_nr_unstable;          \/\/$/;"	v	file:
+vm_nr_writeback	proc/sysinfo.c	/^unsigned long vm_nr_writeback;       \/\/ pages under writeback$/;"	v
+vm_pageoutrun	proc/sysinfo.c	/^unsigned long vm_pageoutrun;  \/\/ times kswapd ran page reclaim$/;"	v
+vm_pgactivate	proc/sysinfo.c	/^unsigned long vm_pgactivate;         \/\/ pages moved inactive -> active$/;"	v
+vm_pgalloc	proc/sysinfo.c	/^unsigned long vm_pgalloc;            \/\/ page allocations$/;"	v
+vm_pgalloc_dma	proc/sysinfo.c	/^static unsigned long vm_pgalloc_dma;          \/\/ $/;"	v	file:
+vm_pgalloc_high	proc/sysinfo.c	/^static unsigned long vm_pgalloc_high;         \/\/ $/;"	v	file:
+vm_pgalloc_normal	proc/sysinfo.c	/^static unsigned long vm_pgalloc_normal;       \/\/ $/;"	v	file:
+vm_pgdeactivate	proc/sysinfo.c	/^unsigned long vm_pgdeactivate;       \/\/ pages moved active -> inactive$/;"	v
+vm_pgfault	proc/sysinfo.c	/^unsigned long vm_pgfault;           \/\/ total faults (major+minor)$/;"	v
+vm_pgfree	proc/sysinfo.c	/^unsigned long vm_pgfree;             \/\/ page freeings$/;"	v
+vm_pginodesteal	proc/sysinfo.c	/^static unsigned long vm_pginodesteal;         \/\/$/;"	v	file:
+vm_pgmajfault	proc/sysinfo.c	/^unsigned long vm_pgmajfault;       \/\/ major faults$/;"	v
+vm_pgpgin	proc/sysinfo.c	/^unsigned long vm_pgpgin;             \/\/ kB disk reads  (same as 1st num on \/proc\/stat page line)$/;"	v
+vm_pgpgout	proc/sysinfo.c	/^unsigned long vm_pgpgout;            \/\/ kB disk writes (same as 2nd num on \/proc\/stat page line)$/;"	v
+vm_pgrefill	proc/sysinfo.c	/^unsigned long vm_pgrefill;       \/\/ inspected by refill_inactive_zone$/;"	v
+vm_pgrefill_dma	proc/sysinfo.c	/^static unsigned long vm_pgrefill_dma;         \/\/ $/;"	v	file:
+vm_pgrefill_high	proc/sysinfo.c	/^static unsigned long vm_pgrefill_high;        \/\/ $/;"	v	file:
+vm_pgrefill_normal	proc/sysinfo.c	/^static unsigned long vm_pgrefill_normal;      \/\/ $/;"	v	file:
+vm_pgrotated	proc/sysinfo.c	/^unsigned long vm_pgrotated; \/\/ pages rotated to the tail of the LRU for immediate reclaim$/;"	v
+vm_pgscan	proc/sysinfo.c	/^unsigned long vm_pgscan;          \/\/ pages scanned by page reclaim$/;"	v
+vm_pgscan_direct_dma	proc/sysinfo.c	/^static unsigned long vm_pgscan_direct_dma;    \/\/ $/;"	v	file:
+vm_pgscan_direct_high	proc/sysinfo.c	/^static unsigned long vm_pgscan_direct_high;   \/\/ $/;"	v	file:
+vm_pgscan_direct_normal	proc/sysinfo.c	/^static unsigned long vm_pgscan_direct_normal; \/\/ $/;"	v	file:
+vm_pgscan_kswapd_dma	proc/sysinfo.c	/^static unsigned long vm_pgscan_kswapd_dma;    \/\/ $/;"	v	file:
+vm_pgscan_kswapd_high	proc/sysinfo.c	/^static unsigned long vm_pgscan_kswapd_high;   \/\/ $/;"	v	file:
+vm_pgscan_kswapd_normal	proc/sysinfo.c	/^static unsigned long vm_pgscan_kswapd_normal; \/\/ $/;"	v	file:
+vm_pgsteal	proc/sysinfo.c	/^unsigned long vm_pgsteal;       \/\/ total pages reclaimed$/;"	v
+vm_pgsteal_dma	proc/sysinfo.c	/^static unsigned long vm_pgsteal_dma;          \/\/ $/;"	v	file:
+vm_pgsteal_high	proc/sysinfo.c	/^static unsigned long vm_pgsteal_high;         \/\/ $/;"	v	file:
+vm_pgsteal_normal	proc/sysinfo.c	/^static unsigned long vm_pgsteal_normal;       \/\/ $/;"	v	file:
+vm_pswpin	proc/sysinfo.c	/^unsigned long vm_pswpin;             \/\/ swap reads     (same as 1st num on \/proc\/stat swap line)$/;"	v
+vm_pswpout	proc/sysinfo.c	/^unsigned long vm_pswpout;            \/\/ swap writes    (same as 2nd num on \/proc\/stat swap line)$/;"	v
+vm_rss	proc/readproc.h	/^	vm_rss,         \/\/ status          same as rss in kb$/;"	m	struct:proc_t
+vm_size	proc/readproc.h	/^	vm_size,        \/\/ status          same as vsize in kb$/;"	m	struct:proc_t
+vm_slabs_scanned	proc/sysinfo.c	/^static unsigned long vm_slabs_scanned;        \/\/$/;"	v	file:
+vm_stack	proc/readproc.h	/^	vm_stack,       \/\/ status          stack size$/;"	m	struct:proc_t
+vm_table_struct	proc/sysinfo.c	/^typedef struct vm_table_struct {$/;"	s	file:
+vm_table_struct	proc/sysinfo.c	/^} vm_table_struct;$/;"	t	file:
+vminfo	proc/sysinfo.c	/^void vminfo(void){$/;"	f
+vminfo_fd	proc/sysinfo.c	/^static int vminfo_fd = -1;$/;"	v	file:
+vp	proc/readproc.h	/^    void *      vp; \/\/ generic$/;"	m	struct:PROCTAB
+vsize	proc/readproc.h	/^	vsize,		\/\/ stat            number of pages of virtual memory ...$/;"	m	struct:proc_t
+w	top.h	/^   TIC_t u, n, s, i, w, x, y, z; \/\/ as represented in \/proc\/stat$/;"	m	struct:CPU_t
+w_count	ps/parser.c	/^static int w_count = 0;$/;"	v	file:
+w_flag	skill.c	/^static int f_flag, i_flag, v_flag, w_flag, n_flag;$/;"	v	file:
+w_sav	top.h	/^   TIC_t u_sav, s_sav, n_sav, i_sav, w_sav, x_sav, y_sav, z_sav; \/\/ in the order of our display$/;"	m	struct:CPU_t
+want_one_command	minimal.c	/^static const char *want_one_command;$/;"	v	file:
+want_one_pid	minimal.c	/^static int want_one_pid;$/;"	v	file:
+want_this_proc	ps/select.c	/^int want_this_proc(proc_t *buf){$/;"	f
+want_this_proc_nop	ps/display.c	/^static int want_this_proc_nop(proc_t *dummy){$/;"	f	file:
+want_this_proc_pcpu	ps/display.c	/^static int want_this_proc_pcpu(proc_t *buf){$/;"	f	file:
+wchan	proc/readproc.h	/^	wchan;		\/\/ stat (special)  address of kernel wait channel proc is sleeping in$/;"	m	struct:proc_t
+wchan_is_number	ps/global.c	/^int             wchan_is_number = -1;$/;"	v
+weighted_milli_spent_IO	proc/sysinfo.h	/^	unsigned           weighted_milli_spent_IO;$/;"	m	struct:disk_stat
+whack_terminal	top.c	/^static void whack_terminal (void)$/;"	f	file:
+wide_signals	ps/output.c	/^static int wide_signals;  \/* true if we have room *\/$/;"	v	file:
+width	ps/common.h	/^  const int width;$/;"	m	struct:format_struct
+width	ps/common.h	/^  int width;$/;"	m	struct:format_node
+width	top.h	/^   const int     width;         \/\/ field width, if applicable$/;"	m	struct:FLD_t
+width	watch.c	/^static int height = 24, width = 80;$/;"	v	file:
+win	top.h	/^   RCW_t  win [4];              \/\/ a 'WIN_t.rc' for each of the 4 windows$/;"	m	struct:RCF_t
+win_index	top.h	/^   int    win_index;            \/\/ Curwin, as index$/;"	m	struct:RCF_t
+win_names	top.c	/^static void win_names (WIN_t *q, const char *name)$/;"	f	file:
+win_select	top.c	/^static void win_select (char ch)$/;"	f	file:
+win_warn	top.c	/^static int win_warn (void)$/;"	f	file:
+winch_handler	watch.c	/^winch_handler(int notused)$/;"	f	file:
+window_show	top.c	/^static void window_show (proc_t **ppt, WIN_t *q, int *lscr)$/;"	f	file:
+windows_stage1	top.c	/^static void windows_stage1 (void)$/;"	f	file:
+windows_stage2	top.c	/^static void windows_stage2 (void)$/;"	f	file:
+winflags	top.h	/^   int    winflags,             \/\/ 'view', 'show' and 'sort' mode flags$/;"	m	struct:RCW_t
+winhi	vmstat.c	/^static int winhi(void) {$/;"	f	file:
+winlines	top.h	/^               winlines;                \/\/ task window's rows (volatile)$/;"	m	struct:WIN_t
+winname	top.h	/^   char   winname [WINNAMSIZ],          \/\/ window name, user changeable$/;"	m	struct:RCW_t
+winnum	top.h	/^   int         winnum,                  \/\/ window's num (array pos + 1)$/;"	m	struct:WIN_t
+wins_colors	top.c	/^static void wins_colors (void)$/;"	f	file:
+wins_reflag	top.c	/^static void wins_reflag (int what, int flg)$/;"	f	file:
+wins_resize	top.c	/^static void wins_resize (void)$/;"	f	file:
+wins_resize_sighandler	top.c	/^static void wins_resize_sighandler (int dont_care_sig)$/;"	f	file:
+winsclrhlp	top.c	/^static void winsclrhlp (WIN_t *q, int save)$/;"	f	file:
+without_a_tty	ps/select.c	26;"	d	file:
+writes	proc/sysinfo.h	/^	unsigned           writes;$/;"	m	struct:disk_stat
+writes	proc/sysinfo.h	/^	unsigned           writes;$/;"	m	struct:partition_stat
+written_sectors	proc/sysinfo.h	/^	unsigned long long written_sectors;$/;"	m	struct:disk_stat
+x	top.h	/^   TIC_t u, n, s, i, w, x, y, z; \/\/ as represented in \/proc\/stat$/;"	m	struct:CPU_t
+x_option	pmap.c	/^static int x_option;$/;"	v	file:
+x_sav	top.h	/^   TIC_t u_sav, s_sav, n_sav, i_sav, w_sav, x_sav, y_sav, z_sav; \/\/ in the order of our display$/;"	m	struct:CPU_t
+xcalloc	proc/alloc.c	/^void *xcalloc(void *pointer, int size) {$/;"	f
+xmalloc	proc/alloc.c	/^void *xmalloc(unsigned int size) {$/;"	f
+xrealloc	proc/alloc.c	/^void *xrealloc(void *oldp, unsigned int size) {$/;"	f
+y	top.h	/^   TIC_t u, n, s, i, w, x, y, z; \/\/ as represented in \/proc\/stat$/;"	m	struct:CPU_t
+yRSVD	top.c	1975;"	d	file:
+yRSVD	top.c	2012;"	d	file:
+y_sav	top.h	/^   TIC_t u_sav, s_sav, n_sav, i_sav, w_sav, x_sav, y_sav, z_sav; \/\/ in the order of our display$/;"	m	struct:CPU_t
+z	top.h	/^   TIC_t u, n, s, i, w, x, y, z; \/\/ as represented in \/proc\/stat$/;"	m	struct:CPU_t
+z_sav	top.h	/^   TIC_t u_sav, s_sav, n_sav, i_sav, w_sav, x_sav, y_sav, z_sav; \/\/ in the order of our display$/;"	m	struct:CPU_t

@@ -1,0 +1,49 @@
+#!/bin/sh
+# Force mv to use the copying code.
+
+if test "$VERBOSE" = yes; then
+  set -x
+  mv --version
+fi
+
+. $srcdir/setup
+. $srcdir/../envvar-check
+
+if test -z "$other_partition_tmpdir"; then
+  exit 77
+fi
+
+a="$other_partition_tmpdir/a"
+a2="$other_partition_tmpdir/a~"
+
+framework_failure=0
+rm -f $a $a2 || framework_failure=1
+echo a > $a || framework_failure=1
+echo a2 > $a2 || framework_failure=1
+
+if test $framework_failure = 1; then
+  echo 'failure in testing framework'
+  exit 1
+fi
+
+# Make sure we get English translations.
+. $srcdir/../lang-default
+
+# This mv command should exit nonzero.
+mv --b=simple $a2 $a > out 2>&1 && fail=1
+
+sed \
+   -e "s,mv:,XXX:," \
+   -e "s,$a,YYY," \
+   -e "s,$a2,ZZZ," \
+  out > out2
+
+cat > exp <<\EOF
+XXX: backing up `YYY' would destroy source;  `ZZZ' not moved
+EOF
+
+cmp out2 exp || fail=1
+
+rm -fr out out2 exp $a $a2 $other_partition_tmpdir
+
+exit $fail

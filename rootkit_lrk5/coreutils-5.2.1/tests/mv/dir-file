@@ -1,0 +1,30 @@
+#!/bin/sh
+# mv must fail when src and dest are mismatched directory/non-directory.
+
+if test "$VERBOSE" = yes; then
+  set -x
+  mv --version
+fi
+
+tmp=mv-mismatch-$$
+pwd=`pwd`
+trap "cd $pwd; rm -rf $tmp" 0 1 2 3 15
+
+framework_failure=0
+mkdir $tmp || framework_failure=1
+cd $tmp
+mkdir -p dir/file || framework_failure=1
+> file || framework_failure=1
+
+if test $framework_failure = 1; then
+  echo 'failure in testing framework'
+  exit 1
+fi
+
+fail=0
+
+# These should both fail, but until fileutils-4.0q only the second one did.
+mv dir file > /dev/null 2>&1 && fail=1
+mv file dir > /dev/null 2>&1 && fail=1
+
+exit $fail

@@ -1,0 +1,1377 @@
+#! /bin/sh
+# This script was generated automatically by mk-script.
+case $# in
+  0) xx='../../src/head';;
+  *) xx="$1";;
+esac
+test "$VERBOSE" && echo=echo || echo=:
+$echo testing program: $xx
+errors=0
+test "$srcdir" || srcdir=.
+test "$VERBOSE" && $xx --version 2> /dev/null
+
+# Make sure we get English translations.
+LANGUAGE=C
+export LANGUAGE
+LC_ALL=C
+export LC_ALL
+LANG=C
+export LANG
+
+_POSIX2_VERSION=199209 $xx  $srcdir/idem-0.I > idem-0.O 2> idem-0.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-0(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-0.O $srcdir/idem-0.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-0(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test idem-0(_POSIX2_VERSION=199209:F) failed: files idem-0.O and $srcdir/idem-0.X differ" 1>&2
+       (diff -c idem-0.O $srcdir/idem-0.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-0(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp idem-0.O $srcdir/idem-0.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-0.E || rm -f idem-0.E
+cat $srcdir/idem-0.I | _POSIX2_VERSION=199209 $xx  > idem-0.O 2> idem-0.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-0(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-0.O $srcdir/idem-0.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-0(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test idem-0(_POSIX2_VERSION=199209:|) failed: files idem-0.O and $srcdir/idem-0.X differ" 1>&2
+       (diff -c idem-0.O $srcdir/idem-0.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-0(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp idem-0.O $srcdir/idem-0.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-0.E || rm -f idem-0.E
+_POSIX2_VERSION=199209 $xx  < $srcdir/idem-0.I > idem-0.O 2> idem-0.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-0(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-0.O $srcdir/idem-0.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-0(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test idem-0(_POSIX2_VERSION=199209:<) failed: files idem-0.O and $srcdir/idem-0.X differ" 1>&2
+       (diff -c idem-0.O $srcdir/idem-0.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-0(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp idem-0.O $srcdir/idem-0.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-0.E || rm -f idem-0.E
+_POSIX2_VERSION=199209 $xx  $srcdir/idem-1.I > idem-1.O 2> idem-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-1(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-1.O $srcdir/idem-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-1(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test idem-1(_POSIX2_VERSION=199209:F) failed: files idem-1.O and $srcdir/idem-1.X differ" 1>&2
+       (diff -c idem-1.O $srcdir/idem-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-1(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp idem-1.O $srcdir/idem-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-1.E || rm -f idem-1.E
+cat $srcdir/idem-1.I | _POSIX2_VERSION=199209 $xx  > idem-1.O 2> idem-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-1(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-1.O $srcdir/idem-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-1(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test idem-1(_POSIX2_VERSION=199209:|) failed: files idem-1.O and $srcdir/idem-1.X differ" 1>&2
+       (diff -c idem-1.O $srcdir/idem-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-1(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp idem-1.O $srcdir/idem-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-1.E || rm -f idem-1.E
+_POSIX2_VERSION=199209 $xx  < $srcdir/idem-1.I > idem-1.O 2> idem-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-1(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-1.O $srcdir/idem-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-1(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test idem-1(_POSIX2_VERSION=199209:<) failed: files idem-1.O and $srcdir/idem-1.X differ" 1>&2
+       (diff -c idem-1.O $srcdir/idem-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-1(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp idem-1.O $srcdir/idem-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-1.E || rm -f idem-1.E
+_POSIX2_VERSION=199209 $xx  $srcdir/idem-2.I > idem-2.O 2> idem-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-2(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-2.O $srcdir/idem-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-2(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test idem-2(_POSIX2_VERSION=199209:F) failed: files idem-2.O and $srcdir/idem-2.X differ" 1>&2
+       (diff -c idem-2.O $srcdir/idem-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-2(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp idem-2.O $srcdir/idem-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-2.E || rm -f idem-2.E
+cat $srcdir/idem-2.I | _POSIX2_VERSION=199209 $xx  > idem-2.O 2> idem-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-2(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-2.O $srcdir/idem-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-2(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test idem-2(_POSIX2_VERSION=199209:|) failed: files idem-2.O and $srcdir/idem-2.X differ" 1>&2
+       (diff -c idem-2.O $srcdir/idem-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-2(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp idem-2.O $srcdir/idem-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-2.E || rm -f idem-2.E
+_POSIX2_VERSION=199209 $xx  < $srcdir/idem-2.I > idem-2.O 2> idem-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-2(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-2.O $srcdir/idem-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-2(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test idem-2(_POSIX2_VERSION=199209:<) failed: files idem-2.O and $srcdir/idem-2.X differ" 1>&2
+       (diff -c idem-2.O $srcdir/idem-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-2(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp idem-2.O $srcdir/idem-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-2.E || rm -f idem-2.E
+_POSIX2_VERSION=199209 $xx  $srcdir/idem-3.I > idem-3.O 2> idem-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-3(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-3.O $srcdir/idem-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-3(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test idem-3(_POSIX2_VERSION=199209:F) failed: files idem-3.O and $srcdir/idem-3.X differ" 1>&2
+       (diff -c idem-3.O $srcdir/idem-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-3(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp idem-3.O $srcdir/idem-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-3.E || rm -f idem-3.E
+cat $srcdir/idem-3.I | _POSIX2_VERSION=199209 $xx  > idem-3.O 2> idem-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-3(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-3.O $srcdir/idem-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-3(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test idem-3(_POSIX2_VERSION=199209:|) failed: files idem-3.O and $srcdir/idem-3.X differ" 1>&2
+       (diff -c idem-3.O $srcdir/idem-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-3(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp idem-3.O $srcdir/idem-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-3.E || rm -f idem-3.E
+_POSIX2_VERSION=199209 $xx  < $srcdir/idem-3.I > idem-3.O 2> idem-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test idem-3(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp idem-3.O $srcdir/idem-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed idem-3(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test idem-3(_POSIX2_VERSION=199209:<) failed: files idem-3.O and $srcdir/idem-3.X differ" 1>&2
+       (diff -c idem-3.O $srcdir/idem-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test idem-3(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp idem-3.O $srcdir/idem-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s idem-3.E || rm -f idem-3.E
+_POSIX2_VERSION=199209 $xx  $srcdir/basic-0-10.I > basic-0-10.O 2> basic-0-10.E
+code=$?
+if test $code != 0; then
+  $echo "Test basic-0-10(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp basic-0-10.O $srcdir/basic-0-10.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed basic-0-10(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test basic-0-10(_POSIX2_VERSION=199209:F) failed: files basic-0-10.O and $srcdir/basic-0-10.X differ" 1>&2
+       (diff -c basic-0-10.O $srcdir/basic-0-10.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test basic-0-10(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp basic-0-10.O $srcdir/basic-0-10.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s basic-0-10.E || rm -f basic-0-10.E
+cat $srcdir/basic-0-10.I | _POSIX2_VERSION=199209 $xx  > basic-0-10.O 2> basic-0-10.E
+code=$?
+if test $code != 0; then
+  $echo "Test basic-0-10(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp basic-0-10.O $srcdir/basic-0-10.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed basic-0-10(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test basic-0-10(_POSIX2_VERSION=199209:|) failed: files basic-0-10.O and $srcdir/basic-0-10.X differ" 1>&2
+       (diff -c basic-0-10.O $srcdir/basic-0-10.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test basic-0-10(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp basic-0-10.O $srcdir/basic-0-10.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s basic-0-10.E || rm -f basic-0-10.E
+_POSIX2_VERSION=199209 $xx  < $srcdir/basic-0-10.I > basic-0-10.O 2> basic-0-10.E
+code=$?
+if test $code != 0; then
+  $echo "Test basic-0-10(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp basic-0-10.O $srcdir/basic-0-10.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed basic-0-10(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test basic-0-10(_POSIX2_VERSION=199209:<) failed: files basic-0-10.O and $srcdir/basic-0-10.X differ" 1>&2
+       (diff -c basic-0-10.O $srcdir/basic-0-10.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test basic-0-10(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp basic-0-10.O $srcdir/basic-0-10.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s basic-0-10.E || rm -f basic-0-10.E
+_POSIX2_VERSION=199209 $xx  $srcdir/basic-0-09.I > basic-0-09.O 2> basic-0-09.E
+code=$?
+if test $code != 0; then
+  $echo "Test basic-0-09(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp basic-0-09.O $srcdir/basic-0-09.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed basic-0-09(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test basic-0-09(_POSIX2_VERSION=199209:F) failed: files basic-0-09.O and $srcdir/basic-0-09.X differ" 1>&2
+       (diff -c basic-0-09.O $srcdir/basic-0-09.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test basic-0-09(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp basic-0-09.O $srcdir/basic-0-09.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s basic-0-09.E || rm -f basic-0-09.E
+cat $srcdir/basic-0-09.I | _POSIX2_VERSION=199209 $xx  > basic-0-09.O 2> basic-0-09.E
+code=$?
+if test $code != 0; then
+  $echo "Test basic-0-09(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp basic-0-09.O $srcdir/basic-0-09.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed basic-0-09(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test basic-0-09(_POSIX2_VERSION=199209:|) failed: files basic-0-09.O and $srcdir/basic-0-09.X differ" 1>&2
+       (diff -c basic-0-09.O $srcdir/basic-0-09.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test basic-0-09(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp basic-0-09.O $srcdir/basic-0-09.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s basic-0-09.E || rm -f basic-0-09.E
+_POSIX2_VERSION=199209 $xx  < $srcdir/basic-0-09.I > basic-0-09.O 2> basic-0-09.E
+code=$?
+if test $code != 0; then
+  $echo "Test basic-0-09(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp basic-0-09.O $srcdir/basic-0-09.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed basic-0-09(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test basic-0-09(_POSIX2_VERSION=199209:<) failed: files basic-0-09.O and $srcdir/basic-0-09.X differ" 1>&2
+       (diff -c basic-0-09.O $srcdir/basic-0-09.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test basic-0-09(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp basic-0-09.O $srcdir/basic-0-09.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s basic-0-09.E || rm -f basic-0-09.E
+_POSIX2_VERSION=199209 $xx  $srcdir/basic-0-11.I > basic-0-11.O 2> basic-0-11.E
+code=$?
+if test $code != 0; then
+  $echo "Test basic-0-11(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp basic-0-11.O $srcdir/basic-0-11.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed basic-0-11(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test basic-0-11(_POSIX2_VERSION=199209:F) failed: files basic-0-11.O and $srcdir/basic-0-11.X differ" 1>&2
+       (diff -c basic-0-11.O $srcdir/basic-0-11.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test basic-0-11(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp basic-0-11.O $srcdir/basic-0-11.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s basic-0-11.E || rm -f basic-0-11.E
+cat $srcdir/basic-0-11.I | _POSIX2_VERSION=199209 $xx  > basic-0-11.O 2> basic-0-11.E
+code=$?
+if test $code != 0; then
+  $echo "Test basic-0-11(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp basic-0-11.O $srcdir/basic-0-11.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed basic-0-11(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test basic-0-11(_POSIX2_VERSION=199209:|) failed: files basic-0-11.O and $srcdir/basic-0-11.X differ" 1>&2
+       (diff -c basic-0-11.O $srcdir/basic-0-11.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test basic-0-11(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp basic-0-11.O $srcdir/basic-0-11.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s basic-0-11.E || rm -f basic-0-11.E
+_POSIX2_VERSION=199209 $xx  < $srcdir/basic-0-11.I > basic-0-11.O 2> basic-0-11.E
+code=$?
+if test $code != 0; then
+  $echo "Test basic-0-11(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp basic-0-11.O $srcdir/basic-0-11.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed basic-0-11(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test basic-0-11(_POSIX2_VERSION=199209:<) failed: files basic-0-11.O and $srcdir/basic-0-11.X differ" 1>&2
+       (diff -c basic-0-11.O $srcdir/basic-0-11.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test basic-0-11(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp basic-0-11.O $srcdir/basic-0-11.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s basic-0-11.E || rm -f basic-0-11.E
+_POSIX2_VERSION=199209 $xx -1 $srcdir/obs-0.I > obs-0.O 2> obs-0.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-0(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-0.O $srcdir/obs-0.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-0(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test obs-0(_POSIX2_VERSION=199209:F) failed: files obs-0.O and $srcdir/obs-0.X differ" 1>&2
+       (diff -c obs-0.O $srcdir/obs-0.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-0(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp obs-0.O $srcdir/obs-0.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-0.E || rm -f obs-0.E
+cat $srcdir/obs-0.I | _POSIX2_VERSION=199209 $xx -1 > obs-0.O 2> obs-0.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-0(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-0.O $srcdir/obs-0.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-0(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test obs-0(_POSIX2_VERSION=199209:|) failed: files obs-0.O and $srcdir/obs-0.X differ" 1>&2
+       (diff -c obs-0.O $srcdir/obs-0.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-0(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp obs-0.O $srcdir/obs-0.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-0.E || rm -f obs-0.E
+_POSIX2_VERSION=199209 $xx -1 < $srcdir/obs-0.I > obs-0.O 2> obs-0.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-0(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-0.O $srcdir/obs-0.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-0(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test obs-0(_POSIX2_VERSION=199209:<) failed: files obs-0.O and $srcdir/obs-0.X differ" 1>&2
+       (diff -c obs-0.O $srcdir/obs-0.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-0(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp obs-0.O $srcdir/obs-0.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-0.E || rm -f obs-0.E
+_POSIX2_VERSION=199209 $xx -1c $srcdir/obs-1.I > obs-1.O 2> obs-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-1(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-1.O $srcdir/obs-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-1(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test obs-1(_POSIX2_VERSION=199209:F) failed: files obs-1.O and $srcdir/obs-1.X differ" 1>&2
+       (diff -c obs-1.O $srcdir/obs-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-1(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp obs-1.O $srcdir/obs-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-1.E || rm -f obs-1.E
+cat $srcdir/obs-1.I | _POSIX2_VERSION=199209 $xx -1c > obs-1.O 2> obs-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-1(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-1.O $srcdir/obs-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-1(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test obs-1(_POSIX2_VERSION=199209:|) failed: files obs-1.O and $srcdir/obs-1.X differ" 1>&2
+       (diff -c obs-1.O $srcdir/obs-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-1(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp obs-1.O $srcdir/obs-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-1.E || rm -f obs-1.E
+_POSIX2_VERSION=199209 $xx -1c < $srcdir/obs-1.I > obs-1.O 2> obs-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-1(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-1.O $srcdir/obs-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-1(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test obs-1(_POSIX2_VERSION=199209:<) failed: files obs-1.O and $srcdir/obs-1.X differ" 1>&2
+       (diff -c obs-1.O $srcdir/obs-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-1(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp obs-1.O $srcdir/obs-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-1.E || rm -f obs-1.E
+_POSIX2_VERSION=199209 $xx -1c $srcdir/obs-2.I > obs-2.O 2> obs-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-2(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-2.O $srcdir/obs-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-2(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test obs-2(_POSIX2_VERSION=199209:F) failed: files obs-2.O and $srcdir/obs-2.X differ" 1>&2
+       (diff -c obs-2.O $srcdir/obs-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-2(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp obs-2.O $srcdir/obs-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-2.E || rm -f obs-2.E
+cat $srcdir/obs-2.I | _POSIX2_VERSION=199209 $xx -1c > obs-2.O 2> obs-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-2(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-2.O $srcdir/obs-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-2(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test obs-2(_POSIX2_VERSION=199209:|) failed: files obs-2.O and $srcdir/obs-2.X differ" 1>&2
+       (diff -c obs-2.O $srcdir/obs-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-2(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp obs-2.O $srcdir/obs-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-2.E || rm -f obs-2.E
+_POSIX2_VERSION=199209 $xx -1c < $srcdir/obs-2.I > obs-2.O 2> obs-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-2(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-2.O $srcdir/obs-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-2(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test obs-2(_POSIX2_VERSION=199209:<) failed: files obs-2.O and $srcdir/obs-2.X differ" 1>&2
+       (diff -c obs-2.O $srcdir/obs-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-2(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp obs-2.O $srcdir/obs-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-2.E || rm -f obs-2.E
+_POSIX2_VERSION=199209 $xx -14c $srcdir/obs-3.I > obs-3.O 2> obs-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-3(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-3.O $srcdir/obs-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-3(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test obs-3(_POSIX2_VERSION=199209:F) failed: files obs-3.O and $srcdir/obs-3.X differ" 1>&2
+       (diff -c obs-3.O $srcdir/obs-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-3(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp obs-3.O $srcdir/obs-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-3.E || rm -f obs-3.E
+cat $srcdir/obs-3.I | _POSIX2_VERSION=199209 $xx -14c > obs-3.O 2> obs-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-3(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-3.O $srcdir/obs-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-3(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test obs-3(_POSIX2_VERSION=199209:|) failed: files obs-3.O and $srcdir/obs-3.X differ" 1>&2
+       (diff -c obs-3.O $srcdir/obs-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-3(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp obs-3.O $srcdir/obs-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-3.E || rm -f obs-3.E
+_POSIX2_VERSION=199209 $xx -14c < $srcdir/obs-3.I > obs-3.O 2> obs-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-3(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-3.O $srcdir/obs-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-3(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test obs-3(_POSIX2_VERSION=199209:<) failed: files obs-3.O and $srcdir/obs-3.X differ" 1>&2
+       (diff -c obs-3.O $srcdir/obs-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-3(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp obs-3.O $srcdir/obs-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-3.E || rm -f obs-3.E
+_POSIX2_VERSION=199209 $xx -2b $srcdir/in > obs-4.O 2> obs-4.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-4(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-4.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-4(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test obs-4(_POSIX2_VERSION=199209:F) failed: files obs-4.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c obs-4.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-4(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp obs-4.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-4.E || rm -f obs-4.E
+cat $srcdir/in | _POSIX2_VERSION=199209 $xx -2b > obs-4.O 2> obs-4.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-4(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-4.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-4(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test obs-4(_POSIX2_VERSION=199209:|) failed: files obs-4.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c obs-4.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-4(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp obs-4.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-4.E || rm -f obs-4.E
+_POSIX2_VERSION=199209 $xx -2b < $srcdir/in > obs-4.O 2> obs-4.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-4(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-4.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-4(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test obs-4(_POSIX2_VERSION=199209:<) failed: files obs-4.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c obs-4.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-4(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp obs-4.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-4.E || rm -f obs-4.E
+_POSIX2_VERSION=199209 $xx -1k $srcdir/in > obs-5.O 2> obs-5.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-5(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-5.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-5(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test obs-5(_POSIX2_VERSION=199209:F) failed: files obs-5.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c obs-5.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-5(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp obs-5.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-5.E || rm -f obs-5.E
+cat $srcdir/in | _POSIX2_VERSION=199209 $xx -1k > obs-5.O 2> obs-5.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-5(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-5.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-5(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test obs-5(_POSIX2_VERSION=199209:|) failed: files obs-5.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c obs-5.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-5(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp obs-5.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-5.E || rm -f obs-5.E
+_POSIX2_VERSION=199209 $xx -1k < $srcdir/in > obs-5.O 2> obs-5.E
+code=$?
+if test $code != 0; then
+  $echo "Test obs-5(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp obs-5.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed obs-5(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test obs-5(_POSIX2_VERSION=199209:<) failed: files obs-5.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c obs-5.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test obs-5(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp obs-5.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s obs-5.E || rm -f obs-5.E
+_POSIX2_VERSION=199209 $xx -n 2048m $srcdir/fail-1.I > fail-1.O 2> fail-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test fail-1(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp fail-1.O $srcdir/fail-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed fail-1(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test fail-1(_POSIX2_VERSION=199209:F) failed: files fail-1.O and $srcdir/fail-1.X differ" 1>&2
+       (diff -c fail-1.O $srcdir/fail-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test fail-1(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp fail-1.O $srcdir/fail-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s fail-1.E || rm -f fail-1.E
+cat $srcdir/fail-1.I | _POSIX2_VERSION=199209 $xx -n 2048m > fail-1.O 2> fail-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test fail-1(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp fail-1.O $srcdir/fail-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed fail-1(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test fail-1(_POSIX2_VERSION=199209:|) failed: files fail-1.O and $srcdir/fail-1.X differ" 1>&2
+       (diff -c fail-1.O $srcdir/fail-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test fail-1(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp fail-1.O $srcdir/fail-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s fail-1.E || rm -f fail-1.E
+_POSIX2_VERSION=199209 $xx -n 2048m < $srcdir/fail-1.I > fail-1.O 2> fail-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test fail-1(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp fail-1.O $srcdir/fail-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed fail-1(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test fail-1(_POSIX2_VERSION=199209:<) failed: files fail-1.O and $srcdir/fail-1.X differ" 1>&2
+       (diff -c fail-1.O $srcdir/fail-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test fail-1(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp fail-1.O $srcdir/fail-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s fail-1.E || rm -f fail-1.E
+_POSIX2_VERSION=199209 $xx  $srcdir/null-1.I > null-1.O 2> null-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test null-1(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp null-1.O $srcdir/null-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed null-1(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test null-1(_POSIX2_VERSION=199209:F) failed: files null-1.O and $srcdir/null-1.X differ" 1>&2
+       (diff -c null-1.O $srcdir/null-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test null-1(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp null-1.O $srcdir/null-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s null-1.E || rm -f null-1.E
+cat $srcdir/null-1.I | _POSIX2_VERSION=199209 $xx  > null-1.O 2> null-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test null-1(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp null-1.O $srcdir/null-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed null-1(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test null-1(_POSIX2_VERSION=199209:|) failed: files null-1.O and $srcdir/null-1.X differ" 1>&2
+       (diff -c null-1.O $srcdir/null-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test null-1(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp null-1.O $srcdir/null-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s null-1.E || rm -f null-1.E
+_POSIX2_VERSION=199209 $xx  < $srcdir/null-1.I > null-1.O 2> null-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test null-1(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp null-1.O $srcdir/null-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed null-1(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test null-1(_POSIX2_VERSION=199209:<) failed: files null-1.O and $srcdir/null-1.X differ" 1>&2
+       (diff -c null-1.O $srcdir/null-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test null-1(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp null-1.O $srcdir/null-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s null-1.E || rm -f null-1.E
+_POSIX2_VERSION=199209 $xx -08 $srcdir/no-oct-1.I > no-oct-1.O 2> no-oct-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-1(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-1.O $srcdir/no-oct-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-1(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test no-oct-1(_POSIX2_VERSION=199209:F) failed: files no-oct-1.O and $srcdir/no-oct-1.X differ" 1>&2
+       (diff -c no-oct-1.O $srcdir/no-oct-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-1(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp no-oct-1.O $srcdir/no-oct-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-1.E || rm -f no-oct-1.E
+cat $srcdir/no-oct-1.I | _POSIX2_VERSION=199209 $xx -08 > no-oct-1.O 2> no-oct-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-1(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-1.O $srcdir/no-oct-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-1(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test no-oct-1(_POSIX2_VERSION=199209:|) failed: files no-oct-1.O and $srcdir/no-oct-1.X differ" 1>&2
+       (diff -c no-oct-1.O $srcdir/no-oct-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-1(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp no-oct-1.O $srcdir/no-oct-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-1.E || rm -f no-oct-1.E
+_POSIX2_VERSION=199209 $xx -08 < $srcdir/no-oct-1.I > no-oct-1.O 2> no-oct-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-1(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-1.O $srcdir/no-oct-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-1(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test no-oct-1(_POSIX2_VERSION=199209:<) failed: files no-oct-1.O and $srcdir/no-oct-1.X differ" 1>&2
+       (diff -c no-oct-1.O $srcdir/no-oct-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-1(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp no-oct-1.O $srcdir/no-oct-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-1.E || rm -f no-oct-1.E
+_POSIX2_VERSION=199209 $xx -010 $srcdir/no-oct-2.I > no-oct-2.O 2> no-oct-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-2(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-2.O $srcdir/no-oct-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-2(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test no-oct-2(_POSIX2_VERSION=199209:F) failed: files no-oct-2.O and $srcdir/no-oct-2.X differ" 1>&2
+       (diff -c no-oct-2.O $srcdir/no-oct-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-2(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp no-oct-2.O $srcdir/no-oct-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-2.E || rm -f no-oct-2.E
+cat $srcdir/no-oct-2.I | _POSIX2_VERSION=199209 $xx -010 > no-oct-2.O 2> no-oct-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-2(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-2.O $srcdir/no-oct-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-2(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test no-oct-2(_POSIX2_VERSION=199209:|) failed: files no-oct-2.O and $srcdir/no-oct-2.X differ" 1>&2
+       (diff -c no-oct-2.O $srcdir/no-oct-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-2(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp no-oct-2.O $srcdir/no-oct-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-2.E || rm -f no-oct-2.E
+_POSIX2_VERSION=199209 $xx -010 < $srcdir/no-oct-2.I > no-oct-2.O 2> no-oct-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-2(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-2.O $srcdir/no-oct-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-2(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test no-oct-2(_POSIX2_VERSION=199209:<) failed: files no-oct-2.O and $srcdir/no-oct-2.X differ" 1>&2
+       (diff -c no-oct-2.O $srcdir/no-oct-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-2(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp no-oct-2.O $srcdir/no-oct-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-2.E || rm -f no-oct-2.E
+_POSIX2_VERSION=199209 $xx -n 08 $srcdir/no-oct-3.I > no-oct-3.O 2> no-oct-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-3(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-3.O $srcdir/no-oct-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-3(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test no-oct-3(_POSIX2_VERSION=199209:F) failed: files no-oct-3.O and $srcdir/no-oct-3.X differ" 1>&2
+       (diff -c no-oct-3.O $srcdir/no-oct-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-3(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp no-oct-3.O $srcdir/no-oct-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-3.E || rm -f no-oct-3.E
+cat $srcdir/no-oct-3.I | _POSIX2_VERSION=199209 $xx -n 08 > no-oct-3.O 2> no-oct-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-3(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-3.O $srcdir/no-oct-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-3(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test no-oct-3(_POSIX2_VERSION=199209:|) failed: files no-oct-3.O and $srcdir/no-oct-3.X differ" 1>&2
+       (diff -c no-oct-3.O $srcdir/no-oct-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-3(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp no-oct-3.O $srcdir/no-oct-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-3.E || rm -f no-oct-3.E
+_POSIX2_VERSION=199209 $xx -n 08 < $srcdir/no-oct-3.I > no-oct-3.O 2> no-oct-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-3(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-3.O $srcdir/no-oct-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-3(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test no-oct-3(_POSIX2_VERSION=199209:<) failed: files no-oct-3.O and $srcdir/no-oct-3.X differ" 1>&2
+       (diff -c no-oct-3.O $srcdir/no-oct-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-3(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp no-oct-3.O $srcdir/no-oct-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-3.E || rm -f no-oct-3.E
+_POSIX2_VERSION=199209 $xx -c 08 $srcdir/no-oct-4.I > no-oct-4.O 2> no-oct-4.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-4(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-4.O $srcdir/no-oct-4.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-4(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test no-oct-4(_POSIX2_VERSION=199209:F) failed: files no-oct-4.O and $srcdir/no-oct-4.X differ" 1>&2
+       (diff -c no-oct-4.O $srcdir/no-oct-4.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-4(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp no-oct-4.O $srcdir/no-oct-4.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-4.E || rm -f no-oct-4.E
+cat $srcdir/no-oct-4.I | _POSIX2_VERSION=199209 $xx -c 08 > no-oct-4.O 2> no-oct-4.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-4(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-4.O $srcdir/no-oct-4.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-4(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test no-oct-4(_POSIX2_VERSION=199209:|) failed: files no-oct-4.O and $srcdir/no-oct-4.X differ" 1>&2
+       (diff -c no-oct-4.O $srcdir/no-oct-4.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-4(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp no-oct-4.O $srcdir/no-oct-4.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-4.E || rm -f no-oct-4.E
+_POSIX2_VERSION=199209 $xx -c 08 < $srcdir/no-oct-4.I > no-oct-4.O 2> no-oct-4.E
+code=$?
+if test $code != 0; then
+  $echo "Test no-oct-4(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp no-oct-4.O $srcdir/no-oct-4.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed no-oct-4(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test no-oct-4(_POSIX2_VERSION=199209:<) failed: files no-oct-4.O and $srcdir/no-oct-4.X differ" 1>&2
+       (diff -c no-oct-4.O $srcdir/no-oct-4.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test no-oct-4(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp no-oct-4.O $srcdir/no-oct-4.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s no-oct-4.E || rm -f no-oct-4.E
+_POSIX2_VERSION=199209 $xx -n 1 $srcdir/posix-0.I > posix-0.O 2> posix-0.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-0(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-0.O $srcdir/posix-0.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-0(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test posix-0(_POSIX2_VERSION=199209:F) failed: files posix-0.O and $srcdir/posix-0.X differ" 1>&2
+       (diff -c posix-0.O $srcdir/posix-0.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-0(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp posix-0.O $srcdir/posix-0.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-0.E || rm -f posix-0.E
+cat $srcdir/posix-0.I | _POSIX2_VERSION=199209 $xx -n 1 > posix-0.O 2> posix-0.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-0(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-0.O $srcdir/posix-0.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-0(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test posix-0(_POSIX2_VERSION=199209:|) failed: files posix-0.O and $srcdir/posix-0.X differ" 1>&2
+       (diff -c posix-0.O $srcdir/posix-0.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-0(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp posix-0.O $srcdir/posix-0.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-0.E || rm -f posix-0.E
+_POSIX2_VERSION=199209 $xx -n 1 < $srcdir/posix-0.I > posix-0.O 2> posix-0.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-0(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-0.O $srcdir/posix-0.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-0(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test posix-0(_POSIX2_VERSION=199209:<) failed: files posix-0.O and $srcdir/posix-0.X differ" 1>&2
+       (diff -c posix-0.O $srcdir/posix-0.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-0(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp posix-0.O $srcdir/posix-0.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-0.E || rm -f posix-0.E
+_POSIX2_VERSION=199209 $xx -c 1 $srcdir/posix-1.I > posix-1.O 2> posix-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-1(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-1.O $srcdir/posix-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-1(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test posix-1(_POSIX2_VERSION=199209:F) failed: files posix-1.O and $srcdir/posix-1.X differ" 1>&2
+       (diff -c posix-1.O $srcdir/posix-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-1(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp posix-1.O $srcdir/posix-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-1.E || rm -f posix-1.E
+cat $srcdir/posix-1.I | _POSIX2_VERSION=199209 $xx -c 1 > posix-1.O 2> posix-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-1(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-1.O $srcdir/posix-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-1(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test posix-1(_POSIX2_VERSION=199209:|) failed: files posix-1.O and $srcdir/posix-1.X differ" 1>&2
+       (diff -c posix-1.O $srcdir/posix-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-1(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp posix-1.O $srcdir/posix-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-1.E || rm -f posix-1.E
+_POSIX2_VERSION=199209 $xx -c 1 < $srcdir/posix-1.I > posix-1.O 2> posix-1.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-1(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-1.O $srcdir/posix-1.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-1(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test posix-1(_POSIX2_VERSION=199209:<) failed: files posix-1.O and $srcdir/posix-1.X differ" 1>&2
+       (diff -c posix-1.O $srcdir/posix-1.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-1(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp posix-1.O $srcdir/posix-1.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-1.E || rm -f posix-1.E
+_POSIX2_VERSION=199209 $xx -c 1 $srcdir/posix-2.I > posix-2.O 2> posix-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-2(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-2.O $srcdir/posix-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-2(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test posix-2(_POSIX2_VERSION=199209:F) failed: files posix-2.O and $srcdir/posix-2.X differ" 1>&2
+       (diff -c posix-2.O $srcdir/posix-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-2(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp posix-2.O $srcdir/posix-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-2.E || rm -f posix-2.E
+cat $srcdir/posix-2.I | _POSIX2_VERSION=199209 $xx -c 1 > posix-2.O 2> posix-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-2(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-2.O $srcdir/posix-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-2(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test posix-2(_POSIX2_VERSION=199209:|) failed: files posix-2.O and $srcdir/posix-2.X differ" 1>&2
+       (diff -c posix-2.O $srcdir/posix-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-2(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp posix-2.O $srcdir/posix-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-2.E || rm -f posix-2.E
+_POSIX2_VERSION=199209 $xx -c 1 < $srcdir/posix-2.I > posix-2.O 2> posix-2.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-2(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-2.O $srcdir/posix-2.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-2(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test posix-2(_POSIX2_VERSION=199209:<) failed: files posix-2.O and $srcdir/posix-2.X differ" 1>&2
+       (diff -c posix-2.O $srcdir/posix-2.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-2(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp posix-2.O $srcdir/posix-2.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-2.E || rm -f posix-2.E
+_POSIX2_VERSION=199209 $xx -c 14 $srcdir/posix-3.I > posix-3.O 2> posix-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-3(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-3.O $srcdir/posix-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-3(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test posix-3(_POSIX2_VERSION=199209:F) failed: files posix-3.O and $srcdir/posix-3.X differ" 1>&2
+       (diff -c posix-3.O $srcdir/posix-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-3(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp posix-3.O $srcdir/posix-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-3.E || rm -f posix-3.E
+cat $srcdir/posix-3.I | _POSIX2_VERSION=199209 $xx -c 14 > posix-3.O 2> posix-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-3(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-3.O $srcdir/posix-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-3(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test posix-3(_POSIX2_VERSION=199209:|) failed: files posix-3.O and $srcdir/posix-3.X differ" 1>&2
+       (diff -c posix-3.O $srcdir/posix-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-3(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp posix-3.O $srcdir/posix-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-3.E || rm -f posix-3.E
+_POSIX2_VERSION=199209 $xx -c 14 < $srcdir/posix-3.I > posix-3.O 2> posix-3.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-3(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-3.O $srcdir/posix-3.X > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-3(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test posix-3(_POSIX2_VERSION=199209:<) failed: files posix-3.O and $srcdir/posix-3.X differ" 1>&2
+       (diff -c posix-3.O $srcdir/posix-3.X) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-3(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp posix-3.O $srcdir/posix-3.X" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-3.E || rm -f posix-3.E
+_POSIX2_VERSION=199209 $xx -c 2b $srcdir/in > posix-4.O 2> posix-4.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-4(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-4.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-4(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test posix-4(_POSIX2_VERSION=199209:F) failed: files posix-4.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c posix-4.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-4(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp posix-4.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-4.E || rm -f posix-4.E
+cat $srcdir/in | _POSIX2_VERSION=199209 $xx -c 2b > posix-4.O 2> posix-4.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-4(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-4.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-4(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test posix-4(_POSIX2_VERSION=199209:|) failed: files posix-4.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c posix-4.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-4(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp posix-4.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-4.E || rm -f posix-4.E
+_POSIX2_VERSION=199209 $xx -c 2b < $srcdir/in > posix-4.O 2> posix-4.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-4(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-4.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-4(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test posix-4(_POSIX2_VERSION=199209:<) failed: files posix-4.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c posix-4.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-4(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp posix-4.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-4.E || rm -f posix-4.E
+_POSIX2_VERSION=199209 $xx -c 1k $srcdir/in > posix-5.O 2> posix-5.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-5(_POSIX2_VERSION=199209:F) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-5.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-5(_POSIX2_VERSION=199209:F)"; fi;;
+    1) $echo "Test posix-5(_POSIX2_VERSION=199209:F) failed: files posix-5.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c posix-5.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-5(_POSIX2_VERSION=199209:F) may have failed." 1>&2
+       $echo The command "cmp posix-5.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-5.E || rm -f posix-5.E
+cat $srcdir/in | _POSIX2_VERSION=199209 $xx -c 1k > posix-5.O 2> posix-5.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-5(_POSIX2_VERSION=199209:|) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-5.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-5(_POSIX2_VERSION=199209:|)"; fi;;
+    1) $echo "Test posix-5(_POSIX2_VERSION=199209:|) failed: files posix-5.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c posix-5.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-5(_POSIX2_VERSION=199209:|) may have failed." 1>&2
+       $echo The command "cmp posix-5.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-5.E || rm -f posix-5.E
+_POSIX2_VERSION=199209 $xx -c 1k < $srcdir/in > posix-5.O 2> posix-5.E
+code=$?
+if test $code != 0; then
+  $echo "Test posix-5(_POSIX2_VERSION=199209:<) failed: $xx return code $code differs from expected value 0" 1>&2
+  errors=`expr $errors + 1`
+else
+  cmp posix-5.O $srcdir/in-1024 > /dev/null 2>&1
+  case $? in
+    0) if test "$VERBOSE"; then $echo "passed posix-5(_POSIX2_VERSION=199209:<)"; fi;;
+    1) $echo "Test posix-5(_POSIX2_VERSION=199209:<) failed: files posix-5.O and $srcdir/in-1024 differ" 1>&2
+       (diff -c posix-5.O $srcdir/in-1024) 2> /dev/null
+       errors=`expr $errors + 1`;;
+    2) $echo "Test posix-5(_POSIX2_VERSION=199209:<) may have failed." 1>&2
+       $echo The command "cmp posix-5.O $srcdir/in-1024" failed. 1>&2
+       errors=`expr $errors + 1`;;
+  esac
+fi
+test -s posix-5.E || rm -f posix-5.E
+if test $errors = 0; then
+  $echo Passed all 75 tests. 1>&2
+else
+  $echo Failed $errors tests. 1>&2
+fi
+test $errors = 0 || errors=1
+exit $errors

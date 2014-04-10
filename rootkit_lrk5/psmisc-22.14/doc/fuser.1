@@ -1,0 +1,201 @@
+.TH FUSER 1 2011-06-19 "Linux" "User Commands"
+.SH NAME
+fuser \- identify processes using files or sockets
+.SH SYNOPSIS
+.ad l
+.B fuser
+.RB [ \-fuv ]
+.RB [ \-a | \-s ]
+.RB [ \-4 | \-6 ]
+.RB [ \-c | \-m | \-n\ 
+.IR space\  ]
+.RB [ \-k
+.RB [ \-i ]
+.RB [ \-M ]
+.RB [ \-w ]
+.RB [ \- \fISIGNAL
+] ]
+.IR name " ..."
+.br
+.B fuser
+.RB \-l
+.br
+.B fuser
+.RB \-V
+.ad b
+.SH DESCRIPTION
+.B fuser
+displays the PIDs of processes using the specified files or file systems.
+In the default display mode, each file name is followed by a letter denoting
+the type of access:
+.RS
+.IP \fBc\fR
+current directory.
+.IP \fBe\fR
+executable being run.
+.IP \fBf\fR
+open file. \fBf\fR is omitted in default display mode.
+.IP \fBF\fR
+open file for writing. \fBF\fR is omitted in default display mode.
+.IP \fBr\fR
+root directory.
+.IP \fBm\fR
+mmap'ed file or shared library.
+.RE
+.LP
+\fBfuser\fR returns a non-zero return code if none of the specified files
+is accessed or in case of a fatal error. If at least one access has been
+found, \fBfuser\fR returns zero.
+.PP
+In order to look up processes using TCP and UDP sockets, the corresponding
+name space has to be selected with the \fB\-n\fR option. By default
+\fBfuser\fR will look in both IPv6 and IPv4 sockets. To change the default,
+behavior, use the \fB\-4\fR and \fB\-6\fR options. The socket(s) can
+be specified by the local and remote port, and the remote address. All fields
+are optional, but commas in front of missing fields must be present:
+
+.RB \fB[\fR\fIlcl_port\fR\fB][\fR,\fB[\fR\fIrmt_host\fR\fB][\fR,\fB[\fIrmt_port\fR\fB]]]
+
+Either symbolic or numeric values can be used for IP addresses and port
+numbers.
+.PP
+\fBfuser\fR outputs only the PIDs to stdout, everything else is sent to stderr.
+.SH OPTIONS
+.TP
+\fB\-a\fR, \fB\-\-all\fR
+Show all files specified on the command line. By default, only files that are
+accessed by at least one process are shown.
+.TP
+\fB\-c\fR
+Same as \-m option, used for POSIX compatibility.
+.TP
+\fB\-f\fR
+Silently ignored, used for POSIX compatibility.
+.TP
+\fB\-k\fR, \fB\-\-kill\fR
+Kill processes accessing the file. Unless changed with \fB\-\fR\fISIGNAL\fR,
+SIGKILL is sent. An \fBfuser\fR process never kills itself, but may kill
+other \fBfuser\fR processes. The effective user ID of the process executing
+\fBfuser\fR is set to its real user ID before attempting to kill.
+.TP
+\fB\-i\fR, \fB\-\-interactive\fR
+Ask the user for confirmation before killing a process. This option is
+silently ignored if \fB\-k\fR is not present too.
+.TP
+\fB\-l\fR, \fB\-\-list\-signals\fR
+List all known signal names.
+.TP
+\fB\-m\fR \fINAME\fR, \fB\-\-mount\fR \fINAME\fR
+\fINAME\fR specifies a file on a mounted file system or a block device that
+is mounted. All processes accessing files on that file system are listed.
+If a directory file is specified, it is automatically changed to
+\fINAME\fR/. to use any file system that might be mounted on that
+directory.
+.TP
+\fB\-M\f, \fB\-\-ismountpoint\fR
+Request will be fulfilled only if \fINAME\fR specifies a mountpoint.
+This is an invaluable seatbelt which prevents you from killing the machine
+if \fINAME\fR happens to not be a filesystem.
+.TP
+\fB\-w\fP
+Kill only processes which have write access. This option is
+silently ignored if \fB\-k\fP is not present too.
+.TP
+\fB\-n \fISPACE\fR, \fB\-\-namespace\fR \fISPACE\fR
+Select a different name space. The name spaces \fBfile\fR (file names, the
+default), \fBudp\fR (local UDP ports), and \fBtcp\fR (local TCP ports) are
+supported. For ports, either the port number or the symbolic name can be
+specified. If there is no ambiguity, the shortcut notation
+\fIname\fB/\fRIspace\fR (e.g. \fI80\fB/\fRtcp\fR ) can be used.
+.TP
+\fB\-s\fR, \fB\-\-silent\fR
+Silent operation. \fB\-u\fR and \fB\-v\fR are ignored in this mode.
+\fB\-a\fR must not be used with \fB\-s\fR.
+.TP
+\fB\-\fISIGNAL\fR
+Use the specified signal instead of SIGKILL when killing processes. Signals
+can be specified either by name (e.g. \fB\-HUP\fR) or by number
+(e.g. \fB\-1\fR). This option is silently ignored if the \fB\-k\fR option
+is not used.
+.TP
+\fB\-u\fR, \fB\-\-user\fR
+Append the user name of the process owner to each PID.
+.TP
+\fB\-v\fR, \fB\-\-verbose\fR
+Verbose mode. Processes are shown in a \fBps\fR-like style. The fields PID,
+USER and COMMAND are similar to \fBps\fR. ACCESS shows how the process
+accesses the file. Verbose mode will also show when a particular file
+is being access as a mount point, knfs export or swap file. In this case
+\fBkernel\fR is shown instead of the PID.
+.TP
+\fB\-V\fR, \fB\-\-version\fR
+Display version information.
+.TP
+\fB\-4\fR, \fB\-\-ipv4\fR
+Search only for IPv4 sockets. This option must not be used with the
+\fB\-6\fR option and only has an effect with the tcp and udp namespaces.
+.TP
+\fB\-6\fR, \fB\-\-ipv6\fR
+Search only for IPv6 sockets. This option must not be used with the \fB\-4\fR
+option and only has an effect with the tcp and udp namespaces.
+.IP \fB\-\fR
+Reset all options and set the signal back to SIGKILL.
+.SH FILES
+.nf
+/proc	location of the proc file system
+.fi
+.SH EXAMPLES
+\fBfuser \-km /home\fR kills all processes accessing the file system /home
+in any way.
+.LP
+\fBif fuser \-s /dev/ttyS1; then :; else \fIsomething\fR; fi\fR invokes
+\fIsomething\fR if no other process is using /dev/ttyS1.
+.LP
+\fBfuser telnet/tcp\fR shows all processes at the (local) TELNET port.
+.SH RESTRICTIONS
+Processes accessing the same file or file system several times in the same way
+are only shown once.
+.PP
+If the same object is specified several times on the command line, some of
+those entries may be ignored.
+.PP
+\fBfuser\fR may only be able to gather partial information unless run with
+privileges. As a consequence, files opened by processes belonging to other
+users may not be listed and executables may be classified as mapped only.
+.PP
+Installing \fBfuser\fR SUID root will avoid problems associated with
+partial information, but may be undesirable for security and privacy
+reasons.
+.PP
+\fBudp\fR and \fBtcp\fR name spaces, and UNIX domain sockets can't be
+searched with kernels older than 1.3.78.
+.PP
+Accesses by the kernel are only shown with the \fB\-v\fR option.
+.PP
+The \fB\-k\fR option only works on processes. If the user is the kernel,
+\fBfuser\fR will print an advice, but take no action beyond that.
+.SH BUGS
+.PP
+fuser \-m /dev/sgX will show (or kill with the \-k flag) all processes, even
+if you don't have that device configured. There may be other devices it
+does this for too.
+.PP
+.B fuser
+cannot report on any processes that it doesn't have permission to look at
+the file descriptor table for.  The most common time this problem occurs
+is when looking for TCP or UDP sockets when running
+.B fuser
+as a non-root user. In this case 
+.B fuser
+will report no access
+.PP
+The mount \-m option will match any file within the save device as the 
+specified file, use the \-M option as well if you mean to specify only the mount point.
+.SH AUTHORS
+.PP
+Werner Almesberger <werner@almesberger.net>
+.PP
+Craig Small <csmall@enc.com.au>
+.SH "SEE ALSO"
+.BR kill "(1), " killall "(1), " lsof "(8), " pkill "(1), " ps "(1), " kill (2).
+.\"{{{}}}

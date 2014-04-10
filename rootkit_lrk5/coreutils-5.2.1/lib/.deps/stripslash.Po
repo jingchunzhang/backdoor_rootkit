@@ -1,0 +1,8 @@
+stripslash.o stripslash.o: stripslash.c ../config.h dirname.h \
+  /usr/lib/gcc/x86_64-redhat-linux/3.4.6/include/stddef.h
+
+../config.h:
+
+dirname.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/3.4.6/include/stddef.h:

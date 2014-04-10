@@ -1,0 +1,46 @@
+#! /bin/sh
+
+# Use df to find a writable directory on a file system different from that
+# of the current directory.  If one is found, create a temporary directory
+# inside it.
+
+test "${CANDIDATE_TMP_DIRS+set}" = set \
+  || CANDIDATE_TMP_DIRS="$TMPDIR /tmp /var/tmp /usr/tmp $HOME"
+
+other_partition_tmpdir=
+
+# WARNING: using sed like this to extract the mount point will fail
+# if the mount point name contains `% '.
+dot_mount_point=`df --no-sync -P . | sed -n '2s/.*%  *//p'`
+for d in $CANDIDATE_TMP_DIRS; do
+
+  # Skip nonexistent directories.
+  test -d $d || continue
+
+  d_mount_point=`df --no-sync -P $d | sed -n '2s/.*%  *//p'`
+
+  # Same partition?  Skip it.
+  test x$d_mount_point = x$dot_mount_point && continue
+
+  # See if we can create a directory in it.
+  if mkdir "$d/df-$$" > /dev/null 2>&1; then
+    other_partition_tmpdir="$d/df-$$"
+    break
+  fi
+
+done
+
+if test -z "$other_partition_tmpdir"; then
+  cat <<EOF 1>&2
+**************************************
+This test requires a writable directory on a different
+disk partition, and I couldn't find one.  I tried these:
+  $CANDIDATE_TMP_DIRS
+Set your environment variable CANDIDATE_TMP_DIRS to make
+this test use a different list.
+**************************************
+EOF
+    #'
+fi
+
+test "$VERBOSE" = yes && set -x

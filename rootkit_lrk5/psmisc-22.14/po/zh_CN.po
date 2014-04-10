@@ -1,0 +1,649 @@
+# Chinese translations for psmisc package
+# psmisc 软件包的简体中文翻译.
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the psmisc package.
+# LI Daobing <lidaobing@gmail.com>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: psmisc 22.6\n"
+"Report-Msgid-Bugs-To: csmall@small.dropbear.id.au\n"
+"POT-Creation-Date: 2011-06-20 21:47+1000\n"
+"PO-Revision-Date: 2007-11-06 21:28+0800\n"
+"Last-Translator: LI Daobing <lidaobing@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/fuser.c:118
+#, fuzzy, c-format
+msgid ""
+"Usage: fuser [-fMuv] [-a|-s] [-4|-6] [-c|-m|-n SPACE] [-k [-i] [-SIGNAL]] "
+"NAME...\n"
+"       fuser -l\n"
+"       fuser -V\n"
+"Show which processes use the named files, sockets, or filesystems.\n"
+"\n"
+"  -a,--all              display unused files too\n"
+"  -i,--interactive      ask before killing (ignored without -k)\n"
+"  -k,--kill             kill processes accessing the named file\n"
+"  -l,--list-signals     list available signal names\n"
+"  -m,--mount            show all processes using the named filesystems or "
+"block device\n"
+"  -M,--ismountpoint     fulfill request only if NAME is a mount point\n"
+"  -n,--namespace SPACE  search in this name space (file, udp, or tcp)\n"
+"  -s,--silent           silent operation\n"
+"  -SIGNAL               send this signal instead of SIGKILL\n"
+"  -u,--user             display user IDs\n"
+"  -v,--verbose          verbose output\n"
+"  -w,--writeonly        kill only processes with write access\n"
+"  -V,--version          display version information\n"
+msgstr ""
+"Usage: fuser [ -a | -s | -c ] [ -n 名字空间 ] [ -信号 ] [ -kimuv ] 名字...\n"
+"             [ - ] [ -n 名字空间 ] [ -信号 ] [ -kimuv ] 名字...\n"
+"       fuser -l\n"
+"       fuser -V\n"
+"显示哪些进程使用指定的文件，端口或文件系统。\n"
+"\n"
+"    -a          也显示未使用的文件\n"
+"    -c          已挂载的文件系统\n"
+"    -f          被悄悄忽略的选项(为了 POSIX 兼容性)\n"
+"    -i          杀死程序前询问 (未指定 -k 选项时被忽略)\n"
+"    -k          杀死访问指定文件的进程\n"
+"    -l          显示可用的信号名\n"
+"    -m          显示所有使用指定文件系统的进程\n"
+"    -n 名字空间 在指定名字空间中查找(file, udp 或 tcp)\n"
+"    -s          不输出信息\n"
+"    -信号       输出 \"信号\" 而不是 SIGKILL\n"
+"    -u          显示用户 ID\n"
+"    -v          输出更多信息\n"
+"    -V          显示版本信息\n"
+
+#: src/fuser.c:136
+#, fuzzy, c-format
+msgid ""
+"  -4,--ipv4             search IPv4 sockets only\n"
+"  -6,--ipv6             search IPv6 sockets only\n"
+msgstr ""
+"    -4          仅查找 IPv4 端口\n"
+"    -6          仅查找 IPv6 端口\n"
+
+#: src/fuser.c:140
+#, fuzzy, c-format
+msgid ""
+"  -                     reset options\n"
+"\n"
+"  udp/tcp names: [local_port][,[rmt_host][,[rmt_port]]]\n"
+"\n"
+msgstr ""
+"    -           重置选项\n"
+"\n"
+"  udp/tcp 名字格式: [本地端口][,[远程主机][,[远程端口]]]\n"
+"\n"
+
+#: src/fuser.c:147
+#, c-format
+msgid "fuser (PSmisc) %s\n"
+msgstr "fuser (PSmisc) %s\n"
+
+#: src/fuser.c:150
+#, fuzzy, c-format
+msgid ""
+"Copyright (C) 1993-2010 Werner Almesberger and Craig Small\n"
+"\n"
+msgstr ""
+"版权所有 © 1993-2005 Werner Almesberger 和 Craig Small\n"
+"\n"
+
+#: src/fuser.c:152 src/killall.c:683 src/peekfd.c:108 src/prtstat.c:68
+#: src/pstree.c:824
+#, c-format
+msgid ""
+"PSmisc comes with ABSOLUTELY NO WARRANTY.\n"
+"This is free software, and you are welcome to redistribute it under\n"
+"the terms of the GNU General Public License.\n"
+"For more information about these matters, see the files named COPYING.\n"
+msgstr ""
+"PSmisc 无任何保证。\n"
+"该程序为自由软件，欢迎你在 GNU 通用公共许可证(GPL) 下重新发布。\n"
+"详情可参阅 COPYING 文件。\n"
+
+#: src/fuser.c:171
+#, c-format
+msgid "Cannot open /proc directory: %s\n"
+msgstr "无法打开 /proc 目录: %s\n"
+
+#: src/fuser.c:362 src/fuser.c:415 src/fuser.c:1869
+#, c-format
+msgid "Cannot allocate memory for matched proc: %s\n"
+msgstr "无法为已找到的进程分配内存: %s\n"
+
+#: src/fuser.c:449
+#, c-format
+msgid "Specified filename %s does not exist.\n"
+msgstr ""
+
+#: src/fuser.c:451
+#, c-format
+msgid "Cannot stat %s: %s\n"
+msgstr "无法分析 %s: %s\n"
+
+#: src/fuser.c:584
+#, c-format
+msgid "Cannot resolve local port %s: %s\n"
+msgstr "无法解析本地端口 %s: %s\n"
+
+#: src/fuser.c:602
+#, c-format
+msgid "Unknown local port AF %d\n"
+msgstr "未知本地端口 AF %d\n"
+
+#: src/fuser.c:692
+#, c-format
+msgid "Cannot open protocol file \"%s\": %s\n"
+msgstr "无法打开协议文件 \"%s\": %s\n"
+
+#: src/fuser.c:938
+#, c-format
+msgid "%s: Invalid option %s\n"
+msgstr ""
+
+#: src/fuser.c:988
+msgid "Namespace option requires an argument."
+msgstr "名字空间选项需要一个参数"
+
+#: src/fuser.c:1000
+msgid "Invalid namespace name"
+msgstr "无效的名字空间名"
+
+#: src/fuser.c:1056
+#, fuzzy
+msgid "You can only use files with mountpoint options"
+msgstr "你只能使用有挂载选项的文件。"
+
+#: src/fuser.c:1101
+msgid "No process specification given"
+msgstr "未指定进程"
+
+#: src/fuser.c:1108
+msgid "all option cannot be used with silent option."
+msgstr "所有选项都不能与不输出信息选项同时使用。"
+
+#: src/fuser.c:1113
+msgid "You cannot search for only IPv4 and only IPv6 sockets at the same time"
+msgstr "你无法同时搜索 IPv4 和 IPv6 端口"
+
+#: src/fuser.c:1186
+#, c-format
+msgid "%*s USER        PID ACCESS COMMAND\n"
+msgstr "%*s 用户     进程号 权限   命令\n"
+
+#: src/fuser.c:1219 src/fuser.c:1274
+msgid "(unknown)"
+msgstr "(未知)"
+
+#: src/fuser.c:1364 src/fuser.c:1402
+#, c-format
+msgid "Cannot stat file %s: %s\n"
+msgstr "无法获取 %s 的文件状态: %s\n"
+
+#: src/fuser.c:1493
+#, c-format
+msgid "Cannot open /proc/net/unix: %s\n"
+msgstr "无法打开 /proc/net/unix: %s\n"
+
+#: src/fuser.c:1569
+#, c-format
+msgid "Kill process %d ? (y/N) "
+msgstr "杀死进程 %d ? (y/N) "
+
+#: src/fuser.c:1605
+#, c-format
+msgid "Could not kill process %d: %s\n"
+msgstr "无法杀死进程 %d: %s\n"
+
+#: src/fuser.c:1620
+#, c-format
+msgid "Cannot open a network socket.\n"
+msgstr "无法打开网络端口。\n"
+
+#: src/fuser.c:1624
+#, c-format
+msgid "Cannot find socket's device number.\n"
+msgstr "无法找到 socket 的设备号。\n"
+
+#: src/killall.c:102
+#, c-format
+msgid "Kill %s(%s%d) ? (y/N) "
+msgstr "杀死 %s(%s%d) ? (y/N) "
+
+#: src/killall.c:105
+#, c-format
+msgid "Signal %s(%s%d) ? (y/N) "
+msgstr "信号 %s(%s%d) ? (y/N) "
+
+#: src/killall.c:209
+#, c-format
+msgid "Cannot get UID from process status\n"
+msgstr "无法从进程状态获取用户ID(UID)\n"
+
+#: src/killall.c:235 src/killall.c:838
+#, c-format
+msgid "Bad regular expression: %s\n"
+msgstr "错误的正则表达式: %s\n"
+
+#: src/killall.c:446
+#, c-format
+msgid "skipping partial match %s(%d)\n"
+msgstr "跳过部分符合的部分 %s(%d)\n"
+
+#: src/killall.c:568
+#, c-format
+msgid "Killed %s(%s%d) with signal %d\n"
+msgstr "%s(%s%d) 被信号 %d 杀死\n"
+
+#: src/killall.c:582
+#, fuzzy, c-format
+msgid "%s: no process found\n"
+msgstr "%s: 没有进程被杀死\n"
+
+#: src/killall.c:620
+#, c-format
+msgid ""
+"Usage: pidof [ -eg ] NAME...\n"
+"       pidof -V\n"
+"\n"
+"    -e      require exact match for very long names;\n"
+"            skip if the command line is unavailable\n"
+"    -g      show process group ID instead of process ID\n"
+"    -V      display version information\n"
+"\n"
+msgstr ""
+"用法: pidof [ -eg ] 程序名...\n"
+"      pidof -V\n"
+"\n"
+"    -e      对长程序名需要严格匹配\n"
+"            如果命令行不可用则忽略该选项\n"
+"    -g      显示进程组ID而不是进程ID\n"
+"    -V      显示版本信息\n"
+"\n"
+
+#: src/killall.c:636
+#, c-format
+msgid ""
+"Usage: killall [-Z CONTEXT] [-u USER] [ -eIgiqrvw ] [ -SIGNAL ] NAME...\n"
+msgstr ""
+"Usage: killall [-Z 上下文] [-u 用户名] [ -eIgiqrvw ] [ -信号 ] 程序名...\n"
+
+#: src/killall.c:639
+#, c-format
+msgid "Usage: killall [OPTION]... [--] NAME...\n"
+msgstr "用法: killall [选项]... [--] 进程名...\n"
+
+#: src/killall.c:642
+#, fuzzy, c-format
+msgid ""
+"       killall -l, --list\n"
+"       killall -V, --version\n"
+"\n"
+"  -e,--exact          require exact match for very long names\n"
+"  -I,--ignore-case    case insensitive process name match\n"
+"  -g,--process-group  kill process group instead of process\n"
+"  -y,--younger-than   kill processes younger than TIME\n"
+"  -o,--older-than     kill processes older than TIME\n"
+"  -i,--interactive    ask for confirmation before killing\n"
+"  -l,--list           list all known signal names\n"
+"  -q,--quiet          don't print complaints\n"
+"  -r,--regexp         interpret NAME as an extended regular expression\n"
+"  -s,--signal SIGNAL  send this signal instead of SIGTERM\n"
+"  -u,--user USER      kill only process(es) running as USER\n"
+"  -v,--verbose        report if the signal was successfully sent\n"
+"  -V,--version        display version information\n"
+"  -w,--wait           wait for processes to die\n"
+msgstr ""
+"      killall -l, --list\n"
+"      killall -V, --version\n"
+"\n"
+"  -e,--exact          对长名字需要严格匹配\n"
+"  -I,--ignore-case    匹配进程名时忽略大小写\n"
+"  -g,--process-group  杀死进程组而不是进程\n"
+"  -i,--interactive    在杀死进程前要求确认\n"
+"  -l,--list           显示所有的信号名\n"
+"  -q,--quiet          不要打印抱怨信息\n"
+"  -r,--regexp         将 \"进程名\" 视为扩展正则表达式\n"
+"  -s,--signal 信号    发送 \"信号\" 而不是 SIGTERM\n"
+"  -u,--user 用户      仅杀死 \"用户\" 的进程\n"
+"  -v,--verbose        信号成功送出时打印信息\n"
+"  -V,--version        显示版本信息\n"
+"  -w,--wait           等待进程死亡\n"
+
+#: src/killall.c:660
+#, c-format
+msgid ""
+"  -Z,--context REGEXP kill only process(es) having context\n"
+"                      (must precede other arguments)\n"
+msgstr ""
+"  -Z,--context 正则表达式 仅杀死含有指定上下文的进程\n"
+"                          (必须在其他参数前使用)\n"
+
+#: src/killall.c:681
+#, c-format
+msgid ""
+"Copyright (C) 1993-2005 Werner Almesberger and Craig Small\n"
+"\n"
+msgstr ""
+"版权所有 © 1993-2005 Werner Almesberger 和 Craig Small\n"
+"\n"
+
+#: src/killall.c:772 src/killall.c:778
+msgid "Invalid time format"
+msgstr ""
+
+#: src/killall.c:803
+#, c-format
+msgid "Cannot find user %s\n"
+msgstr "无法找到用户 %s\n"
+
+#: src/killall.c:870
+#, c-format
+msgid "Maximum number of names is %d\n"
+msgstr "最大名字数量是 %d\n"
+
+#: src/killall.c:874
+#, fuzzy, c-format
+msgid "%s lacks process entries (not mounted ?)\n"
+msgstr "%s 是空的 (未挂载?)\n"
+
+#: src/peekfd.c:96
+#, c-format
+msgid "Error attaching to pid %i\n"
+msgstr "帮定%i号进程时发生错误\n"
+
+#: src/peekfd.c:104
+#, c-format
+msgid "peekfd (PSmisc) %s\n"
+msgstr "peekfd (PSmisc) %s\n"
+
+#: src/peekfd.c:106
+#, c-format
+msgid ""
+"Copyright (C) 2007 Trent Waddington\n"
+"\n"
+msgstr ""
+"版权所有 © 2007 Trent Waddington\n"
+"\n"
+
+#: src/peekfd.c:116
+#, c-format
+msgid ""
+"Usage: peekfd [-8] [-n] [-c] [-d] [-V] [-h] <pid> [<fd> ..]\n"
+"    -8 output 8 bit clean streams.\n"
+"    -n don't display read/write from fd headers.\n"
+"    -c peek at any new child processes too.\n"
+"    -d remove duplicate read/writes from the output.\n"
+"    -V prints version info.\n"
+"    -h prints this help.\n"
+"\n"
+"  Press CTRL-C to end output.\n"
+msgstr ""
+"用发: peekfd [-8] [-n] [-c] [-d] [-V] [-h] <进程号> [<文件号> ..]\n"
+"    -8 输出流使用第8位(首位)。\n"
+"    -n 不显示读写信息。\n"
+"    -c 也检测新的子进程。\n"
+"    -d 从输出中删除重复的读写信息。\n"
+"    -V 输出版本信息。\n"
+"    -h 输出帮助。\n"
+"\n"
+"  输入 CTRL-C 来终止输出。\n"
+
+#: src/prtstat.c:54
+#, c-format
+msgid ""
+"Usage: prtstat [options] PID ...\n"
+"       prtstat -V\n"
+"Print information about a process\n"
+"    -r,--raw       Raw display of information\n"
+"    -V,--version   Display version information and exit\n"
+msgstr ""
+
+#: src/prtstat.c:65
+#, fuzzy, c-format
+msgid "prtstat (PSmisc) %s\n"
+msgstr "pstree (PSmisc) %s\n"
+
+#: src/prtstat.c:66
+#, fuzzy, c-format
+msgid ""
+"Copyright (C) 2009 Craig Small\n"
+"\n"
+msgstr ""
+"版权所有 © 2007 Trent Waddington\n"
+"\n"
+
+#: src/prtstat.c:78
+msgid "running"
+msgstr ""
+
+#: src/prtstat.c:80
+msgid "sleeping"
+msgstr ""
+
+#: src/prtstat.c:82
+msgid "disk sleep"
+msgstr ""
+
+#: src/prtstat.c:84
+msgid "zombie"
+msgstr ""
+
+#: src/prtstat.c:86
+msgid "traced"
+msgstr ""
+
+#: src/prtstat.c:88
+msgid "paging"
+msgstr ""
+
+#: src/prtstat.c:90
+#, fuzzy
+msgid "unknown"
+msgstr "(未知)"
+
+#: src/prtstat.c:164
+#, c-format
+msgid ""
+"Process: %-14s\t\tState: %c (%s)\n"
+"  CPU#:  %-3d\t\tTTY: %s\tThreads: %ld\n"
+msgstr ""
+
+#: src/prtstat.c:169
+#, c-format
+msgid ""
+"Process, Group and Session IDs\n"
+"  Process ID: %d\t\t  Parent ID: %d\n"
+"    Group ID: %d\t\t Session ID: %d\n"
+"  T Group ID: %d\n"
+"\n"
+msgstr ""
+
+#: src/prtstat.c:175
+#, c-format
+msgid ""
+"Page Faults\n"
+"  This Process    (minor major): %8lu  %8lu\n"
+"  Child Processes (minor major): %8lu  %8lu\n"
+msgstr ""
+
+#: src/prtstat.c:180
+#, c-format
+msgid ""
+"CPU Times\n"
+"  This Process    (user system guest blkio): %6.2f %6.2f %6.2f %6.2f\n"
+"  Child processes (user system guest):       %6.2f %6.2f %6.2f\n"
+msgstr ""
+
+#: src/prtstat.c:189
+#, c-format
+msgid ""
+"Memory\n"
+"  Vsize:       %-10s\n"
+"  RSS:         %-10s \t\t RSS Limit: %s\n"
+"  Code Start:  %#-10lx\t\t Code Stop:  %#-10lx\n"
+"  Stack Start: %#-10lx\n"
+"  Stack Pointer (ESP): %#10lx\t Inst Pointer (EIP): %#10lx\n"
+msgstr ""
+
+#: src/prtstat.c:199
+#, c-format
+msgid ""
+"Scheduling\n"
+"  Policy: %s\n"
+"  Nice:   %ld \t\t RT Priority: %ld %s\n"
+msgstr ""
+
+#: src/prtstat.c:221
+msgid "asprintf in print_stat failed.\n"
+msgstr ""
+
+#: src/prtstat.c:226
+#, c-format
+msgid "Process with pid %d does not exist.\n"
+msgstr ""
+
+#: src/prtstat.c:228
+#, c-format
+msgid "Unable to open stat file for pid %d (%s)\n"
+msgstr ""
+
+#: src/prtstat.c:308
+msgid "Invalid option"
+msgstr ""
+
+#: src/prtstat.c:313
+msgid "You must provide at least one PID."
+msgstr ""
+
+#: src/prtstat.c:317
+#, c-format
+msgid "/proc is not mounted, cannot stat /proc/self/stat.\n"
+msgstr ""
+
+#: src/pstree.c:753
+#, c-format
+msgid "%s is empty (not mounted ?)\n"
+msgstr "%s 是空的 (未挂载?)\n"
+
+#: src/pstree.c:791
+#, fuzzy, c-format
+msgid ""
+"Usage: pstree [ -a ] [ -c ] [ -h | -H PID ] [ -l ] [ -n ] [ -p ] [ -u ]\n"
+"              [ -A | -G | -U ] [ PID | USER ]\n"
+"       pstree -V\n"
+"Display a tree of processes.\n"
+"\n"
+"  -a, --arguments     show command line arguments\n"
+"  -A, --ascii         use ASCII line drawing characters\n"
+"  -c, --compact       don't compact identical subtrees\n"
+"  -h, --highlight-all highlight current process and its ancestors\n"
+"  -H PID,\n"
+"  --highlight-pid=PID highlight this process and its ancestors\n"
+"  -G, --vt100         use VT100 line drawing characters\n"
+"  -l, --long          don't truncate long lines\n"
+"  -n, --numeric-sort  sort output by PID\n"
+"  -p, --show-pids     show PIDs; implies -c\n"
+"  -s, --show-parents  show parents of the selected process\n"
+"  -u, --uid-changes   show uid transitions\n"
+"  -U, --unicode       use UTF-8 (Unicode) line drawing characters\n"
+"  -V, --version       display version information\n"
+msgstr ""
+"用法: pstree [ -a ] [ -c ] [ -h | -H 进程号 ] [ -l ] [ -n ] [ -p ] [ -u ]\n"
+"             [ -A | -G | -U ] [ 进程号 | 用户 ]\n"
+"      pstree -V\n"
+"显示进程树。\n"
+"\n"
+"    -a        显示命令行参数\n"
+"    -A        使用 ASCII 画线符\n"
+"    -c        不压缩雷同的子树\n"
+"    -h        高亮显示当前进程及其祖先\n"
+"    -H 进程号 高亮显示 \"进程号\" 指定的进程当及其祖先\n"
+"    -G        使用 VT100 划线符\n"
+"    -l        不截断长行\n"
+"    -n        输出按进程号排序\n"
+"    -p        显示进程号；隐含 -c\n"
+"    -u        显示用户名变换\n"
+"    -U        使用 UTF-8 (Unicode) 划线符\n"
+"    -V        显示版本信息\n"
+
+#: src/pstree.c:810
+#, fuzzy, c-format
+msgid "  -Z     show         SELinux security contexts\n"
+msgstr "    -Z     显示 SELinux 安全环境\n"
+
+#: src/pstree.c:812
+#, fuzzy, c-format
+msgid ""
+"  PID    start at this PID; default is 1 (init)\n"
+"  USER   show only trees rooted at processes of this user\n"
+"\n"
+msgstr ""
+"    进程号    从 \"进程号\" 开始，缺省是1(init)\n"
+"    用户      仅显示从该 \"用户\" 的进程开始的进程树\n"
+"\n"
+
+#: src/pstree.c:819
+#, c-format
+msgid "pstree (PSmisc) %s\n"
+msgstr "pstree (PSmisc) %s\n"
+
+#: src/pstree.c:822
+#, fuzzy, c-format
+msgid ""
+"Copyright (C) 1993-2009 Werner Almesberger and Craig Small\n"
+"\n"
+msgstr ""
+"版权所有 © 1993-2005 Werner Almesberger 和 Craig Small\n"
+"\n"
+
+#: src/pstree.c:934
+#, c-format
+msgid "TERM is not set\n"
+msgstr "未设置环境变量TERM\n"
+
+#: src/pstree.c:938
+#, c-format
+msgid "Can't get terminal capabilities\n"
+msgstr "无法获取终端大小\n"
+
+#: src/pstree.c:983
+#, c-format
+msgid "No such user name: %s\n"
+msgstr "无用户名: %s\n"
+
+#: src/pstree.c:1006
+#, c-format
+msgid "No processes found.\n"
+msgstr "未发现进程。\n"
+
+#: src/pstree.c:1012
+#, c-format
+msgid "Press return to close\n"
+msgstr "按回车后关闭\n"
+
+#: src/signals.c:84
+#, c-format
+msgid "%s: unknown signal; %s -l lists signals.\n"
+msgstr "%s: 未知的信号; %s -l 显示信号列表。\n"
+
+#~ msgid "Cannot stat mount point %s: %s\n"
+#~ msgstr "无法分析挂载点 %s: %s\n"
+
+#~ msgid "You cannot use the mounted and mountpoint flags together"
+#~ msgstr "你不能同时是用已挂载和挂载点选项"
+
+#~ msgid "Cannot open /etc/mtab: %s\n"
+#~ msgstr "无法打开 /etc/mtab: %s\n"
+
+#~ msgid "Internal error: MAX_DEPTH not big enough.\n"
+#~ msgstr "内部错误: MAX_DEPTH 不够大。\n"

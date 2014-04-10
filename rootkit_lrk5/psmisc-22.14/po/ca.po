@@ -1,0 +1,670 @@
+# Catalan translation for psmisc.
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# This file is distributed under the same license as the psmisc package.
+# Guillem Jover <guillem@debian.org>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: psmisc 21.6cvs\n"
+"Report-Msgid-Bugs-To: csmall@small.dropbear.id.au\n"
+"POT-Creation-Date: 2011-06-20 21:47+1000\n"
+"PO-Revision-Date: 2004-12-08 12:46+0100\n"
+"Last-Translator: Guillem Jover <guillem@debian.org>\n"
+"Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/fuser.c:118
+#, fuzzy, c-format
+msgid ""
+"Usage: fuser [-fMuv] [-a|-s] [-4|-6] [-c|-m|-n SPACE] [-k [-i] [-SIGNAL]] "
+"NAME...\n"
+"       fuser -l\n"
+"       fuser -V\n"
+"Show which processes use the named files, sockets, or filesystems.\n"
+"\n"
+"  -a,--all              display unused files too\n"
+"  -i,--interactive      ask before killing (ignored without -k)\n"
+"  -k,--kill             kill processes accessing the named file\n"
+"  -l,--list-signals     list available signal names\n"
+"  -m,--mount            show all processes using the named filesystems or "
+"block device\n"
+"  -M,--ismountpoint     fulfill request only if NAME is a mount point\n"
+"  -n,--namespace SPACE  search in this name space (file, udp, or tcp)\n"
+"  -s,--silent           silent operation\n"
+"  -SIGNAL               send this signal instead of SIGKILL\n"
+"  -u,--user             display user IDs\n"
+"  -v,--verbose          verbose output\n"
+"  -w,--writeonly        kill only processes with write access\n"
+"  -V,--version          display version information\n"
+msgstr ""
+"Forma d'ús:\n"
+"    fuser [ -a | -s | -c ] [ -n espai ] [ -senyal ] [ -kimuv ] nom ...\n"
+"          [ - ] [ -n espai ] [ -senyal ] [ -kimuv ] nom ...\n"
+"    fuser -l\n"
+"    fuser -V\n"
+"\n"
+"    -a        mostra també fitxers no usats\n"
+"    -c        sistemes de fitxers muntats\n"
+"    -f        ignorat silenciosament (per compatibilitat amb POSIX)\n"
+"    -k        matar els processos que accedeixen a aquest fitxer\n"
+"    -i        pregunta abans de matar (ignorat sense -k)\n"
+"    -l        llista els noms dels senyals\n"
+"    -m        sistema de fitxers muntat\n"
+"    -n espai  busca en l'espai de noms especificat (file, udp o tcp)\n"
+"    -s        operació silenciosa\n"
+"    -senyal   envia «senyal» en comptes de SIGKILL\n"
+"    -u        mostra ids d'usuari\n"
+"    -v        mode verbal\n"
+"    -V        mostra informació de la versió\n"
+"    -4        busca només sòcols IPv4\n"
+"    -6        busca només sòcols IPv6\n"
+"    -         inicialitza opcions\n"
+"\n"
+"  noms udp/tcp: [port_local][,[hoste_remot][,[port_remot]]]\n"
+"\n"
+
+#: src/fuser.c:136
+#, c-format
+msgid ""
+"  -4,--ipv4             search IPv4 sockets only\n"
+"  -6,--ipv6             search IPv6 sockets only\n"
+msgstr ""
+
+#: src/fuser.c:140
+#, c-format
+msgid ""
+"  -                     reset options\n"
+"\n"
+"  udp/tcp names: [local_port][,[rmt_host][,[rmt_port]]]\n"
+"\n"
+msgstr ""
+
+#: src/fuser.c:147
+#, fuzzy, c-format
+msgid "fuser (PSmisc) %s\n"
+msgstr "fuser (psmisc) %s\n"
+
+#: src/fuser.c:150
+#, fuzzy, c-format
+msgid ""
+"Copyright (C) 1993-2010 Werner Almesberger and Craig Small\n"
+"\n"
+msgstr ""
+"Copyright (C) 1993-2002 Werner Almesberger i Craig Small\n"
+"\n"
+
+#: src/fuser.c:152 src/killall.c:683 src/peekfd.c:108 src/prtstat.c:68
+#: src/pstree.c:824
+#, c-format
+msgid ""
+"PSmisc comes with ABSOLUTELY NO WARRANTY.\n"
+"This is free software, and you are welcome to redistribute it under\n"
+"the terms of the GNU General Public License.\n"
+"For more information about these matters, see the files named COPYING.\n"
+msgstr ""
+"PSmisc ve ABSOLUTAMENT SENSE CAP GARANTIA.\n"
+"Això és software lliure, i esteu convidats a redistribuir-lo sota els "
+"termes\n"
+"de la llicencia publica general de GNU.\n"
+"Per a més informació sobre aquests assumptes, vegeu el fitxer COPYING.\n"
+
+#: src/fuser.c:171
+#, c-format
+msgid "Cannot open /proc directory: %s\n"
+msgstr ""
+
+#: src/fuser.c:362 src/fuser.c:415 src/fuser.c:1869
+#, c-format
+msgid "Cannot allocate memory for matched proc: %s\n"
+msgstr ""
+
+#: src/fuser.c:449
+#, c-format
+msgid "Specified filename %s does not exist.\n"
+msgstr ""
+
+#: src/fuser.c:451
+#, c-format
+msgid "Cannot stat %s: %s\n"
+msgstr ""
+
+#: src/fuser.c:584
+#, c-format
+msgid "Cannot resolve local port %s: %s\n"
+msgstr ""
+
+#: src/fuser.c:602
+#, c-format
+msgid "Unknown local port AF %d\n"
+msgstr ""
+
+#: src/fuser.c:692
+#, c-format
+msgid "Cannot open protocol file \"%s\": %s\n"
+msgstr ""
+
+#: src/fuser.c:938
+#, fuzzy, c-format
+msgid "%s: Invalid option %s\n"
+msgstr "%s/%s: especificació no vàlida\n"
+
+#: src/fuser.c:988
+msgid "Namespace option requires an argument."
+msgstr ""
+
+#: src/fuser.c:1000
+msgid "Invalid namespace name"
+msgstr ""
+
+#: src/fuser.c:1056
+msgid "You can only use files with mountpoint options"
+msgstr ""
+
+#: src/fuser.c:1101
+msgid "No process specification given"
+msgstr ""
+
+#: src/fuser.c:1108
+msgid "all option cannot be used with silent option."
+msgstr ""
+
+#: src/fuser.c:1113
+msgid "You cannot search for only IPv4 and only IPv6 sockets at the same time"
+msgstr ""
+
+#: src/fuser.c:1186
+#, fuzzy, c-format
+msgid "%*s USER        PID ACCESS COMMAND\n"
+msgstr ""
+"\n"
+"%*s USUARI      PID ACCÉS  ORDRE\n"
+
+#: src/fuser.c:1219 src/fuser.c:1274
+msgid "(unknown)"
+msgstr ""
+
+#: src/fuser.c:1364 src/fuser.c:1402
+#, c-format
+msgid "Cannot stat file %s: %s\n"
+msgstr ""
+
+#: src/fuser.c:1493
+#, c-format
+msgid "Cannot open /proc/net/unix: %s\n"
+msgstr ""
+
+#: src/fuser.c:1569
+#, c-format
+msgid "Kill process %d ? (y/N) "
+msgstr "Voleu matar el procés %d? (s/N)"
+
+#: src/fuser.c:1605
+#, c-format
+msgid "Could not kill process %d: %s\n"
+msgstr ""
+
+#: src/fuser.c:1620
+#, c-format
+msgid "Cannot open a network socket.\n"
+msgstr ""
+
+#: src/fuser.c:1624
+#, fuzzy, c-format
+msgid "Cannot find socket's device number.\n"
+msgstr "no s'ha pogut trobar el nombre de dispositiu del sòcol"
+
+#: src/killall.c:102
+#, c-format
+msgid "Kill %s(%s%d) ? (y/N) "
+msgstr "Voleu matar %s(%s%d)? (s/N) "
+
+#: src/killall.c:105
+#, fuzzy, c-format
+msgid "Signal %s(%s%d) ? (y/N) "
+msgstr "Voleu matar %s(%s%d)? (s/N) "
+
+#: src/killall.c:209
+#, c-format
+msgid "Cannot get UID from process status\n"
+msgstr ""
+
+#: src/killall.c:235 src/killall.c:838
+#, c-format
+msgid "Bad regular expression: %s\n"
+msgstr ""
+
+#: src/killall.c:446
+#, c-format
+msgid "skipping partial match %s(%d)\n"
+msgstr "s'evitarà la coincidència parcial %s(%d)\n"
+
+#: src/killall.c:568
+#, c-format
+msgid "Killed %s(%s%d) with signal %d\n"
+msgstr "S'ha matat %s(%s%d) amb el senyal %d\n"
+
+#: src/killall.c:582
+#, fuzzy, c-format
+msgid "%s: no process found\n"
+msgstr "%s: no s'ha matat cap procés\n"
+
+#: src/killall.c:620
+#, fuzzy, c-format
+msgid ""
+"Usage: pidof [ -eg ] NAME...\n"
+"       pidof -V\n"
+"\n"
+"    -e      require exact match for very long names;\n"
+"            skip if the command line is unavailable\n"
+"    -g      show process group ID instead of process ID\n"
+"    -V      display version information\n"
+"\n"
+msgstr ""
+"Forma d'ús: pidof [ -eg ] nom ...\n"
+"            pidof -V\n"
+"\n"
+"    -e      requereix coincidència exacta per a noms molt llargs;\n"
+"            s'eviten si la línia d'ordres no està disponible\n"
+"    -g      mostra l'ID del grup de procés en comptes de l'ID de procés\n"
+"    -V      mostra informació de versió\n"
+"\n"
+
+#: src/killall.c:636
+#, fuzzy, c-format
+msgid ""
+"Usage: killall [-Z CONTEXT] [-u USER] [ -eIgiqrvw ] [ -SIGNAL ] NAME...\n"
+msgstr ""
+"Forma d'ús: killall [-s sid] [-c context] [ -egiqvw ] [ -senyal ] nom ...\n"
+
+#: src/killall.c:639
+#, fuzzy, c-format
+msgid "Usage: killall [OPTION]... [--] NAME...\n"
+msgstr "Forma d'ús: killall [ OPCIONS ] [ -- ] nom ...\n"
+
+#: src/killall.c:642
+#, fuzzy, c-format
+msgid ""
+"       killall -l, --list\n"
+"       killall -V, --version\n"
+"\n"
+"  -e,--exact          require exact match for very long names\n"
+"  -I,--ignore-case    case insensitive process name match\n"
+"  -g,--process-group  kill process group instead of process\n"
+"  -y,--younger-than   kill processes younger than TIME\n"
+"  -o,--older-than     kill processes older than TIME\n"
+"  -i,--interactive    ask for confirmation before killing\n"
+"  -l,--list           list all known signal names\n"
+"  -q,--quiet          don't print complaints\n"
+"  -r,--regexp         interpret NAME as an extended regular expression\n"
+"  -s,--signal SIGNAL  send this signal instead of SIGTERM\n"
+"  -u,--user USER      kill only process(es) running as USER\n"
+"  -v,--verbose        report if the signal was successfully sent\n"
+"  -V,--version        display version information\n"
+"  -w,--wait           wait for processes to die\n"
+msgstr ""
+"            killall -l, --list\n"
+"            killall -V --version\n"
+"\n"
+"  -e,--exact          requereix coincidència exacta per a noms molt llargs\n"
+"  -I,--ignore-case    coincidència de nom sense sensibilitat a majúscules\n"
+"  -g,--process-group  mata el grup del procés en comptes del procés\n"
+"  -i,--interactive    pregunta abans de matar\n"
+"  -l,--list           llista tots els noms de senyals coneguts\n"
+"  -q,--quiet          no mostra queixes\n"
+"  -s,--signal         envia «senyal» en comptes de «SIGTERM»\n"
+"  -v,--verbose        informa si el senyal s'ha enviat amb èxit\n"
+"  -V,--version        mostra informació de versió\n"
+"  -w,--wait           espera fins que el procés mori\n"
+"\n"
+
+#: src/killall.c:660
+#, fuzzy, c-format
+msgid ""
+"  -Z,--context REGEXP kill only process(es) having context\n"
+"                      (must precede other arguments)\n"
+msgstr ""
+"  -d,--sid            només mata processos que tinguin sid\n"
+"  -c,--context        només mata processos que tinguin scontext\n"
+"   (-s, -c són mútuament excloents i han de precedir altres arguments)\n"
+"\n"
+
+#: src/killall.c:681
+#, fuzzy, c-format
+msgid ""
+"Copyright (C) 1993-2005 Werner Almesberger and Craig Small\n"
+"\n"
+msgstr ""
+"Copyright (C) 1993-2002 Werner Almesberger i Craig Small\n"
+"\n"
+
+#: src/killall.c:772 src/killall.c:778
+msgid "Invalid time format"
+msgstr ""
+
+#: src/killall.c:803
+#, c-format
+msgid "Cannot find user %s\n"
+msgstr ""
+
+#: src/killall.c:870
+#, c-format
+msgid "Maximum number of names is %d\n"
+msgstr "El nombre màxim de noms és %d\n"
+
+#: src/killall.c:874
+#, fuzzy, c-format
+msgid "%s lacks process entries (not mounted ?)\n"
+msgstr "%s és buit (no s'ha muntat?)\n"
+
+#: src/peekfd.c:96
+#, c-format
+msgid "Error attaching to pid %i\n"
+msgstr ""
+
+#: src/peekfd.c:104
+#, fuzzy, c-format
+msgid "peekfd (PSmisc) %s\n"
+msgstr "pstree (psmisc) %s\n"
+
+#: src/peekfd.c:106
+#, c-format
+msgid ""
+"Copyright (C) 2007 Trent Waddington\n"
+"\n"
+msgstr ""
+
+#: src/peekfd.c:116
+#, c-format
+msgid ""
+"Usage: peekfd [-8] [-n] [-c] [-d] [-V] [-h] <pid> [<fd> ..]\n"
+"    -8 output 8 bit clean streams.\n"
+"    -n don't display read/write from fd headers.\n"
+"    -c peek at any new child processes too.\n"
+"    -d remove duplicate read/writes from the output.\n"
+"    -V prints version info.\n"
+"    -h prints this help.\n"
+"\n"
+"  Press CTRL-C to end output.\n"
+msgstr ""
+
+#: src/prtstat.c:54
+#, c-format
+msgid ""
+"Usage: prtstat [options] PID ...\n"
+"       prtstat -V\n"
+"Print information about a process\n"
+"    -r,--raw       Raw display of information\n"
+"    -V,--version   Display version information and exit\n"
+msgstr ""
+
+#: src/prtstat.c:65
+#, fuzzy, c-format
+msgid "prtstat (PSmisc) %s\n"
+msgstr "pstree (psmisc) %s\n"
+
+#: src/prtstat.c:66
+#, fuzzy, c-format
+msgid ""
+"Copyright (C) 2009 Craig Small\n"
+"\n"
+msgstr ""
+"Copyright (C) 1993-2002 Werner Almesberger i Craig Small\n"
+"\n"
+
+#: src/prtstat.c:78
+msgid "running"
+msgstr ""
+
+#: src/prtstat.c:80
+msgid "sleeping"
+msgstr ""
+
+#: src/prtstat.c:82
+msgid "disk sleep"
+msgstr ""
+
+#: src/prtstat.c:84
+msgid "zombie"
+msgstr ""
+
+#: src/prtstat.c:86
+msgid "traced"
+msgstr ""
+
+#: src/prtstat.c:88
+msgid "paging"
+msgstr ""
+
+#: src/prtstat.c:90
+msgid "unknown"
+msgstr ""
+
+#: src/prtstat.c:164
+#, c-format
+msgid ""
+"Process: %-14s\t\tState: %c (%s)\n"
+"  CPU#:  %-3d\t\tTTY: %s\tThreads: %ld\n"
+msgstr ""
+
+#: src/prtstat.c:169
+#, c-format
+msgid ""
+"Process, Group and Session IDs\n"
+"  Process ID: %d\t\t  Parent ID: %d\n"
+"    Group ID: %d\t\t Session ID: %d\n"
+"  T Group ID: %d\n"
+"\n"
+msgstr ""
+
+#: src/prtstat.c:175
+#, c-format
+msgid ""
+"Page Faults\n"
+"  This Process    (minor major): %8lu  %8lu\n"
+"  Child Processes (minor major): %8lu  %8lu\n"
+msgstr ""
+
+#: src/prtstat.c:180
+#, c-format
+msgid ""
+"CPU Times\n"
+"  This Process    (user system guest blkio): %6.2f %6.2f %6.2f %6.2f\n"
+"  Child processes (user system guest):       %6.2f %6.2f %6.2f\n"
+msgstr ""
+
+#: src/prtstat.c:189
+#, c-format
+msgid ""
+"Memory\n"
+"  Vsize:       %-10s\n"
+"  RSS:         %-10s \t\t RSS Limit: %s\n"
+"  Code Start:  %#-10lx\t\t Code Stop:  %#-10lx\n"
+"  Stack Start: %#-10lx\n"
+"  Stack Pointer (ESP): %#10lx\t Inst Pointer (EIP): %#10lx\n"
+msgstr ""
+
+#: src/prtstat.c:199
+#, c-format
+msgid ""
+"Scheduling\n"
+"  Policy: %s\n"
+"  Nice:   %ld \t\t RT Priority: %ld %s\n"
+msgstr ""
+
+#: src/prtstat.c:221
+msgid "asprintf in print_stat failed.\n"
+msgstr ""
+
+#: src/prtstat.c:226
+#, c-format
+msgid "Process with pid %d does not exist.\n"
+msgstr ""
+
+#: src/prtstat.c:228
+#, c-format
+msgid "Unable to open stat file for pid %d (%s)\n"
+msgstr ""
+
+#: src/prtstat.c:308
+#, fuzzy
+msgid "Invalid option"
+msgstr "%s/%s: especificació no vàlida\n"
+
+#: src/prtstat.c:313
+msgid "You must provide at least one PID."
+msgstr ""
+
+#: src/prtstat.c:317
+#, c-format
+msgid "/proc is not mounted, cannot stat /proc/self/stat.\n"
+msgstr ""
+
+#: src/pstree.c:753
+#, c-format
+msgid "%s is empty (not mounted ?)\n"
+msgstr "%s és buit (no s'ha muntat?)\n"
+
+#: src/pstree.c:791
+#, fuzzy, c-format
+msgid ""
+"Usage: pstree [ -a ] [ -c ] [ -h | -H PID ] [ -l ] [ -n ] [ -p ] [ -u ]\n"
+"              [ -A | -G | -U ] [ PID | USER ]\n"
+"       pstree -V\n"
+"Display a tree of processes.\n"
+"\n"
+"  -a, --arguments     show command line arguments\n"
+"  -A, --ascii         use ASCII line drawing characters\n"
+"  -c, --compact       don't compact identical subtrees\n"
+"  -h, --highlight-all highlight current process and its ancestors\n"
+"  -H PID,\n"
+"  --highlight-pid=PID highlight this process and its ancestors\n"
+"  -G, --vt100         use VT100 line drawing characters\n"
+"  -l, --long          don't truncate long lines\n"
+"  -n, --numeric-sort  sort output by PID\n"
+"  -p, --show-pids     show PIDs; implies -c\n"
+"  -s, --show-parents  show parents of the selected process\n"
+"  -u, --uid-changes   show uid transitions\n"
+"  -U, --unicode       use UTF-8 (Unicode) line drawing characters\n"
+"  -V, --version       display version information\n"
+msgstr ""
+"Forma d'ús: pstree [ -a ] [ -c ] [ -h | -H pid ] [ -l ] [ -n ] [ -p ] [ -"
+"u ]\n"
+"                   [ -A | -G | -U ] [ pid | usuari ]\n"
+"            pstree -V\n"
+"\n"
+"    -a     mostra els arguments de la línia d'ordres\n"
+"    -A     usa caràcters de dibuix de línia ASCII\n"
+"    -c     no compactar subarbres idèntics\n"
+"    -h     ressaltar el procés actual i els seus ancestres\n"
+"    -H pid ressaltar el procés «pid» i els seus ancestres\n"
+"    -G     usa caràcters de dibuix de línia VT100\n"
+"    -l     no tallar les línies llargues\n"
+"    -n     ordenar sortida per PID\n"
+"    -p     mostra els PID; implica -c\n"
+"    -u     mostra transicions de uid\n"
+
+#: src/pstree.c:810
+#, fuzzy, c-format
+msgid "  -Z     show         SELinux security contexts\n"
+msgstr ""
+"    -s     mostra els SID de Flask\n"
+"    -x     mostra els contextes de seguretat de Flask\n"
+
+#: src/pstree.c:812
+#, fuzzy, c-format
+msgid ""
+"  PID    start at this PID; default is 1 (init)\n"
+"  USER   show only trees rooted at processes of this user\n"
+"\n"
+msgstr ""
+"    -U     usar caràcters de dibuix de línia UTF-8 (Unicode)\n"
+"    -V     mostra informació de la versió\n"
+"    pid    comença en pid, predeterminat 1 (init)\n"
+"    user   només mostra arbres amb arrel en processos d'aquest usuari\n"
+"\n"
+
+#: src/pstree.c:819
+#, fuzzy, c-format
+msgid "pstree (PSmisc) %s\n"
+msgstr "pstree (psmisc) %s\n"
+
+#: src/pstree.c:822
+#, fuzzy, c-format
+msgid ""
+"Copyright (C) 1993-2009 Werner Almesberger and Craig Small\n"
+"\n"
+msgstr ""
+"Copyright (C) 1993-2002 Werner Almesberger i Craig Small\n"
+"\n"
+
+#: src/pstree.c:934
+#, c-format
+msgid "TERM is not set\n"
+msgstr "TERM no està especificada\n"
+
+#: src/pstree.c:938
+#, c-format
+msgid "Can't get terminal capabilities\n"
+msgstr "No s'han pogut obtenir les capacitats\n"
+
+#: src/pstree.c:983
+#, c-format
+msgid "No such user name: %s\n"
+msgstr "No existeix aquest nom d'usuari: %s\n"
+
+#: src/pstree.c:1006
+#, c-format
+msgid "No processes found.\n"
+msgstr "No s'han trobat processos.\n"
+
+#: src/pstree.c:1012
+#, c-format
+msgid "Press return to close\n"
+msgstr "Premeu retorn per a tancar\n"
+
+#: src/signals.c:84
+#, c-format
+msgid "%s: unknown signal; %s -l lists signals.\n"
+msgstr "%s: senyal desconegut. «%s -l» llista els senyals.\n"
+
+#, fuzzy
+#~ msgid "Internal error: MAX_DEPTH not big enough.\n"
+#~ msgstr "MAX_DEPTH no és prou gran.\n"
+
+#~ msgid "%s: SID (%s) must be numeric\n"
+#~ msgstr "%s: el SID (%s) ha de ser numèric\n"
+
+#~ msgid "-4 flag used but proc file %s is not readable\n"
+#~ msgstr ""
+#~ "s'ha usat l'argument -4 però el fitxer proc %s no s'ha pogut llegir\n"
+
+#~ msgid "-6 flag used but proc file %s is not readable\n"
+#~ msgstr ""
+#~ "s'ha usat l'argument -6 però el fitxer proc %s no s'ha pogut llegir\n"
+
+#~ msgid "kill %d"
+#~ msgstr "mata %d"
+
+#~ msgid "No automatic removal. Please use  umount %s\n"
+#~ msgstr "No s'eliminarà automàticament. Si us plau useu «umount %s»\n"
+
+#~ msgid "No automatic removal. Please use  swapoff %s\n"
+#~ msgstr "No s'eliminarà automàticament. Si us plau useu «swapoff %s»\n"
+
+#~ msgid "Internal error (type %d)\n"
+#~ msgstr "Error intern (tipus %d)\n"
+
+#~ msgid "kernel mount  "
+#~ msgstr "muntatge de nucli "
+
+#~ msgid "kernel loop   "
+#~ msgstr "bucle de nucli "
+
+#~ msgid "kernel swap   "
+#~ msgstr "intercanvi de nucli "
+
+#~ msgid "ignoring -m in name space \"%s\"\n"
+#~ msgstr "s'està ignorant -m en l'espai de noms «%s»\n"

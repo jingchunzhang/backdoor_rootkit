@@ -1,0 +1,54 @@
+#!/bin/sh
+# make sure --update works as advertised
+
+if test "$VERBOSE" = yes; then
+  set -x
+  cp --version
+  mv --version
+fi
+
+. $srcdir/../envvar-check
+. $srcdir/../lang-default
+
+pwd=`pwd`
+tmp=mv-update.$$
+trap 'status=$?; cd $pwd; rm -rf $tmp && exit $status' 0
+trap '(exit $?); exit' 1 2 13 15
+
+framework_failure=0
+mkdir $tmp || framework_failure=1
+cd $tmp || framework_failure=1
+echo old > old || framework_failure=1
+touch -d yesterday old || framework_failure=1
+echo new > new || framework_failure=1
+
+if test $framework_failure = 1; then
+  echo 'failure in testing framework' 1>&2
+  (exit 1); exit
+fi
+
+fail=0
+
+for cp_or_mv in cp mv; do
+  # This is a no-op.
+  $cp_or_mv --update old new || fail=1
+  case "`cat new`" in new) ;; *) fail=1 ;; esac
+  case "`cat old`" in old) ;; *) fail=1 ;; esac
+done
+
+# This will actually perform the rename.
+mv --update new old || fail=1
+test -f new && fail=1
+case "`cat old`" in new) ;; *) fail=1 ;; esac
+
+# Restore initial conditions.
+echo old > old || fail=1
+touch -d yesterday old || fail=1
+echo new > new || fail=1
+
+# This will actually perform the copy.
+cp --update new old || fail=1
+case "`cat old`" in new) ;; *) fail=1 ;; esac
+case "`cat new`" in new) ;; *) fail=1 ;; esac
+
+(exit $fail); exit

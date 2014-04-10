@@ -1,0 +1,194 @@
+#!/bin/sh
+# Test some of cp's options and how cp handles situations in
+# which a naive implementation might overwrite the source file.
+
+if test "$VERBOSE" = yes; then
+  set -x
+  cp --version
+fi
+
+. $srcdir/../lang-default
+
+# Unset CDPATH.  Otherwise, output from the `cd dir' command
+# can make this test fail.
+(unset CDPATH) >/dev/null 2>&1 && unset CDPATH
+
+VERSION_CONTROL=numbered; export VERSION_CONTROL
+
+pwd=`pwd`
+t0=`echo "$0"|sed 's,.*/,,'`.tmp;tmp=$t0/$$
+trap 'status=$?; cd $pwd; exec 1>&2; rm -rf $t0 && exit $status' 0
+trap 'exit $?' 1 2 13 15
+
+framework_failure=0
+mkdir -p $tmp || framework_failure=1
+cd $tmp || framework_failure=1
+
+if test $framework_failure = 1; then
+  echo 'failure in testing framework'
+  exit 1
+fi
+
+actual=actual-$$
+expected=expected-$$
+
+exec 1> $actual
+
+# FIXME: This should be bigger: like more than 8k
+contents=XYZ
+
+for args in 'foo symlink' 'symlink foo' 'foo foo' 'sl1 sl2' 'foo hardlink'; do
+  for options in '' -d -f -df --rem -b -bd -bf -bdf \
+		 -l -dl -fl -dfl -bl -bdl -bfl -bdfl; do
+    case $args$options in
+      # These tests are not portable.
+      # They all involve making a hard link to a symbolic link.
+      'symlink foo'-dfl)
+	continue;;
+      'symlink foo'-bdl)
+	continue;;
+      'symlink foo'-bdfl)
+	continue;;
+      'sl1 sl2'-dfl)
+	continue;;
+      'sl1 sl2'-bd*l)
+	continue;;
+      'sl1 sl2'-dl)
+	continue;;
+    esac
+    rm -rf dir
+    mkdir dir
+    cd dir
+    echo $contents > foo
+    case "$args" in *symlink*) ln -s foo symlink ;; esac
+    case "$args" in *hardlink*) ln foo hardlink ;; esac
+    case "$args" in *sl1*) ln -s foo sl1;; esac
+    case "$args" in *sl2*) ln -s foo sl2;; esac
+    (
+      (
+	# echo 1>&2 cp $options $args
+	cp $options $args 2>_err
+	echo $? $options
+
+	# Normalize the program name in the error output,
+	# and put brackets around the output.
+	test -s _err && echo "[`sed 's/^[^:][^:]*:/cp:/' _err`]"
+	# Strip off all but the file names.
+	ls="`ls -gG --ignore=_err . \
+	    | sed \
+	        -e '/^total /d' \
+		-e 's/^[^ ]*  *[^ ]*  *[^ ]*  *[^ ]*  *[^ ]*  *[^ ]*  *//'`"
+	echo "($ls)"
+	# Make sure the original is unchanged and that
+	# the destination is a copy.
+	for f in $args; do
+	  if test -f $f; then
+	    case "`cat $f`" in
+	      "$contents") ;;
+	      *) echo cp FAILED;;
+	    esac
+	  else
+	    echo symlink-loop
+	  fi
+	done
+      ) | tr '\n' ' '
+      echo
+    ) | sed 's/  *$//'
+    cd ..
+  done
+  echo
+done
+
+cat <<\EOF > $expected
+1 [cp: `foo' and `symlink' are the same file] (foo symlink -> foo)
+1 -d [cp: `foo' and `symlink' are the same file] (foo symlink -> foo)
+1 -f [cp: `foo' and `symlink' are the same file] (foo symlink -> foo)
+1 -df [cp: `foo' and `symlink' are the same file] (foo symlink -> foo)
+0 --rem (foo symlink)
+0 -b (foo symlink symlink.~1~ -> foo)
+0 -bd (foo symlink symlink.~1~ -> foo)
+0 -bf (foo symlink symlink.~1~ -> foo)
+0 -bdf (foo symlink symlink.~1~ -> foo)
+0 -l (foo symlink -> foo)
+0 -dl (foo symlink -> foo)
+0 -fl (foo symlink -> foo)
+0 -dfl (foo symlink)
+0 -bl (foo symlink -> foo)
+0 -bdl (foo symlink symlink.~1~ -> foo)
+0 -bfl (foo symlink -> foo)
+0 -bdfl (foo symlink symlink.~1~ -> foo)
+
+1 [cp: `symlink' and `foo' are the same file] (foo symlink -> foo)
+1 -d [cp: `symlink' and `foo' are the same file] (foo symlink -> foo)
+1 -f [cp: `symlink' and `foo' are the same file] (foo symlink -> foo)
+1 -df [cp: `symlink' and `foo' are the same file] (foo symlink -> foo)
+1 --rem [cp: `symlink' and `foo' are the same file] (foo symlink -> foo)
+1 -b [cp: `symlink' and `foo' are the same file] (foo symlink -> foo)
+0 -bd (foo -> foo foo.~1~ symlink -> foo) symlink-loop symlink-loop
+1 -bf [cp: `symlink' and `foo' are the same file] (foo symlink -> foo)
+0 -bdf (foo -> foo foo.~1~ symlink -> foo) symlink-loop symlink-loop
+0 -l (foo symlink -> foo)
+0 -dl (foo symlink -> foo)
+0 -fl (foo symlink -> foo)
+0 -bl (foo symlink -> foo)
+0 -bfl (foo symlink -> foo)
+
+1 [cp: `foo' and `foo' are the same file] (foo)
+1 -d [cp: `foo' and `foo' are the same file] (foo)
+1 -f [cp: `foo' and `foo' are the same file] (foo)
+1 -df [cp: `foo' and `foo' are the same file] (foo)
+1 --rem [cp: `foo' and `foo' are the same file] (foo)
+1 -b [cp: `foo' and `foo' are the same file] (foo)
+1 -bd [cp: `foo' and `foo' are the same file] (foo)
+0 -bf (foo foo.~1~)
+0 -bdf (foo foo.~1~)
+0 -l (foo)
+0 -dl (foo)
+0 -fl (foo)
+0 -dfl (foo)
+0 -bl (foo)
+0 -bdl (foo)
+0 -bfl (foo foo.~1~)
+0 -bdfl (foo foo.~1~)
+
+1 [cp: `sl1' and `sl2' are the same file] (foo sl1 -> foo sl2 -> foo)
+0 -d (foo sl1 -> foo sl2 -> foo)
+1 -f [cp: `sl1' and `sl2' are the same file] (foo sl1 -> foo sl2 -> foo)
+0 -df (foo sl1 -> foo sl2 -> foo)
+0 --rem (foo sl1 -> foo sl2)
+0 -b (foo sl1 -> foo sl2 sl2.~1~ -> foo)
+0 -bd (foo sl1 -> foo sl2 -> foo sl2.~1~ -> foo)
+0 -bf (foo sl1 -> foo sl2 sl2.~1~ -> foo)
+0 -bdf (foo sl1 -> foo sl2 -> foo sl2.~1~ -> foo)
+0 -l (foo sl1 -> foo sl2 -> foo)
+0 -fl (foo sl1 -> foo sl2 -> foo)
+0 -bl (foo sl1 -> foo sl2 -> foo)
+0 -bfl (foo sl1 -> foo sl2 -> foo)
+
+1 [cp: `foo' and `hardlink' are the same file] (foo hardlink)
+1 -d [cp: `foo' and `hardlink' are the same file] (foo hardlink)
+1 -f [cp: `foo' and `hardlink' are the same file] (foo hardlink)
+1 -df [cp: `foo' and `hardlink' are the same file] (foo hardlink)
+0 --rem (foo hardlink)
+0 -b (foo hardlink hardlink.~1~)
+0 -bd (foo hardlink hardlink.~1~)
+0 -bf (foo hardlink hardlink.~1~)
+0 -bdf (foo hardlink hardlink.~1~)
+0 -l (foo hardlink)
+0 -dl (foo hardlink)
+0 -fl (foo hardlink)
+0 -dfl (foo hardlink)
+0 -bl (foo hardlink)
+0 -bdl (foo hardlink)
+0 -bfl (foo hardlink)
+0 -bdfl (foo hardlink)
+
+EOF
+
+fail=0;
+
+# Some folks don't have diff.
+cmp $expected $actual \
+  || { diff -c $expected $actual 1>&2; fail=1; }
+
+(exit $fail); exit

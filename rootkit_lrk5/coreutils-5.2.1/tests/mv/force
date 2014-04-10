@@ -1,0 +1,41 @@
+#!/bin/sh
+# move a file onto itself
+
+if test "$VERBOSE" = yes; then
+  set -x
+  mv --version
+fi
+
+ff=mvforce
+ff2=mvforce2
+
+framework_failure=0
+rm -f $ff $ff2 || framework_failure=1
+echo force-contents > $ff || framework_failure=1
+ln $ff $ff2 || framework_failure=1
+
+if test $framework_failure = 1; then
+  echo 'failure in testing framework'
+  exit 1
+fi
+
+# Make sure we get English translations.
+. $srcdir/../lang-default
+
+# This mv command should exit nonzero.
+mv $ff $ff > out 2>&1 && fail=1
+
+cat > exp <<EOF
+mv: \`$ff' and \`$ff' are the same file
+EOF
+
+cmp out exp || fail=1
+test `cat $ff` = force-contents || fail=1
+
+# This should succeed, even though the source and destination
+# device and inodes are the same.
+mv $ff $ff2 || fail=1
+
+rm -fr out exp $ff $ff2
+
+exit $fail
