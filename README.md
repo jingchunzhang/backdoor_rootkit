@@ -3,4 +3,4 @@ backdoor_rootkit
 仅供交流参考使用,后果自负!
 ================
 
-欢迎交流，个人WeChat：Spring_big
+欢迎交流，个人WeChat：danezhang_tt
